@@ -1,0 +1,769 @@
+---
+title: Survey
+slug: survey
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 107
+seo_title: CareerTrackers Surveys
+---
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+	{% include page_header %}
+		<div class="page-header orange-dotted-border-bottom">
+		<form action='/forms' id='survey' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+		{% csrf_param %}
+			<div class='form-group'>
+            <label class='col-sm-2 control-label' for='survey_selection'>Select Survey</label>
+			  <div class='col-sm-5'>
+				<select class='form-control' id='survey_selection' name='survey[survey_selection]' value="{{params['survey_selection']}}">
+					<option selected='' value=''></option>
+					
+					{% if params['survey_selection'] == "Winter Kick-off 2015" %}
+					<option selected='' value='Winter Kick-off 2015'>Winter Kick-off 2015</option>
+					{% else %}
+					<option value='Winter Kick-off 2015'>Winter Kick-off 2015</option>
+					{% endif %}
+					
+					{% if params['survey_selection'] == "Workshop 1 Evaluation" %}
+					<option selected ='' value='Workshop 1 Evaluation'>Workshop 1 Evaluation</option>
+					{% else %}
+					<option value='Workshop 1 Evaluation'>Workshop 1 Evaluation</option>
+					{% endif %}
+					
+					{% if params['survey_selection'] == "Workshop 2 Evaluation" %}
+					<option selected ='' value='Workshop 2 Evaluation'>Workshop 2 Evaluation</option>
+					{% else %}
+					<option value='Workshop 2 Evaluation'>Workshop 2 Evaluation</option>
+					{% endif %}
+					
+				</select>
+			  </div>
+        	</div>
+        	
+        	<div class='form-group'>
+			  <label class='col-sm-2 control-label' for='facilitaor'>Facilitator</label>
+			  <div class='col-sm-5'>
+				<input class='form-control' id='name' name='survey[facilitaor]' placeholder='Name of Facilitator' type='text' value="{{params['name']}}">
+			  </div>
+			</div>
+        
+        	<div class='form-group'>
+            <label class='col-sm-2 control-label' for='question_1'>1. The session content provided an effective balance between lecture and exercises:</label>
+			  <div class='col-sm-5'>
+				<select class='form-control' id='question_1' name='survey[question_1]' value="{{params['question_1']}}">
+					<option selected='' value=''></option>
+					
+					{% if params['question_1'] == "N/A" %}
+					<option selected='' value='N/A'>N/A</option>
+					{% else %}
+					<option value='N/A'>N/A</option>
+					{% endif %}
+					
+					{% if params['question_1'] == "1 - Strongly Disagree" %}
+					<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+					{% else %}
+					<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+					{% endif %}
+					
+					{% if params['question_1'] == "2 - Disagree" %}
+					<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+					{% else %}
+					<option value='2 - Disagree'>2 - Disagree</option>
+					{% endif %}
+					
+					{% if params['question_1'] == "3 - Neutral" %}
+					<option selected='' value='3 - Neutral'>3 - Neutral</option>
+					{% else %}
+					<option value='3 - Neutral'>3 - Neutral</option>
+					{% endif %}
+					
+					{% if params['question_1'] == "4 - Agree" %}
+					<option selected ='' value='4 - Agree'>4 - Agree</option>
+					{% else %}
+					<option value='4 - Agree'>4 - Agree</option>
+					{% endif %}
+					
+					{% if params['question_1'] == "5 - Strongly Agree" %}
+					<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+					{% else %}
+					<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+					{% endif %}
+				</select>
+			  </div>
+        </div>
+        
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_2'>2. The interaction between participants made the session more interesting:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_2' name='survey[question_2]' value="{{params['question_2']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_2'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_2'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_2'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_2'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_2'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_2'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_3'>3. The interaction between participants made the session more interesting:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_3' name='survey[question_3]' value="{{params['question_3']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_3'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_3'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_3'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_3'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_3'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_3'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_4'>4. I can apply what I have learnt to enhance my job performance:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_4' name='survey[question_4]' value="{{params['question_4']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_4'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_4'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_4'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_4'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_4'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_4'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_5'>5. The session content provided me with new information or a different way of thinking:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_5' name='survey[question_5]' value="{{params['question_5']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_5'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_5'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_5'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_5'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_5'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_5'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_6'>6. The information presented will be valuable in  my professional development:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_6' name='survey[question_6]' value="{{params['question_6']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_6'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_6'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_6'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_6'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_6'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_6'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_7'>7. I felt engaged and involved in the workshop:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_7' name='survey[question_7]' value="{{params['question_7']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_7'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_7'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_7'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_7'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_7'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_7'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_8'>8. I felt comfortable to contribute to the workshop:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_8' name='survey[question_8]' value="{{params['question_8']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_8'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_8'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_8'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_8'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_8'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_8'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_9'>9. Overall, I was satisfied with this course:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_9' name='survey[question_9]' value="{{params['question_9']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_9'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_9'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_9'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_9'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_9'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_9'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_10'>10. The facilitator was prepared and organised:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_10' name='survey[question_10]' value="{{params['question_10']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_10'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_10'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_10'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_10'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_10'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_10'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_11'>11. The facilitator presented the information clearly:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_11' name='survey[question_10]' value="{{params['question_10']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_11'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_11'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_11'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_11'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_11'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_11'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_12'>12. The facilitator encouraged a high level of interaction between participants:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_12' name='survey[question_12]' value="{{params['question_12']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_12'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_12'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_12'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_12'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_12'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_12'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_13'>13. The facilitator was helpful and responsive to participants:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_13' name='survey[question_13]' value="{{params['question_13']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_13'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_13'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_13'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_13'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_13'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_13'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+				<label class='col-sm-2 control-label' for='question_14'>14. The facilitator helped me see the application of this course concept to my professional development:</label>
+				  <div class='col-sm-5'>
+					<select class='form-control' id='question_14' name='survey[question_14]' value="{{params['question_14']}}">
+						<option selected='' value=''></option>
+					
+						{% if params['question_14'] == "N/A" %}
+						<option selected='' value='N/A'>N/A</option>
+						{% else %}
+						<option value='N/A'>N/A</option>
+						{% endif %}
+					
+						{% if params['question_14'] == "1 - Strongly Disagree" %}
+						<option selected ='' value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% else %}
+						<option value='1 - Strongly Disagree'>1 - Strongly Disagree</option>
+						{% endif %}
+					
+						{% if params['question_14'] == "2 - Disagree" %}
+						<option selected ='' value='2 - Disagree'>2 - Disagree</option>
+						{% else %}
+						<option value='2 - Disagree'>2 - Disagree</option>
+						{% endif %}
+					
+						{% if params['question_14'] == "3 - Neutral" %}
+						<option selected='' value='3 - Neutral'>3 - Neutral</option>
+						{% else %}
+						<option value='3 - Neutral'>3 - Neutral</option>
+						{% endif %}
+					
+						{% if params['question_14'] == "4 - Agree" %}
+						<option selected ='' value='4 - Agree'>4 - Agree</option>
+						{% else %}
+						<option value='4 - Agree'>4 - Agree</option>
+						{% endif %}
+					
+						{% if params['question_14'] == "5 - Strongly Agree" %}
+						<option selected ='' value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% else %}
+						<option value='5 - Strongly Agree'>5 - Strongly Agree</option>
+						{% endif %}
+					</select>
+				  </div>
+			</div>
+			
+			<div class='form-group'>
+			  <label class='col-sm-2 control-label' for='improvements'>15. How would you improve this session?</label>
+			  <div class='col-sm-5'>
+			  
+				<div class='checkbox'>
+					<label>
+						<input  id='name' name='survey[improvements]'  type='checkbox' value="Allow more time for the session">Allow more time for the session
+					</label>
+				</div>
+				
+				
+				<div class='checkbox'>
+					<label>
+						<input  id='name' name='survey[improvements]'  type='checkbox' value="Slow down the pace of the workshop">Slow down the pace of the workshop
+					</label>
+				</div>
+				
+				
+				<div class='checkbox'>
+					<label>
+						<input  id='name' name='survey[improvements]'  type='checkbox' value="Improve the organisation of the session">Improve the organisation of the session
+					</label>
+				</div>
+				
+				
+				<div class='checkbox'>
+					<label>
+						<input  id='name' name='survey[improvements]'  type='checkbox' value="Make activities more stimulating">Make activities more stimulating
+					</label>
+				</div>
+				
+				
+				<div class='checkbox'>
+					<label>
+						<input id='name' name='survey[improvements]'  type='checkbox' value="Reduce the content covered in the session">Reduce the content covered in the session
+					</label>
+				</div>
+				
+				
+				<div class='checkbox'>
+					<label>
+						<input  id='name' name='survey[improvements]'  type='checkbox' value="Provide pre-workshop information">Provide pre-workshop information
+					</label>
+				</div>
+				
+			  </div>
+			</div>
+			
+			<div class='form-group'>
+			  <label class='col-sm-2 control-label' for='most_valuable'>16. What was the most valuable part of the session?</label>
+			  <div class='col-sm-5'>
+				<textarea class='form-control' id='name' name='survey[most_valuable]' type='text' value="{{params['most_valuable']}}"></textarea>
+			  </div>
+			</div>
+			
+			<div class='form-group'>
+			  <label class='col-sm-2 control-label' for='least_valuable'>17. What was the least valuable part of the session?</label>
+			  <div class='col-sm-5'>
+				<textarea class='form-control' id='name' name='survey[least_valuable]' type='text' value="{{params['least_valuable']}}"></textarea>
+			  </div>
+			</div>
+			
+			<div class='row'>
+      		<div class='col-sm-12'>
+          		<div class='col-sm-6' style="text-alight:center;">
+            		<button class='btn orange-button' type='submit'>Submit</button>
+          		</div>
+		  </div>
+		</div>
+		</form>
+		 
+		
+	</div>
+</div>
+
+{% endblock %}
+{% block javascripts %}
+<script>
+	$(document).ready(function() {
+		$("#survey").submit(function() {
+			
+			
+		});
+	});
+</script>
+{% endblock %}

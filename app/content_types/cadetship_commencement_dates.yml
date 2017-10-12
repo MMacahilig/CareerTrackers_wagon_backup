@@ -1,0 +1,14 @@
+---
+name: Cadetship commencement dates
+description: Cadetship commencement dates
+slug: cadetship_commencement_dates
+label_field_name: date
+order_by: manually
+order_direction: asc
+fields:
+- date:
+    label: Date
+    type: string
+    required: true
+    unique: false
+    localized: false

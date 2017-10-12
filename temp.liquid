@@ -1,0 +1,110 @@
+---
+title: Alumni
+slug: alumni
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 6
+seo_title: CareerTrackers Alumni Program
+editable_elements:
+---
+
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+    {% include page_header %}
+    <div class='container-fluid'>
+
+        <p>
+            <strong>By 2020 there will be more than 1,000 CareerTrackers Alumni out there in the workforce!  </strong><br><br>
+
+            The purpose of our Alumni program is to accelerate Aboriginal and Torres Strait Islander leadership in industry through creating an influential network of Indigenous professionals who are active role models within the community and are supporting the next generation to fulfil their potential.<br><br>
+
+            CareerTrackers continues to support Alumni and provide opportunities for ongoing development and leadership opportunities within the community. Each year we deliver national Alumni events to provide leadership training and networking opportunities with corporate and community leaders. Our Alumni also continue to participate in CareerTrackers events and take on a mentoring role for younger students in the program and the community. <br><br>
+
+        <h3>Who are our Alumni?</h3>
+
+        Members of our Alumni Association are made up of Indigenous university graduates who participated in CareerTrackers through an internship and continue an active role in our community.<br><br>
+
+        </p>
+
+
+</div>
+<div class="container-fluid">
+    <div class="col-md-8 col-md-push-4 bottom-margin-medium">
+        <img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/threepillars.png" />
+    </div>
+    <div class='col-md-4 col-md-pull-8 careertrackers-model'>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Leadership Development</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'student' %}
+                Accelerate the development of Alumni by providing access to programs that develop their leadership potential.
+                {% endeditable_text %}
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Community Impact</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'university' %}
+                Empower Alumni to become active role models and engage with Indigenous school students and community to inspire interest in university and professional employment.
+                {% endeditable_text %}
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Networking & Events</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'work' %}
+                Create opportunities that develop the Alumni community through both personal and professional relationship building. 
+                {% endeditable_text %}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class='container-fluid white-background'>
+      <div class='container marketing'>
+        <div class='page-header container text-center white-background'>
+          <h1>Community Impact</h1>
+          <div class='lead'>
+            {% editable_text 'stories' %}
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+            {% endeditable_text %}
+          </div>
+        </div>
+        <div class='row'>
+          {% for story in contents.stories %}
+          <div class='col-lg-4'>
+			  <a href="" data-target="#{{story._slug}}-modal" data-toggle='modal'><img alt='{{story.student_name | escape }}' src='{{story.image.url | escape }}'></a>
+            <h2>{{story.student_name | escape }}</h2>
+            <p>{{story.description | escape }}</p>
+            
+            <div aria-hidden='true' class='modal fade' id='{{story._slug}}-modal' role='dialog' tabindex='-1'>
+              <div class='modal-dialog'>
+                <div class='modal-content'>
+                  <div class='modal-header'>
+                    <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+                    <h2 class='modal-title' id='myModalLabel'>{{story.student_name}}</h2>
+                  </div>
+                  <div class='modal-body'>
+                    <div class='player' id='{{story._slug}}-video' src='{{story.youtube_video_url | escape}}'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

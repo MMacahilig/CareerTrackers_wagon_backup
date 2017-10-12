@@ -1,0 +1,28 @@
+---
+name: Semester Events
+description: Semester Events
+slug: semester_events
+label_field_name: event_title
+order_by: manually
+order_direction: asc
+fields:
+- event_title:
+    label: event_title
+    type: string
+    required: true
+    unique: false
+    localized: false
+- event_date:
+    label: event_date
+    type: string
+    required: true
+    unique: false
+    localized: false
+- semester:
+    label: semester
+    type: belongs_to
+    required: true
+    unique: false
+    localized: false
+    class_name: semesters
+    ui_enabled: true

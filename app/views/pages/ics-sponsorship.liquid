@@ -1,0 +1,120 @@
+---
+title: ICS Scholarship Application
+slug: ics-sponsorship
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 105
+seo_title: ICS Scholarship Application
+editable_elements:
+
+---
+{% extends parent %}
+{% block main %}
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+
+
+
+</script>
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='progress hide'>
+    <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='0' class='progress-bar' role='progressbar' style='width: 0%;'>
+      <span class='sr-only'>0% Complete</span>
+    </div>
+  </div>
+
+    {% csrf_param %}
+    <div class='light-background padded-top padded-bottom'>
+      <div class='container-fluid'>
+        {% editable_text 'introduction' %}
+        SOMETHING HERE
+        {% endeditable_text %}
+      </div>
+
+    </div>
+
+</div>
+{% endblock %}
+{% block javascripts %}
+
+<script>
+  $(document).ready(function() {
+    var metrics = [
+                    [ "[name='intern[last_name]']", 'presence', 'Last name is required and cannot be empty' ],
+                    [ "[name='intern[first_name]']", 'presence', 'First name is required and cannot be empty' ],
+                    [ "[name='intern[gender]']", 'presence', 'Please choose one of the following' ],
+                    [ "[name='intern[dob]']", /|(0[1-9]|[12][0-9]|3[01])[\/.](0[1-9]|1[012])[\/.](19|20)\d\d/, 'Invalid date format. Should be dd/mm/yyyy' ],
+                    [ "[name='intern[dob]']", 'presence', 'Date of birth is required and cannot be empty' ],
+                    [ "[name='intern[email]']", 'presence', 'Email address is required and cannot be empty' ],
+                    [ "[name='intern[email]']", 'email', 'Invalid email address' ],
+                    [ "[name='intern[ics]']", 'presence', 'Please choose one of the following' ],
+                    [ "[name='intern[student_advisor]']", 'presence', 'Please select your student advisor' ]
+                  ];
+
+    $( "form" ).nod( metrics , {
+                      groupSelector: ".form-group",
+                      groupClass: "has-error",
+                      helpSpanDisplay: "help-block small"
+
+    });
+
+
+    $("#ics_yes").click(function(){
+      $("#ics_previous_dates").removeClass("hide");
+    });
+
+    $("#ics_no").click(function(){
+      $("#ics_previous_dates").addClass("hide");
+    });
+
+
+    var rand = parseInt(Math.random()*1000);
+    $("#ics-app-id").val(rand);
+    console.log($("#ics-app-id").val());
+    function postToGoogle() {
+                var field1 = $("#last_name").val();
+                var field2 = $("#first_name").val();
+                var field3 = $('input[id=gender]:checked', '#ics_application').val()
+                var field4 = $("#dob").val();
+                var field5 = $("#email").val();
+                var field6 = $("#student_advisor").val();
+                var field7 = $('input[id=ics]:checked', '#ics_application').val();
+                var field8 = rand;
+                var field9 = $("#ics_dates").val();
+                var ajaxData = {"id" : rand,"entry.1663862538": field1, "entry.1775386231": field2, "entry.1860433036": field3, "entry.1746506056": field4, "entry.269528052": field5, "entry.1316935157": field6, "entry.1327838264": field7, "previous" : field9};
+
+
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://script.google.com/macros/s/AKfycbwm_SDHzm0FSFa4XtkODcf_VXv3zFQMLwX3SZoHVfheSZ4dBWFH/exec",
+                    data: JSON.stringify(ajaxData),
+                    dataType: "json",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					}
+                });
+                //alert('working');
+    }
+    $('#ics_application').submit(function() {
+                    postToGoogle();
+                    //return false;
+    });
+
+  });
+
+</script>
+
+
+{% endblock %}

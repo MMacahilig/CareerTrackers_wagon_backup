@@ -1,0 +1,1455 @@
+---
+title: Intern Evaluation
+slug: intern-evaluation
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 104
+seo_title: 12 Week Intern Evaluation Form
+---
+{% extends parent %}
+{% block main %}
+<script type="text/javascript">
+/*
+$(document).ready(function(){
+
+    var lines = 6;
+    //var linesUsed = $('#linesUsed');
+
+    $('#company_1_desc').keydown(function(e) {
+	console.log('keydown');
+        var newLines = $(this).val().split("\n").length;
+        //linesUsed.text(newLines);
+
+        if(e.keyCode == 13 && newLines >= lines) {
+            //linesUsed.css('color', 'red');
+            e.preventDefault();
+            return false;
+        }
+
+    });
+});*/
+</script>
+
+<div class='container-fluid'>
+  {% include page_header %}
+  <form action='/interns/evaluation' id='evaluation-form' class='form-horizontal' method='POST' role='form'>
+  <!--<form id='evaluation-form' class='form-horizontal' method='POST' role='form'>-->
+    {% csrf_param %}
+    <div class='light-background padded-top padded-bottom'>
+      <fieldset>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='name'>Name of Intern</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='name' name='evaluation[name]' placeholder='Name of Intern' type='text' value="{{params['name']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='employer'>Employer</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='employer' name='evaluation[employer]' placeholder='Employer' type='text' value="{{params['employer']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='evaluator'>Manager / Evaluator’s Name</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='evaluator' name='evaluation[evaluator]' placeholder='Manager / Evaluator’s Name' type='text' value="{{params['evaluator']}}">
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='email'>Manager / Evaluator’s Email</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='email' name='evaluation[email]' placeholder='Manager / Evaluator’s Email' type='text' value="{{params['email']}}">
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='comments'>Overall Comments of Interns Performance</label>
+          <div class='col-sm-5'>
+            <textarea class='form-control' id='comment' name='evaluation[comments]' placeholder='Overall Comments of Interns Performance' rows='5' maxlength="2000" style="height:560px;overflow:hidden;resize:none;">{{params['comments']}}</textarea>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <h3>
+      Intern Evaluation
+    </h3>
+    <h4>
+      Core Capabilities Assessment
+    </h4>
+    <h5>
+      (NOTE: We are mainly looking at Professional and Personal Qualities at this stage)
+    </h5>
+    <hr>
+    <div class='ratings light-background padded-top padded-bottom bottom-margin-medium'>
+      <div class='row'>
+        <div class='col-lg-5'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>RATINGS</h5>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-1'>
+                    <strong>
+                      1
+                    </strong>
+                  </div>
+                  <div class='col-lg-11'>
+                    Did not display this quality
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-1'>
+                    <strong>
+                      2
+                    </strong>
+                  </div>
+                  <div class='col-lg-11'>
+                    Displays this quality to an adequate degree
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-1'>
+                    <strong>
+                      3
+                    </strong>
+                  </div>
+                  <div class='col-lg-11'>
+                    Displays this quality to a high degree
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-1'>
+                    <strong>
+                      N/A
+                    </strong>
+                  </div>
+                  <div class='col-lg-11'>
+                    Minimal opportunity to demonstrate the capability
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>Leadership Qualities</h5>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Leadership
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Motivates and empowers others in order to reach organisation goals.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign leadership_1 = params['leadership_1'] %}
+                      <select class='leadership form-control' id='leadership_1' name='evaluation[leadership_1]'>
+                        <option value=''>---</option>
+                        {% if leadership_1 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if leadership_1 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if leadership_1 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if leadership_1 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Planning & Organising
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Organises and schedules events, activities and resources. Sets up and monitors timescales and plans.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign leadership_2 = params['leadership_2'] %}
+                      <select class='leadership form-control' id='leadership_2' name='evaluation[leadership_2]'>
+                        <option value=''>---</option>
+                        {% if leadership_2 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if leadership_2 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if leadership_2 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if leadership_2 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Quality Orientation
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Shows awareness of goals and standards. Follows through to ensure the quality and productivity standards are met.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign leadership_3 = params['leadership_3'] %}
+                      <select class='leadership form-control' id='leadership_3' name='evaluation[leadership_3]'>
+                        <option value=''>---</option>
+                        {% if leadership_3 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if leadership_3 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if leadership_3 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if leadership_3 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Persuasiveness
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Influences, convinces or impresses others in a way that results in acceptance, agreement or behaviour change.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign leadership_4 = params['leadership_4'] %}
+                      <select class='leadership form-control' id='leadership_4' name='evaluation[leadership_4]'>
+                        <option value=''>---</option>
+                        {% if leadership_4 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if leadership_4 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if leadership_4 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if leadership_4 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+      <div class='row'>
+        <div class='col-lg-12'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>Professional Qualities</h5>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Teamwork
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Demonstrates a willingness and ability to work as part of a team and values the knowledge and decisions of other team members.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign professional_1 = params['professional_1'] %}
+                      <select class='professional form-control' id='professional_1' name='evaluation[professional_1]'>
+                        <option value=''>---</option>
+                        {% if professional_1 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if professional_1 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if professional_1 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if professional_1 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Problem Solving and Analysis
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Analyses issues and breaks them down into component parts. Makes systematic and rational judgements based on relevant information.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign professional_2 = params['professional_2'] %}
+                      <select class='professional form-control' id='professional_2' name='evaluation[professional_2]'>
+                        <option value=''>---</option>
+                        {% if professional_2 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if professional_2 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if professional_2 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if professional_2 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Oral Communication
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Speaks clearly, fluently and in a compelling manner to both individuals and groups.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign professional_3 = params['professional_3'] %}
+                      <select class='professional form-control' id='professional_3' name='evaluation[professional_3]'>
+                        <option value=''>---</option>
+                        {% if professional_3 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if professional_3 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if professional_3 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if professional_3 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Written Communication
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Writes in a clear concise manner, using appropriate grammar, style and language for the reader.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign professional_4 = params['professional_4'] %}
+                      <select class='professional form-control' id='professional_4' name='evaluation[professional_4]'>
+                        <option value=''>---</option>
+                        {% if professional_4 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if professional_4 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if professional_4 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if professional_4 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>Entrepreneurial Qualities</h5>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Creativity & Innovation
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Creates new and imaginative approaches to work- related issues. Identifies fresh approaches and shows a willingness to question traditional assumptions.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign entrepreneurial_1 = params['entrepreneurial_1'] %}
+                      <select class='entrepreneurial form-control' id='entrepreneurial_1' name='evaluation[entrepreneurial_1]'>
+                        <option value=''>---</option>
+                        {% if entrepreneurial_1 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if entrepreneurial_1 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if entrepreneurial_1 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if entrepreneurial_1 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Action Orientation
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Demonstrates a readiness to make decisions, takes the initiative and originates action.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign entrepreneurial_2 = params['entrepreneurial_2'] %}
+                      <select class='entrepreneurial form-control' id='entrepreneurial_2' name='evaluation[entrepreneurial_2]'>
+                        <option value=''>---</option>
+                        {% if entrepreneurial_2 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if entrepreneurial_2 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if entrepreneurial_2 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if entrepreneurial_2 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Strategic
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Demonstrates a broad-based view of issues, events and activities and a perception of their longer-term impact and wider implications.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign entrepreneurial_3 = params['entrepreneurial_3'] %}
+                      <select class='entrepreneurial form-control' id='entrepreneurial_3' name='evaluation[entrepreneurial_3]'>
+                        <option value=''>---</option>
+                        {% if entrepreneurial_3 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if entrepreneurial_3 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if entrepreneurial_3 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if entrepreneurial_3 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+         <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+      <div class='row'>
+        <div class='col-lg-12'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>Personal Qualities</h5>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Interpersonal Sensitivity
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Interacts with others in a sensitive and effective way. Respects and works well with others.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign personal_1 = params['personal_1'] %}
+                      <select class='personal form-control' id='personal_1' name='evaluation[personal_1]'>
+                        <option value=''>---</option>
+                        {% if personal_1 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if personal_1 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if personal_1 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if personal_1 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Flexibility
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Successfully adapts to changing demands and conditions.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign personal_2 = params['personal_2'] %}
+                      <select class='personal form-control' id='personal_2' name='evaluation[personal_2]'>
+                        <option value=''>---</option>
+                        {% if personal_2 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if personal_2 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if personal_2 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if personal_2 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Resilience
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Maintains effective work behaviour in the face of setbacks or pressure. Remains calm, stable and in control of themselves.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign personal_3 = params['personal_3'] %}
+                      <select class='personal form-control' id='personal_3' name='evaluation[personal_3]'>
+                        <option value=''>---</option>
+                        {% if personal_3 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if personal_3 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if personal_3 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if personal_3 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <strong>
+                      Personal Motivation
+                    </strong>
+                  </div>
+                  <div class='col-lg-8'>
+                    Commits self to work hard towards goals. Shows enthusiasm and career commitment.
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign personal_4 = params['personal_4'] %}
+                      <select class='personal form-control' id='personal_4' name='evaluation[personal_4]'>
+                        <option value=''>---</option>
+                        {% if personal_4 == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if personal_4 == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if personal_4 == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if personal_4 == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row no-margin-bottom'>
+        <div class='col-lg-12'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>Company Specific Qualities</h5>
+              <h6>(please insert any other qualities specific to your organisation that you would like to provide feedback to the intern.)</h6>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_1' maxlength='124' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_1]' rows='5'>{{params['company_1']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-8'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_1_desc' maxlength='500' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_1_desc]' rows='5'>{{params['company_1_desc']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign company_1_rating = params['company_1_rating'] %}
+                      <select class='company form-control' id='company_1_rating' name='evaluation[company_1_rating]'>
+                        <option value=''>---</option>
+                        {% if company_1_rating == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if company_1_rating == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if company_1_rating == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if company_1_rating == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+
+
+
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+         <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_2' maxlength='124' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_2]' rows='5'>{{params['company_2']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-8'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_2_desc' maxlength='500' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_2_desc]' rows='5'>{{params['company_2_desc']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign company_2_rating = params['company_2_rating'] %}
+                      <select class='company form-control' id='company_2_rating' name='evaluation[company_2_rating]'>
+                        <option value=''>---</option>
+                        {% if company_2_rating == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if company_2_rating == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if company_2_rating == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if company_2_rating == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_3' maxlength='124' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_3]' rows='5'>{{params['company_3']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-8'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_3_desc' maxlength='500' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_3_desc]' rows='5'>{{params['company_3_desc']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign company_3_rating = params['company_3_rating'] %}
+                      <select class='company form-control' id='company_3_rating' name='evaluation[company_3_rating]'>
+                        <option value=''>---</option>
+                        {% if company_3_rating == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if company_3_rating == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if company_3_rating == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if company_3_rating == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+
+                               <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+          <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <!-- -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-2'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_4' maxlength='124' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_4]' rows='5'>{{params['company_4']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-8'>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='company_4_desc' maxlength='500' style="height:170px;overflow:hidden;resize:none;" name='evaluation[company_4_desc]' rows='5'>{{params['company_4_desc']}}</textarea>
+                    </div>
+                  </div>
+                  <div class='col-lg-1'>
+                    <div class='form-group'>
+                      {% assign company_4_rating = params['company_4_rating'] %}
+                      <select class='company form-control' id='company_4_rating' name='evaluation[company_4_rating]'>
+                        <option value=''>---</option>
+                        {% if company_4_rating == '1' %}
+                        <option selected='' value='1'>1</option>
+                        {% else %}
+                        <option value='1'>1</option>
+                        {% endif %}
+                        {% if company_4_rating == '2' %}
+                        <option selected='' value='2'>2</option>
+                        {% else %}
+                        <option value='2'>2</option>
+                        {% endif %}
+                        {% if company_4_rating == '3' %}
+                        <option selected='' value='3'>3</option>
+                        {% else %}
+                        <option value='3'>3</option>
+                        {% endif %}
+                        {% if company_4_rating == 'NA' %}
+                        <option selected='' value='NA'>N/A</option>
+                        {% else %}
+                        <option value='NA'>N/A</option>
+                        {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+      <div class='row'>
+        <div class='col-lg-5'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h5>Overall Rating</h5>
+            </div>
+            <div class='list-group'>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-6'>
+                    <strong>
+                      Leadership Qualities
+                    </strong>
+                  </div>
+                  <div class='col-lg-6'>
+                    <span id='leadership_total_span'>
+                      {% if params['leadership_total'] and params['leadership_overall_total']%}
+                      {{params['leadership_total']}} out of {{params['leadership_overall_total']}}
+                      {% endif%}
+                    </span>
+                    <input class='total' id='leadership_total' name='evaluation[leadership_total]' type='hidden' value='0'>
+                    <input class='overall_total' id='leadership_overall_total' name='evaluation[leadership_overall_total]' type='hidden' value='0'>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-6'>
+                    <strong>
+                      Professional Qualities
+                    </strong>
+                  </div>
+                  <div class='col-lg-6'>
+                    <span id='professional_total_span'>
+                      {% if params['professional_total'] and params['professional_overall_total']%}
+                      {{params['professional_total']}} out of {{params['professional_overall_total']}}
+                      {% endif%}
+                    </span>
+                    <input class='total' id='professional_total' name='evaluation[professional_total]' type='hidden' value='0'>
+                    <input class='overall_total' id='professional_overall_total' name='evaluation[professional_overall_total]' type='hidden' value='0'>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-6'>
+                    <strong>
+                      Entrepreneurial Qualities
+                    </strong>
+                  </div>
+                  <div class='col-lg-6'>
+                    <span id='entrepreneurial_total_span'>
+                      {% if params['entrepreneurial_total'] and params['entrepreneurial_overall_total']%}
+                      {{params['entrepreneurial_total']}} out of {{params['entrepreneurial_overall_total']}}
+                      {% endif%}
+                    </span>
+                    <input class='total' id='entrepreneurial_total' name='evaluation[entrepreneurial_total]' type='hidden' value='0'>
+                    <input class='overall_total' id='entrepreneurial_overall_total' name='evaluation[entrepreneurial_overall_total]' type='hidden' value='0'>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-6'>
+                    <strong>
+                      Personal Qualities
+                    </strong>
+                  </div>
+                  <div class='col-lg-6'>
+                    <span id='personal_total_span'>
+                      {% if params['personal_total'] and params['personal_overall_total']%}
+                      {{params['personal_total']}} out of {{params['personal_overall_total']}}
+                      {% endif%}
+                    </span>
+                    <input class='total' id='personal_total' name='evaluation[personal_total]' type='hidden' value='0'>
+                    <input class='overall_total' id='personal_overall_total' name='evaluation[personal_overall_total]' type='hidden' value='0'>
+                  </div>
+                </div>
+              </div>
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-6'>
+                    <strong>
+                      Company Specific
+                    </strong>
+                  </div>
+                  <div class='col-lg-6'>
+                    <span id='company_total_span'>
+                      {% if params['company_total'] and params['company_overall_total']%}
+                      {{params['company_total']}} out of {{params['company_overall_total']}}
+                      {% endif%}
+                    </span>
+                    <input class='total' id='company_total' name='evaluation[company_total]' type='hidden' value='0'>
+                    <input class='overall_total' id='company_overall_total' name='evaluation[company_overall_total]' type='hidden' value='0'>
+                  </div>
+                </div>
+              </div>
+
+              <div class='list-group-item'>
+                <div class='row'>
+                  <div class='col-lg-6'>
+                    <strong>
+                      Total Rating
+                    </strong>
+                  </div>
+                  <div class='col-lg-6'>
+                    <span id='overall_total_span'>
+                      {% if params['total'] != nil and params['overall_total'] != nil and params['total'] != '' and params['overall_total'] != '' %}
+                      {{params['total']}} out of {{params['overall_total']}}
+                      {% endif%}
+                    </span>
+                    <input id='total' name='evaluation[total]' type='hidden'>
+                    <input id='overall_total' name='evaluation[overall_total]' type='hidden'>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div class='form-group'>
+          <div class='col-sm-2 pull-right'>
+            <div id="spinner"></div>
+            <button id="submitEval"class='btn orange-button' type='submit'>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+  $(document).ready(function(){
+    $("#spinner").hide();
+    $("#submitEval").click(function(){
+        $("#spinner").show();
+    });
+
+    $("[name='evaluation[return_option]']").change(function(){
+      var val = $(this).val();
+      if (val) {
+        if (val == "return_option_2") {
+          $("#department").removeAttr("disabled");
+        } else {
+          $("#department").val("");
+          $("#department").attr("disabled","disabled");
+        }
+      }
+    });
+    $("[name='evaluation[return_option]']").change();
+
+
+
+    addValidationForCompanyQualities("company_1");
+    addValidationForCompanyQualities("company_2");
+    addValidationForCompanyQualities("company_3");
+    addValidationForCompanyQualities("company_4");
+
+    function addValidationForCompanyQualities(company) {
+      $("[name='evaluation["+company+"]']").change(function() {
+        $("[name='evaluation["+company+"_rating]']").change();
+        if(!$(this).val()) {
+          $("[name='evaluation["+company+"_rating]']").attr("disabled","disabled");
+          $("[name='evaluation["+company+"_rating]']").val("");
+          $("[name='evaluation["+company+"_desc]']").attr("disabled","disabled");
+          $("[name='evaluation["+company+"_desc]']").val("");
+        } else {
+          $("[name='evaluation["+company+"_desc]']").removeAttr("disabled");
+          $("[name='evaluation["+company+"_rating]']").removeAttr("disabled");
+        }
+      });
+      $("[name='evaluation["+company+"]']").change();
+    }
+
+    $("select").change(function () {
+      var $this = $(this);
+      var id = $this.attr("id");
+      var id_arr = id.split("_");
+      var section = id_arr[0];
+      var total_span = section + "_total_span";
+      var total = 0;
+      var overall_total = 0;
+      $("." + section).each(function (){
+        var $this = $(this);
+        var val = $this.val();
+        if (val && val != "NA") {
+          total += parseInt(val);
+          overall_total += 3;
+        }
+      });
+      $("#" + section + "_total").val(total);
+      $("#" + section + "_overall_total").val(overall_total);
+      $("#"+total_span).html(total + " out of " + overall_total);
+
+      total = 0;
+      $(".total").each(function () {
+        var val = $(this).val();
+        if (val) {
+          total += parseInt(val);
+        }
+
+      });
+
+      overall_total = 0;
+      $(".overall_total").each(function () {
+        var val = $(this).val();
+        if (val) {
+          overall_total += parseInt(val);
+        }
+      });
+
+      $("#total").val(total);
+      $("#overall_total").val(overall_total);
+      $("#overall_total_span").html(total + " out of " + overall_total);
+    });
+
+    var metrics = [
+                    [ "[name='evaluation[name]']", 'presence', 'Name of intern is required and cannot be empty' ],
+                    [ "[name='evaluation[employer]']", 'presence', 'Company name is required and cannot be empty' ],
+                    [ "[name='evaluation[evaluator]']", 'presence', 'Manager / Evaluator’s Name is required and cannot be empty' ],
+                    [ "[name='evaluation[email]']", 'presence', 'Manager / Evaluator’s Email is required and cannot be empty' ],
+                    [ "[name='evaluation[email]']", 'email', 'Invalid Email' ],
+                    [ "[name='evaluation[leadership_1]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[leadership_2]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[leadership_3]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[leadership_4]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[professional_1]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[professional_2]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[professional_3]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[professional_4]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[entrepreneurial_1]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[entrepreneurial_2]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[entrepreneurial_3]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[personal_1]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[personal_2]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[personal_3]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[personal_4]']", 'presence', 'Please select a rating' ],
+                    [ "[name='evaluation[company_1_rating]']",function(x){
+                        if ($("[name='evaluation[company_1]']").val()) {
+                            return x != ''
+                        }
+                        return true;
+                    }, 'Please select a rating'],
+                    [ "[name='evaluation[company_2_rating]']",function(x){
+                        if ($("[name='evaluation[company_2]']").val()) {
+                            return x != ''
+                        }
+                        return true;
+                    }, 'Please select a rating'],
+                    [ "[name='evaluation[company_3_rating]']",function(x){
+                        if ($("[name='evaluation[company_3]']").val()) {
+                            return x != ''
+                        }
+                        return true;
+                    }, 'Please select a rating'],
+                    [ "[name='evaluation[company_4_rating]']",function(x){
+                        if ($("[name='evaluation[company_4]']").val()) {
+                            return x != ''
+                        }
+                        return true;
+                    }, 'Please select a rating'],
+                  ];
+    $( "form" ).nod( metrics , {
+                      groupSelector: ".form-group",
+                      groupClass: "has-error",
+                      helpSpanDisplay: "help-block small",
+    });
+
+
+    var lines = 8;
+
+    /*
+
+    $('#company_1, #company_2, #company_3, #company_4, #company_1_desc, #company_2_desc, #company_3_desc, #company_4_desc').keydown(function(e) {
+        var newLines = $(this).val().split("\n").length;
+
+
+        if(e.keyCode == 13 && newLines >= lines) {
+            e.preventDefault();
+            return false;
+        }
+
+    });*/
+
+
+    /*
+	$("#evaluation-form").submit(function(){var o,e=$("#name").val(),
+	l=$("#employer").val(),n=$("#evaluator").val(),a=$("#comments").val(),t=$("#leadership_1").val(),
+	r=$("#leadership_2").val(),s=$("#leadership_3").val(),_=$("#leadership_4").val(),c=$("#professional_1").val(),
+	p=$("#professional_2").val(),y=$("#professional_3").val(),g=$("#professional_4").val(),i=$("#entrepreneurial_1").val(),
+	v=$("#entrepreneurial_2").val(),m=$("#entrepreneurial_3").val(),d=$("#personal_1").val(),u=$("#personal_2").val(),
+	f=$("#personal_3").val(),h=$("#personal_4").val(),B=$("#company_1").val(),k=$("#company_1_desc").val(),
+	E=$("#company_1_rating").val(),w=$("#company_2").val(),I=$("#company_2_desc").val(),x=$("#company_2_rating").val(),
+	D=$("#company_3").val(),C=$("#company_3_desc").val(),O=$("#company_3_rating").val(),P=$("#company_4").val(),
+	S=$("#company_4_desc").val(),T=$("#company_4_rating").val(),V=$("#leadership_total").val(),Z=$("#professional_total").val(),
+	b=$("#entrepreneurial_total").val(),j=$("#personal_total").val(),q=$("#company_total").val(),F=$("#total").val(),
+	G=$("#leadership_overall_total").val(),H=$("#professional_overall_total").val(),J=$("#entrepreneurial_overall_total").val(),
+	M=$("#personal_overall_total").val(),Q=$("#company_total_overall").val(),R=$("#overall_total").val(),W="",
+	X=$("#signature").val();document.getElementById("return_option_1").checked?o=$("#return_option_1").val():document.getElementById("return_option_2").checked?(o=$("#return_option_2").val(),
+	W=$("#new-department").val()):document.getElementById("return_option_3").checked?o=$("#return_option_3").val():document.getElementById("return_option_4").checked&&(o=$("#return_option_4").val()),
+	console.log("name = "+e),console.log("employer = "+l),console.log("evaluator = "+n),console.log("comments = "+a),
+	console.log("leadership_1 = "+t),console.log("leadership_2 = "+r),console.log("leadership_3 = "+s),
+	console.log("leadership_4 = "+_),console.log("professional_1 = "+c),console.log("professional_2 = "+p),
+	console.log("professional_3 = "+y),console.log("professional_4 = "+g),console.log("entrepreneurial_1 = "+i),
+	console.log("entrepreneurial_2 = "+v),console.log("entrepreneurial_3 = "+m),console.log("personal_1 = "+d),
+	console.log("personal_2 = "+u),console.log("personal_3 = "+f),console.log("personal_4 = "+h),console.log("company_1 = "+B),
+	console.log("company_1_desc = "+k),console.log("company_1_rating = "+E),console.log("company_2 = "+w),
+	console.log("company_2_desc = "+I),console.log("company_2_rating = "+x),console.log("company_3 = "+D),
+	console.log("company_3_desc = "+C),console.log("company_3_rating = "+O),console.log("company_4 = "+P),
+	console.log("company_4_desc = "+S),console.log("company_4_rating = "+T),console.log("leadership_total = "+V),
+	console.log("leadership out of = "+G),console.log("professional_total = "+Z),console.log("professional out of = "+H),
+	console.log("entrepreneurial_total = "+b),console.log("entrepreneurial out of = "+J),console.log("personal_total = "+j),
+	console.log("personal out of = "+M),console.log("company_total = "+q),console.log("company out of = "+Q),console.log("total = "+F),
+	console.log("total out of = "+R),console.log("return_option = "+o),console.log("new_department = "+W),
+	console.log("signature = "+X),$.ajax({type:"POST",url:"https://docs.google.com/a/careertrackers.org.au/forms/d/1PaZMH_GVEBlgqv6-wmWtgQ97OBVJXat8dZrkDSlDBB4/formResponse",data:{"entry.1178581919":e,"entry.1160330753":l,"entry.1378685836":n,"entry.997846741":a,"entry.1697507226":t,"entry.1173308747":r,"entry.43663946":s,"entry.783444331":_,"entry.1741593928":c,"entry.689736463":p,"entry.602351558":y,"entry.1399097081":g,"entry.1064688272":i,"entry.341864854":v,"entry.914460157":m,"entry.432935042":d,"entry.272395508":u,"entry.584480526":f,"entry.679982331":h,"entry.116681083":B,"entry.1662617095":k,"entry.443309960":E,"entry.994046248":w,"entry.814973799":I,"entry.1976934466":x,"entry.1430702969":D,"entry.1810591159":C,"entry.1987290636":O,"entry.822639235":P,"entry.231287234":S,"entry.279212086":T,"entry.85500010":V,"entry.729223479":V,"entry.1503933935":Z,"entry.1598288962":Z,"entry.1550844647":b,"entry.740650786":b,"entry.1020307870":j,"entry.1830002327":j,"entry.1753870195":q,"entry.1253949416":q,"entry.437818874":F,"entry.1326045718":R,"entry.945626060":o,"entry.266674104":W,"entry.1076482583":X},dataType:"text/html",statusCode:{0:function(){},200:function(){}},xhrFields:{withCredentials:!0},crossDomain:!0})});
+    */
+
+  });
+</script>
+{% endblock %}

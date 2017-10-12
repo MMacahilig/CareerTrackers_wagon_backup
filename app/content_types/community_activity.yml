@@ -1,0 +1,52 @@
+---
+name: Community
+description: Community stories
+slug: community_activity
+label_field_name: student_name
+order_by: manually
+order_direction: asc
+fields:
+- student_name:
+    label: Student name
+    type: string
+    hint: Name of the student
+    required: true
+    unique: false
+    localized: false
+- action:
+    label: Action
+    type: text
+    hint: Community action group
+    required: true
+    unique: false
+    localized: false
+    text_formatting: text
+- description:
+    label: Description
+    type: text
+    hint: A brief background of the story of the student
+    required: true
+    unique: false
+    localized: false
+    text_formatting: text
+- image:
+    label: Image
+    type: file
+    hint: Profile Picture of the community
+    required: true
+    unique: false
+    localized: false
+- picture:
+    label: Image
+    type: file
+    hint: Picture of the activity
+    required: true
+    unique: false
+    localized: false
+- activity:
+    label: community story
+    type: string
+    hint: story of the community
+    required: true
+    unique: false
+    localized: false

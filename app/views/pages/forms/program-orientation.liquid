@@ -1,0 +1,89 @@
+---
+title: Program Orientation Form
+slug: program-orientation
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 106
+seo_title: CareerTrackers Program Orientation Form
+---
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+    {% include page_header %}
+    <div class="col-sm-12 page-header padded-top padded-bottom orange-dotted-border-bottom">
+        <p>
+            We’re excited to have you in our program. Please check that you’ve filled in as much as this as you can on your own before submitting it to our team. If you need a hand with anything, your Student Advisor will be able to assist you. <br><br>
+            
+            Required documentation for the Program Orientation:<br>
+        </p>
+        <ul>
+            <li>Confidential Details</li>
+            <li>Goals and Aspirations</li>
+            <li>Talent Release</li>
+            <li>Student Agreement</li>
+            
+        </ul>
+
+        
+
+
+        
+    <br>
+    <form action='/interns/program-orientation' class='' method='POST' novalidate='novalidate' role='form'>
+        {% assign conf = session['conf'] %}
+
+
+        {% csrf_param %}
+        
+
+    <div class='row'>
+        <div class='col-sm-12'>
+            <div class='form-group'>
+                <div class='col-sm-2 pull-left'>
+                    <button class='btn orange-button' type='submit'>Begin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+</div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+
+
+    $(document).ready(function() {
+
+        var metrics = [
+
+            [ "[name='contract[grad-status]']", 'presence', 'Field is required and cannot be empty' ],
+
+
+        ];
+
+
+
+        $( "form" ).nod( metrics , {
+
+            groupSelector: ".form-group",
+
+            groupClass: "has-error",
+
+            helpSpanDisplay: "help-block small"
+
+        });
+
+    });
+
+</script>
+
+{% endblock %}

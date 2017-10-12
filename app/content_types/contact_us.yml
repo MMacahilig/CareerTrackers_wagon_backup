@@ -1,0 +1,32 @@
+---
+name: Contact Us
+description: CareerTrackers Offices
+slug: contact_us
+label_field_name: location
+order_by: manually
+order_direction: asc
+fields:
+- location:
+    label: Location
+    type: string
+    required: true
+    unique: false
+    localized: false
+- address:
+    label: Address
+    type: string
+    required: false
+    unique: false
+    localized: false
+- phone:
+    label: Phone
+    type: string
+    required: false
+    unique: false
+    localized: false
+- email:
+    label: Email
+    type: string
+    required: false
+    unique: false
+    localized: false

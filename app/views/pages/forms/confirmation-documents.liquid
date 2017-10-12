@@ -1,0 +1,511 @@
+---
+title: Confirmation Documents
+slug: confirmation-documents
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 101
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='progress'>
+    <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='80' class='progress-bar' role='progressbar' style='width: 80%;'>
+      <span class='sr-only'>80% Complete</span>
+    </div>
+  </div>
+  <form id='document_confirmation' action='/interns/confirmation' class='form-horizontal' enctype='multipart/form-data' method='POST' role='form'>
+    {% assign ics = session['ics'] %}
+    {% assign bank = session['bank'] %}
+    {% assign tfn = session['tfn'] %}
+
+    {% assign legal_registered_name = ics['legal_registered_name'] %}
+    {% assign trading_name = ics['trading_name'] %}
+    {% assign business_ics_id = '' | concat: ics['business_ics_id_1'], ics['business_ics_id_2'], ics['business_ics_id_3'], ics['business_ics_id_4'], ics['business_ics_id_5'], ics['business_ics_id_6'], ics['business_ics_id_7'] %}
+    {% assign registered_business_address = '' | concat: ics['registered_business_address_1'],' ' , ics['registered_business_address_2'],' ' ,ics['registered_business_address_3'] %}
+    {% assign registered_post = '' | concat: ics['registered_post_1'], ics['registered_post_2'], ics['registered_post_3'], ics['registered_post_4'] %}
+    {% assign abn = '' | concat: ics['ABN_1'], ics['ABN_2'], ics['ABN_3'], ics['ABN_4'], ics['ABN_5'], ics['ABN_6'], ics['ABN_7'], ics['ABN_8'], ics['ABN_9'], ics['ABN_10'], ics['ABN_11'] %}
+    {% assign business_register = 'Yes' %}
+    {% assign business_name = ics['business_name'] %}
+    {% assign contact_name = ics['contact_name'] %}
+    {% assign contact_business_number = ics['contact_business_number'] %}
+    {% assign contact_mobile_number = ics['contact_mobile_number'] %}
+    {% assign contact_email = ics['contact_email'] %}
+    {% assign business_method_of_contact = 'email' %}
+    {% assign alternate_contact_name = ics['alternate_contact_name'] %}
+    {% assign alternate_business_number = ics['alternate_business_number'] %}
+    {% assign alternate_mobile_number = ics['alternate_mobile_number'] %}
+    {% assign alternate_contact_email = ics['alternate_contact_email'] %}
+    {% assign alternate_method_of_contact = 'email' %}
+
+
+    {% assign last_name = ics['last_name'] %}
+    {% assign first_name = ics['first_name'] %}
+    {% assign initials = ics['initials'] %}
+    {% assign gender = ics['gender'] %}
+    {% assign dob = ics['dob'] %}
+    {% assign descent = ics['descent'] %}
+    {% assign job_seekers_id = ics['job_seekers_id'] %}
+    {% assign email = ics['email'] %}
+    {% assign residential_address = '' | concat: ics['residential_address_1'],' ' , ics['residential_address_2'], ' ' , ics['residential_address_3'] %}
+    {% assign residential_post = '' | concat: ics['residential_post_1'], ics['residential_post_2'], ics['residential_post_3'], ics['residential_post_4'] %}
+	{% assign postal_address = '' | concat: ics['postal_address_1'],' ' , ics['postal_address_2'],' ' , ics['postal_address_3'],' ' , ics['postal_post_1'], ics['postal_post_2'], ics['postal_post_3'], ics['postal_post_4'] %}
+	{% assign semester_address = '' | concat: ics['semester_address_1'],' ' , ics['semester_address_2'],' ' , ics['semester_address_3'],' ' , ics['semester_post_1'], ics['semester_post_2'], ics['semester_post_3'], ics['semester_post_4'] %}
+	{% assign home_phone = '' | concat: ics['home_phone_area'],' ' , ics['home_phone'] %}
+	{% assign fax = '' | concat: ics['fax_area'],' ' , ics['fax'] %}
+	{% assign mobile = ics['mobile'] %}
+	{% assign educational_institution = ics['educational_institution'] %}
+	{% assign campus_location = ics['campus_location'] %}
+	{% assign faculty_address = '' | concat: ics['faculty_address_1'],' ' , ics['faculty_address_2'],' ' , ics['faculty_address_3'],' ' , ics['faculty_post_1'], ics['faculty_post_2'], ics['faculty_post_3'], ics['faculty_post_4'] %}
+	{% assign course = ics['course'] %}
+	{% assign study_award = 'Undergraduate Degree' %}
+	{% assign enrolment_status = ics['enrolment_status'] %}
+	{% assign job_title = ics['job_title'] %}
+    {% assign cadetship_date = ics['cadetship_date'] %}
+    {% assign graduation_date = ics['graduation_date'] %}
+    {% assign industrial_instrument = ics['industrial_instrument'] %}
+    {% assign workplace_address = '' | concat: ['workplace_address_1'],' ' , ['workplace_address_2'],' ' , ['workplace_address_3'] %}
+    {% assign cadet_work_email = ics['cadet_work_email'] %}
+    {% assign advisor_full_name = ics['advisor_full_name'] %}
+    {% assign advisor_contact_business = '' | concat: ics['advisor_contact_business_area'],' ' , ics['advisor_contact_business'] %}
+    {% assign advisor_contact_mobile = ics['advisor_contact_mobile'] %}
+    {% assign advisor_contact_fax = '' | concat: ics['advisor_contact_fax_area'],' ' , ics['advisor_contact_fax'] %}
+    {% assign advisor_email_address = ics['advisor_email_address'] %}
+    {% assign advisor_method_of_contact = 'Email' %}
+    {% assign financial_institute_type = 'Bank' %}
+    {% assign financial_institute = ics['financial_institution'] %}
+    {% assign branch_location = ics['branch_location'] %}
+    {% assign Name_Of_Account = ics['Name_Of_Account'] %}
+    {% assign bsb = '' | concat: ics['BSB_1'], ics['BSB_2'], ics['BSB_3'], ics['BSB_4'], ics['BSB_5'], ics['BSB_6'] %}
+    {% assign acc_no = '' | concat: ics['ACC_1_1'], ics['ACC_1_2'], ics['ACC_1_3'], ics['ACC_1_4'], ics['ACC_1_5'], ics['ACC_1_6'], ics['ACC_1_7'], ics['ACC_1_8'], ics['ACC_1_9'], ics['ACC_1_10'], ics['ACC_1_11'], ics['ACC_1_12'] %}
+    {% assign sponsor_signature =  ics['sponsor_signature'] %}
+    {% assign sponsor_signature_date = ics['signature_date'] %}
+    {% assign sponsor_position = ics['sponsor_position'] %}
+    {% assign sponsor_last_name = ics['sponsor_last_name'] %}
+    {% assign sponsor_First_name = ics['sponsor_First_name'] %}
+    {% assign sponsor_initials = ics['sponsor_initials'] %}
+    {% assign sponsor_phone = ics['sponsor_phone'] %}
+    {% assign signature = ics['signature'] %}
+    {% assign signature_date = ics['signature_date'] %}
+
+
+    {% assign tfn_no =  '' | concat: bank['tax_1'], bank['tax_2'], bank['tax_3'], bank['tax_4'], bank['tax_5'], bank['tax_6'], bank['tax_7'], bank['tax_8'], bank['tax_9'] %}
+    {% assign payments = bank['payments'] %}
+    {% assign branch = bank['branch'] %}
+    {% assign cadet_bsb = bank['bank'] %}
+    {% assign cadet_acc = bank['account'] %}
+
+    {% assign previous_name = tfn['previous_name'] %}
+    {% assign paid = 'Casual employment' %}
+    {% assign resident = tfn['resident'] %}
+    {% assign threshold = 'No' %}
+    {% assign seniors = tfn['seniors'] %}
+    {% assign zone = tfn['zone'] %}
+    {% assign help = tfn['help'] %}
+    {% assign financial = tfn['financial'] %}
+
+    {% csrf_param %}
+    <h3>
+      Confirmation of Indigenous Status
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom bottom-margin-medium'>
+      <fieldset>
+        <div class='form-group'>
+          <div class='col-sm-5 col-sm-offset-3 padded-bottom'>
+            <div class='radio'>
+              <label>
+                <input name='confirmation[option]' type='radio' value='option_1'>
+                Upload your Confirmation of Indigenous Status
+              </label>
+            </div>
+            <input class='form-control' name='status_file' type='file'>
+            <div class='radio'>
+              <label>
+                <input name='confirmation[option]' type='radio' value='option_2' onclick="documentPopup()">
+                <strong></strong>
+                I don't have a Confirmation of Indigenous Status
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class='form-group hide-form'>
+          <div class='col-sm-5'>
+            <input class='form-control' id='legal_registered_name'  type='text' value="{{legal_registered_name}}">
+            <input class='form-control' id='trading_name' type='text' value='{{trading_name}}'>
+            <input class='form-control' id='business_ics_id' type='text' value='{{business_ics_id}}'>
+            <input class='form-control' id='registered_business_address' type='text' value='{{registered_business_address}}'>
+            <input class='form-control' id='registered_post' type='text' value='{{registered_post}}'>
+            <input class='form-control' id='abn' type='text' value='{{abn}}'>
+            <input class='form-control' id='business_register' type='text' value='{{business_register}}'>
+            <input class='form-control' id='business_name' type='text' value='{{business_name}}'>
+            <input class='form-control' id='contact_name' type='text' value='{{contact_name}}'>
+            <input class='form-control' id='contact_business_number' type='text' value='{{contact_business_number}}'>
+            <input class='form-control' id='contact_mobile_number' type='text' value='{{contact_mobile_number}}'>
+            <input class='form-control' id='contact_email' type='text' value='{{contact_email}}'>
+            <input class='form-control' id='business_method_of_contact' type='text' value='{{business_method_of_contact}}'>
+            <input class='form-control' id='business_register' type='text' value='{{business_register}}'>
+            <input class='form-control' id='alternate_contact_name' type='text' value='{{contact_business_number}}'>
+            <input class='form-control' id='alternate_business_number' type='text' value='{{contact_email}}'>
+            <input class='form-control' id='alternate_mobile_number' type='text' value='{{alternate_mobile_number}}'>
+            <input class='form-control' id='alternate_contact_email' type='text' value='{{alternate_contact_email}}'>
+            <input class='form-control' id='alternate_method_of_contact' type='text' value='{{alternate_method_of_contact}}'>
+  			    <input class='form-control' id='last_name'  type='text' value="{{last_name}}">
+            <input class='form-control' id='first_name' type='text' value='{{first_name}}'>
+            <input class='form-control' id='initials' type='text' value='{{initials}}'>
+            <input class='form-control' id='gender' type='text' value='{{gender}}'>
+            <input class='form-control' id='dob' type='text' value='{{dob}}'>
+            <input class='form-control' id='descent' type='text' value='{{descent}}'>
+            <input class='form-control' id='job_seekers_id' type='text' value='{{job_seekers_id}}'>
+            <input class='form-control' id='email' type='text' value='{{email}}'>
+            <input class='form-control' id='residential_address' type='text' value='{{residential_address}}'>
+            <input class='form-control' id='residential_post' type='text' value='{{residential_post}}'>
+            <input class='form-control' id='postal_address' type='text' value='{{postal_address}}'>
+            <input class='form-control' id='semester_address' type='text' value='{{semester_address}}'>
+            <input class='form-control' id='home_phone' type='text' value='{{home_phone}}'>
+            <input class='form-control' id='fax' type='text' value='{{fax}}'>
+            <input class='form-control' id='mobile' type='text' value='{{mobile}}'>
+            <input class='form-control' id='educational_institution' type='text' value='{{educational_institution}}'>
+            <input class='form-control' id='campus_location' type='text' value='{{campus_location}}'>
+            <input class='form-control' id='faculty_address' type='text' value='{{faculty_address}}'>
+            <input class='form-control' id='course' type='text' value='{{course}}'>
+            <input class='form-control' id='study_award'  type='text' value="{{study_award}}">
+            <input class='form-control' id='enrolment_status' type='text' value='{{enrolment_status}}'>
+            <input class='form-control' id='job_title' type='text' value='{{job_title}}'>
+            <input class='form-control' id='cadetship_date' type='text' value='{{cadetship_date}}'>
+            <input class='form-control' id='graduation_date' type='text' value='{{graduation_date}}'>
+            <input class='form-control' id='industrial_instrument' type='text' value='{{industrial_instrument}}'>
+            <input class='form-control' id='workplace_address' type='text' value='{{workplace_address}}'>
+            <input class='form-control' id='cadet_work_email' type='text' value='{{cadet_work_email}}'>
+            <input class='form-control' id='advisor_full_name' type='text' value='{{advisor_full_name}}'>
+            <input class='form-control' id='advisor_contact_business' type='text' value='{{advisor_contact_business}}'>
+            <input class='form-control' id='advisor_contact_mobile' type='text' value='{{advisor_contact_mobile}}'>
+            <input class='form-control' id='advisor_contact_fax' type='text' value='{{advisor_contact_fax}}'>
+            <input class='form-control' id='advisor_email_address' type='text' value='{{advisor_email_address}}'>
+            <input class='form-control' id='advisor_method_of_contact' type='text' value='{{advisor_method_of_contact}}'>
+            <input class='form-control' id='financial_institute_type' type='text' value='{{financial_institute_type}}'>
+            <input class='form-control' id='financial_institute' type='text' value='{{financial_institute}}'>
+            <input class='form-control' id='branch_location' type='text' value='{{branch_location}}'>
+            <input class='form-control' id='Name_Of_Account' type='text' value='{{Name_Of_Account}}'>
+            <input class='form-control' id='bsb' type='text' value='{{bsb}}'>
+            <input class='form-control' id='acc_no'  type='text' value="{{acc_no}}">
+            <input class='form-control' id='sponsor_signature'  type='text' value="{{sponsor_signature}}">
+            <input class='form-control' id='sponsor_signature_date' type='text' value='{{sponsor_signature_date}}'>
+            <input class='form-control' id='sponsor_position' type='text' value='{{sponsor_position}}'>
+            <input class='form-control' id='sponsor_last_name' type='text' value='{{sponsor_last_name}}'>
+            <input class='form-control' id='sponsor_First_name' type='text' value='{{sponsor_First_name}}'>
+            <input class='form-control' id='sponsor_initials' type='text' value='{{sponsor_initials}}'>
+            <input class='form-control' id='sponsor_phone' type='text' value='{{sponsor_phone}}'>
+            <input class='form-control' id='signature' type='text' value='{{signature}}'>
+            <input class='form-control' id='signature_date' type='text' value='{{signature_date}}'>
+            <input class='form-control' id='tfn_no' type='text' value='{{tfn_no}}'>
+            <input class='form-control' id='payments' type='text' value='{{payments}}'>
+            <input class='form-control' id='branch' type='text' value='{{branch}}'>
+            <input class='form-control' id='cadet_bsb' type='text' value='{{cadet_bsb}}'>
+            <input class='form-control' id='cadet_acc' type='text' value='{{cadet_acc}}'>
+            <input class='form-control' id='previous_name' type='text' value='{{previous_name}}'>
+            <input class='form-control' id='paid' type='text' value='{{paid}}'>
+            <input class='form-control' id='resident' type='text' value='{{resident}}'>
+            <input class='form-control' id='threshold' type='text' value='{{threshold}}'>
+            <input class='form-control' id='seniors' type='text' value='{{seniors}}'>
+            <input class='form-control' id='zone' type='text' value='{{zone}}'>
+            <input class='form-control' id='help' type='text' value='{{help}}'>
+            <input class='form-control' id='financial' type='text' value='{{financial}}'>
+        </div>
+    </div>
+
+    <h3>
+      Confirmation of Full-time Enrolment
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom bottom-margin-medium'>
+      <fieldset>
+        <div class='form-group'>
+          <div class='col-sm-5 col-sm-offset-3 padded-bottom'>
+            <input class='form-control' name='enrolment_file' type='file'>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div class='form-group'>
+          <div class='col-sm-2 pull-right'>
+          	<button class='btn orange-button' type='button' VALUE="Back" onClick="history.go(-1);return true;">Back</button>
+            <button class='btn orange-button' type='submit'>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+{{ 'validation' | javascript_tag }}
+<script>
+
+  function documentPopup(){
+  alert("Please contact your student advisor to discuss alternate documents of support ");
+
+  }
+  $(document).ready(function() {
+    var metrics = [
+                    [ "[name=status_file]",
+                      function(x) {
+                        if ($("[name='confirmation[option]']:checked").val() == 'option_1') {
+                              return x != ''
+                        }
+                        return true;
+                      }, 'Confirmation of Indigenous Status is required and cannot be empty'],
+                    [ "[name=status_file]",
+                      function(x) {
+                        if ($("[name='confirmation[option]']:checked").val() == 'option_1') {
+                              return validateFileExtension($("[name=status_file]"),["jpg","pdf","jpeg","gif","png","doc","docx","xls","xlsx","ppt","txt"])
+                        }
+                        return true;
+                      }, "Only pdf/office/image files are allowed."],
+                    [ "[name=status_file]",
+                      function(x) {
+                        if ($("[name='confirmation[option]']:checked").val() == 'option_1') {
+                              return validateFileSize($("[name=status_file]"),10485760)
+                        }
+                        return true;
+                      }, "Document size should be less than 10MB."],
+                    [ "[name='confirmation[option]']", 'presence', 'Please choose one of the following' ]
+                  ];
+
+    /*
+    [ "[name=enrolment_file]", "presence", 'Confirmation of Full-time Enrolment is required and cannot be empty'],
+    [ "[name=enrolment_file]",
+      function(x) {
+        return validateFileExtension($("[name=enrolment_file]"),["jpg","pdf","jpeg","gif","png","doc","docx","xls","xlsx","ppt","txt"]);
+      }, "Only pdf/office/image files are allowed."],
+    [ "[name=enrolment_file]",
+      function(x) {
+        return validateFileSize($("[name=enrolment_file]"),10485760);
+      }, "Document size should be less than 10MB."],
+    */
+
+    $( "form" ).nod( metrics , {
+                      groupSelector: ".form-group",
+                      groupClass: "has-error",
+                      helpSpanDisplay: "help-block small"
+    });
+
+    $("[name='confirmation[option]']").change(function(){
+      $("[name=status_file]").change();
+    });
+    /*
+    function postToGoogle() {
+                var legal_registered_name = $("#legal_registered_name").val();
+                var trading_name = $("#trading_name").val();
+                var business_ics_id = $("#business_ics_id").val();
+                var registered_business_address = $("#registered_business_address").val();
+                var registered_post = $("#registered_post").val();
+                var abn = $("#abn").val();
+                var business_register = $("#business_register").val();
+				var business_name = $("#business_name").val();
+                var contact_name = $("#contact_name").val();
+				var contact_business_number = $("#contact_business_number").val();
+				var contact_mobile_number = $("#contact_mobile_number").val();
+				var contact_email = $("#contact_email").val();
+				var business_method_of_contact = $("#business_method_of_contact").val();
+				var alternate_contact_name = $("#alternate_contact_name").val();
+				var alternate_business_number = $("#alternate_business_number").val();
+				var alternate_mobile_number = $("#alternate_mobile_number").val();
+				var alternate_contact_email = $("#alternate_contact_email").val();
+				var alternate_method_of_contact = $("#alternate_method_of_contact").val();
+				var last_name = $("#last_name").val();
+				var first_name = $("#first_name").val();
+				var initials = $("#initials").val();
+				var gender = $("#gender").val();
+				var dob = $("#dob").val();
+				var descent = $("#descent").val();
+				var job_seekers_id = $("#job_seekers_id").val();
+				var email = $("#email").val();
+				var residential_address = $("#residential_address").val();
+				var residential_post = $("#residential_post").val();
+				var postal_address = $("#postal_address").val();
+				var semester_address = $("#semester_address").val();
+				var home_phone = $("#home_phone").val();
+				var fax = $("#fax").val();
+				var mobile = $("#mobile").val();
+				var educational_institution = $("#educational_institution").val();
+				var campus_location = $("#campus_location").val();
+				var faculty_address = $("#faculty_address").val();
+				var course = $("#course").val();
+				var study_award = $("#study_award").val();
+				var enrolment_status = $("#enrolment_status").val();
+				var job_title = $("#job_title").val();
+				var cadetship_date = $("#cadetship_date").val();
+				var graduation_date = $("#graduation_date").val();
+				var industrial_instrument = $("#industrial_instrument").val();
+				var workplace_address = $("#workplace_address").val();
+				var cadet_work_email = $("#cadet_work_email").val();
+				var advisor_full_name = $("#advisor_full_name").val();
+				var advisor_contact_business = $("#advisor_contact_business").val();
+				var advisor_contact_mobile = $("#advisor_contact_mobile").val();
+				var advisor_contact_fax = $("#advisor_contact_fax").val();
+				var advisor_email_address = $("#advisor_email_address").val();
+				var advisor_method_of_contact = $("#advisor_method_of_contact").val();
+				var financial_institute_type = $("#financial_institute_type").val();
+				var financial_institute = $("#financial_institute").val();
+				var branch_location = $("#branch_location").val();
+				var Name_Of_Account = $("#Name_Of_Account").val();
+				var bsb = $("#bsb").val();
+				var acc_no = $("#acc_no").val();
+				var sponsor_signature = $("#sponsor_signature").val();
+				var sponsor_signature_date = $("#sponsor_signature_date").val();
+				var sponsor_position = $("#sponsor_position").val();
+				var sponsor_last_name = $("#sponsor_last_name").val();
+				var sponsor_First_name = $("#sponsor_First_name").val();
+				var sponsor_initials = $("#sponsor_initials").val();
+				var sponsor_phone = $("#sponsor_phone").val();
+				var signature = $("#signature").val();
+				var signature_date = $("#signature_date").val();
+				var tfn_no = $("#tfn_no").val();
+				var payments = $("#payments").val();
+				var branch = $("#branch").val();
+				var cadet_bsb = $("#cadet_bsb").val();
+				var cadet_acc = $("#cadet_acc").val();
+				var previous_name = $("#previous_name").val();
+				var paid = $("#paid").val();
+				var resident = $("#resident").val();
+				var threshold = $("#threshold").val();
+				var seniors = $("#seniors").val();
+				var zone = $("#zone").val();
+				var help = $("#help").val();
+				var financial = $("#financial").val();
+
+
+                $.ajax({
+                    type: "POST",
+                    //url: "https://docs.google.com/a/careertrackers.org.au/forms/d/1bZ0umAybZHvu8zC9BSioJi9FoO55S5ogWnYf_zNH2Ak/formResponse",
+                    url: "https://docs.google.com/a/careertrackers.org.au/forms/d/1oLTfXYsCn3ElvZlqBbL6t_oKTUeOgMmvWj8Hd8kN_Ac/formResponse",
+                    data: {"entry.1327394393": legal_registered_name,
+                    	   "entry.332186374": trading_name,
+                    	   "entry.518693028": business_ics_id,
+                    	   "entry.1549586718": registered_business_address,
+                    	   "entry.1673953433": registered_post,
+                    	   "entry.1397351849": abn,
+                    	   "entry.729248702": business_register,
+                    	   "entry.89200985": business_name,
+                    	   "entry.601833103": contact_name,
+                    	   "entry.558976303": contact_business_number,
+                    	   "entry.37840875": contact_mobile_number,
+                    	   "entry.140262859": contact_email,
+                    	   "entry.1256953570": business_method_of_contact,
+                    	   "entry.957054193": alternate_contact_name,
+                    	   "entry.1079381286": alternate_business_number,
+                    	   "entry.954924767": alternate_mobile_number,
+                    	   "entry.1591452297": alternate_contact_email,
+                    	   "entry.963264367": alternate_method_of_contact,
+                    	   "entry.799410736": last_name,
+                    	   "entry.31843878": first_name,
+                    	   "entry.1979043680": initials,
+                    	   "entry.349462227": gender,
+                    	   "entry.1973328671": dob,
+                    	   "entry.1362002632": descent,
+                    	   "entry.1994092664": job_seekers_id,
+                    	   "entry.2060718986": email,
+                    	   "entry.1348804062": residential_address,
+                    	   "entry.1855309759": residential_post,
+                    	   "entry.34133921": postal_address,
+                    	   "entry.484141089": semester_address,
+                    	   "entry.385531939": home_phone,
+                    	   "entry.2102489889": fax,
+                    	   "entry.1393646460": mobile,
+                    	   "entry.1659651375": educational_institution,
+                    	   "entry.1269602089": campus_location,
+                    	   "entry.1191394612": faculty_address,
+                    	   "entry.1685757410": course,
+                    	   "entry.1094343823": study_award,
+                    	   "entry.1187520702": enrolment_status,
+                    	   "entry.585240232": job_title,
+                    	   "entry.1687797957": cadetship_date,
+                    	   "entry.298574317": graduation_date,
+                    	   "entry.931900323": industrial_instrument,
+                    	   "entry.1693574979": workplace_address,
+                    	   "entry.233277478": cadet_work_email,
+                    	   "entry.1923883876": advisor_full_name,
+                    	   "entry.568709844": advisor_contact_business,
+                    	   "entry.1884893147": advisor_contact_mobile,
+                    	   "entry.1194409829": advisor_contact_fax,
+                    	   "entry.1833201914": advisor_email_address,
+                    	   "entry.16467429": advisor_method_of_contact,
+                    	   "entry.1524976870": financial_institute_type,
+                    	   "entry.1584520018": financial_institute,
+                    	   "entry.296027349": branch_location,
+                    	   "entry.1799587274": Name_Of_Account,
+                    	   "entry.2143312048": bsb,
+						   "entry.945074130": acc_no,
+						   "entry.1529824885": sponsor_signature,
+						   "entry.147312258": sponsor_signature_date,
+						   "entry.2030323545": sponsor_position,
+						   "entry.1531730267": sponsor_last_name,
+						   "entry.1137264276": sponsor_First_name,
+						   "entry.1021431482": sponsor_initials,
+						   "entry.1143160854": sponsor_phone,
+						   "entry.1522051290": signature,
+						   "entry.152430770": signature_date,
+						   "entry.266567762": tfn_no,
+						   "entry.1540669718": payments,
+						   "entry.1563052852": branch,
+						   "entry.1582625114": cadet_bsb,
+						   "entry.622822762": cadet_acc,
+						   "entry.956918560": previous_name,
+						   "entry.1169391973": paid,
+						   "entry.542661741": resident,
+						   "entry.1759385765": threshold,
+						   "entry.626667669": seniors,
+						   "entry.733429276": zone,
+						   "entry.160830630": help,
+						   "entry.1223385745": financial},
+                    dataType: "text/html",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					}
+                });
+    }*///url: "https://docs.google.com/a/careertrackers.org.au/forms/d/1bZ0umAybZHvu8zC9BSioJi9FoO55S5ogWnYf_zNH2Ak/formResponse",
+
+    function postToGoogle() {
+
+                $.ajax({
+                    type: "POST",
+                    //url: "https://script.google.com/macros/s/AKfycbzPx7MlviSDBZPYYWz-qhfcnbusf8QuaWbw4KsQ27N2UhtPKEI/exec",
+					url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzPx7MlviSDBZPYYWz-qhfcnbusf8QuaWbw4KsQ27N2UhtPKEI/exec",
+                    data: {},
+                    dataType: "text/html",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					}
+                });
+    }
+    $('#document_confirmation').submit(function() {
+                  postToGoogle();
+                   // return false;
+    });
+  });
+</script>
+{% endblock %}

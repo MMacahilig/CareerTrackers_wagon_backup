@@ -1,0 +1,587 @@
+---
+title: Bank Account Details
+slug: bank-account-details
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 100
+seo_title: Bank Account Details
+---
+{% extends parent %}
+
+{% block main %}
+
+<div class='container-fluid'>
+
+	{% include page_header %}
+
+	<div class='progress'>
+
+		<div aria-valuemax='100' aria-valuemin='0' aria-valuenow='40' class='progress-bar' role='progressbar' style='width: 40%;'>
+
+			<span class='sr-only'>40% Complete</span>
+
+		</div>
+
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('input').keyup(function(){
+				if($(this).val().length==$(this).attr("maxlength")){
+					$(this).next().focus();
+				}
+			});
+		});
+
+	</script>
+
+	<form id="ics_bank_details" action='/interns/bank' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+
+		{% assign intern = session['intern'] %}
+		{% assign ics = session['ics'] %}
+		{% assign last_name = intern['last_name'] %}
+		{% assign first_name = intern['first_name'] %}
+		{% assign name = params['name'] %}
+
+		{% unless params['name'] %}
+
+		{%if params['last_name']%}
+
+		{% assign last_name = params['last_name'] %}
+
+		{%endif%}
+
+		{%if params['first_name']%}
+
+		{% assign first_name = params['first_name'] %}
+
+		{%endif%}
+
+		{% assign name = '' | concat: first_name, ' ', last_name %}
+
+		{% endunless %}
+
+		{% csrf_param %}
+
+		<h3>
+
+			Student Details
+
+		</h3>
+
+		<hr>
+
+		<div class='light-background padded-top padded-bottom'>
+
+			<fieldset>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='name'>Name</label>
+
+					<div class='col-sm-5'>
+
+						<input class='form-control' id='name' name='bank[name]' placeholder='Name' type='text' value='{{name}}'>
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='email'>Email Address</label>
+
+					<div class='col-sm-5'>
+
+						<input class='form-control' id='email' name='bank[email]' placeholder='Email Address' type='text' value="{%if params['email']%}{{params['email']}}{%else%}{{intern['email']}}{%endif%}">
+
+					</div>
+
+				</div>
+
+				<div class='form-group no-margin-bottom'>
+
+					<label class='col-sm-3 control-label' for='address_1'>
+
+						Address
+
+					</label>
+
+					<div class='col-sm-5 input-vertical-group'>
+
+						<input class='form-control' id='address_1' name='bank[address_1]' placeholder='Number and Street Name' type='text' value="{%if params['address_1']%}{{params['address_1']}}{%else%}{{ics['residential_address_1']}}{%endif%}">
+
+						<input class='form-control' id='address_2' name='bank[address_2]' placeholder='City/Town' type='text' value="{%if params['address_2']%}{{params['address_2']}}{%else%}{{ics['residential_address_2']}}{%endif%}">
+
+						<input class='form-control' id='address_3' name='bank[address_3]' placeholder='State/Territory' value="{%if params['address_3']%}{{params['address_3']}}{%else%}{{ics['residential_address_3']}}{%endif%}">
+
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+					<label class='small col-sm-3 control-label' for='post'>Postcode</label>
+					<div class='col-sm-5'>
+						<div class='input-group'>
+							<input class='digit-box form-control' id="residential_post_1" maxlength='1' name='bank[residential_post_1]' type='text' value="{%if params['residential_post_1']%}{{params['residential_post_1']}}{%else%}{{ics['residential_post_1']}}{%endif%}">
+							<input class='digit-box form-control' id="residential_post_2" maxlength='1' name='bank[residential_post_2]' type='text' value="{%if params['residential_post_2']%}{{params['residential_post_2']}}{%else%}{{ics['residential_post_2']}}{%endif%}">
+							<input class='digit-box form-control' id="residential_post_3" maxlength='1' name='bank[residential_post_3]' type='text' value="{%if params['residential_post_3']%}{{params['residential_post_3']}}{%else%}{{ics['residential_post_3']}}{%endif%}">
+							<input class='digit-box form-control' id="residential_post_4" maxlength='1' name='bank[residential_post_4]' type='text' value="{%if params['residential_post_4']%}{{params['residential_post_4']}}{%else%}{{ics['residential_post_4']}}{%endif%}">
+						</div>
+					</div>
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='dob'>
+
+						Date of Birth
+
+						<div class='small normal-font-weight'>
+
+							(DD/MM/YYYY)
+
+						</div>
+
+					</label>
+
+					<div class='col-sm-5'>
+
+						<input class='date form-control' readonly id="dob" maxlength='10' name='bank[dob]' required='' type='text' value="{%if params['dob']%}{{params['dob']}}{%else%}{{intern['dob']}}{%endif%}">
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='phone'>
+
+						Phone numbers:
+
+					</label>
+
+				</div>
+
+				<div class='form-group no-margin-bottom'>
+
+					<label class='col-sm-3 small control-label' for='home_phone'>
+
+						Home
+
+					</label>
+
+					<div class='col-sm-5'>
+
+						<div class='input-group'>
+							<input class='area_code form-control' id='home_phone_area' maxlength='2' name='bank[home_phone_area]' type='text' value="{%if params['home_phone_area']%}{{params['home_phone_area']}}{%else%}{{ics['home_phone_area']}}{%endif%}">
+
+							<input class='phone form-control' id='home_phone' name='bank[home_phone]' type='text' value="{%if params['home_phone']%}{{params['home_phone']}}{%else%}{{ics['home_phone']}}{%endif%}">
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 small control-label' for='mobile'>
+
+						Mobile
+
+					</label>
+
+					<div class='col-sm-5'>
+						<input class='mobile form-control' id="mobile" name='bank[mobile]' placeholder='' type='text' value="{%if params['mobile']%}{{params['mobile']}}{%else%}{{ics['mobile']}}{%endif%}">
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='tax'>Tax File Number</label>
+
+					<div class='col-sm-5'>
+
+						<div class='input-group pull-left'>
+
+							<input class='digit-box form-control' id="tax_1" maxlength='1' name='bank[tax_1]' type='text' value="{{params['tax_1']}}">
+
+							<input class='digit-box form-control' id="tax_2" maxlength='1' name='bank[tax_2]' type='text' value="{{params['tax_2']}}">
+
+							<input class='digit-box form-control' id="tax_3" maxlength='1' name='bank[tax_3]' type='text' value="{{params['tax_3']}}">
+
+							<input class='digit-box form-control' id="tax_4" maxlength='1' name='bank[tax_4]' type='text' value="{{params['tax_4']}}">
+
+							<input class='digit-box form-control' id="tax_5" maxlength='1' name='bank[tax_5]' type='text' value="{{params['tax_5']}}">
+
+							<input class='digit-box form-control' id="tax_6" maxlength='1' name='bank[tax_6]' type='text' value="{{params['tax_6']}}">
+
+							<input class='digit-box form-control' id="tax_7" maxlength='1' name='bank[tax_7]' type='text' value="{{params['tax_7']}}">
+
+							<input class='digit-box form-control' id="tax_8" maxlength='1' name='bank[tax_8]' type='text' value="{{params['tax_8']}}">
+
+							<input class='digit-box form-control' id="tax_9" maxlength='1' name='bank[tax_9]' type='text' value="{{params['tax_9']}}">
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='payments'>Do you receive Centrelink/Abstudy payments?</label>
+
+					<div class='col-sm-5'>
+
+						{% assign payments = params['payments']%}
+
+						<div class='radio'>
+
+							<label>
+
+								{% if payments == 'Yes' %}
+
+								<input id="centrelink" checked='checked' name='bank[payments]' type='radio' value='Yes'>
+
+								{% else %}
+
+								<input id="centrelink" name='bank[payments]' type='radio' value='Yes' onclick="centrelinkPopup()">
+
+								{% endif %}
+
+								Yes
+
+							</label>
+
+						</div>
+
+						<div class='radio'>
+
+							<label>
+
+								{% if payments == 'No' %}
+
+								<input checked='checked' id="centrelink" name='bank[payments]' type='radio' value='No'>
+
+								{% else %}
+
+								<input name='bank[payments]' id="centrelink" type='radio' value='No'>
+
+								{% endif %}
+
+								No
+
+							</label>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</fieldset>
+
+		</div>
+
+		<h3>
+
+			Electronic Fund Transfer
+
+		</h3>
+
+		<hr>
+
+		<div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+
+			<div class='container'>
+
+				<div class='col-sm-12 bottom-margin-medium'>
+
+					Example of Bank Details
+
+				</div>
+
+				<div class='col-sm-3'>
+
+					Name of Branch:
+
+				</div>
+
+				<div class='col-sm-9'>
+
+					Westpac – Windsor
+
+				</div>
+
+				<div class='col-sm-3'>
+
+					Bank/State/Branch No:
+
+				</div>
+
+				<div class='col-sm-9'>
+
+					033-088
+
+				</div>
+
+				<div class='col-sm-3'>
+
+					Account No:
+
+				</div>
+
+				<div class='col-sm-9'>
+
+					562198
+
+				</div>
+
+			</div>
+
+			<div class='form-group'>
+
+				<label class='col-sm-3 control-label'>
+
+					Bank Details:
+
+				</label>
+
+			</div>
+
+			<fieldset>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='branch'>Name of Branch</label>
+
+					<div class='col-sm-5'>
+
+						<input class='form-control' id='branch' name='bank[branch]' placeholder='Name of Branch' type='text' value="{{params['branch']}}">
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='bank'>Bank/State/Branch No. (BSB)</label>
+
+					<div class='col-sm-5'>
+
+						<!--<input class='form-control' id='bank' name='bank[bank]' placeholder='Bank/State/Branch No. (BSB)' type='text' value="{{params['bank']}}">-->
+						<div class='input-group pull-left'>
+
+							<input class='digit-box form-control' id="bsb_1" maxlength='1' name='bank[bsb_1]' type='text' value="{{params['bsb_1']}}">
+
+							<input class='digit-box form-control' id="bsb_2" maxlength='1' name='bank[bsb_2]' type='text' value="{{params['bsb_2']}}">
+
+							<input class='digit-box form-control' id="bsb_3" maxlength='1' name='bank[bsb_3]' type='text' value="{{params['bsb_3']}}">
+
+							<input class='digit-box form-control' id="bsb_4" maxlength='1' name='bank[bsb_4]' type='text' value="{{params['bsb_4']}}">
+
+							<input class='digit-box form-control' id="bsb_5" maxlength='1' name='bank[bsb_5]' type='text' value="{{params['bsb_5']}}">
+
+							<input class='digit-box form-control' id="bsb_6" maxlength='1' name='bank[bsb_6]' type='text' value="{{params['bsb_6']}}">
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<div class='form-group'>
+
+					<label class='col-sm-3 control-label' for='account'>Account No.</label>
+
+					<div class='col-sm-5'>
+
+						<input class='form-control' id='account' name='bank[account]' placeholder='Account No.' type='text' value="{{params['account']}}">
+
+					</div>
+
+				</div>
+
+				<div class='hidden form-group'>
+					<label class='col-sm-3 control-label' for='ics-id'>ICS Application ID</label>
+					<div class='col-sm-5'>
+						<input class='form-control' id='ics-app-id' name='intern[ics-app-id]' value="{%if params['ics-app-id']%}{{params['ics-app-id']}}{%else%}{{intern['ics-app-id']}}{%endif%}">
+					</div>
+				</div>
+
+			</fieldset>
+
+		</div>
+
+		<div class='row'>
+
+			<div class='col-sm-12'>
+
+				<div class='form-group'>
+
+					<div class='col-sm-2 pull-right'>
+						<button class='btn orange-button' type='button' VALUE="Back" onClick="history.go(-1);return true;">Back</button>
+						<button class='btn orange-button' type='submit'>Next</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</form>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+
+	function centrelinkPopup(){
+		alert("If you are currently receiving any Centrelink payments it is your responsibility to notify Centrelink if you are approved for ICS payments.");
+
+	}
+	$(document).ready(function() {
+
+
+		$("#bank").keyup(function() {
+			console.log("typing")
+			var check = $("#bank").val();
+			if(check.length == 3){
+				$("#bank").val(check+"-");
+
+			}
+		});
+
+		var metrics = [
+
+			[ "[name='bank[name]']", 'presence', 'Name is required and cannot be empty' ],
+
+			[ "[name='bank[dob]']", 'presence', 'Date of birth is required and cannot be empty' ],
+
+			[ "[name='bank[branch]']", 'presence', 'Name of branch is required and cannot be empty' ],
+
+			[ "[name='bank[bsb_6]']", 'presence', 'Bank/State/Branch No. is required and cannot be empty' ],
+			[ "[name='bank[bsb_1]']", 'integer', 'Bank/State/Branch No. has to be a number' ],
+			[ "[name='bank[bsb_2]']", 'integer', 'Bank/State/Branch No. has to be a number' ],			
+			[ "[name='bank[bsb_3]']", 'integer', 'Bank/State/Branch No. has to be a number' ],
+			[ "[name='bank[bsb_4]']", 'integer', 'Bank/State/Branch No. has to be a number' ],
+			[ "[name='bank[bsb_5]']", 'integer', 'Bank/State/Branch No. has to be a number' ],			
+			[ "[name='bank[bsb_6]']", 'integer', 'Bank/State/Branch No. has to be a number' ],
+
+			[ "[name='bank[account]']", 'presence', 'Account No. is required and cannot be empty' ],
+
+			[ "[name='bank[payments]']", 'presence', 'Please choose one of the following' ],
+
+			[ "[name='bank[dob]']", /|(0[1-9]|[12][0-9]|3[01])[\/.](0[1-9]|1[012])[\/.](19|20)\d\d/, 'Invalid date format. Should be dd/mm/yyyy' ],
+
+			[ "[name='bank[email]']", 'presence', 'Email address is required and cannot be empty' ],
+
+			[ "[name='bank[email]']", 'email', 'Invalid email address' ],
+
+			[ "[name='bank[tax_9]']", 'presence', 'Tax File Number is required and cannot be empty' ],
+
+			[ "[name='bank[tax_1]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_2]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_3]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_4]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_5]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_6]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_7]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_8]']", 'integer', 'Tax File Number has to be a number' ],
+			[ "[name='bank[tax_9]']", 'integer', 'Tax File Number has to be a number' ],
+
+			[ "[name='bank[home_phone]'], [name='bank[mobile]']", 'one-of', 'Please enter at least one contact number' ],
+
+			[ "[name='bank[address_1]'], [name='bank[address_2]'], [name='bank[address_3]']", 'one-of', 'Address is required and cannot be empty' ],
+
+		];
+
+
+
+		$( "form" ).nod( metrics , {
+
+			groupSelector: ".form-group",
+
+			groupClass: "has-error",
+
+			helpSpanDisplay: "help-block small"
+
+		});
+
+		function postToGoogle() {
+			var name = $("#name").val();
+			var email = $("#email").val();
+			var street = $("#address_1").val();
+			var suburb = $("#address_2").val();
+			var state = $("#address_3").val();
+			var postcode = $("#residential_post_1").val() +""+ $("#residential_post_2").val()+""+ $("#residential_post_3").val()+""+ $("#residential_post_4").val();
+			var dob = $("#dob").val();
+			var home_phone = "";
+			var mobile = $("#mobile").val();
+			var taxfile = $("#tax_1").val()+""+ $("#tax_2").val()+""+ $("#tax_3").val()+""+ $("#tax_4").val()+""+ $("#tax_5").val()+""+ $("#tax_6").val()+""+ $("#tax_7").val()+""+ $("#tax_8").val()+""+ $("#tax_9").val();
+			var centrelink = $('input[id=centrelink]:checked', '#ics_bank_details').val()
+			var branch = $("#branch").val();
+			//$("#bank").val();
+			var bank = $("#tax_1").val()+""+ $("#tax_2").val()+""+ $("#tax_3").val()+"-"+ $("#tax_4").val()+""+ $("#tax_5").val()+""+ $("#tax_6").val()
+			var account = $("#account").val();
+			var icsid = $("#ics-app-id").val();
+
+			var ajaxData = {
+				"id" : icsid,
+				"name": name,
+				"email": email,
+				"street": street,
+				"suburb": suburb,
+				"state": state,
+				"postcode": postcode,
+				"dob": dob,
+				"home_phone" : home_phone,
+				"mobile": mobile,
+				"taxfile": taxfile,
+				"centrelink": centrelink,
+				"branch": branch,
+				"bank": bank,
+				"account": account
+			};
+
+
+
+			$.ajax({
+				type: "POST",
+				url: "https://script.google.com/macros/s/AKfycbw6xM7JJp-fUSR2mJ7kt-crvW3skiArT-oRBAjLvyjGM_piXqBa/exec",
+				data: JSON.stringify(ajaxData),
+				dataType: "json",
+				statusCode: {
+					0: function() {
+						//Success message
+					},
+					200: function() {
+						//Success Message
+					}
+				},
+				xhrFields: {
+					withCredentials: true
+				}
+			});
+			//alert('working');
+		}
+
+		$('#ics_bank_details').submit(function() {
+			postToGoogle();
+			//return false;
+		});
+	});
+
+</script>
+
+{% endblock %}

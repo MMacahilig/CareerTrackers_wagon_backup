@@ -1,0 +1,331 @@
+---
+title: Goals and Aspiration
+slug: goals
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 104
+seo_title: Goals and Aspiration
+---
+{% extends parent %}
+{% block main %}
+<script type="text/javascript">
+    /*
+$(document).ready(function(){
+
+    var lines = 6;
+    //var linesUsed = $('#linesUsed');
+
+    $('#company_1_desc').keydown(function(e) {
+	console.log('keydown');
+        var newLines = $(this).val().split("\n").length;
+        //linesUsed.text(newLines);
+
+        if(e.keyCode == 13 && newLines >= lines) {
+            //linesUsed.css('color', 'red');
+            e.preventDefault();
+            return false;
+        }
+
+    });
+});*/
+</script>
+
+<div class='container-fluid'>
+    {% include page_header %}
+    <form action='/interns/goals' id='evaluation-form' class='form-horizontal' method='POST' role='form'>
+        <!--<form id='evaluation-form' class='form-horizontal' method='POST' role='form'>-->
+        {% csrf_param %}
+        <div class='light-background padded-top padded-bottom margin-bottom'>
+            <fieldset>
+
+                <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='degree'>Why are you studying your degree?</label>
+                    <div class='col-sm-5'>
+                        <textarea class='form-control' id='degree' name='aspiration[degree]' placeholder='' rows='3' maxlength="2000" style="height:300px;overflow:hidden;resize:none;">{{params['degree']}}</textarea>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='graduate'>What do you want to do when you graduate university?</label>
+                    <div class='col-sm-5'>
+                        <textarea class='form-control' id='graduate' name='aspiration[graduate]' placeholder='' rows='3' maxlength="2000" style="height:300px;overflow:hidden;resize:none;">{{params['graduate']}}</textarea>
+                    </div>
+                </div>
+                <!-- Spacer Start -->
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <!-- Spacer End -->
+                <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='future'>What would you like to do with your degree in the future?</label>
+                    <div class='col-sm-5'>
+                        <textarea class='form-control' id='future' name='aspiration[future]' placeholder='' rows='3' maxlength="2000" style="height:300px;overflow:hidden;resize:none;">{{params['future']}}</textarea>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='organisation'>Name 5 organisations you’d like to work for based on your degree and knowledge of the industry you want to enter?</label>
+                    <div class='col-sm-5'>
+                        <textarea class='form-control' id='organisation' name='aspiration[organisation]' placeholder='' rows='3' maxlength="2000" style="height:300px;overflow:hidden;resize:none;">{{params['organisation']}}</textarea>
+                    </div>
+                </div>
+                <!-- Spacer Start -->
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <div class='form-group hide-form'>
+                    <label class='col-sm-3 control-label' for='blank_space'>
+                    </label>
+                    <div class='col-sm-5'>
+                    </div>
+                </div>
+                <!-- Spacer End -->
+            </fieldset>
+        </div>
+
+
+        <h5>
+
+        </h5>
+        <hr>
+        <div class='ratings light-background padded-bottom bottom-margin-medium'>
+
+
+            <div class='row no-margin-bottom'>
+                <div class='col-lg-12'>
+                    <div class='panel panel-default'>
+                        <div class='panel-heading'>
+                            <h6>If you know of a student who you think may be interested to join CareerTrackers please provide their details below and we will reach out to them.</h6>
+                        </div>
+                        <div class='list-group'>
+                            <div class='list-group-item'>
+                                <div class='row'>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <h6>Name</h6>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <h6>Degree</h6>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <h6>Phone Number</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='list-group-item'>
+                                <div class='row'>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text" class='form-control'  id='friend_1' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_1]' rows='5' value="{{params['friend_1']}}"/>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text"  class='form-control' id='friend_degree_2' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_degree_1]' rows='5' value="{{params['friend_degree_1']}}"/>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text"  class='form-control' id='friend_number_3' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_number_1]' rows='5' value="{{params['friend_number_1']}}"/>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='list-group-item'>
+                                <div class='row'>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text" class='form-control'  id='friend_2' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_2]' rows='5' value="{{params['friend_2']}}" />
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text"  class='form-control' id='friend_degree_2' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_degree_2]' rows='5' value="{{params['friend_degree_2']}}"/>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text"  class='form-control' id='friend_number_3' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_number_2]' rows='5' value="{{params['friend_number_2']}}"/>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='list-group-item'>
+                                <div class='row'>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text" class='form-control'  id='friend_3' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_3]' rows='5' value="{{params['friend_3']}}"/>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text"  class='form-control' id='friend_degree_3' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_degree_3]' rows='5' value="{{params['friend_degree_3']}}"/>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='form-group'>
+                                            <input type="text"  class='form-control' id='friend_number_3' maxlength='124' style="height:50px;overflow:hidden;resize:none;" name='aspiration[friend_number_3]' rows='5' value="{{params['friend_number_3']}}"/>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='form-group'>
+                    <div class='col-sm-2 pull-right'>
+                        <div id="spinner"></div>
+                        <button class='btn orange-button' type='button' VALUE="Back" onClick="history.go(-1);return true;">Back</button>
+                        <button class='btn orange-button' type='submit'>Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    $(document).ready(function(){
+        $("#spinner").hide();
+        $("#submitEval").click(function(){
+            $("#spinner").show();
+        });
+
+
+
+        var metrics = [
+            [ "[name='evaluation[name]']", 'presence', 'Name of intern is required and cannot be empty' ],
+            [ "[name='evaluation[employer]']", 'presence', 'Company name is required and cannot be empty' ],
+            [ "[name='evaluation[evaluator]']", 'presence', 'Manager / Evaluator’s Name is required and cannot be empty' ],
+            [ "[name='evaluation[email]']", 'presence', 'Manager / Evaluator’s Email is required and cannot be empty' ],
+            [ "[name='evaluation[email]']", 'email', 'Invalid Email' ],
+            [ "[name='evaluation[leadership_1]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[leadership_2]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[leadership_3]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[leadership_4]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[professional_1]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[professional_2]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[professional_3]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[professional_4]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[entrepreneurial_1]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[entrepreneurial_2]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[entrepreneurial_3]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[personal_1]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[personal_2]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[personal_3]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[personal_4]']", 'presence', 'Please select a rating' ],
+            [ "[name='evaluation[company_1_rating]']",function(x){
+                if ($("[name='evaluation[company_1]']").val()) {
+                    return x != ''
+                }
+                return true;
+            }, 'Please select a rating'],
+            [ "[name='evaluation[company_2_rating]']",function(x){
+                if ($("[name='evaluation[company_2]']").val()) {
+                    return x != ''
+                }
+                return true;
+            }, 'Please select a rating'],
+            [ "[name='evaluation[company_3_rating]']",function(x){
+                if ($("[name='evaluation[company_3]']").val()) {
+                    return x != ''
+                }
+                return true;
+            }, 'Please select a rating'],
+            [ "[name='evaluation[company_4_rating]']",function(x){
+                if ($("[name='evaluation[company_4]']").val()) {
+                    return x != ''
+                }
+                return true;
+            }, 'Please select a rating'],
+        ];
+        $( "form" ).nod( metrics , {
+            groupSelector: ".form-group",
+            groupClass: "has-error",
+            helpSpanDisplay: "help-block small",
+        });
+
+
+        var lines = 8;
+
+    });
+</script>
+{% endblock %}

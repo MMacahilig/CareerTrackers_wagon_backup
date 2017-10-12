@@ -1,0 +1,22 @@
+---
+name: Companies
+description: Companies involved with CareerTrackers
+slug: companies
+label_field_name: name
+order_by: manually
+order_direction: asc
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Company Name
+    required: true
+    unique: false
+    localized: false
+- image:
+    label: Image
+    type: file
+    hint: Company Logo
+    required: true
+    unique: false
+    localized: false

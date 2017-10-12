@@ -1,0 +1,1272 @@
+---
+title: ICS Expression of Interest (cont)
+slug: ics-sponsor-agreement
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 103
+seo_title: ICS Expression of Interest (cont)
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input').keyup(function(){
+                if($(this).val().length==$(this).attr("maxlength")){
+                    $(this).next().focus();
+                }
+            });
+        });
+
+    </script>
+    <!--{% include page_header %}-->
+    <div class="page-header orange-dotted-border-bottom">
+        <div class='fb-like pull-right visible-lg' data-action='like' data-href='https://facebook.com/CareerTrackers' data-layout='button_count' data-share='true' data-show-faces='true'></div>
+        <h1>
+            ICS Scholarship Sponsor Agreement
+        </h1>
+    </div>
+    <div class="padded-bottom"> </div>
+    <div class='progress'>
+        <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='20' class='progress-bar' role='progressbar' style='width: 20%;'>
+            <span class='sr-only'>20% Complete</span>
+        </div>
+    </div>
+    <form id='ics_sponsor_form' action='/interns/ics' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+        {% assign intern = session['intern'] %}
+        {% csrf_param %}
+        <!-- Will be hidden until Cadet Details -->
+
+
+        <div class = "">
+
+            <div class=' col-sm-12 padded-top padded-bottom  light-background hide-form' style="margin-bottom:20px">
+                <p> Indigenous Cadetship Support (ICS) is an Australian Government initiative that aims to improve the professional employment prospects of Indigenous
+                    Australians. ICS enables Indigenous tertiary students to gain professional qualifications and experience and move into employment on completion of
+                    their studies.
+                </p>
+            </div>
+
+            <!-- Visible From Below -->
+            <h3>
+                Item 1 - Cadet Details
+            </h3>
+            <hr>
+            <div class='light-background padded-top padded-bottom'>
+                <fieldset>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='last_name'>Last name</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='last_name' name='ics[last_name]' placeholder='Last Name' type='text' value="{%if params['last_name']%}{{params['last_name']}}{%else%}{{intern['last_name']}}{%endif%}">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='first_name'>First name</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='first_name' name='ics[first_name]' placeholder='First Name' type='text' value="{%if params['first_name']%}{{params['first_name']}}{%else%}{{intern['first_name']}}{%endif%}">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='initials'>Initials of other given names</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='initials' name='ics[initials]' placeholder='Initials' type='text' value="{{params['initials']}}">
+                        </div>
+                    </div>
+
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='gender'>Gender</label>
+                        <div class='col-sm-5'>
+                            {% assign gender = intern['gender'] %}
+                            {% if params['gender'] %}
+                            {% assign gender = params['gender'] %}
+                            {% endif %}
+                            {% unless gender %}
+                            {% endunless %}
+                            <div class='radio'>
+                                <label>
+                                    {% if gender == 'male' %}
+                                    <input checked='checked' id='gender' name='ics[gender]' type='radio' value='male'>
+                                    {% else %}
+                                    <input name='ics[gender]' id='gender' type='radio' value='male'>
+                                    {% endif %}
+                                    Male
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if gender == 'female' %}
+                                    <input checked='checked' id='gender' name='ics[gender]' type='radio' value='female'>
+                                    {% else %}
+                                    <input name='ics[gender]' id='gender' type='radio' value='female'>
+                                    {% endif %}
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='dob'>
+                            Date of Birth
+                            <div class='small normal-font-weight'>
+                                (DD/MM/YYYY)
+                            </div>
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='date form-control'  id="dob" maxlength='10' name='ics[dob]' pattern='' required='' type='text' readonly value="{%if params['dob']%}{{params['dob']}}{%else%}{{intern['dob']}}{%endif%}">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='descent'>I am one of the following:</label>
+                        <div class='col-sm-5'>
+                            {% assign descent = params['descent'] %}
+                            <div class='radio'>
+                                <label>
+                                    {% if descent == 'Aboriginal' %}
+                                    <input checked='checked' id="indig" name='ics[descent]' type='radio' value='Aboriginal'>
+                                    {% else %}
+                                    <input name='ics[descent]' id="indig" type='radio' value='Aboriginal'>
+                                    {% endif %}
+                                    of Australian Aboriginal descent; or
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if descent == 'Torres Strait Islander Decent' %}
+                                    <input checked='checked' name='ics[descent]' id="indig" type='radio' value='Torres Strait Islander Decent'>
+                                    {% else %}
+                                    <input name='ics[descent]' type='radio' id="indig" value='Torres Strait Islander Decent'>
+                                    {% endif %}
+                                    of Torres Strait Islander descent; or
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if descent == 'Aboriginal and Torres Strait Islander Decent' %}
+                                    <input checked='checked' name='ics[descent]' id="indig" type='radio' value='Aboriginal and Torres Strait Islander Decent'>
+                                    {% else %}
+                                    <input name='ics[descent]' type='radio' id="indig" value='Aboriginal and Torres Strait Islander Decent'>
+                                    {% endif %}
+                                    of both Aboriginal and Torres Strait Islander descent.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Spacer Start -->
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <!-- Spacer End -->
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='email'>Email address</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='email' name='ics[email]' placeholder='Email address' required='' type='email' value="{%if params['email']%}{{params['email']}}{%else%}{{intern['email']}}{%endif%}">
+                        </div>
+                    </div>
+
+                    <div class='form-group no-margin-bottom'>
+                        <label class='col-sm-3 control-label' for='residential_address_1'>
+                            Residential address
+                        </label>
+                        <div class='col-sm-5'>
+                            <div class='input-vertical-group'>
+                                <input class='form-control' id='residential_address_1' name='ics[residential_address_1]' placeholder='Number and Street Name' type='text' value="{{params['residential_address_1']}}">
+                                <input class='form-control' id='residential_address_2' name='ics[residential_address_2]' placeholder='Suburb/Town' type='text' value="{{params['residential_address_2']}}">
+                                <select class='form-control' id='residential_address_3' name='ics[residential_address_3]' placeholder='State/Territory' value="{{params['residential_address_3']}}">
+
+                                    <option value = "">State</option>
+
+                                    {% if params['residential_address_3'] == "NSW" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "QLD" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "VIC" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "SA" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "TAS" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "WA" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "ACT" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                                    {% endif %}
+
+                                    {% if params['residential_address_3'] == "NT" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                                    {% endif %}
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class=' col-sm-3 control-label' for='residential_post_1'>Postcode</label>
+                        <div class='col-sm-5'>
+                            <div class='input-group'>
+                                <input class='digit-box form-control' id="residential_post_1" maxlength="1" name='ics[residential_post_1]' type='text' value="{{params['residential_post_1']}}" >
+                                <input class='digit-box form-control' id="residential_post_2" maxlength="1" name='ics[residential_post_2]' type='text' value="{{params['residential_post_2']}}" >
+                                <input class='digit-box form-control' id="residential_post_3" maxlength="1" name='ics[residential_post_3]' type='text' value="{{params['residential_post_3']}}" >
+                                <input class='digit-box form-control' id="residential_post_4" maxlength="1" name='ics[residential_post_4]' type='text' value="{{params['residential_post_4']}}" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spacer Start -->
+
+                    <!-- Spacer End -->
+
+                    <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='mobile'>
+                            Mobile Number
+                        </label>
+                        <div class='col-sm-5'>
+                            <!--<input class='mobile form-control' id="mobile" name='ics[mobile]' placeholder='' type='text' value="{{params['mobile']}}">-->
+							<div class='input-group pull-left'>
+
+								<input class='digit-box form-control' id="phone_1" maxlength='1' name='ics[phone_1]' type='text' value="{{params['phone_1']}}">
+
+								<input class='digit-box form-control' id="phone_2" maxlength='1' name='ics[phone_2]' type='text' value="{{params['phone_2']}}">
+
+								<input class='digit-box form-control' id="phone_3" maxlength='1' name='ics[phone_3]' type='text' value="{{params['phone_3']}}">
+
+								<input class='digit-box form-control' id="phone_4" maxlength='1' name='ics[phone_4]' type='text' value="{{params['phone_4']}}">
+
+								<input class='digit-box form-control' id="phone_5" maxlength='1' name='ics[phone_5]' type='text' value="{{params['phone_5']}}">
+
+								<input class='digit-box form-control' id="phone_6" maxlength='1' name='ics[phone_6]' type='text' value="{{params['phone_6']}}">
+
+								<input class='digit-box form-control' id="phone_7" maxlength='1' name='ics[phone_7]' type='text' value="{{params['phone_7']}}">
+
+								<input class='digit-box form-control' id="phone_8" maxlength='1' name='ics[phone_8]' type='text' value="{{params['phone_8']}}">
+
+								<input class='digit-box form-control' id="phone_9" maxlength='1' name='ics[phone_9]' type='text' value="{{params['phone_9']}}">
+								
+								<input class='digit-box form-control' id="phone_10" maxlength='1' name='ics[phone_10]' type='text' value="{{params['phone_10']}}">
+							</div>
+                        </div>
+                    </div>
+
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='educational_institution'>
+                            Educational institution at which you are enrolled
+                        </label>
+                        <div class='col-sm-5'>
+                            <select class='form-control' id='educational_institution' name='ics[educational_institution]' placeholder='Educational Institution' type='text' value="{{params['educational_institution']}}">
+                                <option value='' ></option>
+                                {% if params['educational_institution'] == "Australian Catholic University" %}
+                                <option selected='' value = "{%if params['educational_institution']%}{{'Australian Catholic University'}}{%else%}{{'Australian Catholic University'}}{%endif%}">Australian Catholic University</option>
+                                {% else %}
+                                <option value = "Australian Catholic University">Australian Catholic University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Australian National University" %}
+                                <option selected='' value = "Australian National University">Australian National University</option>
+                                {% else %}
+                                <option value = "Australian National University">Australian National University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Billy Blue" %}
+                                <option selected='' value = "Billy Blue">Billy Blue</option>
+                                {% else %}
+                                <option value = "Billy Blue">Billy Blue</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Bond University" %}
+                                <option selected='' value = "Bond University">Bond University</option>
+                                {% else %}
+                                <option value = "Bond University">Bond University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Central Queensland University" %}
+                                <option selected='' value = "Central Queensland University">Central Queensland University</option>
+                                {% else %}
+                                <option value = "Central Queensland University">Central Queensland University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Charles Darwin University" %}
+                                <option selected='' value = "Charles Darwin University">Charles Darwin University</option>
+                                {% else %}
+                                <option value = "Charles Darwin University">Charles Darwin University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Charles Sturt University" %}
+                                <option selected='' value = "Charles Sturt University">Charles Sturt University</option>
+                                {% else %}
+                                <option value = "Charles Sturt University">Charles Sturt University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Curtin University of Technology" %}
+                                <option selected='' value = "Curtin University of Technology">Curtin University of Technology</option>
+                                {% else %}
+                                <option value = "Curtin University of Technology">Curtin University of Technology</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Deakin University" %}
+                                <option selected='' value = "Deakin University">Deakin University</option>
+                                {% else %}
+                                <option value = "Deakin University">Deakin University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Edith Cowan University" %}
+                                <option selected='' value = "Edith Cowan University">Edith Cowan University</option>
+                                {% else %}
+                                <option value = "Edith Cowan University">Edith Cowan University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Federation University Australia" %}
+                                <option selected='' value = "Federation University Australia">Federation University Australia</option>
+                                {% else %}
+                                <option value = "Federation University Australia">Federation University Australia</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Flinders University" %}
+                                <option selected='' value = "Flinders University">Flinders University</option>
+                                {% else %}
+                                <option value = "Flinders University">Flinders University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Griffith University" %}
+                                <option selected='' value = "Griffith University">Griffith University</option>
+                                {% else %}
+                                <option value = "Griffith University">Griffith University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "James Cook University" %}
+                                <option selected='' value = "James Cook University">James Cook University</option>
+                                {% else %}
+                                <option value = "James Cook University">James Cook University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "La Trobe University" %}
+                                <option selected='' value = "La Trobe University">La Trobe University</option>
+                                {% else %}
+                                <option value = "La Trobe University">La Trobe University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Macquarie University" %}
+                                <option selected='' value = "Macquarie University">Macquarie University</option>
+                                {% else %}
+                                <option value = "Macquarie University">Macquarie University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Monash University" %}
+                                <option selected='' value = "Monash University">Monash University</option>
+                                {% else %}
+                                <option value = "Monash University">Monash University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Murdoch University" %}
+                                <option selected='' value = "Murdoch University">Murdoch University</option>
+                                {% else %}
+                                <option value = "Murdoch University">Murdoch University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Open Universities" %}
+                                <option selected='' value = "Open Universities">Open Universities</option>
+                                {% else %}
+                                <option value = "Open Universities">Open Universities</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Queensland University of Technology" %}
+                                <option selected='' value = "Queensland University of Technology">Queensland University of Technology</option>
+                                {% else %}
+                                <option value = "Queensland University of Technology">Queensland University of Technology</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "RMIT University" %}
+                                <option selected='' value = "RMIT University">RMIT University</option>
+                                {% else %}
+                                <option value = "RMIT University">RMIT University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Southern Cross University" %}
+                                <option selected='' value = "Southern Cross University">Southern Cross University</option>
+                                {% else %}
+                                <option value = "Southern Cross University">Southern Cross University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Swinburne University of Technology" %}
+                                <option selected='' value = "Swinburne University of Technology">Swinburne University of Technology</option>
+                                {% else %}
+                                <option value = "Swinburne University of Technology">Swinburne University of Technology</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Adelaide" %}
+                                <option selected='' value = "University of Adelaide">University of Adelaide</option>
+                                {% else %}
+                                <option value = "University of Adelaide">University of Adelaide</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Ballarat" %}
+                                <option selected='' value = "University of Ballarat">University of Ballarat</option>
+                                {% else %}
+                                <option value = "University of Ballarat">University of Ballarat</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Canberra" %}
+                                <option selected='' value = "University of Canberra">University of Canberra</option>
+                                {% else %}
+                                <option value = "University of Canberra">University of Canberra</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Melbourne" %}
+                                <option selected='' value = "University of Melbourne">University of Melbourne</option>
+                                {% else %}
+                                <option value = "University of Melbourne">University of Melbourne</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of New England" %}
+                                <option selected='' value = "University of New England">University of New England</option>
+                                {% else %}
+                                <option value = "University of New England">University of New England</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of New South Wales" %}
+                                <option selected='' value = "University of New South Wales">University of New South Wales</option>
+                                {% else %}
+                                <option value = "University of New South Wales">University of New South Wales</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Newcastle" %}
+                                <option selected='' value = "University of Newcastle">University of Newcastle</option>
+                                {% else %}
+                                <option value = "University of Newcastle">University of Newcastle</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Notre Dame" %}
+                                <option selected='' value = "University of Notre Dame">University of Notre Dame</option>
+                                {% else %}
+                                <option value = "University of Notre Dame">University of Notre Dame</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Queensland" %}
+                                <option selected='' value = "University of Queensland">University of Queensland</option>
+                                {% else %}
+                                <option value = "University of Queensland">University of Queensland</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of South Australia" %}
+                                <option selected='' value = "University of South Australia">University of South Australia</option>
+                                {% else %}
+                                <option value = "University of South Australia">University of South Australia</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Southern Queensland" %}
+                                <option selected='' value = "University of Southern Queensland">University of Southern Queensland</option>
+                                {% else %}
+                                <option value = "University of Southern Queensland">University of Southern Queensland</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Sydney" %}
+                                <option selected='' value = "University of Sydney">University of Sydney</option>
+                                {% else %}
+                                <option value = "University of Sydney">University of Sydney</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Tasmania" %}
+                                <option selected='' value = "University of Tasmania">University of Tasmania</option>
+                                {% else %}
+                                <option value = "University of Tasmania">University of Tasmania</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Technology, Sydney" %}
+                                <option selected='' value = "University of Technology, Sydney">University of Technology, Sydney</option>
+                                {% else %}
+                                <option value = "University of Technology, Sydney">University of Technology, Sydney</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Western Australia" %}
+                                <option selected='' value = "University of Western Australia">University of Western Australia</option>
+                                {% else %}
+                                <option value = "University of Western Australia">University of Western Australia</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Western Sydney" %}
+                                <option selected='' value = "University of Western Sydney">University of Western Sydney</option>
+                                {% else %}
+                                <option value = "University of Western Sydney">University of Western Sydney</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Wollongong" %}
+                                <option selected='' value = "University of Wollongong">University of Wollongong</option>
+                                {% else %}
+                                <option value = "University of Wollongong">University of Wollongong</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "University of Sunshine Coast" %}
+                                <option selected='' value = "University of Sunshine Coast">University of Sunshine Coast</option>
+                                {% else %}
+                                <option value = "University of Sunshine Coast">University of Sunshine Coast</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Victoria University" %}
+                                <option selected='' value = "Victoria University">Victoria University</option>
+                                {% else %}
+                                <option value = "Victoria University">Victoria University</option>
+                                {% endif %}
+
+                                {% if params['educational_institution'] == "Other" %}
+                                <option selected='' value = "Other">Other</option>
+                                {% else %}
+                                <option value = "Other">Other</option>
+                                {% endif %}
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='campus_location'>
+                            Campus location
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='campus_location' name='ics[campus_location]' placeholder='Campus location' type='text' value="{{params['campus_location']}}">
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='course'>
+                            Course of study
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='course' name='ics[course]' placeholder='' type='text' value="{%if params['course']%}{{params['course']}}{%else%}{{'Bachelor of '}}{%endif%}">
+                            <!--<input class='form-control' id='course' name='ics[course]' placeholder='' type='text' value="{%if params['course']%}{{'Bachelor of'}}{%else%}{{'Bachelor of'}}{%endif%}">-->
+                        </div>
+                    </div>
+
+
+                    <div class='form-group'>
+                        <label class=' col-sm-3 control-label' for='study_award'>Study Award</label>
+                        <div class='col-sm-5'>
+                            {% assign study_award = params['study_award'] %}
+                            <div class='radio'>
+                                <label>
+                                    {% if study_award == 'Undergraduate Degree' %}
+                                    <input checked='checked' id="study_award" name='ics[study_award]' type='radio' value='Undergraduate Degree'>
+                                    {% else %}
+                                    <input id="study_award" name='ics[study_award]' type='radio' value='Undergraduate Degree'>
+                                    {% endif %}
+                                    Undergraduate Degree
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if study_award == 'Diploma' %}
+                                    <input checked='checked' id="study_award" name='ics[study_award]' type='radio' value='Diploma'>
+                                    {% else %}
+                                    <input id="study_award" name='ics[study_award]' type='radio' value='Diploma'>
+                                    {% endif %}
+                                    Diploma
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if study_award == 'Advanced Diploma' %}
+                                    <input checked='checked'  id="study_award" name='ics[study_award]' type='radio' value='Advanced Diploma'>
+                                    {% else %}
+                                    <input id="study_award" name='ics[study_award]' type='radio' value='Advanced Diploma'>
+                                    {% endif %}
+                                    Advanced Diploma
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if study_award == 'Postgraduate Degree' %}
+                                    <input checked='checked'  id="study_award" name='ics[study_award]' type='radio' value='Postgraduate Degree'>
+                                    {% else %}
+                                    <input id="study_award" name='ics[study_award]' type='radio' value='Postgraduate Degree'>
+                                    {% endif %}
+                                    Postgraduate Degree
+                                </label>
+                            </div>
+                            <div class='radio'>
+                                <label>
+                                    {% if study_award == 'Postgraduate Degree' %}
+                                    <input checked='checked' id="study_award" name='ics[study_award]' type='radio' value='Other'>
+                                    {% else %}
+                                    <input id="study_award" name='ics[study_award]' type='radio' value='Other'>
+                                    {% endif %}
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='enrolment_status'>
+                            Enrolment status
+                            <div class='small normal-font-weight'>
+                                (e.g. full-time, part-time, deferred)
+                            </div>
+                        </label>
+                        <div class='col-sm-5'>
+                            <!--<input class='form-control' id='enrolment_status' name='ics[enrolment_status]' type='text' value="{%if params['enrolment_status']%}{{'full-time'}}{%else%}{{'full-time'}}{%endif%}" >-->
+                            <select class='form-control' id='enrolment_status' name='ics[enrolment_status]' type='text' value="{{params['enrolment_status']}}">
+                                <option value = "">Status</option>
+                                {% if params['enrolment_status'] == "Full-time (on-campus)" %}
+                                <option selected='' value = "{%if params['enrolment_status']%}{{'Full-time (on-campus)'}}{%else%}{{'Full-time (on-campus)'}}{%endif%}">Full-time (on-campus)</option>
+                                {% else %}
+                                <option value = "{%if params['enrolment_status']%}{{'Full-time (on-campus)'}}{%else%}{{'Full-time (on-campus)'}}{%endif%}">Full-time (on-campus)</option>
+                                {% endif %}
+
+                                {% if params['enrolment_status'] == "Part-time" %}
+                                <option selected='' value = "{%if params['enrolment_status']%}{{'Part-time'}}{%else%}{{'Part-time'}}{%endif%}">Part-time</option>
+                                {% else %}
+                                <option value = "{%if params['enrolment_status']%}{{'Part-time'}}{%else%}{{'Part-time'}}{%endif%}">Part-time</option>
+                                {% endif %}
+
+                                {% if params['enrolment_status'] == "Deferred" %}
+                                <option selected='' value = "{%if params['enrolment_status']%}{{'Deferred'}}{%else%}{{'Deferred'}}{%endif%}">Deferred</option>
+                                {% else %}
+                                <option value = "{%if params['enrolment_status']%}{{'Deferred'}}{%else%}{{'Deferred'}}{%endif%}">Deferred</option>
+                                {% endif %}
+
+                                {% if params['enrolment_status'] == "Block Release" %}
+                                <option selected='' value = "{%if params['enrolment_status']%}{{'Block Release'}}{%else%}{{'Block Release'}}{%endif%}">Block Release</option>
+                                {% else %}
+                                <option value = "{%if params['enrolment_status']%}{{'Block Release'}}{%else%}{{'Block Release'}}{%endif%}">Block Release</option>
+                                {% endif %}
+
+                                {% if params['enrolment_status'] == "Online / External" %}
+                                <option selected='' value = "{%if params['enrolment_status']%}{{'Online / External'}}{%else%}{{'online'}}{%endif%}">Online / External</option>
+                                {% else %}
+                                <option value = "{%if params['enrolment_status']%}{{'Online / External'}}{%else%}{{'Online / External'}}{%endif%}">Online / External</option>
+                                {% endif %}
+
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Spacer Start -->
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Spacer End -->
+
+
+                </fieldset>
+            </div>
+
+            <h3>
+                Item 2 - Cadetship Plan
+            </h3>
+            <hr>
+            <div class='light-background padded-top padded-bottom'>
+                <fieldset>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='cadetship_date'>
+                            Requested commencement of ICS payments
+
+                        </label>
+                        <div class='col-sm-5'>
+                            <select class='form-control' id='cadetship_date' name='ics[cadetship_date]'>
+                                <option value=''>---</option>
+                                {% for date in contents.cadetship_commencement_dates%}
+                                {% if date.date == params['cadetship_date'] %}
+                                <option selected='' value='{{date.date}}'>{{date.date}}</option>
+                                {% else %}
+                                <option value='{{date.date}}'>{{date.date}}</option>
+                                {% endif %}
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='graduation_date'>
+                            Expected University Graduation date
+                        </label>
+                        <div class='col-sm-5'>
+                            <select class='form-control' id='graduation_date' name='ics[graduation_date]'>
+                                <option value=''>---</option>
+                                {% for date in contents.expected_graduation_dates%}
+                                {% if date.date == params['graduation_date'] %}
+                                <option selected='' value='{{date.date}}'>{{date.date}}</option>
+                                {% else %}
+                                <option value='{{date.date}}'>{{date.date}}</option>
+                                {% endif %}
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                    <!-- still sort of hidden-->
+                </fieldset>
+            </div>
+
+
+            <h3>
+                Item 3 - Cadet Certification
+            </h3>
+            <hr>
+            <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+                <p>
+                    <strong>
+                        I certify that:
+                    </strong>
+                <div style="margin-left:50px;">
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_1'] == "value_1" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_1]' checked value="value_1">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_1]' value="value_1">
+                                {% endif %}
+                                &nbsp;I have checked my details at Item 1, and the details of the Cadetship Plan at Item 2 and certify that to the best of my knowledge that they are true and complete;
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_4'] == "value_4" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_4]' checked value="value_4">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_4]' value="value_4">
+                                {% endif %}
+                                &nbsp;I have read and understand the 'ICS Student Info Pack'
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_3'] == "value_3" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_3]' checked value="value_3">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_3]' value="value_3">
+                                {% endif %}
+                                &nbsp;I agree to abide by the eligibility requirmements listed in the ICS Student Info Pack;
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_5'] == "value_5" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_5]' checked value="value_5">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_5]' value="value_5">
+                                {% endif %}
+                                &nbsp;I am of Aboriginal and/or Torres Strait Islander descent; identify as an Australian Aboriginal and/or Torres Strait Islander; and am accepted as an Aboriginal and/or Torres Strait Islander in the community I live or have lived;
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_6'] == "value_6" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_6]' checked value="value_6">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_6]' value="value_6">
+                                {% endif %}
+                                &nbsp;I am an Australian resident;
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_7'] == "value_7" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_7]' checked value="value_7">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_7]' value="value_7">
+                                {% endif %}
+                                &nbsp;I am enrolled for full-time study for my first undergraduate degree at an Australian university;
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_8'] == "value_8" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_8]' checked value="value_8">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_8]' value="value_8">
+                                {% endif %}
+                                &nbsp;I am aware that under the Criminal Code Act 1995 (Cth) section 137.1 giving false or misleading information is a serious offence; and
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-check">
+                            <label class="form-check-label small">
+                                {% if params['certify_9'] == "value_9" %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_9]' checked value="value_9">
+                                {% else %}
+                                <input type="checkbox" class="form-check-input" name='ics[certify_9]' value="value_9">
+                                {% endif %}
+                                &nbsp;I undertake to advise Centrelink of ICS, and the proposed commencement date as outlined in Item 2 if I am receiving any payments from Centrelink, including ABSTUDY.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+<ul>
+<li>
+I have checked my details at Item 1, and the details of the Cadetship Plan at Item 2 and certify that to the best of my knowledge that they are true and complete;
+</li>
+<li>
+I have read and understand the ‘ICS Handbook’, particularly the Student Eligibility and Cadet Responsibilities that apply to this Agreement;
+</li>
+<li>
+I agree to abide by the ‘Cadet Responsibilities’ of the ICS Handbook;
+</li>
+<li>
+I have read and understand the 'ICS Student Info Pack'
+</li>
+<li>
+I am of Aboriginal and/or Torres Strait Islander descent; identify as an Australian Aboriginal and/or Torres Strait Islander; and am accepted as an Aboriginal and/or Torres Strait Islander in the community I live or have lived;
+</li>
+<li>
+I am an Australian resident;
+</li>
+<li>
+I am enrolled for full-time study for my first undergraduate degree at an Australian university;
+</li>
+<li>
+I am aware that under the Criminal Code Act 1995 (Cth) section 137.1 giving false or misleading information is a serious offence; and
+</li>
+<li>
+I undertake to advise Centrelink of ICS, and the proposed commencement date as outlined in Item 2 if I am receiving any payments from Centrelink, including ABSTUDY.
+</li>
+</ul>
+-->
+                <fieldset class='col-sm-5'>
+                    <div class='form-group no-margin-bottom'>
+                        <label class='control-label' for='signature'>
+                            Signature of ICS Scholarship Applicant
+                            <small class='normal-font-weight'>
+                                (Type your full name)
+                            </small>
+                        </label>
+                        <input class='form-control' id='signature' name='ics[signature]' required='' type='text' value="{{params['signature']}}">
+                        <!--<input class='date form-control' name='ics[signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">-->
+                    </div>
+
+                    <div class='form-group no-margin-bottom'>
+                        <label class='control-label' for='signature'>
+
+                            Date
+
+                        </label>
+                        <input class='date form-control' id="date" name='ics[signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">
+                    </div>
+
+                    <div class='hidden form-group'>
+                        <label class='col-sm-3 control-label' for='ics-id'>ICS Application ID</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='ics-app-id' name='intern[ics-app-id]' value="{%if params['ics-app-id']%}{{params['ics-app-id']}}{%else%}{{intern['ics-app-id']}}{%endif%}">
+                        </div>
+                    </div>
+                </fieldset>
+                </p>
+        </div>
+
+
+
+
+        <!-- spacer -->
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+
+        <!-- end spacer -->
+        <!-- Office Only - Hidden  -->
+        <div class='hide-form'>
+
+            <h3>
+                Office Use Only
+            </h3>
+            <hr>
+            <div class='light-background '>
+                <fieldset>
+
+                    <div class=' form-group '>
+
+                        <label class='col-sm-5 control-label' for='commencement_date'>
+                            Cadetship commencement date &nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='date form-control' name='ics[commencement_date]' type='text' value='         /         /      '>
+                        </div>
+                    </div>
+
+
+                    <div class='form-group '>
+
+                        <label class=' col-sm-5 control-label' for='cessation_date'>
+                            Cadetship expected cessation date
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='date form-control' name='ics[cessation_date]' type='text' value='         /         /      '>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Spacer Start -->
+
+
+                    <!-- Spacer End -->
+                    <div class="form-group no-margin-bottom">
+                        <label class='col-sm-3 control-label' for='expenditure'>
+                            Expenditure of up to
+                            <small class='normal-font-weight'>
+                                (Including GST)
+                            </small>
+                        </label>
+                        <div class='col-sm-6'>
+                            <input  class='  form-control' id='expenditure' name='ics[expenditure]'  type='text' value="$">
+
+                        </div>
+
+                    </div>
+                    <!--
+<div class=' form-group '>
+
+<label class='col-sm-5 control-label' for='sponsor_signature'>
+Expenditure of up to
+<small class='normal-font-weight'>
+(Including GST)
+</small>
+</label>
+<div class='col-sm-5'>
+<input class='form-control' name='ics[cadet_commence_date]' type='text' value='$ '>
+</div>
+</div>
+-->
+
+
+                    <div class="form-group no-margin-bottom">
+                        <label class='col-sm-3 control-label' for='signature_of_delegate'>
+                            Signature of Approver
+                        </label>
+                        <div class='col-sm-6'>
+                            <input  class='  form-control' id='signature_of_delegate' name='ics[signature_of_delegate]'  type='text' value="">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group no-margin-bottom">
+                        <label class='col-sm-3 control-label' for='department_name'>
+                            Printed Name
+                        </label>
+                        <div class='col-sm-6'>
+                            <input  class='form-control' id='department_name' name='ics[department_name]' type='text' value="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group no-margin-bottom">
+                        <label class=' col-sm-3 control-label' for='department_position'>
+                            Position
+                        </label>
+                        <div class='col-sm-6'>
+                            <input class='form-control' id='department_position' name='ics[department_position]'  type='text' value="">
+                        </div>
+                    </div>
+
+
+                    <div class='form-group'>
+                        <label class='col-sm-5 control-label' for='department_approval_sign_date'>
+                            Date
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class=' date form-control' name='ics[department_approval_sign_date]' type='text' placeholder="DD/MM/YYYY" value='         /         /      '>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='form-group'>
+                    <div class='col-sm-2 pull-right'>
+                        <button class='btn orange-button' type='button' VALUE="Back" onClick="history.go(-1);return true;">Back</button>
+                        <button class='btn orange-button' type='submit'>Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    $(document).ready(function() {
+        var metrics = [
+            [ "[name='ics[last_name]']", 'presence', 'Last name is required and cannot be empty' ],
+            [ "[name='ics[first_name]']", 'presence', 'First name is required and cannot be empty' ],
+            [ "[name='ics[dob]']", 'presence', 'Date of birth is required and cannot be empty' ],
+            [ "[name='ics[dob]']", /|(0[1-9]|[12][0-9]|3[01])[\/.](0[1-9]|1[012])[\/.](19|20)\d\d/, 'Invalid date format. Should be dd/mm/yyyy' ],
+            [ "[name='ics[graduation_date]']", 'presence', 'Expected University Graduation date is required and cannot be empty' ],
+            [ "[name='ics[cadetship_date]']", 'presence', 'Requested Commencement ICS date is required and cannot be empty' ],
+            [ "[name='ics[email]']", 'presence', 'Email address is required and cannot be empty' ],
+            [ "[name='ics[email]']", 'email', 'Invalid email address' ],
+            [ "[name='ics[gender]']", 'presence', 'Please choose one of the following' ],
+            [ "[name='ics[study_award]']", 'presence', 'Please choose one of the following' ],
+            [ "[name='ics[enrolment_status]']", 'presence', 'Please choose one of the following' ],
+            [ "[name='ics[descent]']", 'presence', 'Please choose one of the following' ],
+            [ "[name='ics[signature]']", 'presence', 'Signature is required and cannot be empty' ],
+            [ "[name='ics[signature_date]']", 'presence', 'Signature date is required and cannot be empty' ],
+            [ "[name='ics[educational_institution]']", 'presence', 'Educational institution is required and cannot be empty' ],
+            [ "[name='ics[course]']", 'presence', 'Course of study is required and cannot be empty' ],
+            [ "[name='ics[campus_location]']", 'presence', 'Campus location is required and cannot be empty' ],
+            [ "[name='ics[home_phone]'], [name='ics[phone_10]']", 'one-of', 'Please enter at least one contact number' ],
+            [ "[name='ics[residential_address_1]'], [name='ics[residential_address_3]']", 'presence', 'Residential address is required and cannot be empty' ],
+            [ "[name='ics[certify_1]'], [name='ics[certify_2]'], [name='ics[certify_3]'], [name='ics[certify_4]'], [name='ics[certify_5]'], [name='ics[certify_6]'], [name='ics[certify_7]'], [name='ics[certify_8]'], [name='ics[certify_9]']", 'presence', 'Need to declare understanding of conditions' ],
+			[ "[name='ics[phone_1]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_2]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_3]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_4]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_5]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_6]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_7]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_8]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_9]']", 'integer', 'Mobile Number has to be a number' ],
+			[ "[name='ics[phone_10]']", 'integer', 'Mobile Number has to be a number' ],
+            [ "[name='ics[residential_post_4]']", 'presence', 'Residential address is required and cannot be empty' ],
+        ];
+
+        $( "form" ).nod( metrics , {
+            groupSelector: ".form-group",
+            groupClass: "has-error",
+            helpSpanDisplay: "help-block small"
+        });
+
+        function postToGoogle() {
+            var lastName = $("#last_name").val();
+            var firstName = $("#first_name").val();
+            var intials = $("#initials").val();
+            var gender = $('input[id=gender]:checked', '#ics_sponsor_form').val()
+            var dob = $("#dob").val();
+            var indig = $('input[id=indig]:checked', '#ics_sponsor_form').val()
+            var email = $("#email").val();
+            var resStreet = $("#residential_address_1").val();
+            var resSuburb = $("#residential_address_2").val();
+            var resState = $("#residential_address_3").val();
+            var resPost = $("#residential_post_1").val() +""+ $("#residential_post_2").val()+""+ $("#residential_post_3").val()+""+ $("#residential_post_4").val();
+            var contactRes = $("#home_phone_area").val() +" "+ $("#home_phone").val();
+            var contactMobile = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
+            var education = $("#educational_institution").val();
+            var campus = $("#campus_location").val();
+            var course = $("#course").val();
+            var studyAward = $('input[id=study_award]:checked', '#ics_sponsor_form').val();
+            var enrolStatus = $("#enrolStatus").val();
+            var commence = $("#cadetship_date").val();
+            var grad = $("#graduation_date").val();
+            var signature = $("#signature").val();
+            var date = $("#date").val();
+            var icsid = $("#ics-app-id").val();
+
+            var ajaxData = {"id": icsid,
+                            "entry.1862661918": lastName,
+                            "entry.730450753": firstName,
+                            "entry.967983336": intials,
+                            "entry.548718755": gender,
+                            "entry.1716666657": dob,
+                            "entry.209084879": indig,
+                            "entry.357859019": email,
+                            "entry.46714137": resStreet,
+                            "entry.1856718304": resSuburb,
+                            "entry.1123400366": resState,
+                            "entry.423526007": resPost,
+                            "entry.428247000": contactMobile,
+                            "entry.715990456": education,
+                            "entry.2066429542": campus,
+                            "entry.1935838082": course,
+                            "entry.538319437": enrolStatus,
+                            "entry.731344024": studyAward,
+                            "entry.538319437": enrolStatus,
+                            "entry.1601403612": commence,
+                            "entry.1782867248": grad,
+                            "entry.1096356346": signature,
+                            "entry.1515616812": date
+                           };
+
+            /*
+								https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/viewform?usp=pp_url&entry.1862661918=lastName&entry.730450753=firstName&entry.967983336=initials&entry.548718755=gender&entry.1716666657=dob&entry.209084879=indig&entry.357859019=email&entry.46714137=resStreet&entry.1856718304=resSuburb&entry.1123400366=resState&entry.423526007=resPost&entry.525163280=postStreet&entry.124368833=postSuburb&entry.681530446=postState&entry.2063298090=postPost&entry.805068194=semStreet&entry.448633858=semSuburb&entry.1653290301=semState&entry.812394399=semPost&entry.946817817=contactRes&entry.428247000=contactMobile&entry.715990456=uni&entry.2066429542=campus&entry.1200743245=facultyStreet&entry.132153159=facultySuburb&entry.422257361=facultyState&entry.354743533=facultyPost&entry.1935838082=course&entry.1601403612=commence&entry.1782867248=graduate&entry.1096356346=signature&entry.1515616812=date
+
+								https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/viewform?usp=pp_url&entry.1862661918&entry.730450753&entry.967983336&entry.548718755&entry.1716666657&entry.209084879&entry.357859019&entry.46714137&entry.1856718304&entry.1123400366&entry.423526007&entry.525163280&entry.124368833&entry.681530446&entry.2063298090&entry.805068194&entry.448633858&entry.1653290301&entry.812394399&entry.946817817&entry.428247000&entry.715990456&entry.2066429542&entry.1200743245&entry.132153159&entry.422257361&entry.354743533&entry.1935838082&entry.731344024=studyAward&entry.538319437=enrolStatus&entry.1601403612&entry.1782867248&entry.1096356346&entry.1515616812
+								*/
+            /*
+                $.ajax({
+                    type: "POST",
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
+                    data: {"entry.1862661918": lastName, "entry.730450753": firstName, "entry.967983336": intials, "entry.548718755": gender,"entry.1716666657": dob, "entry.209084879": indig, "entry.357859019": email, "entry.46714137": resStreet,"entry.1856718304": resSuburb, "entry.1123400366": resState, "entry.423526007": resPost, "entry.525163280": postStreet,"entry.124368833": postSuburb, "entry.681530446": postState, "entry.805068194": semStreet, "entry.448633858": SemSuburb, "entry.1653290301": semState, "entry.812394399": semPost, "entry.946817817": contactRes, "entry.428247000": contactMobile, "entry.715990456": education, "entry.2066429542": campus, "entry.1200743245": facultyStreet, "entry.422257361": facultyState,"entry.354743533": facultyPost, "entry.1935838082": course, "entry.1601403612": commence, "entry.1782867248": grad, "entry.1096356346": signature, "entry.1515616812": date, "entry.2063298090": postPost, "entry.132153159": facultySuburb,"entry.731344024": studyAward, "entry.538319437": enrolStatus},
+                    dataType: "text/html",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					}
+					});
+
+					{
+						"entry.1862661918": lastName,
+						 "entry.730450753": firstName,
+						  "entry.967983336": intials,
+							 "entry.548718755": gender,
+							 "entry.1716666657": dob,
+							  "entry.209084879": indig,
+								 "entry.357859019": email,
+								  "entry.46714137": resStreet,
+									"entry.1856718304": resSuburb,
+									 "entry.1123400366": resState,
+									  "entry.423526007": resPost,
+										 "entry.525163280": postStreet,
+										 "entry.124368833": postSuburb,
+										  "entry.681530446": postState,
+											 "entry.805068194": semStreet,
+											  "entry.448633858": SemSuburb,
+												"entry.1653290301": semState,
+												 "entry.812394399": semPost,
+												  "entry.946817817": contactRes,
+													 "entry.428247000": contactMobile,
+													  "entry.715990456": education,
+														  "entry.2066429542": campus,
+															 "entry.1200743245": facultyStreet,
+															  "entry.422257361": facultyState,
+																"entry.354743533": facultyPost
+															}
+
+
+					*/
+            $.ajax({
+                type: "POST",
+                //url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzKOGbc4i547wGQaMvrA0vTwD9M12gzp_bdsivS4gzXXnqcCeZv/exec",
+                data: JSON.stringify(ajaxData),
+                dataType: "json",
+                statusCode: {
+                    0: function() {
+                        //Success message
+                    },
+                    200: function() {
+                        //Success Message
+                    }
+                },
+                xhrFields: {
+                    withCredentials: true
+                }
+            });
+            //alert('working');
+        }
+        $('#ics_sponsor_form').submit(function() {
+            postToGoogle();
+            //return false;
+        });
+
+
+    });
+
+
+
+
+</script>
+{% endblock %}
+;

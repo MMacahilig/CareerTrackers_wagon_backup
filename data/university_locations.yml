@@ -1,0 +1,17 @@
+---
+- ACT:
+    _slug: act
+- South Australia:
+    _slug: south-australia
+- Western Australia:
+    _slug: western-australia
+- New South Wales:
+    _slug: new-south-wales
+- Victoria:
+    _slug: victoria
+- Queensland:
+    _slug: queensland
+- Northern Territory:
+    _slug: northern-territory
+- Tasmania:
+    _slug: tasmania

@@ -1,0 +1,41 @@
+---
+title: Where Can I Intern
+slug: where-can-i-intern
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 102
+seo_title: Where Can I Intern
+editable_elements:
+  main/banner: 
+  main/content: ''
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='container-fluid'>
+    {% editable_text 'content' %}
+    SOMETHING HERE
+    {% endeditable_text %}
+  </div>
+  {% for internship in contents.internships %}
+  <div class='row internship-row'>
+    <div class='col-lg-4 internship-logo'>
+      <img alt='{{internship.company.name | escape}}' class='img-responsive' src='{{internship.company.image.url | escape}}'>
+    </div>
+    <div class='col-lg-5 internships'>
+      <div class='list-group'>
+        {% for position in internship.positions %}
+        <div class='list-group-item'>
+          {{position | escape}}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

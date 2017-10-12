@@ -1,0 +1,52 @@
+---
+title: Overview
+slug: overview
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+seo_title: About Us
+editable_elements:
+  main/banner: /samples/pages/Banner_Rosemary_2014.jpg
+  main/about_us_image:
+  main/about_us_text: "<p><!--StartFragment--></p>\r\n<p>CareerTrackers is a national
+    non-profit organisation that creates private sector internship opportunities for
+    talented Indigenous university students.&nbsp;</p>\r\n<p>Leveraging the 40-year
+    legacy of the INROADS African-American internship program in the&nbsp;United States,
+    CareerTrackers has adapted this model to address Indigenous disadvantage throughout
+    Australia.</p>\r\n<p>CareerTrackers recruits pre-professional Indigenous university
+    students and links them with private sector employers to participate in a multi-year
+    internship.&nbsp;Students perform their internship with a sponsoring company with
+    the aim of converting from intern into full-time employee upon completion of their
+    degree program.</p>\r\n<p>In addition to making long-lasting placements CareerTrackers
+    provides a wide spectrum of support to help prepare students for leadership in
+    the workplace and the community.</p>\r\n<p>Through participation in CareerTrackers
+    companies are able to add to the diversity of their workforce as well as help
+    young Australians.&nbsp;</p>"
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  {% capture 'about_us_image' %}{% editable_file 'about_us_image' %}{% endeditable_file %}{% endcapture %}
+  {% capture 'about_us_text' %}{% editable_text 'about_us_text' %}{% endeditable_text %}{% endcapture %}
+  {% if about_us_text != '' and about_us_image != '' %}
+  <div class='col-lg-6'>
+    {{about_us_text}} 
+  </div>
+  <div class='col-lg-6 hidden-xs'>
+    <img class='img-responsive' src='{{about_us_image | escape}}'>
+  </div>
+  {% elsif about_us_image == '' and about_us_text != '' %}
+  <div class='col-lg-12'>
+    {{about_us_text}}
+  </div>
+  {% elsif about_us_image != '' and about_us_text == '' %}
+  <div class='col-lg-12'>
+    <img class='img-responsive' src='{{about_us_image | escape}}'>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

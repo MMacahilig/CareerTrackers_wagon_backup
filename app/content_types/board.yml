@@ -1,0 +1,26 @@
+---
+name: Board of Directors
+description: CareerTrackers Board of Directors
+slug: board
+label_field_name: name
+order_by: manually
+order_direction: asc
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    unique: false
+    localized: false
+- position:
+    label: Position
+    type: string
+    required: true
+    unique: false
+    localized: false
+- image:
+    label: Image
+    type: file
+    required: true
+    unique: false
+    localized: false

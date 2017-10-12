@@ -1,0 +1,38 @@
+---
+title: Forms
+slug: forms
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 7
+seo_title: Forms
+editable_elements:
+  main/banner: 
+  main/content: <p>The following forms are part of the CareerTrackers program. They
+    allow us to ensure your experience in our program is made easy! Please select
+    from the list below the form you wish to complete. Once you complete the form
+    it will be sent to us for review and approval. If you have any questions about
+    any of the forms please contact a CareerTrackers representative.</p>
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='container-fluid'>
+    {% editable_text 'content' %}
+    SOMETHING HERE
+    {% endeditable_text %}
+  </div>
+  <ul class='forms-list'>
+    {% for form in contents.forms %}
+    <li>
+      <a href='{{form.link}}'>
+        {{form.title}}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

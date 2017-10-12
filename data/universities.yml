@@ -1,0 +1,112 @@
+---
+- Australian National University:
+    _slug: australian-national-university
+    location: act
+- University of Canberra:
+    _slug: university-of-canberra
+    location: act
+- Adelaide University:
+    _slug: adelaide-university
+    location: south-australia
+- Flinders University:
+    _slug: flinders-university
+    location: south-australia
+- La Trobe University:
+    _slug: la-trobe-university
+    location: victoria
+- Monash University:
+    _slug: monash-university
+    location: victoria
+- University of Newcastle:
+    _slug: university-of-newcastle
+    location: new-south-wales
+- University of New South Wales:
+    _slug: university-of-new-south-wales
+    location: new-south-wales
+- Bond University:
+    _slug: bond-university
+    location: queensland
+- Griffith University:
+    _slug: griffith-university
+    location: queensland
+- Curtin University:
+    _slug: curtin-university
+    location: western-australia
+- University of Western Australia:
+    _slug: university-of-western-australia
+    location: western-australia
+- Australian Catholic University:
+    _slug: australian-catholic-university
+    location: act
+- University of Technology Sydney:
+    _slug: university-of-technology-sydney
+    location: new-south-wales
+- University of Wollongong:
+    _slug: university-of-wollongong
+    location: new-south-wales
+- Macquarie University:
+    _slug: macquarie-university
+    location: new-south-wales
+- University of Sydney:
+    _slug: university-of-sydney
+    location: new-south-wales
+- Queensland University of Technology:
+    _slug: queensland-university-of-technology
+    location: queensland
+- Central Queensland University:
+    _slug: central-queensland-university
+    location: queensland
+- James Cook University:
+    _slug: james-cook-university
+    location: queensland
+- University of the Sunshine Coast:
+    _slug: university-of-the-sunshine-coast
+    location: queensland
+- University of Southern Queensland:
+    _slug: university-of-southern-queensland
+    location: queensland
+- University of Queensland:
+    _slug: university-of-queensland
+    location: queensland
+- Murdoch University:
+    _slug: murdoch-university
+    location: western-australia
+- University of South Australia:
+    _slug: university-of-south-australia
+    location: south-australia
+- Edith Cowan University:
+    _slug: edith-cowan-university
+    location: western-australia
+- Deakin University:
+    _slug: deakin-university
+    location: victoria
+- RMIT University:
+    _slug: rmit-university
+    location: victoria
+- Swinburne University:
+    _slug: swinburne-university
+    location: victoria
+- Federation University Australia:
+    _slug: university-of-ballarat
+    location: victoria
+- University of Melbourne:
+    _slug: university-of-melbourne
+    location: victoria
+- University of Western Sydney:
+    _slug: university-of-western-sydney
+    location: new-south-wales
+- Charles Sturt University:
+    _slug: charles-sturt-university
+    location: new-south-wales
+- Charles Darwin University:
+    _slug: charles-darwin-university
+    location: northern-territory
+- University of Tasmania:
+    _slug: university-of-tasmania
+    location: tasmania
+- University of New England:
+    _slug: university-of-new-england
+    location: new-south-wales
+- Southern Cross University:
+    _slug: southern-cross-university
+    location: new-south-wales

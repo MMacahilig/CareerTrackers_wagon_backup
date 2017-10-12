@@ -1,0 +1,19 @@
+---
+- Sydney:
+    _slug: sydney
+    address: Suite 1, Level 5 / 309 George Street, Sydney, NSW 2000
+    phone: 02 8090 5765
+    email: info@careertrackers.org.au
+- Brisbane:
+    _slug: brisbane
+    address: Level 10 / 126 Margaret Street, Brisbane, QLD 4000
+    phone: 07 3012 8926
+- Melbourne:
+    _slug: melbourne
+    address: Suite 301, Level 3, 45 William Street, Melbourne 3000
+- Perth:
+    _slug: perth
+    address: Level 9 / 45 St Georges Terrace, Perth, WA 6000
+- Adelaide:
+    _slug: adelaide
+    address: Unit 1 / 23 Beulah Road Norwood, SA 5067

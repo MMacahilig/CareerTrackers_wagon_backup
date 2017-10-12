@@ -1,0 +1,463 @@
+---
+title: Confidential Details
+slug: confidential-details
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 106
+seo_title: Confidential Details
+---
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class="page-header orange-dotted-border-bottom">
+    <form id="lc_conf"action='/interns/confidential-details' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+    {% assign contract = session['contract'] %}
+    {% csrf_param %}
+    <h3>
+  	Student Details
+    </h3>
+    <hr>
+    <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+      <fieldset>
+        <div class='form-group'>
+            <label class='col-sm-3  control-label' for='date'>Date</label>
+            <div class='col-sm-5'>
+              <input class='date form-control' id="date" name='conf[date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['date']}}">
+            </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='name'>Name</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='name' name='conf[name]' placeholder='Name of Student' type='text' value="{{params['name']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='email'>Email</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='email' name='conf[email]' placeholder='Email' type='email' value="{{params['email']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='name'>Facebook Name</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='facebook' name='conf[facebook]' placeholder='Facebook Name of Student' type='text' value="{{params['facebook']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <div class="col-sm-3 control-label"><h4>Address</h4></div>
+        </div>
+
+        <div class='form-group '>
+          <label class='col-sm-3 control-label' for='semester_address_1'>
+            During Semester Address
+          </label>
+          <div class='col-sm-5'>
+          	<div class='input-vertical-group'>
+          		<input class='form-control' id='semester_address_1' name='conf[semester_address_1]' placeholder='Number and Street Name' type='text' value="{{params['semester_address_1']}}">
+          		<input class='form-control' id='semester_address_2' name='conf[semester_address_2]' placeholder='Suburb/Town' type='text' value="{{params['semester_address_2']}}">
+            	<select class='form-control' id='semester_address_3' name='conf[semester_address_3]' placeholder='State/Territory' value="{{params['semester_address_3']}}">
+
+                	<option value = "">State</option>
+
+                	{% if params['semester_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+
+                	{% if params['semester_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+
+            	</select>
+      	     </div>
+          </div>
+        </div>
+        <div class='form-group '>
+          <label class='col-sm-3 control-label' for='residential_address_1'>
+            Home address
+          </label>
+          <div class='col-sm-5'>
+          	<div class='input-vertical-group'>
+          		<input class='form-control' id='residential_address_1' name='conf[residential_address_1]' placeholder='Number and Street Name' type='text' value="{{params['residential_address_1']}}">
+          		<input class='form-control' id='residential_address_2' name='conf[residential_address_2]' placeholder='Suburb/Town' type='text' value="{{params['residential_address_2']}}">
+            	<select class='form-control' id='residential_address_3' name='conf[residential_address_3]' placeholder='State/Territory' value="{{params['residential_address_3']}}">
+
+                	<option value = "">State</option>
+
+                	{% if params['residential_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+
+                	{% if params['residential_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+
+            	</select>
+      	     </div>
+          </div>
+        </div>
+
+        <div class='form-group '>
+          <label class='col-sm-3 control-label' for='postal_address_1'>
+            Postal address
+          </label>
+          <div class='col-sm-5'>
+          	<div class='input-vertical-group'>
+          		<input class='form-control' id='postal_address_1' name='conf[postal_address_1]' placeholder='Number and Street Name' type='text' value="{{params['postal_address_1']}}">
+          		<input class='form-control' id='postal_address_2' name='conf[postal_address_2]' placeholder='Suburb/Town' type='text' value="{{params['postal_address_2']}}">
+            	<select class='form-control' id='postal_address_3' name='conf[postal_address_3]' placeholder='State/Territory' value="{{params['postal_address_3']}}">
+
+                	<option value = "">State</option>
+
+                	{% if params['postal_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+
+                	{% if params['postal_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+
+            	</select>
+      	     </div>
+          </div>
+        </div>
+        <!-- Spacer -->
+        <div class='form-group hide-form'>
+								<label class='col-sm-3 control-label' for='blank_space'>
+								</label>
+								<div class='col-sm-5'>
+								</div>
+				</div>
+				<div class='form-group hide-form'>
+								<label class='col-sm-3 control-label' for='blank_space'>
+								</label>
+								<div class='col-sm-5'>
+								</div>
+				</div>
+        <!-- Spacer Ends -->
+        <div class='form-group'>
+            <label class='col-sm-3 control-label' for='dob'>Date of Birth</label>
+            <div class='col-sm-5'>
+              <input class='date form-control' id="dob" name='conf[dob]'  type='text' placeholder="DD/MM/YYYY" value="{{params['dob']}}">
+            </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='mobile'>
+            Mobile
+          </label>
+          <div class='col-sm-5'>
+            <input class='mobile form-control' id="mobile" name='conf[mobile]' placeholder='' type='text' value="{{params['mobile']}}">
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='Home'>
+            Home
+          </label>
+          <div class='col-sm-5'>
+            <input class='mobile form-control' id="mobile" name='conf[home]' placeholder='' type='text' value="{{params['home']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='university'>University</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='university' name='conf[university]' placeholder='University' type='text' value="{{params['university']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='degree'>Degree</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='degree' name='conf[degree]' placeholder='Bachelor Of' type='text' value="{{params['degree']}}">
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='major'>Major</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='major' name='conf[major]' placeholder='Major' type='text' value="{{params['major']}}">
+          </div>
+        </div>
+        <div class='form-group'>
+            <label class='col-sm-3 control-label' for='start_date'>Degree Start Date</label>
+            <div class='col-sm-5'>
+              <input class='date form-control' id="date" name='conf[start_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['start_date']}}">
+            </div>
+        </div>
+
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='source'>How did you hear about us?</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='source' name='conf[source]'  type='text' value="{{params['source']}}">
+          </div>
+        </div>
+          
+        <div class="col-lg-12 light-background">
+            <h3>Parent / Family Details</h3>
+
+            <p>
+                We may contact your family or people who are important to you invite them to our our Gala Dinner. Please nominate who should we contact
+            </p>
+
+            <div class="col-lg-6 padding-top">
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Person 1</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_1]' placeholder='Name of Student' type='text' value="{{params['emergency_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Relationship:</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[relationship_1]' placeholder='Name of Student' type='text' value="{{params['relationship_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Address</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_address_1]' placeholder='Name of Student' type='text' value="{{params['emergency_address_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Email</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_email_1]' placeholder='Name of Student' type='text' value="{{params['emergency_email_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Phone</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_phone_1]' placeholder='Name of Student' type='text' value="{{params['emergency_phone_1']}}">
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Person 1</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_1]' placeholder='Name of Student' type='text' value="{{params['emergency_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Relationship:</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[relationship_1]' placeholder='Name of Student' type='text' value="{{params['relationship_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Address</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_address_1]' placeholder='Name of Student' type='text' value="{{params['emergency_address_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Email</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_email_1]' placeholder='Name of Student' type='text' value="{{params['emergency_email_1']}}">
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label class='col-sm-3 control-label' for='name'>Phone</label>
+                  <div class='col-sm-5'>
+                    <input class='form-control' id='name' name='conf[emergency_phone_1]' placeholder='Name of Student' type='text' value="{{params['emergency_phone_1']}}">
+                  </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+        
+
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div class='form-group'>
+          <div class='col-sm-2 pull-right'>
+            <button class='btn orange-button' type='submit'>Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+
+
+  $(document).ready(function() {
+
+    var metrconf = [
+
+                    [ "[name='conf[name]']", 'presence', 'First Name is required and cannot be empty' ],
+
+                    [ "[name='conf[date]']", 'presence', 'Last Name is required and cannot be empty' ],
+
+                    [ "[name='conf[email]']", 'presence', 'Email is required and cannot be empty' ],
+
+                    [ "[name='conf[email]']", 'email', 'Invalid email address' ],
+
+                    [ "[name='conf[semester_address_1]']", 'presence', 'Address is required and cannot be empty' ],
+
+                    [ "[name='conf[semester_address_3]']", 'presence', 'Address is required and cannot be empty' ],
+
+
+                    [ "[name='conf[dob]']", 'presence', 'Date if Birth is required and cannot be empty' ],
+
+                    [ "[name='conf[mobile]']", 'presence', 'Mobile Number is required and cannot be empty' ],
+
+                    [ "[name='conf[university]']", 'presence', 'University is required and cannot be empty' ],
+
+                    [ "[name='conf[degree]']", 'presence', 'Degree is required and cannot be empty' ],
+
+                    [ "[name='conf[start_date]']", 'presence', 'University Start Date is required and cannot be empty' ]
+
+
+
+                  ];
+
+
+
+    $( "form" ).nod( metrconf , {
+
+                      groupSelector: ".form-group",
+
+                      groupClass: "has-error",
+
+                      helpSpanDisplay: "help-block small"
+
+    });
+
+
+
+
+
+  });
+
+</script>
+
+{% endblock %}

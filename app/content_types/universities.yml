@@ -1,0 +1,22 @@
+---
+name: University
+description: University
+slug: universities
+label_field_name: university
+order_by: manually
+order_direction: asc
+fields:
+- university:
+    label: university
+    type: string
+    required: true
+    unique: false
+    localized: false
+- location:
+    label: location
+    type: belongs_to
+    required: true
+    unique: false
+    localized: false
+    class_name: university_locations
+    ui_enabled: true

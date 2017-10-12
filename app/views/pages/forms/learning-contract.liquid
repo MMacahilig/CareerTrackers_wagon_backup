@@ -1,0 +1,194 @@
+---
+title: Learning Contract
+slug: learning-contract
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 106
+seo_title: CareerTrackers Learning Contract
+---
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class="page-header orange-dotted-border-bottom">
+    <p>
+      The Learning Contract is an agreement between an intern, their manager and  <br>
+
+      CareerTrackers Advisor. It is based on the intern’s goals, the needs of the organisation or <br>
+
+      team, which they will be working, and the requirements of the CareerTrackers program. It also helps to <br>
+ 
+      make sure that there are clear expectations of everyone involved in the internship. <br><br>
+
+
+      The Learning Contract provides a syllabus for all CareerTrackers internships. It includes two standard <br>
+
+      goals that apply to all interns, as well as three unique goals that you will develop, and is structured in <br>
+
+      the following format.<br><br>
+	
+
+      <table style="width:700px">
+        <tr>
+          <td ><strong>Learning Goals:</strong> <br><br></td>
+          <td>The Learning Goals are the intended outcomes for an intern during their internship.<br><br></td>
+        </tr>
+        <tr>
+          <td><strong>Tasks &amp; Strategies: </strong><br><br><br></td>
+          <td>This includes a set of tasks and strategies associated with each Learning Goal.<br>They are
+            the specific actions that will help guide the intern to achieve their goals.<br>These should
+            be action oriented and begin with a verb.</td>
+        </tr>
+      </table>
+      <br><br>
+
+      <h4><u>Lifecycle of a Learning Contract</u></h4>
+
+      During the first week of the internship, a meeting will take place between the intern, their manager and <br>
+
+      CareerTrackers Student Advisor to discuss and agree on the goals for the internship. The intern is <br>
+
+      required to take notes and develop the draft Learning Contract and circulate to their manager and <br>
+
+      Student Advisor for final sign-off. <br><br>
+
+	  
+	  
+      The Learning Contract is designed to provide a baseline, which outlines the key activities and projects <br>
+
+      that the intern should undertake during the course of their internship. Each week during full-time work <br>
+
+      interns are required to update their CareerTrackers Advisor on their overall progress in the internship. <br><br>
+	  
+	  
+
+      At the end of the summer internship, managers are asked to evaluate the performance of their intern. <br>
+
+      The Learning Contract is a reference point and can be used as a benchmark for the intern’s <br>
+
+      performance. <br><br>
+
+
+      <br><br><br>
+      <h4><u>Creating the Intern Learning Contract</u></h4>
+
+      <table style="width:800px;" border="0">
+        <tr>
+          <td>Step 1: <br><br><br><br></td>
+          <td>Prepare by developing projects &amp; outcomes of the internship. Bring draft to formal <br>
+
+          Learning Contract meeting<br>
+
+          <strong>Owner: Intern, Manager</strong><br><br></td>
+        </tr>
+        <tr>
+          <td>Step 2:<br><br><br><br><br></td>
+          <td>Schedule a meeting between the intern, manager, workplace buddy and your<br>
+
+          Student Advisor to discuss and agree upon the Learning Contract. Review the key<br>
+
+          dates section and schedule a date for the end of winter internship presentation.<br>
+
+          <strong>Owner: Intern, Manager, Buddy, CareerTrackers Advisor</strong><br><br></td>
+        </tr>
+        <tr>
+          <td>Step 3:<br><br><br><br></td>
+          <td>Finalise the Learning Contract and provide a copy to the relevant manager and<br>
+
+          Student Advisor.<br>
+
+          <strong>Owner: Intern</strong><br><br></td>
+        </tr>
+        <tr>
+          <td>Step 4:<br><br></td>
+          <td>Intern to send weekly progress reports to their CareerTrackers Advisor.<br>
+
+          <strong>Owner: Intern, CareerTrackers Advisor</strong><br><br></td>
+        </tr>
+        <tr>
+          <td>Step 5:<br><br><br></td>
+          <td>Inform CareerTrackers Advisor of any changes, outstanding<br>
+
+         achievements or additional support required.<br>
+
+       <strong>Owner: Manager, CareerTrackers Advisor, Intern</strong></td>
+        </tr>
+      </table>
+
+    </p>
+    <br>
+    <form action='/interns/contract' class='' method='POST' novalidate='novalidate' role='form'>
+      <h4><u>Please select from the following to complete the learning contract relevant to you</u></h4>
+      <br>
+      <div class='form-group'>
+        <div class='col-sm-5'>
+        	<select class='form-control' id='grad-status' name='contract[grad-status]' value="{{params['grad-status']}}">
+          	<option selected='' value=''></option>
+
+          	{% if params['grad-status'] == "non-grad" %}
+        		<option selected ='' value='non-grad'>Non-Graduating Intern</option>
+        		{% else %}
+        		<option value='non-grad'>Non-Graduating Intern</option>
+        		{% endif %}
+
+            {% if params['grad-status'] == "grad" %}
+        		<option selected ='' value='grad'>Graduating Intern</option>
+        		{% else %}
+        		<option value='grad'>Graduating Intern</option>
+        		{% endif %}
+
+        	</select>
+        </div>
+      </div>
+      <br><br>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <div class='form-group'>
+            <div class='col-sm-2 pull-left'>
+              <button class='btn orange-button' type='submit'>Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+
+
+  $(document).ready(function() {
+
+    var metrics = [
+
+                    [ "[name='contract[grad-status]']", 'presence', 'Field is required and cannot be empty' ],
+
+
+                  ];
+
+
+
+    $( "form" ).nod( metrics , {
+
+                      groupSelector: ".form-group",
+
+                      groupClass: "has-error",
+
+                      helpSpanDisplay: "help-block small"
+
+    });
+
+  });
+
+</script>
+
+{% endblock %}

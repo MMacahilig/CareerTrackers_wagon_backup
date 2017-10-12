@@ -1,0 +1,264 @@
+---
+title: Join Our Team
+slug: join-our-team
+listed: false
+published: false
+cache_strategy: none
+response_type: text/html
+position: 7
+seo_title: Join Our Team
+editable_elements:
+---
+
+{% extends parent %}
+
+{% block main %}
+
+{% include banner %}
+
+<div class='container-fluid'>
+  {% include page_header %}
+  
+  <form action='/jobseekers' class='form-horizontal' id='jobseeker-form' method='POST' enctype='multipart/form-data' role='form'>
+  {% csrf_param %}
+
+  <div class='col-sm-12  padded-bottom'>
+	<fieldset>
+		<p> Here at CareerTrackers, we are always looking for the best people in order to provide the best service to our students and corporate partners.<br> 
+			We have offices nationwide, where our main office is based in Sydney. Throughout the past few years we have been experience the need to<br>
+			expand our team in order to meet the needs of our students. We are always looking for new people to join our team as we continue to grow nationally
+
+		
+		
+  		<div class='col-sm-12'>
+		<h2>
+		Our Roles
+  		</h2>
+  		Here is a list of all current roles within CareerTrackers along with a description with what's involved within that role <br>  
+			<hr class='col-sm-7'>
+	
+  		</div>
+  		<div class='col-sm-12 padded-top padded-bottom'>
+  			<img src='/samples/join_team/student_advisors.png' class='img-responsive'>
+			<H3>Student Advisor</H3>
+			The CareerTrackers Student Advisor acts as a mentor to guides and trains students throughout the program and its various <br>
+			stages. They will act as the point of contact between student and the organisation. Student advisors can come from a range <br>
+			of professional background and experience and must be capable of working with a team. Student Advisors must be willing <br>
+			to work with each student within the program and work towards achieving their potential.<br>
+			<hr class='col-sm-7'>
+  		</div>
+  		
+		
+		
+		<div class='col-sm-12 padded-top padded-bottom'>
+  			<img src='/samples/join_team/office_admin.png' class='img-responsive'>
+  			
+  			<br> <H3>Receptionist / Office Administrator</H3>
+			Here at CareerTrackers, our receptionist role involves serving our visitors by greeting, welcoming, and directing them <br>
+			appropriately; along with notifying the appropriate personnel of visitor arrival. The Receptionist acts as the gateway<br>
+			into the CareerTrackers office and must therefore have a welcoming and friendly personality.
+			<br><br>
+			The receptionist role in CareerTrackers is partnered with the role of Office administrator whom will handles several <br> 
+			administrative activities that ensure that CareerTrackers continues to run smoothly. They are responsible for the management<br>
+			of office resources, handling student accommodation and assist in any CareerTrackers events that happen throughout the year<br>
+		<hr class='col-sm-7'>
+  		</div>
+  		
+		
+		<div class='col-sm-12 padded-top padded-bottom'>
+  			<img src='/samples/join_team/business_analyst.png' class='img-responsive'>
+  			<br> <H3>Business Analyst</H3>
+			The Business Analyst’s role in CareerTrackers focuses on the implementation of new and current technology in a <br>
+			cost-effective manner. The business analyst brings forth new innovative processes and methodology to our team enabling <br>
+			a more efficient and productive environment. <br>
+			<hr class='col-sm-7'>
+  		</div>
+  		
+		
+		
+		<div class='col-sm-12 padded-top padded-bottom'>
+  			<img src='/samples/join_team/program_analyst.png' class='img-responsive'>
+  			<br> <H3>Program Analyst</H3>
+			The program analyst role focuses on the important internal processes within CareerTrackers that support both staff and <br>
+			students. As a program analyst, you must have a strong passion for organising and evaluating how CareerTrackers work <br>
+			and be creative in producing key process documents. <br>
+			<hr class='col-sm-7'>
+  		</div>
+  		
+  		
+		
+		<div class='col-sm-12 padded-top padded-bottom'>
+  			<img src='/samples/join_team/accounting.png' class='img-responsive'>
+  			<br> <H3>Accountant</H3>
+			The accounting role involves the analysis of financial information and prepares financial reports to determine or <br>
+			maintain record of assets, liabilities, and loss, tax liability, or other financial activities within CareerTrackers. <br>
+  			<hr class='col-sm-7'>
+  		</div>
+  		
+  		
+		
+		<div class='col-sm-12 padded-top padded-bottom'>
+  			<img src='/samples/join_team/IT_support.png' class='img-responsive'>
+  			<br> <H3>Information and Technology (IT) Support</H3>
+			The IT support staff manages and maintains computer systems within CareerTrackers. As an IT support staff you must <br>
+			have a passion for helping people along with troubleshooting skills in order to solve any issues that occur revolving<br>
+			computers and networks. The IT support staff also manages the CareerTrackers website and continues to develop it into<br>
+			a more informative website. <br>
+			<hr class='col-sm-7'>
+		<br><br>
+  		</div>
+  		
+  		
+		
+		<h5>If you feel that one of these roles fit you perfectly, apply for the role below and we'll be in touch</h5>
+
+	</fieldset>
+	</div>
+	
+	<div class='col-sm-7 light-background bottom-margin-medium'>
+      
+      <fieldset>
+        	<p>
+             <div class='orange-dotted-border-bottom'>
+             <h3>CareerTrackers Expression of Interest</h3>
+             </div>
+              <form action='/jobseekers' class='form-horizontal' id='jobseeker-form' method='POST' enctype='multipart/form-data' role='form'>
+                {% csrf_param %}
+                <fieldset>
+                  <div class='form-group padded-top'>
+                    <label class='col-sm-2 control-label text-left' for='name'>Name</label>
+                    <div class='col-sm-10'>
+                      <input class='form-control' name='jobseeker[name]' placeholder='Name' type='text'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-2 control-label text-left' for='role'>Phone</label>
+                    <div class='col-sm-10'>
+                      <input class='form-control' name='jobseeker[phone]' placeholder='Phone' type='text'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-2 control-label text-left' for='email'>Email</label>
+                    <div class='col-sm-10'>
+                      <input class='form-control' name='jobseeker[email]' placeholder='Email' type='text'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+          			<label class='col-sm-2 control-label text-left' for='file'>Resume</label>
+          			<div class='col-sm-10'>
+            			<input class='form-control' name='jobfile' id='jobfile' type='file'>
+          			</div>
+        		  </div>
+        		
+        		<label class='control-label' for='role'>Which role would you like to apply for?</label>
+       			 
+       			  <div class='form-group'>
+       			  <label class='col-sm-2 control-label' for='role'></label>
+                  	<div class='col-sm-10'>
+                  		<select class='form-control' id='role' name='jobseeker[role]'>
+                    		<option selected='' value=''></option>
+                    		<option value='Student Advisor'>Student Advisor</option>
+                    		<option value='Receptionist / Office Administrator'>Receptionist / Office Administrator</option>
+                    		<option value='Business Analyst'>Business Analyst</option>
+                    		<option value='Program Analyst'>Program Analyst</option>
+                    		<option value='Accountant'>Accountant</option>
+                    		<option value='Information and Technology (IT) Support'>Information and Technology (IT) Support</option>
+                    		<option value='Other'>Other</option>
+                  		</select>
+                  	</div>
+       			 </div>
+       			 
+        		  <label class='control-label' for='job-hear'>How did you hear about CareerTrackers?</label>
+        		  <div class='form-group'>
+                    <label class='col-sm-2 control-label' for='jobhear'></label>
+                    <div class='col-sm-10'>
+                      <textarea class='form-control' name='jobseeker[jobhear]'  style="overflow:hidden;resize:vertical;" type='text'></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class='row'>
+      				<div class='col-sm-12'>
+        				<div class='form-group'>
+          					<div class='col-sm-1'>
+          					
+          					</div>
+          					<div class='col-sm-4'>
+          					
+          					</div>
+          					<div class='col-sm-1 '>
+            					<button id='submitJob' class='btn orange-button' type='submit'>Submit</button>
+          					</div>
+          					<div class='col-sm-1'>
+          					<div id="spinner"></div>
+          					</div>
+        				</div>
+      				</div>
+    			</div>
+            </fieldset>
+            </p>
+		</fieldset>
+	</div>
+	
+	
+	</form>
+</div>
+
+{% endblock %}
+{% block javascripts %}
+<script>	
+	 $(document).ready(function() {
+	 
+      	$("#spinner").hide();
+      	
+      	$("#submitJob").click(function(){
+    		$("#spinner").show();
+		});
+      
+
+        if($("#jobseeker-form").length) {
+    	  var metrics = [
+        	            [ "[name='jobseeker[name]']", 'presence', 'Please fill out your name'],
+        	            [ "[name='jobseeker[phone]']", 'presence', 'We will need your number to call you'],
+        	            [ "[name='jobseeker[email]']", 'presence', 'We will need your email to send you information'],
+        	            [ '#jobfile', 'presence', 'Please attach your resume'],
+        	            [ "[name='jobseeker[role]']", 'presence', 'We would like to know which role you are applying for'],
+        	            [ "[name='jobseeker[jobhear]']", 'presence', 'It is valuable to us how you found out about CareerTrackers']
+        			  ];
+        
+          $( "#jobseeker-form" ).nod( metrics , {
+                            groupSelector: ".form-group", 
+                            groupClass: "has-error", 
+                            helpSpanDisplay: "help-block small"
+          });
+        
+        }
+      });
+      
+      
+      
+	
+    </script>
+    <script>
+    var opts = {
+  		lines: 8, // The number of lines to draw
+  		length: 6, // The length of each line
+  		width: 5, // The line thickness
+  		radius: 8, // The radius of the inner circle
+  		corners: 1, // Corner roundness (0..1)
+  		rotate: 0, // The rotation offset
+  		direction: 1, // 1: clockwise, -1: counterclockwise
+  		color: '#000', // #rgb or #rrggbb or array of colors
+  		speed: 1, // Rounds per second
+  		trail: 60, // Afterglow percentage
+  		shadow: false, // Whether to render a shadow
+  		hwaccel: false, // Whether to use hardware acceleration
+  		className: 'spinner', // The CSS class to assign to the spinner
+  		zIndex: 2e9, // The z-index (defaults to 2000000000)
+  		top: '20px', // Top position relative to parent
+  		left: '50px' // Left position relative to parent
+		};
+	
+	var target = document.getElementById('spinner');
+	var spinner = new Spinner(opts).spin(target);
+    </script>
+{% endblock %}

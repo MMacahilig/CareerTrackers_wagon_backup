@@ -1,0 +1,61 @@
+---
+- Program Orientation:
+    _slug: program-orientation
+    event_date: 4 March - 28 March
+    semester: semester-01
+- CV Writing & Company Match:
+    _slug: cv-writing-and-company-match
+    event_date: 10 March - 11 April
+    semester: semester-01
+- Interview Preparation Training:
+    _slug: interview-preparation-training
+    event_date: 31 March - 30 April
+    semester: semester-01
+- Networking Event:
+    _slug: networking-event
+    event_date: 1 April - 16 May
+    semester: semester-01
+- Corporate Interview:
+    _slug: corporate-interview
+    event_date: 5 May - 30 May
+    semester: semester-01
+- Winter Kick-Off Workshop:
+    _slug: winter-kick-off-workshop
+    event_date: 9 June - 29 June
+    semester: semester-01
+- Winter Internship:
+    _slug: winter-internship
+    event_date: 23 June - 25 July
+    semester: semester-01
+- Program Orientation:
+    _slug: program-orientation-1
+    event_date: 4 August - 29 August
+    semester: semester-02
+- CV Writing & Company Match:
+    _slug: cv-writing-and-company-match-1
+    event_date: 11 August - 5 September
+    semester: semester-02
+- Interview Preparation Training:
+    _slug: interview-preparation-training-1
+    event_date: 1 September - 28 September
+    semester: semester-02
+- Networking Event:
+    _slug: networking-event-1
+    event_date: 8 September - 3 October
+    semester: semester-02
+- Corporate Interview:
+    _slug: corporate-interview-1
+    event_date: 29 September - 31 October
+    semester: semester-02
+- Summer Kick-Off Workshop:
+    _slug: summer-kick-off-workshop
+    event_date: 10 November - 30 November
+    semester: semester-02
+- Summer Internship:
+    _slug: summer-internship
+    event_date: 24 November 2014 - 13 February 2015
+    semester: semester-02
+- Leadership Development Institute:
+    _slug: ldi-2015
+    event_date: 27 January - 30 January 2015
+    semester: semester-02

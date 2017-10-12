@@ -1,0 +1,431 @@
+---
+title: Student End of Intership Review
+slug: end-of-internship
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 106
+seo_title: Student End of Intership Review
+---
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class="page-header orange-dotted-border-bottom">
+  <form  id='review-form' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+  {% csrf_param %}
+  
+  <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium no-margin-bottom'>
+      <fieldset>
+        <div class='form-group'>
+          <label class='col-sm-1 control-label' for='name'>Intern Name</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='name' name='review[name]' placeholder='Name of Student' type='text' value="{{params['name']}}">
+          </div>
+        </div>
+        
+        <div class='form-group'>
+          <label class='col-sm-1 control-label' for='company'>Company</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='company' name='review[company]' placeholder='Name of Company' type='text' value="{{params['company']}}">
+          </div>
+        </div>
+        
+        <div class='form-group'>
+          <label class='col-sm-1 control-label' for='manager'>Manager<br></label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='manager' name='review[manager]' placeholder='Manager' type='text' value="{{params['manager']}}">
+          </div>
+        </div>
+        
+         <div class='form-group'>
+          <label class='col-sm-1 control-label' for='department'>Department<br></label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='department' name='review[department]' placeholder='Name of Department' type='text' value="{{params['department']}}">
+          </div>
+        </div>
+        
+        <div class='form-group no-margin-bottom'>
+            <label class='col-sm-1 control-label' for='primary_advisor'>Student Advisor</label>
+			  <div class='col-sm-5'>
+				<select class='form-control' id='primary_advisor' name='review[primary_advisor]' value="{{params['primary_advisor']}}">
+					<option selected='' value=''></option>
+					
+					{% if params['primary_advisor'] == "Andrea Walisser" %}
+					<option selected='' value='Andrea Walisser'>Andrea Walisser</option>
+					{% else %}
+					<option value='Andrea Walisser'>Andrea Walisser</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Brooke Scott" %}
+					<option selected ='' value='Brooke Scott'>Brooke Scott</option>
+					{% else %}
+					<option value='Brooke Scott'>Brooke Scott</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Dimity Sebire" %}
+					<option selected ='' value='Dimity Sebire'>Dimity Sebire</option>
+					{% else %}
+					<option value='Dimity Sebire'>Dimity Sebire</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Farhana Laffernis" %}
+					<option selected='' value='Farhana Laffernis'>Farhanah Laffernis</option>
+					{% else %}
+					<option value='Farhana Laffernis'>Farhana Laffernis</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Holly Johnson" %}
+					<option selected ='' value='Holly Johnson'>Holly Johnson</option>
+					{% else %}
+					<option value='Holly Johnson'>Holly Johnson</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Ildike Piercy" %}
+					<option selected='' value='Ildike Piercy'>Ildike Piercy</option>
+					{% else %}
+					<option value='Ildike Piercy'>Ildike Piercy</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Jay Palese" %}
+					<option selected ='' value='Jay Palese'>Jay Palese</option>
+					{% else %}
+					<option value='Jay Palese'>Jay Palese</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Jessica Bulger" %}
+					<option selected='' value='Jessica Bulger'>Jessica Bulger</option>
+					{% else %}
+					<option value='Jessica Bulger'>Jessica Bulger</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Jessica Williams" %}
+					<option selected='' value='Jessica Williams'>Jessica Williams</option>
+					{% else %}
+					<option value='Jessica Williams'>Jessica Williams</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Joshua Long" %}
+					<option selected='' value='Joshua Long'>Joshua Long</option>
+					{% else %}
+					<option value='Joshua Long'>Joshua Long</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Matthew Faulkner" %}
+					<option selected='' value='Matthew Faulkner'>Matthew Faulkner</option>
+					{% else %}
+					<option value='Matthew Faulkner'>Matthew Faulkner</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Mia Strasek-Barker" %}
+					<option selected='' value='Mia Strasek-Barker'>Mia Strasek-Barker</option>
+					{% else %}
+					<option value='Mia Strasek-Barker'>Mia Strasek-Barker</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Peta-Lee Moran" %}
+					<option selected='' value='Peta-Lee Moran'>Peta-Lee Moran</option>
+					{% else %}
+					<option value='Peta-Lee Moran'>Peta-Lee Moran</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Raqual Nutley" %}
+					<option selected='' value='Raqual Nutley'>Raqual Nutley</option>
+					{% else %}
+					<option value='Raqual Nutley'>Raqual Nutley</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Talia Ritson" %}
+					<option selected='' value='Talia Ritson'>Talia Ritson</option>
+					{% else %}
+					<option value='Talia Ritson'>Talia Ritson</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Trent Bosgra" %}
+					<option selected='' value='Trent Bosgra'>Trent Bosgra</option>
+					{% else %}
+					<option value='Trent Bosgra'>Trent Bosgra</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Zenzi Clark" %}
+					<option selected='' value='Zenzi Clark'>Zenzi Clark</option>
+					{% else %}
+					<option value='Zenzi Clark'>Zenzi Clark</option>
+					{% endif %}
+					
+					{% if params['primary_advisor'] == "Michael Macahilig" %}
+					<option selected='' value='Michael Macahilig'>Michael Macahilig</option>
+					{% else %}
+					<option value='Michael Macahilig'>Michael Macahilig</option>
+					{% endif %}
+					
+				</select>
+			  </div>
+        </div>
+    
+	<br>
+	<br>Congratulations on successfully completing your	most recent	internship period. This form will act as a guide for both 
+	<br>your Student Advisor, and	your sponsoring	company	for	future internships.
+	<br>
+	<br>Completing	this form does not guarantee your internship position, however it is used by CareerTrackers	to begin negotiations
+	<br>with your employer for your return.
+	<br>
+	<br>Please check the statement below that applies to you
+	<br>
+	
+	</fieldset>
+	</div>
+	
+	<div class='light-background padded-top padded-bottom bottom-margin-medium'>
+      <div class='container-fluid'>
+        <fieldset>
+          
+          <div class='form-group bottom-margin-medium'>
+            <div class='col-sm-6'>
+              {% assign return_option = params['return_option'] %}
+              <div class='radio'>
+                <label>
+                  {% if return_option == 'return_option_1' %}
+                  <input checked='checked' id='return_option_1' name='review[return_option]' type='radio' value='return_option_1'>
+                  {% else %}
+                  <input name='review[return_option]' id='return_option_1' type='radio' value='return_option_1'>
+                  {% endif %}
+                  <strong>
+                    Yes
+                  </strong>
+                  , I intend to return to my sponsoring	company in the	current department.
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  {% if return_option == 'return_option_2' %}
+                  <input checked='checked' id='return_option_2' name='review[return_option]' type='radio' value='return_option_2'>
+                  {% else %}
+                  <input name='review[return_option]' id='return_option_2' type='radio' value='return_option_2'>
+                  {% endif %}
+                  <strong>
+                    Yes
+                  </strong>
+                  , I intend to return to my sponsoring	company, however I would like the opportunity to explore other areas within the business. If so, which departments?
+                </label>
+              </div>
+              <div class='form-group'>              
+                <input class='form-control' id='new-department' name='review[department]' maxlength="50" placeholder='Department' type='text' style="height:100;margin-left:35px;width:650px;" value="{{params['department']}}">
+              	<!--<textarea class='form-control' id='new-department' name='review[department]' placeholder='Department' rows='2' maxlength="180" style="height:50px;overflow:hidden;resize:none;">{{params['department']}}</textarea> -->
+              </div>
+              <div class='radio'>
+                <label>
+                  {% if return_option == 'return_option_3' %}
+                  <input checked='checked' id='return_option_3' name='review[return_option]' type='radio' value='return_option_3'>
+                  {% else %}
+                  <input name='review[return_option]' id='return_option_3' type='radio' value='return_option_3'>
+                  {% endif %}
+                  <strong>
+                    No
+                  </strong>
+                  ,	I do NOT intend	to return to my	sponsoring company,	however	would be interested	in potential internships with other	CareerTrackers employers.
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  {% if return_option == 'return_option_4' %}
+                  <input checked='checked' id='return_option_4' name='review[return_option]' type='radio' value='return_option_4'>
+                  {% else %}
+                  <input name='review[return_option]' id='return_option_4' type='radio' value='return_option_4'>
+                  {% endif %}
+                  <strong>
+                    No
+                  </strong>
+                  , I do NOT intend	to return to my sponsoring company and do not wish to continue with CareerTrackers. If so, please provide additional information to your Student Advisor.
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  {% if return_option == 'return_option_5' %}
+                  <input checked='checked' id='return_option_5' name='review[return_option]' type='radio' value='return_option_5'>
+                  {% else %}
+                  <input name='review[return_option]' id='return_option_5' type='radio' value='return_option_5'>
+                  {% endif %}
+                  I intend to <strong>GRADUATE</strong> during the 2015 academic year and would like to join my sponsoring company as a graduate	or seek	employment opportunities with other CareerTrackers employers.
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='col-sm-1 control-label' for='signature'>
+              Intern Signature
+              <div class='small normal-font-weight'>
+                (Type full name)
+              </div>
+            </label>
+            <div class='col-sm-5'>
+              <input class='form-control' id='signature' name='evaluation[signature]' type='text' value="{{params['signature']}}">
+            </div>
+          </div>
+          <div class='form-group no-margin-bottom'>
+            <label class='col-sm-1 control-label' for='date'>
+              Date
+            </label>
+            <div class='col-sm-5'>
+              <span class='form-control' id='date'>
+                {{ today | localized_date: "%d/%m/%Y" }}
+              </span>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+	
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div class='form-group'>
+          <div class='col-sm-2 pull-right'>
+            <button class='btn orange-button' type='submit'>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+
+  $(document).ready(function() {
+  
+    $("[name='review[return_option]']").change(function(){
+      var val = $(this).val();
+      if (val) {
+        if (val == "return_option_2") {
+          $("#new-department").removeAttr("disabled");
+        } else {
+          $("#new-department").val("");
+          $("#new-department").attr("disabled","disabled");
+        }
+      }
+    });
+    $("[name='review[return_option]']").change();
+  
+
+    var metrics = [
+
+                    [ "[name='contract[name]']", 'presence', 'Name is required and cannot be empty' ],
+
+                    [ "[name='contract[primary_advisor]']", 'presence', 'Primary Student Advisor is required and cannot be empty' ],
+
+                    [ "[name='contract[employer]']", 'presence', 'Company is required and cannot be empty' ],
+
+                    [ "[name='contract[goal_3]']", 'presence', 'Goal #3 is required and cannot be empty' ],
+
+                    [ "[name='contract[tasks_3]']", 'presence', 'Tasks and Strategies are required and cannot be empty' ],
+
+                    [ "[name='contract[goal_4]']", 'presence', 'Goal #4 is required and cannot be empty' ],
+
+                    [ "[name='contract[tasks_4]']", 'presence', 'Tasks and Strategies is required and cannot be empty' ],
+
+                    [ "[name='contract[goal_5]']", 'presence', 'Goal #5 is required and cannot be empty' ],
+
+                    [ "[name='contract[tasks_5]']", 'presence', 'Tasks and Strategies is required and cannot be empty' ],
+                    
+                    [ "[name='contract[signature]']", 'presence', 'Student Signature is required and cannot be empty' ],
+                    
+                    [ "[name='contract[studentEmail]']", 'presence', 'Student email is required and cannot be empty' ],
+                    
+                    [ "[name='contract[studentEmail]']", 'email', 'Invalid Email Address' ]
+
+                  ];
+
+    $( "form" ).nod( metrics , {
+
+                      groupSelector: ".form-group", 
+
+                      groupClass: "has-error", 
+
+                      helpSpanDisplay: "help-block small"
+
+    });
+    
+    function postToGoogle() {
+                var studentName = $("#name").val();
+                var studentAdvisor = $("#primary_advisor").val();
+                var company = $("#company").val();
+                var manager = $("#manager").val();
+                var return_option;
+                var signature = $("#signature").val();
+                var department = $("#department").val();
+                var new_department = "";
+                
+                if(document.getElementById('return_option_1').checked){
+					return_option = $("#return_option_1").val();
+				}else if(document.getElementById('return_option_2').checked){
+					return_option = $("#return_option_2").val();
+					new_department = $("#new-department").val();
+				}else if(document.getElementById('return_option_3').checked){
+					return_option = $("#return_option_3").val();
+				}else if(document.getElementById('return_option_4').checked){
+					return_option = $("#return_option_4").val();
+				}else if(document.getElementById('return_option_5').checked){
+					return_option = $("#return_option_5").val();
+				}
+				
+				console.log("student name: " + studentName);
+				console.log("student advisor: " + studentAdvisor);
+				console.log("company: " + company);
+				console.log("department: " + department);
+				console.log("manager: " + manager);
+				console.log("return_option: " + return_option);
+				console.log("signature: " + signature);
+				console.log("new department: " + new_department);
+				
+		
+            
+            	   
+                $.ajax({
+                	type: "POST",
+                	//url: "https://docs.google.com/a/careertrackers.org.au/forms/d/1oLTfXYsCn3ElvZlqBbL6t_oKTUeOgMmvWj8Hd8kN_Ac/formResponse",
+                    url: "https://docs.google.com/a/careertrackers.org.au/forms/d/1_zZnIpE_j8pBVnXO5B63gyRf66PjUxtWzvZlMxkWHnY/formResponse",
+                    data: { "entry.205548021" : studentName, 
+                    		"entry.1967420861" : company,
+                    		"entry.1313491901": manager,
+                    		"entry.1042571621" : department,
+                    		"entry.1874583310": studentAdvisor,
+                    		"entry.1038880550": return_option,
+                    		"entry.384086817": signature,
+                    		"entry.739171336"  : new_department
+                    },
+                    dataType: "text/html",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                            alert("STOP!");
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					}
+                });
+                
+                
+    }
+    
+    $('#review-form').submit(function() {
+                  postToGoogle();
+                  
+                   // return false;
+    });
+    
+
+  });
+  
+
+</script>
+
+{% endblock %}

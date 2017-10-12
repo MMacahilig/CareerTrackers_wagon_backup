@@ -1,0 +1,23 @@
+---
+name: Semesters
+description: Semesters
+slug: semesters
+label_field_name: semester
+order_by: manually
+order_direction: asc
+fields:
+- semester:
+    label: semester
+    type: string
+    required: true
+    unique: false
+    localized: false
+- events:
+    label: events
+    type: has_many
+    required: false
+    unique: false
+    localized: false
+    class_name: semester_events
+    inverse_of: semester
+    ui_enabled: true

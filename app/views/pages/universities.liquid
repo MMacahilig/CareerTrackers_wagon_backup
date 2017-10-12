@@ -1,0 +1,54 @@
+---
+title: Universities
+slug: universities
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 5
+seo_title: Universities
+editable_elements:
+  main/banner: /samples/pages/Banner_Renee_2013.jpg
+  main/content: "<p>CareerTrackers currently works with students at 37 universities.</p>\r\n<p>If
+    you would like to recommend any of your students to CareerTrackers please call
+    us. We would be more than happy to work with you in supporting your students.</p>"
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  {% editable_text content %}
+  <p>
+    CareerTrackers currently works with students at the following 21 universities, however, we are open to support students at ANY university across Australia.
+  </p>
+  <p>
+    If you would like to recommend any of your students to CareerTrackers please call us. We would be more than happy to work with you in supporting your students.
+    <br>
+    
+  </p>
+  {% endeditable_text %}
+  {% for university_location in contents.university_locations %}
+  {% cycle  '<div class="row">', '', ''%}
+  <div class='col-md-4'>
+    <div class='panel panel-default'>
+      <div class='panel-heading orange-panel-heading'>
+        <h2>{{university_location.location | escape }}</h2>
+      </div>
+      <div class='list-group'>
+        {% for university in university_location.universities %}
+        <div class='list-group-item'>
+          <div class='row'>
+            <div class='col-lg-12'>
+              {{university.university | escape}}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% cycle  '', '', '</div>'%}
+  {% endfor %}          
+</div>
+{% endblock %}

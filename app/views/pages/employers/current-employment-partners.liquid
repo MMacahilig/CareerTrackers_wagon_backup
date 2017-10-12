@@ -1,0 +1,26 @@
+---
+title: Current Employment Partners
+slug: current-employment-partners
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 101
+seo_title: Current Employment Partners
+editable_elements:
+  main/banner: /samples/pages/Banner_Andrew_Niven_Gala
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  {% for company in contents.companies %}
+  {% cycle  '<div class="row company-row">', '', '', '<div class="row company-row">', '', '', ''%}
+  {% cycle  '<div class="col-lg-4">', '<div class="col-lg-4">', '<div class="col-lg-4">', '<div class="col-lg-3">', '<div class="col-lg-3">', '<div class="col-lg-3">', '<div class="col-lg-3">'%}
+  <img alt='{{company.name | escape}}' class='img-responsive' src='{{company.image.url | escape}}'>
+  {% cycle  '</div>', '</div>', '</div>', '</div>', '</div>', '</div>', '</div>'%}
+  {% cycle  '', '', '</div>', '', '', '', '</div>'%}
+  {% endfor %}
+</div>
+{% endblock %}

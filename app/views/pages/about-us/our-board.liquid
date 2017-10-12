@@ -1,0 +1,37 @@
+---
+title: Our Board
+slug: our-board
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 2
+seo_title: Our Board of Directors
+editable_elements:
+  main/banner: /samples/pages/Banner_Rosemary_2014.jpg
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  
+  <div class='row bottom-margin-large'>
+    {% for board in contents.board %}
+    <div class='col-lg-2'>
+      <img alt='{{board.name | escape}}' class='profile-picture' src='{{board.image.url | escape}}'>
+    </div>
+    <div class='col-lg-4'>
+      <h3>{{board.name | escape}}</h3>
+      <h4 class='profile-position'>{{board.position | escape}}</h4>
+      <div style="margin-bottom:100px"></div>
+    </div>
+    {% endfor %}
+  </div>
+  
+</div>
+{% endblock %}
+
+
+
+

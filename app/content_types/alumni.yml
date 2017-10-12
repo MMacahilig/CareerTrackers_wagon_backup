@@ -1,0 +1,27 @@
+---
+name: Alumni
+description: CareerTrackers Alumni
+slug: alumni
+label_field_name: name
+order_by: manually
+order_direction: asc
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    unique: false
+    localized: false
+- description:
+    label: Description
+    type: text
+    required: true
+    unique: false
+    localized: false
+    text_formatting: text
+- image:
+    label: Image
+    type: file
+    required: true
+    unique: false
+    localized: false

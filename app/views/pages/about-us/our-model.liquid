@@ -1,0 +1,81 @@
+---
+title: Our Model
+slug: our-model
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 4
+seo_title: Our Model
+editable_elements:
+  main/banner: /samples/pages/Banner_Rosemary_2014.jpg
+  main/university: <p>University comes first in CareerTrackers. Our program is designed
+    to ensure that university remains the number one priority for our students. Each
+    student is required to check-in with their CareerTrackers Student Advisor on a
+    regular basis to ensure academic progress is being maintained.</p>
+  main/student: Students are able to accelerate their professional development, develop
+    careers following their passions, participate in tailored development training
+    and contribute back to their communities.
+  main/work: <p>Our students will undertake an internship for a minimum of 12-weeks
+    each year throughout their university degree. Each year the students will develop
+    a Learning Contract with their manager and CareerTrackers. Managers also provide
+    a formal performance evaluation on their interns performance setting the student
+    up for a successful future career within the company.</p>
+  main/community: <p>Connecting like-minded students together is core to the CareerTrackers
+    community.&nbsp;All of our students are provided opportunities to develop relationships
+    with other students locally and nationally. Our students and Alumni are encouraged
+    to support one another to continue community building and improve the success
+    of all students in the program.</p>
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='col-md-8 col-md-push-4 bottom-margin-medium'>
+    <img alt='' class='img-responsive' src="{{ 'careertrackers-model.png' | theme_image_url }}">
+  </div>
+  <div class='col-md-4 col-md-pull-8 careertrackers-model'>
+    <div class='panel panel-default'>
+      <div class='panel-heading orange-panel-heading'>
+        <h3 class='panel-title'>Student</h3>
+      </div>
+      <div class='panel-body'>
+        {% editable_text 'student' %}
+        Students are able to accelerate their professional development, develop careers following their passions, participate in tailored development training and contribute back to their communities.
+        {% endeditable_text %}
+      </div>
+    </div>
+    <div class='panel panel-default'>
+      <div class='panel-heading orange-panel-heading'>
+        <h3 class='panel-title'>University</h3>
+      </div>
+      <div class='panel-body'>
+        {% editable_text 'university' %}
+        University comes first in CareerTrackers. We want you to perform academically to the best of your ability. In order to do this, you will have to prioritise your studies. Planning is the key to academic success. Your Student Advisor will regularly check in with you to ensure that you are on top of your study load. If at any time you are feeling overwhelmed, contact your Student Advisor. We will help in any way possible.
+        {% endeditable_text %}
+      </div>
+    </div>
+    <div class='panel panel-default'>
+      <div class='panel-heading orange-panel-heading'>
+        <h3 class='panel-title'>Work</h3>
+      </div>
+      <div class='panel-body'>
+        {% editable_text 'work' %}
+        The CareerTrackers program incorporates many professional development and training opportunities. When you join the CareerTrackers program, the training will focus on how to prepare for a professional interview. Once you have successfully gained an internship, the training will focus on learning skills that will serve you well in the corporate environment. We regularly run workshops on topics like goal setting, time management and study skills.
+        {% endeditable_text %}
+      </div>
+    </div>
+    <div class='panel panel-default'>
+      <div class='panel-heading orange-panel-heading'>
+        <h3 class='panel-title'>Community</h3>
+      </div>
+      <div class='panel-body'>
+        {% editable_text 'community' %}
+        There will be other students at your university who are participating in the CareerTrackers program and we encourage all of our students to create local networks.
+        {% endeditable_text %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

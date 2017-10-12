@@ -1,0 +1,37 @@
+---
+name: Stories
+description: Student stories
+slug: stories
+label_field_name: student_name
+order_by: manually
+order_direction: asc
+fields:
+- student_name:
+    label: Student name
+    type: string
+    hint: Name of the student
+    required: true
+    unique: false
+    localized: false
+- description:
+    label: Description
+    type: text
+    hint: A brief background of the story of the student
+    required: true
+    unique: false
+    localized: false
+    text_formatting: text
+- image:
+    label: Image
+    type: file
+    hint: Picture of the student
+    required: true
+    unique: false
+    localized: false
+- youtube_video_url:
+    label: Youtube video url
+    type: string
+    hint: Video of the student
+    required: true
+    unique: false
+    localized: false

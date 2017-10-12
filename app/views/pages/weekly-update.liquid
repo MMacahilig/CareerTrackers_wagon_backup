@@ -1,0 +1,22 @@
+---
+title: Weekly Update
+slug: weekly-update
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 8
+editable_elements:
+  main/terms and conditions: <p><iframe width="760" height="500" frameborder="0" src="https://docs.google.com/forms/d/1G3TZBpb2NNICXj6Bo3POB2omX-FguiBgE8vQR21cHxg/viewform?embedded=true">Loading...</iframe></p>
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+  {% include page_header %}
+  {% editable_text 'Details' %}
+  <p>
+    Something here.
+  </p>
+  {% endeditable_text %}
+</div>
+{% endblock %}

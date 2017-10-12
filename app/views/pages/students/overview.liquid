@@ -1,0 +1,76 @@
+---
+title: Overview
+slug: overview
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+seo_title: Students
+editable_elements:
+  main/banner: /samples/pages/Banner_Ben___Clark.jpg
+  main/content: "<p>CareerTrackers is designed for Indigenous students who study full-time
+    at university. We currently support students across all years of study in the
+    following areas. If your degree is not listed below, you may still be able to
+    participate in the program if you want to develop corporate experience. Please
+    contact your local CareerTrackers office for more information.</p>\r\n<table class=\"table\"
+    border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Agriculture and Environment</td>\r\n<td>\r\n<ul>\r\n<li>Agriculture
+    and Economics</li>\r\n<li>Environmental Sustainability</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Architecture,
+    Design and Planning</td>\r\n<td>\r\n<ul>\r\n<li><span style=\"line-height: 1.5em;\">Architecture</span></li>\r\n<li><span
+    style=\"line-height: 1.5em;\">Urban Planning&nbsp;</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Arts
+    and Social Sciences</td>\r\n<td>\r\n<ul>\r\n<li><span style=\"line-height: 1.5em;\">Media
+    and Communication</span></li>\r\n<li><span style=\"line-height: 1.5em;\">Social
+    Sciences</span></li>\r\n<li><span style=\"line-height: 1.5em;\">Political Science</span></li>\r\n<li><span
+    style=\"line-height: 1.5em;\">Community Development&nbsp;</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Business</td>\r\n<td>\r\n<ul>\r\n<li><span
+    style=\"line-height: 1.5em;\">&nbsp;All majors</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Engineering
+    and Information Technologies</td>\r\n<td>\r\n<ul>\r\n<li><span style=\"line-height:
+    1.5em;\">Aerospace, Mechanical and Mechatronic Engineering</span></li>\r\n<li><span
+    style=\"line-height: 1.5em;\">Chemical Engineering</span></li>\r\n<li><span style=\"line-height:
+    1.5em;\">Civil and Electrical Engineering</span></li>\r\n<li><span style=\"line-height:
+    1.5em;\">Information Technologies&nbsp;</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Law</td>\r\n<td>\r\n<ul>\r\n<li><span
+    style=\"line-height: 1.5em;\">All majors</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Science</td>\r\n<td>\r\n<ul>\r\n<li><span
+    style=\"line-height: 1.5em;\">Psychology</span></li>\r\n<li><span style=\"line-height:
+    1.5em;\">Chemistry</span></li>\r\n<li><span style=\"line-height: 1.5em;\">Mathematics
+    and Statistics</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='col-md-8'>
+    {% editable_text content %}
+    <p>
+      CareerTrackers is a program offered to Indigenous full time university students who are keen on getting a professional paid-internship with a leading private sector organisation. Places are given to students who are committed to:
+    </p>
+    <p>
+      - Completing their university degree
+      <br>
+      - Gaining a high level of personal and professional development
+      <br>
+      - Building the foundation of a successful career
+      <br>
+      - Becoming a role model within the wider community.
+    </p>
+    <p>
+      To start the process all you need to do is register your interest. One of our advisors will then be in touch so that we can find the right opportunity for you.
+    </p>
+    <p>
+      CareerTrackers is far more than a placement - it’s an entire program whereby you receive ongoing support and advice from the moment you enter the program.
+    </p>
+    <p>
+      By joining the program you will become a part of the CareerTrackers community that includes other like-minded students and Alumni from across Australia. 
+    </p>
+    <p>
+      Does this sound right for you? If you are ready to get involved, register your interest and we will get the process started.
+      <br>
+       
+    </p>
+    <p></p>
+    {% endeditable_text %}
+  </div>
+  <div class='col-md-4 hidden-xs hidden-sm'>
+    <div class='fb-like-box' data-colorscheme='light' data-header='false' data-href='https://facebook.com/CareerTrackers' data-show-border='true' data-show-faces='true' data-stream='true'></div>
+  </div>
+</div>
+{% endblock %}

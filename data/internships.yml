@@ -1,0 +1,49 @@
+---
+- Accor Hotels:
+    _slug: accor-hotels
+    positions:
+    - Marketing
+    - Finance
+    - Business and Bond Management
+- Herbert Smith Freehills:
+    _slug: herbert-smith-freehills
+    positions:
+    - Knowledge Centre
+    - Commercial Law
+    - Dispute Resolution
+    - Construction and Environment Law
+- Insurance Australia Group (IAG):
+    _slug: insurance-australia-group-iag
+    positions:
+    - Stakeholder Management
+    - Business Insurance
+    - Marketing
+    - Information Technology
+- Leighton Contractors:
+    _slug: leighton-contractors
+    positions:
+    - Mining and Civil Engineering
+    - Safety Health & Environment
+    - Finance
+    - Construction Management
+- Lend Lease:
+    _slug: lend-lease
+    positions:
+    - Architecture
+    - Civil Engineering
+    - Urban Development
+    - Communications
+- Qantas:
+    _slug: thoughtworks
+    positions:
+    - Community Partnerships
+    - Qantas Catering
+    - Aeronautical Engineering
+    - Accounting and FInance
+- Westpac:
+    _slug: westpac
+    positions:
+    - Human Resources
+    - Legal Counsel
+    - Commercial Banking
+    - IT Infrastructure

@@ -1,0 +1,57 @@
+---
+title: Document upload
+slug: document-upload
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 102
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <form action='/documents/upload' class='form-horizontal' enctype='multipart/form-data' method='POST' role='form'>
+    {% csrf_param %}
+    <div class='light-background padded-top padded-bottom'>
+      <fieldset>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='file'>File</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='file' name='file' type='file'>
+          </div>
+        </div>
+        <div class='col-sm-8'>
+          <div class='form-group pull-right'>
+            <button class='btn orange-button' type='submit'>Upload</button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+{{ 'validation' | javascript_tag }}
+<script>
+  $(document).ready(function() {
+    var metrics = [
+                    [ "#file", 'presence', 'File is required.' ],
+                    [ "#file",
+                      function(x) {
+                        return validateFileExtension($("[name=file]"),["jpg","pdf","jpeg","gif","png","doc","docx","xls","xlsx","ppt","txt"]);
+                      }, "Only pdf/office/image files are allowed."],
+                    [ "#file",
+                      function(x) {
+                        return validateFileSize($("[name=file]"), 10485760);
+                      }, "Document size should be less than 10MB."]
+                  ];
+  
+    $( 'form' ).nod( metrics , {
+                      groupSelector: '.form-group',
+                      groupClass: 'has-error',
+                      helpSpanDisplay: 'help-block small'
+    });
+  });
+</script>
+{% endblock %}

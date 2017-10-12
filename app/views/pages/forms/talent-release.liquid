@@ -1,0 +1,120 @@
+---
+title: Talent Release
+slug: talent-release
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 106
+seo_title: Talent Release Form
+---
+{% extends parent %}
+{% block main %}
+
+<div class='container-fluid'>
+    {% include page_header %}
+    <div class="col-sm-12 page-header padded-top padded-bottom orange-dotted-border-bottom">
+        <p>
+            CareerTrackers may use your name and image during and after your involvement in the CareerTrackers Program.  <br><br>
+
+            By signing this form you: <br>
+        <ol>
+            <li>Consent to your name and image to be used by CareerTrackers for their communications, promotions, publications, websites and advertisements for an undefined period of time.</li>
+            <li>Consent to your name and image to be displayed by CareerTrackers in public in Australia and overseas.</li>
+            <li>Understand that CareerTrackers will store your name and image for an undefined period of time.</li>
+            <li>Acknowledge that CareerTrackers are not obliged to include your name or image in any of their communications, promotions, publications, websites and advertisements.</li>
+            <li>Understand CareerTrackers may provide your name and image to a third party for reporting and other purposes.</li>
+            <li>Release CareerTrackers from any claim by you or anyone on your behalf arising out of your name or image being used by CareerTrackers </li>
+            <li>Acknowledge that CareerTrackers will make no payment for using your name or image.</li>
+        </ol>
+
+        <strong>Definition:</strong> You understand the definition of ‘image’ in this form to mean any photograph, video footage, statement and audio of you taken by CareerTrackers.<br><br>
+
+        By reading and signing this form, you acknowledge the intended uses of your name and image. You give your permission for your name and image to be reproduced by CareerTrackers with out limitations.<br><br>
+
+
+        </p>
+    <br>
+    <form action='/interns/talent-release' class='' method='POST' novalidate='novalidate' role='form'>
+        {% assign talent = session['talent'] %}
+
+
+        {% csrf_param %}
+        <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+
+            <fieldset class='col-sm-5'>
+                <div class='form-group no-margin-bottom'>
+                    <label class='control-label' for='signature'>
+                        Signature of Student
+                        <small class='normal-font-weight'>
+                            (Type your full name)
+                        </small>
+                    </label>
+                    <input class='form-control' id='signature' name='talent[signature]' required='' type='text' value="{{params['signature']}}">
+                    <!--<input class='date form-control' name='ics[signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">-->
+                </div>
+
+                <div class='form-group no-margin-bottom'>
+                    <label class='control-label' for='signature'>
+
+                        Date
+
+                    </label>
+                    <input class='date form-control' id="date" name='talent[signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">
+                </div>
+
+                
+            </fieldset>
+            </p>
+        </div>
+
+    <br><br>
+    <div class='row'>
+        <div class='col-sm-12'>
+            <div class='form-group'>
+                <div class='col-sm-2 pull-left'>
+                    <button class='btn orange-button' type='submit'>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+</div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+
+
+    $(document).ready(function() {
+
+        var metrics = [
+
+            [ "[name='talent[signature]']", 'presence', 'Signature is required and cannot be empty' ],
+            [ "[name='talent[signature_date]']", 'presence', 'Signature Date is required and cannot be empty' ],
+
+
+        ];
+
+
+
+        $( "form" ).nod( metrics , {
+
+            groupSelector: ".form-group",
+
+            groupClass: "has-error",
+
+            helpSpanDisplay: "help-block small"
+
+        });
+
+    });
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,544 @@
+---
+title: Home
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+editable_elements:
+  main/middle_content/column 1 title: Creating Opportunities
+  main/middle_content/column 1 text: ''
+  main/middle_content/column 2 title: Building Leaders
+  main/middle_content/column 2 text: ''
+  main/middle_content/column 3 title: Growing Communities
+  main/middle_content/column 3 text: ''
+  main/stories/stories: <p>Check out the video's below and discover our vision for
+    the future of Indigenous leadership in Australia.</p>
+---
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='content-type'>
+		<meta charset='utf-8'>
+		<title>
+			{% if page.seo_title %}{{ page.seo_title }} - {{ site.name }}{% else %}{{ site.seo_title }}{% endif %}
+		</title>
+		<meta content='CareerTrackers' name='generator'>
+		<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+		{% csrf_meta %}
+		<link href="{{ 'logo.png' | theme_image_url }}" rel='shortcut icon'>
+		{{ 'bootstrap.min.css' | stylesheet_tag: 'all' }}
+		{{ 'font-awesome.min.css' | stylesheet_tag: 'all' }}
+		{{ 'styles.css' | stylesheet_tag: 'all' }}
+		{{ 'datepicker.css' | stylesheet_tag }}
+		{{ 'bootstrapValidator.min.css' | stylesheet_tag }}
+		<!--[if lt IE 9]>
+{{ '//html5shim.googlecode.com/svn/trunk/html5.js' | javascript_tag }}
+<![endif]-->
+
+	</head>
+	<body>
+		<div id='fb-root'></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		{% include header %}
+		{% assign flash_message = session.flash.message%}
+		{% case flash_message['status'] %}
+		{% when 'success' %}
+		<div class='alert alert-success alert-dismissable'>
+			<button aria-hidden='true' class='close' data-dismiss='alert' type='button'>×</button>
+			<strong>Congratulations!</strong>
+			{{flash_message['message']}}
+		</div>
+		{% when 'error' %}
+		<div class='alert alert-danger alert-dismissable'>
+			<button aria-hidden='true' class='close' data-dismiss='alert' type='button'>×</button>
+			<strong>Error!</strong>
+			{{flash_message['message']}}
+		</div>
+		{% endcase %}
+		{% block main %}
+		<div class='container-fluid light-background padded-top '>
+
+			<div class='col-md-7 visible-lg visible-md hard-left'>
+				<div class='carousel slide' data-ride='carousel' id='homeCarousel'>
+					<ol class='carousel-indicators'>
+						{% for carousel in contents.carousel %}
+						{% if forloop.first %}
+						<li class='active' data-slide-to='0' data-target='#homeCarousel'></li>
+						{% else %}
+						<li data-slide-to='{{forloop.index0}}' data-target='#homeCarousel'></li>
+						{% endif %}
+						{% endfor %}
+					</ol>
+					<div class='carousel-inner'>
+						{% for carousel in contents.carousel %}
+						{% if forloop.first %}
+						<div class='item active'>
+							<img alt='{{carousel.title | escape }}' src='{{carousel.image.url | escape }}'>
+							<div class='container'>
+								<div class='carousel-caption'>
+									<p>{{carousel.caption | escape }}</p>
+								</div>
+							</div>
+						</div>
+						{% else %}
+						<div class='item'>
+							<img alt='{{carousel.title | escape }}' src='{{carousel.image.url | escape }}'>
+							<div class='container'>
+								<div class='carousel-caption'>
+									<p>{{carousel.caption | escape }}</p>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+						{% endfor %}
+					</div>
+					<a class='left carousel-control' data-slide='prev' href='#homeCarousel'>
+						<span class='glyphicon glyphicon-chevron-left'></span>
+					</a>
+					<a class='right carousel-control' data-slide='next' href='#homeCarousel'>
+						<span class='glyphicon glyphicon-chevron-right'></span>
+					</a>
+				</div>
+			</div>
+			<div class='col-md-5  '>
+				<h3 class='register'>Register your interest</h3>
+				<ul class='nav nav-tabs'>
+					<li class='active'>
+						<a data-toggle='tab' href='#students'>Students</a>
+					</li>
+					<li>
+						<a data-toggle='tab' href='#employers'>Employers</a>
+					</li>
+					<!--<li>
+<a data-toggle='tab' href='#jobseeker'>Join our Team!</a>
+</li>-->
+				</ul>
+				<div class='tab-content'>
+					<div class='tab-pane active col-md-11' id='students'>
+						<form id="student-form" action='/students'  method='POST' role='form'>
+							{% csrf_param %}
+							<fieldset>
+								<div class='form-group'>
+									<div class='form-inline'>
+										<div class='form-group'>
+											<label class='sr-only' for='firstName'>First Name</label>
+											<input class='form-control' id='firstName' name='student[first_name]' placeholder='First name' type='text'>
+										</div>
+										<div class='form-group'>
+											<label class='sr-only' for='lastName'>Last Name</label>
+											<input class='form-control' id='lastName' name='student[last_name]' placeholder='Last name' type='text'>
+										</div>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='sr-only' for='email'>Email</label>
+									<div class='left-inner-addon'>
+										<i class='fa fa-envelope-o fa-fw'></i>
+										<input class='form-control' id='email' name='student[email]' placeholder='Email address' type='text'>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='control-label' for='phone'>Phone</label>
+									<input class='form-control' id='phone' name='student[phone]' placeholder='Phone' type='text'>
+								</div>
+                                
+                                <div class='form-group'>
+									<label class='control-label' for='state'>State</label>
+									<select class='form-control' id='state' name='student[state]'>
+										<option selected='' value=''></option>
+                                        <option value='QLD'>Queensland</option>
+                                        <option value='ACT'>Australian Capital Territory</option>
+										<option value='NSW'>New South Wales</option>
+										<option value='NT'>Northern Territory</option>
+                                        <option value='SA'>South Australia</option>
+                                        <option value='TAS'>Tasmania</option>
+										<option value='VIC'>Victoria</option>
+                                        <option value='WA'>Western Australia</option>
+									</select>
+								</div>
+
+
+								<div class='form-group'>
+									<label class='control-label' for='university'>University</label>
+									<select class='form-control' id='university' name='student[university]'>
+										<option selected='' value=''></option>
+										<option value='Australian Catholic University'>Australian Catholic University</option>
+										<option value='Australian National University'>Australian National University</option>
+										<option value='Australia Film, Television and Radio School'>Australia Film, Television and Radio School</option>
+										<option value='Billy Blue'>Billy Blue</option>
+										<option value='Bond University'>Bond University</option>
+										<option value='Central Queensland University'>Central Queensland University</option>
+										<option value='Charles Darwin University'>Charles Darwin University</option>
+										<option value='Charles Sturt University'>Charles Sturt University</option>
+										<option value='Curtin University of Technology'>Curtin University of Technology</option>
+										<option value='Deakin University'>Deakin University</option>
+										<option value='Edith Cowan University'>Edith Cowan University</option>
+										<option value='Flinders University'>Flinders University</option>
+										<option value='Griffith University'>Griffith University</option>
+										<option value='James Cook University'>James Cook University</option>
+										<option value='La Trobe University'>La Trobe University</option>
+										<option value='Macquarie University'>Macquarie University</option>
+										<option value='Monash University'>Monash University</option>
+										<option value='Murdoch University'>Murdoch University</option>
+										<option value='Open Universities'>Open Universities</option>
+										<option value='Queensland University of Technology'>Queensland University of Technology</option>
+										<option value='RMIT University'>RMIT University</option>
+										<option value='Southern Cross University'>Southern Cross University</option>
+										<option value='Swinburne University of Technology'>Swinburne University of Technology</option>
+										<option value='University of Adelaide'>University of Adelaide</option>
+										<option value='University of Ballarat'>University of Ballarat</option>
+										<option value='University of Canberra'>University of Canberra</option>
+										<option value='University of Melbourne'>University of Melbourne</option>
+										<option value='University of New England'>University of New England</option>
+										<option value='University of New South Wales'>University of New South Wales</option>
+										<option value='University of Newcastle'>University of Newcastle</option>
+										<option value='University of Notre Dame'>University of Notre Dame</option>
+										<option value='University of Queensland'>University of Queensland</option>
+										<option value='University of South Australia'>University of South Australia</option>
+										<option value='University of Southern Queensland'>University of Southern Queensland</option>
+										<option value='University of Sydney'>University of Sydney</option>
+										<option value='University of Tasmania'>University of Tasmania</option>
+										<option value='University of Technology Sydney'>University of Technology Sydney</option>
+										<option value='University of Western Australia'>University of Western Australia</option>
+										<option value='University of Wollongong'>University of Wollongong</option>
+										<option value='University of the Sunshine Coast'>University of the Sunshine Coast</option>
+										<option value='Western Sydney University'>Western Sydney University</option>
+										<option value='Victoria University'>Victoria University</option>
+										<option value='Other'>Other</option>
+									</select>
+								</div>
+								<div class='form-group'>
+									<label class='control-label' for='degree'>Degree Area</label>
+									<select class='form-control' id='degree' name='student[degree]'>
+										<option selected='' value=''></option>
+										<option value='Agriculture and Environment'>Agriculture and Environment</option>
+										<option value='Architecture, Design &amp; Planning'>Architecture, Design & Planning</option>
+										<option value='Arts &amp; Social Sciences'>Arts & Social Sciences</option>
+										<option value='Business'>Business</option>
+										<option value='Education and Social Work'>Education and Social Work</option>
+										<option value='Engineering &amp; IT'>Engineering & IT</option>
+										<option value='Health Science'>Health Science</option>
+										<option value='Law'>Law</option>
+										<option value='Science'>Science</option>
+										<option value='Other'>Other</option>
+									</select>
+								</div>
+
+								<div class='form-group'>
+									<label class='control-label' for='stream'>Stream</label>
+									<select class='form-control' id='stream' name='student[stream]'>
+										<option selected='' value=''></option>
+										<option value='University'>University</option>
+										<option value='Pre-University'>Pre-University</option>
+									</select>
+								</div>
+								<div class='form-group'>
+									<label class='control-label' for='source'>How did you hear about us?</label>
+									<select class='form-control' id='source' name='student[source]'>
+										<option selected='' value=''></option>
+										<option value='University Referral'>University Referral</option>
+										<option value='Community Partner'>AIME, Waratahs, Queensland Reds, </option>
+										<option value='Student Referral'>Family and Friends</option>
+										<option value='Student Ambassador'>Student Ambassador</option>
+										<option value='Student Advisor'>Student Advisor on Campus</option>
+										<option value='Other'>Other</option>
+									</select>
+								</div>
+
+								<div class='form-group'>
+									<input type="checkbox" id="proof" name='student[proof]' value="first_checkbox"> I identify as Aboriginal and/or Torres Strait Islander
+								</div>
+								<div class='form-group pull-right'>
+									<button class='btn orange-button' type='submit'>Submit</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class='tab-pane col-md-11' id='employers'>
+						<p class='panel-body'>
+							To request more information or speak to a CareerTrackers representative please fill in your details below.
+						<form action='/employers' class='form-horizontal' id='employers-form' method='POST' role='form'>
+							{% csrf_param %}
+							<fieldset>
+								<div class='form-group'>
+									<label class='col-sm-2 control-label' for='name'>Name</label>
+									<div class='col-sm-10'>
+										<input class='form-control' name='employer[name]' placeholder='Name' type='text'>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='col-sm-2 control-label' for='role'>Company</label>
+									<div class='col-sm-10'>
+										<input class='form-control' name='employer[company]' placeholder='Company' type='text'>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='col-sm-2 control-label' for='role'>Role</label>
+									<div class='col-sm-10'>
+										<input class='form-control' name='employer[role]' placeholder='Role' type='text'>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='col-sm-2 control-label' for='role'>City</label>
+									<div class='col-sm-10'>
+										<input class='form-control' name='employer[city]' placeholder='City' type='text'>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='col-sm-2 control-label' for='role'>Phone</label>
+									<div class='col-sm-10'>
+										<input class='form-control' name='employer[phone]' placeholder='Phone' type='text'>
+									</div>
+								</div>
+								<div class='form-group'>
+									<label class='col-sm-2 control-label' for='email'>Email</label>
+									<div class='col-sm-10'>
+										<input class='form-control' name='employer[email]' placeholder='Email' type='text'>
+									</div>
+								</div>
+
+								<div class='form-group pull-right'>
+									<button class='btn orange-button' type='submit'>Submit</button>
+								</div>
+							</fieldset>
+						</form>
+						</p>
+				</div>
+
+
+			</div>
+		</div>
+
+		</div>
+	{% block middle_content %}
+	<div class='container-fluid dark-background homepage-strip'>
+		<div class='container headings'></div>
+		<div class='container'>
+			<div class='col-md-4 text-center'>
+				<h2>{% editable_text 'column 1 title', priority: 6, format: "raw" %}Mission{% endeditable_text %}</h2>
+				{% editable_text 'column 1 text', priority: 5 %}
+				<p>Our innovative and comprehensive program gives Indigenous university students the opportunity to fulfill their career aspirations and equip them with the tools needed to become leaders in the private sector and wider community.</p>
+				{% endeditable_text %}
+			</div>
+			<div class='col-md-4 text-center'>
+				<h2>{% editable_text 'column 2 title', priority: 4, format: "raw" %}Values{% endeditable_text %}</h2>
+				{% editable_text 'column 2 text', priority: 3 %}
+				Students at core,
+				Collaboration,
+				Respect,
+				Integrity,
+				Responsibility,
+				Accountability.
+				{% endeditable_text %}
+			</div>
+			<div class='col-md-4 text-center'>
+				<h2>{% editable_text 'column 3 title', priority: 2, format: "raw" %}Vision{% endeditable_text %}</h2>
+				{% editable_text 'column 3 text', priority: 1 %}
+				<p>Our vision is to create a community of Indigenous professionals to represent the voices of Indigenous Australians from the bush to the boardroom.</p>
+				{% endeditable_text %}
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+	{% block stories %}
+	<div class='container-fluid white-background'>
+		<div class='container marketing'>
+			<div class='page-header container text-center white-background'>
+				<h1>Stories</h1>
+				<div class='lead'>
+					{% editable_text 'stories' %}
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+					{% endeditable_text %}
+				</div>
+			</div>
+			<div class='row'>
+				{% for story in contents.stories %}
+				<div class='col-lg-4'>
+					<img alt='{{story.student_name | escape }}' src='{{story.image.url | escape }}'>
+					<h2>{{story.student_name | escape }}</h2>
+					<p>{{story.description | escape }}</p>
+					<p>
+						<button class='btn btn-default' data-target="{{ '#' | concat: story._slug, '-modal' }}" data-toggle='modal'>
+							<i class='fa fa-play-circle'></i>
+							Play video
+						</button>
+					</p>
+					<div aria-hidden='true' class='modal fade' id='{{story._slug}}-modal' role='dialog' tabindex='-1'>
+						<div class='modal-dialog'>
+							<div class='modal-content'>
+								<div class='modal-header'>
+									<button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+									<h2 class='modal-title' id='myModalLabel'>{{story.student_name}}</h2>
+								</div>
+								<div class='modal-body'>
+									<div class='player' id='{{story._slug}}-video' src='{{story.youtube_video_url | escape}}'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+	{% endblock %}
+	{% include footer %}
+	{{ 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | javascript_tag }}
+	{{ 'bootstrap.min.js' | javascript_tag }}
+	{{ 'bootstrap-datepicker.js' | javascript_tag }}
+	{{ 'docs.min.js' | javascript_tag }}
+	{{ 'player.js' | javascript_tag }}
+	{{ 'nod.min.js' | javascript_tag }}
+	{{ 'spin.js' | javascript_tag}}
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-49035951-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		$(document).ready(function() {
+			$('.date').datepicker({
+				format: "dd/mm/yyyy",
+				todayBtn: "linked",
+				autoclose: true,
+				todayHighlight: true
+			});
+		});
+	</script>
+	{% block javascripts %}
+	<script>
+
+		$(document).ready(function() {
+
+			if ($( "#student-form" ).length) {
+				var metrics = [
+					[ "[name='student[last_name]']", 'presence', 'Last name is required' ],
+                    [ "[name='student[first_name]']", 'presence', 'First name is required' ],
+                    [ "[name='student[phone]']", 'presence', 'Phone Number is required' ],
+                    [ "[name='student[email]']", 'presence', 'Email is required' ],
+                    [ "[name='student[email]']", 'email', 'Invalid email address' ],
+                    [ "[name='student[state]']", 'presence', 'State is required' ],
+                    [ "[name='student[university]']", 'presence', 'University is required' ],
+                    [ "[name='student[degree]']", 'presence', 'Degree Area is required' ],
+                    [ "[name='student[stream]']", 'presence', 'Stream is required' ],
+                    [ "[name='student[source]']", 'presence', 'Please tell us how you heard about CareerTrackers' ],
+                    [ "[name='student[proof]']", 'presence', 'You must identify as Aboriginal or Torres Strait Islander to be eligible for the program' ],
+				];
+
+				$( "#student-form" ).nod( metrics , {
+					groupSelector: ".form-group",
+					groupClass: "has-error",
+					helpSpanDisplay: "help-block small"
+				});
+			}
+
+			if ($( "#employers-form" ).length) {
+				var metrics = [
+					[ "[name='employer[name]']", 'presence', 'Name is required' ],
+					[ "[name='employer[company]']", 'presence', 'Company name is required' ],
+					[ "[name='employer[email]']", 'presence', 'Email address is required' ],
+					[ "[name='employer[email]']", 'email', 'Invalid email address' ],
+					[ "[name='employer[phone]']", 'presence', 'Phone is required' ],
+					[ "[name='employer[role]']", 'presence', 'Role is required' ],
+					[ "[name='employer[city]']", 'presence', 'City is required' ]
+
+				];
+
+				$( "#employers-form" ).nod( metrics , {
+					groupSelector: ".form-group",
+					groupClass: "has-error",
+					helpSpanDisplay: "help-block small"
+				});
+			}
+
+			function postToGoogle(){
+				var firstName = $("#firstName").val();
+				var lastName = $("#lastName").val();
+				var email = $("#email").val();
+				var phone = $("#phone").val();
+				var university = $("#university").val();
+				var degree = $("#degree").val();
+				var stream = $("#stream").val();
+				var source = $("#source").val();
+                var state = $("#state").val();
+				var ajaxData = {"firstName" : firstName,
+								"lastName" : lastName,
+								"email" : email,
+								"phone" : phone,
+								"university" : university,
+								"degree" : degree,
+								"stream" : stream,
+								"source" : source,
+                                "state" : state
+							   }
+
+				$.ajax({
+					type: "POST",
+					//url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
+					url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbxmnCMs1yYh5FagsODmhh0I4nb_T0EdDWktAXAG7uQXwQM5hhrU/exec",
+					data: JSON.stringify(ajaxData),
+					dataType: "json",
+					statusCode: {
+						0: function() {
+							console.log('success');//Success message
+						},
+						200: function() {
+							console.log('success');//Success Message
+						}
+					},
+					xhrFields: {
+						withCredentials: true
+					}
+				});
+			}
+
+			$('#student-form').submit(function() {
+				postToGoogle();
+				//return false;
+			});
+
+		});
+	</script>
+	<script>
+		var opts = {
+			lines: 13, // The number of lines to draw
+			length: 20, // The length of each line
+			width: 10, // The line thickness
+			radius: 30, // The radius of the inner circle
+			corners: 1, // Corner roundness (0..1)
+			rotate: 0, // The rotation offset
+			direction: 1, // 1: clockwise, -1: counterclockwise
+			color: '#000', // #rgb or #rrggbb or array of colors
+			speed: 1, // Rounds per second
+			trail: 60, // Afterglow percentage
+			shadow: false, // Whether to render a shadow
+			hwaccel: false, // Whether to use hardware acceleration
+			className: 'spinner', // The CSS class to assign to the spinner
+			zIndex: 2e9, // The z-index (defaults to 2000000000)
+			top: '50%', // Top position relative to parent
+			left: '50%' // Left position relative to parent
+		};
+
+		var target = document.getElementById('spinner');
+		var spinner = new Spinner(opts).spin(target);
+	</script>
+	{% endblock %}
+	</body>
+</html>

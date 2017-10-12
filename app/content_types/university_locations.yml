@@ -1,0 +1,23 @@
+---
+name: University Locations
+description: University Locations / State
+slug: university_locations
+label_field_name: location
+order_by: manually
+order_direction: asc
+fields:
+- location:
+    label: location
+    type: string
+    required: true
+    unique: false
+    localized: false
+- universities:
+    label: universities
+    type: has_many
+    required: true
+    unique: false
+    localized: false
+    class_name: universities
+    inverse_of: location
+    ui_enabled: true

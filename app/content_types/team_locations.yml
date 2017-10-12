@@ -1,0 +1,23 @@
+---
+name: Team locations
+description: Team locations
+slug: team_locations
+label_field_name: location
+order_by: manually
+order_direction: asc
+fields:
+- location:
+    label: Location
+    type: string
+    required: true
+    unique: false
+    localized: false
+- team_members:
+    label: Team Members
+    type: has_many
+    required: true
+    unique: false
+    localized: false
+    class_name: team_members
+    inverse_of: location
+    ui_enabled: true

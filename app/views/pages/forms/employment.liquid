@@ -1,0 +1,234 @@
+---
+title: Employment Application
+slug: employment
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 106
+seo_title: CareerTrackers Employment Application
+---
+{% extends parent %}
+{% block main %}
+<script type="application/javascript">
+    function CheckRole(val){
+        if(val=='Other'){
+            $("#employment_extra").removeClass("hide");
+            console.log("hit");
+        }else{
+            $("#employment_extra").addClass("hide");
+        }
+            
+            
+    }
+</script>
+<div class='container-fluid'>
+    {% include page_header %}
+    <div class="page-header orange-dotted-border-bottom">
+        <form id="goals_aspiration"action='/interns/employment' class='form-horizontal' method='POST' novalidate='novalidate'  enctype='multipart/form-data' method='POST' role='form'>
+            {% assign contract = session['employment'] %}
+            {% csrf_param %}
+            <h3>
+
+            </h3>
+            <hr>
+            <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+                <fieldset>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='name'>First Name <span style="color: red">*</span></label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' required id='first_name' name='employment[first_name]' placeholder='First Name' type='text' value="{{params['first_name']}}" >
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='name'>Last Name <span style="color: red">*</span></label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='last_name' name='employment[last_name]' placeholder='Last Name' type='text' value="{{params['last_name']}}">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='number'>Best Contact Number <span style="color: red">*</span></label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='number' name='employment[number]' placeholder='Phone Number' type='text' value="{{params['number']}}">
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='email'>Email <span style="color: red">*</span></label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='email' name='employment[email]' placeholder='Email' type='email' value="{{params['email']}}">
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='enrolment_status'>
+                            Position Applying for <span style="color: red">*</span>
+                        </label>
+                        <div class='col-sm-5'>
+                            <!--<input class='form-control' id='enrolment_status' name='ics[enrolment_status]' type='text' value="{%if params['enrolment_status']%}{{'full-time'}}{%else%}{{'full-time'}}{%endif%}" >-->
+                            <select class='form-control' id='position' name='employment[position]' type='text' value="{{params['position']}}" onchange='CheckRole(this.value)'>
+                                <option value = "">Position</option>
+                                {% if params['position'] == "Intern Advisor" %}
+                                <option selected='' value = "{%if params['position']%}{{'Intern Advisor'}}{%else%}{{'Intern Advisor'}}{%endif%}">Intern Advisor</option>
+                                {% else %}
+                                <option value = "{%if params['position']%}{{'Intern Advisor'}}{%else%}{{'Intern Advisor'}}{%endif%}">Intern Advisor</option>
+                                {% endif %}
+                                {% if params['position'] == "Program Manager" %}
+                                <option selected='' value="Program Manager">Program Manager</option>
+                                {% else %}
+                                <option value="Program Manager">Program Manager</option>
+                                {% endif %}
+                                {% if params['position'] == "Other" %}
+                                <option selected='' value = "{%if params['position']%}{{'Other'}}{%else%}{{'Other'}}{%endif%}">Other</option>
+                                {% else %}
+                                <option value = "{%if params['position']%}{{'Other'}}{%else%}{{'Other'}}{%endif%}">Other</option>
+                                {% endif %}
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <div id="employment_extra" class='hide form-group'>
+                        <label class='col-sm-3 control-label' for='extra'>
+                            Which role are you applying for? <span style="color: red">*</span>
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='extra' name='employment[extra]' placeholder='Roles' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='region'>
+                            Region <span style="color: red">*</span>
+                        </label>
+                        <div class='col-sm-5'>
+                            <!--<input class='form-control' id='enrolment_status' name='ics[enrolment_status]' type='text' value="{%if params['enrolment_status']%}{{'full-time'}}{%else%}{{'full-time'}}{%endif%}" >-->
+                            <select class='form-control' id='region' name='employment[region]' type='text' value="{{params['region']}}">
+                                <option value = "">Region Applying for</option>
+                                {% if params['position'] == "NSW / Sydney" %}
+                                <option selected='' value = "{%if params['region']%}{{'NSW / Sydney'}}{%else%}{{'NSW / Sydney'}}{%endif%}">NSW / Sydney</option>
+                                {% else %}
+                                <option value = "{%if params['region']%}{{'NSW / Sydney'}}{%else%}{{'NSW / Sydney'}}{%endif%}">NSW / Sydney</option>
+                                {% endif %}
+                                {% if params['position'] == "QLD / Brisbane" %}
+                                <option selected='' value = "{%if params['region']%}{{'QLD / Brisbane'}}{%else%}{{'QLD / Brisbane'}}{%endif%}">QLD / Brisbane</option>
+                                {% else %}
+                                <option value = "{%if params['region']%}{{'QLD / Brisbane'}}{%else%}{{'QLD / Brisbane'}}{%endif%}">QLD / Brisbane</option>
+                                {% endif %}
+                                {% if params['position'] == "South West / Victoria" %}
+                                <option selected='' value = "{%if params['region']%}{{'South West / Victoria'}}{%else%}{{'South West / Victoria'}}{%endif%}">South West / Victoria</option>
+                                {% else %}
+                                <option value = "{%if params['region']%}{{'Other'}}{%else%}{{'South West / Victoria'}}{%endif%}">South West / Victoria</option>
+                                {% endif %}
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <div id="employment_extra" class='hide form-group'>
+                        <label class='col-sm-3 control-label' for='extra'>
+                            Which role are you applying for? <span style="color: red">*</span>
+                        </label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='extra' name='employment[extra]' placeholder='Roles' type='text'>
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='resume_file'>Resume <span style="color: red">*</span></label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' name='resume_file' type='file'>
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='cover_letter_file'>Cover Letter <span style="color: red">*</span></label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' name='cover_letter_file' type='file'>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class='row'>
+                        <div class='col-sm-12'>
+                            <div class='form-group'>
+                                <div class='col-sm-2 pull-right'>
+                                    <button class='btn orange-button' type='submit'>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+            </div>
+        {% endblock %}
+
+        {% block javascripts %}
+        {{ 'validation' | javascript_tag }}
+        <script>
+
+
+            $(document).ready(function() {
+
+                function CheckRole(val){
+                    if(val=='Other')
+                        $("#extra").addClass("hide");
+                    else  
+                        $("#extra").removeClass("hide");
+                }
+
+                var metrics = [
+                    [ "[name='employment[first_name]']", 'presence', 'Please provide your First name' ],
+                    [ "[name='employment[last_name]']", 'presence', 'Please provide your Last name' ],
+                    [ "[name='employment[number]']", 'presence', 'A contact number is required to contact you' ],
+                    [ "[name='employment[region]']", 'presence', 'Region is required and cannot be empty' ],
+                    [ "[name='employment[position]']", 'presence', 'Position is required and cannot be empty' ],
+                    [ "[name='employment[email]']", 'presence', 'Email is required and cannot be empty' ],
+                    [ "[name='employment[email]']", 'email', 'Invalid Email' ],
+                    [ "[name='resume_file']", 'presence', 'Resume is required' ],
+                    [ "[name='cover_letter_file']", 'presence', 'Cover Letter is required' ],
+                   
+                    [ "[name='resume_file']",
+                     function(x) {
+
+                         return validateFileExtension($("[name='resume_file']"),["jpg","pdf","jpeg","gif","png","doc","docx","xls","xlsx","ppt","txt"])
+
+
+                     }, "Only pdf/office/image files are allowed."],
+                    [ "[name=resume_file]",
+                     function(x) {
+
+                         return validateFileSize($("[name=resume_file]"),3145728)
+                     }, "Document size should be less than 3MB."],
+                    /*
+                    [ "[name='cover_letter_file']",
+                      function(x) {
+
+                              return validateFileExtension($("[name='cover_letter_file']"),["jpg","pdf","jpeg","gif","png","doc","docx","xls","xlsx","ppt","txt"])
+
+
+                      }, "Only pdf/office/image files are allowed."],
+                    [ "[name=cover_letter_file]",
+                      function(x) {
+
+                              return validateFileSize($("[name=cover_letter_file]"),3145728)
+                      }, "Document size should be less than 3MB."],
+
+*/
+                ];
+                
+                $( "form" ).nod( metrics , {
+                    groupSelector: ".form-group",
+                    groupClass: "has-error",
+                    helpSpanDisplay: "help-block small",
+                });
+
+
+
+            });
+
+        </script>
+
+        {% endblock %}
