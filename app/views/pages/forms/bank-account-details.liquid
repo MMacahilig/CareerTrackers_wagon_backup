@@ -185,20 +185,37 @@ seo_title: Bank Account Details
 					</div>
 
 				</div>
+                
+                <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='mobile'>
+                            Mobile Number
+                        </label>
+                        <div class='col-sm-5'>
+                            <!--<input class='mobile form-control' id="mobile" name='ics[mobile]' placeholder='' type='text' value="{{params['mobile']}}">-->
+							<div class='input-group pull-left'>
 
-				<div class='form-group'>
+								<input class='digit-box form-control' id="phone_1" maxlength='1' name='ics[phone_1]' type='text' value="{{params['phone_1']}}">
 
-					<label class='col-sm-3 small control-label' for='mobile'>
+								<input class='digit-box form-control' id="phone_2" maxlength='1' name='ics[phone_2]' type='text' value="{{params['phone_2']}}">
 
-						Mobile
+								<input class='digit-box form-control' id="phone_3" maxlength='1' name='ics[phone_3]' type='text' value="{{params['phone_3']}}">
 
-					</label>
+								<input class='digit-box form-control' id="phone_4" maxlength='1' name='ics[phone_4]' type='text' value="{{params['phone_4']}}">
 
-					<div class='col-sm-5'>
-						<input class='mobile form-control' id="mobile" name='bank[mobile]' placeholder='' type='text' value="{%if params['mobile']%}{{params['mobile']}}{%else%}{{ics['mobile']}}{%endif%}">
-					</div>
+								<input class='digit-box form-control' id="phone_5" maxlength='1' name='ics[phone_5]' type='text' value="{{params['phone_5']}}">
 
-				</div>
+								<input class='digit-box form-control' id="phone_6" maxlength='1' name='ics[phone_6]' type='text' value="{{params['phone_6']}}">
+
+								<input class='digit-box form-control' id="phone_7" maxlength='1' name='ics[phone_7]' type='text' value="{{params['phone_7']}}">
+
+								<input class='digit-box form-control' id="phone_8" maxlength='1' name='ics[phone_8]' type='text' value="{{params['phone_8']}}">
+
+								<input class='digit-box form-control' id="phone_9" maxlength='1' name='ics[phone_9]' type='text' value="{{params['phone_9']}}">
+								
+								<input class='digit-box form-control' id="phone_10" maxlength='1' name='ics[phone_10]' type='text' value="{{params['phone_10']}}">
+							</div>
+                        </div>
+                    </div>
 
 				<div class='form-group'>
 
