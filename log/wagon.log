@@ -21478,3 +21478,122 @@ Found page "Home" [index]
 [0;32;49mCompleted 200 OK in 446.9ms
 
 [0m
+[0;97;49mStarted GET "/" at 2017-10-16 11:19:05 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 133.9ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-16 11:23:25 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 135.1ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-16 11:23:29 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.1ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-16 11:23:38 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.7ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-17 12:58:46 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 135.2ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-17 12:58:52 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 72.1ms
+
+[0m
+[0;97;49mStarted GET "/about-us/overview" at 2017-10-17 12:58:55 +1000[0m
+Detecting locale EN
+Found page "Overview" [about-us/overview]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.4ms
+
+[0m
+[0;97;49mStarted GET "/about-us/our-program" at 2017-10-17 12:58:59 +1000[0m
+Detecting locale EN
+Found page "Our Program" [about-us/our-program]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 10.9ms
+
+[0m
+[0;97;49mStarted GET "/about-us/our-team" at 2017-10-17 12:59:02 +1000[0m
+Detecting locale EN
+Found page "Our Team" [about-us/our-team]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.8ms
+
+[0m
+[0;97;49mStarted GET "/about-us/overview" at 2017-10-17 12:59:04 +1000[0m
+Detecting locale EN
+Found page "Overview" [about-us/overview]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.4ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-17 12:59:07 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 10.8ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-17 13:00:00 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 11.0ms
+
+[0m
