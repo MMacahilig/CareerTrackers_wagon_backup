@@ -21597,3 +21597,117 @@ Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
 [0;32;49mCompleted 200 OK in 11.0ms
 
 [0m
+[0;97;49mStarted GET "/" at 2017-10-17 21:46:59 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 150.9ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-17 21:47:03 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.5ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-17 21:47:08 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 10.5ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-17 21:47:16 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 10.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-17 21:47:55 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.0ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-17 21:48:02 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 10.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-18 09:14:10 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-18 09:14:25 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.4ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-18 09:31:09 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 81.7ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-18 09:31:11 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 11:50:17 +1000
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-18 11:50:32 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 69.4ms
+
+[0m
