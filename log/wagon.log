@@ -21478,3 +21478,33 @@ Found page "Home" [index]
 [0;32;49mCompleted 200 OK in 446.9ms
 
 [0m
+[0;97;49mStarted GET "/locomotive/pages" at 2017-10-18 10:33:22 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 15.7ms
+
+[0m
+[0;97;49mStarted GET "/locomotive/" at 2017-10-18 10:33:30 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 11.0ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-18 10:33:35 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 196.3ms
+
+[0m
+[0;97;49mStarted GET "/locomotive/sign_in" at 2017-10-18 10:34:09 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 39.4ms
+
+[0m

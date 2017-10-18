@@ -52,7 +52,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.11)
-    json (1.8.1)
+    json (1.8.2)
     less (2.2.2)
       commonjs (~> 0.2.6)
     listen (2.7.12)
