@@ -36,7 +36,7 @@ GEM
       multi_json (~> 1.0)
       rack
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    eventmachine (1.0.8)
     execjs (2.2.2)
     faker (0.9.5)
       i18n (~> 0.4)
