@@ -52,7 +52,7 @@ seo_title: ICS Expression of Interest (cont)
 
             <!-- Visible From Below -->
             <h3>
-                Item 1 - Cadet Details
+                Item 1 - Intern Details
             </h3>
             <hr>
             <div class='light-background padded-top padded-bottom'>
@@ -69,13 +69,6 @@ seo_title: ICS Expression of Interest (cont)
                             <input class='form-control' id='first_name' name='ics[first_name]' placeholder='First Name' type='text' value="{%if params['first_name']%}{{params['first_name']}}{%else%}{{intern['first_name']}}{%endif%}">
                         </div>
                     </div>
-                    <div class='form-group'>
-                        <label class='col-sm-3 control-label' for='initials'>Initials of other given names</label>
-                        <div class='col-sm-5'>
-                            <input class='form-control' id='initials' name='ics[initials]' placeholder='Initials' type='text' value="{{params['initials']}}">
-                        </div>
-                    </div>
-
 
                     <div class='form-group'>
                         <label class='col-sm-3 control-label' for='gender'>Gender</label>
@@ -156,6 +149,13 @@ seo_title: ICS Expression of Interest (cont)
                             </div>
                         </div>
                     </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='email'>Email address</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='email' name='ics[email]' placeholder='Email address' required='' type='email' value="{%if params['email']%}{{params['email']}}{%else%}{{intern['email']}}{%endif%}">
+                        </div>
+                    </div>
+                    
                     <!-- Spacer Start -->
                     <div class='form-group hide-form'>
                         <label class='col-sm-3 control-label' for='blank_space'>
@@ -176,12 +176,6 @@ seo_title: ICS Expression of Interest (cont)
                         </div>
                     </div>
                     <!-- Spacer End -->
-                    <div class='form-group'>
-                        <label class='col-sm-3 control-label' for='email'>Email address</label>
-                        <div class='col-sm-5'>
-                            <input class='form-control' id='email' name='ics[email]' placeholder='Email address' required='' type='email' value="{%if params['email']%}{{params['email']}}{%else%}{{intern['email']}}{%endif%}">
-                        </div>
-                    </div>
 
                     <div class='form-group no-margin-bottom'>
                         <label class='col-sm-3 control-label' for='residential_address_1'>
@@ -713,7 +707,7 @@ seo_title: ICS Expression of Interest (cont)
             </div>
 
             <h3>
-                Item 2 - Cadetship Plan
+                Item 2 - Internship Plan
             </h3>
             <hr>
             <div class='light-background padded-top padded-bottom'>
@@ -764,7 +758,7 @@ seo_title: ICS Expression of Interest (cont)
 
 
             <h3>
-                Item 3 - Cadet Certification
+                Item 3 - Intern Certification
             </h3>
             <hr>
             <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
@@ -781,7 +775,7 @@ seo_title: ICS Expression of Interest (cont)
                                 {% else %}
                                 <input type="checkbox" class="form-check-input" name='ics[certify_1]' value="value_1">
                                 {% endif %}
-                                &nbsp;I have checked my details at Item 1, and the details of the Cadetship Plan at Item 2 and certify that to the best of my knowledge that they are true and complete;
+                                &nbsp;I have checked my details at Item 1, and the details of the Internship Plan at Item 2 and certify that to the best of my knowledge that they are true and complete;
                             </label>
                         </div>
                     </div>
@@ -818,7 +812,7 @@ seo_title: ICS Expression of Interest (cont)
                                 {% else %}
                                 <input type="checkbox" class="form-check-input" name='ics[certify_5]' value="value_5">
                                 {% endif %}
-                                &nbsp;I am of Aboriginal and/or Torres Strait Islander descent; identify as an Australian Aboriginal and/or Torres Strait Islander; and am accepted as an Aboriginal and/or Torres Strait Islander in the community I live or have lived;
+                                &nbsp;I am of Australian Aboriginal and/or Torres Strait Islander descent; identify as an Australian Aboriginal and/or Torres Strait Islander; and am accepted as an Australian Aboriginal and/or Torres Strait Islander in the community I live or have lived;
                             </label>
                         </div>
                     </div>
@@ -977,7 +971,7 @@ I undertake to advise Centrelink of ICS, and the proposed commencement date as o
                     <div class=' form-group '>
 
                         <label class='col-sm-5 control-label' for='commencement_date'>
-                            Cadetship commencement date &nbsp;&nbsp;&nbsp;&nbsp;
+                            Internship commencement date &nbsp;&nbsp;&nbsp;&nbsp;
                         </label>
                         <div class='col-sm-5'>
                             <input class='date form-control' name='ics[commencement_date]' type='text' value='         /         /      '>
@@ -988,7 +982,7 @@ I undertake to advise Centrelink of ICS, and the proposed commencement date as o
                     <div class='form-group '>
 
                         <label class=' col-sm-5 control-label' for='cessation_date'>
-                            Cadetship expected cessation date
+                            Internship expected cessation date
                         </label>
                         <div class='col-sm-5'>
                             <input class='date form-control' name='ics[cessation_date]' type='text' value='         /         /      '>
