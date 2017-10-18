@@ -21747,3 +21747,83 @@ Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
 [0;32;49mCompleted 200 OK in 33.6ms
 
 [0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-18 13:11:04 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 13:12:11 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-18 13:12:14 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 13:12:38 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-18 13:12:40 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 13:19:16 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-18 13:19:19 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 34.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 13:19:49 +1000
+[0;97;49mStarted GET "/forms/tfn-declaration" at 2017-10-18 13:20:30 +1000[0m
+Detecting locale EN
+Found page "Tax File Number Declaration" [forms/tfn-declaration]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 13:21:51 +1000
+* Reloaded "pages", "snippets" at 2017-10-18 13:25:07 +1000
+* Reloaded "pages", "snippets" at 2017-10-18 13:37:13 +1000
+[0;97;49mStarted GET "/forms" at 2017-10-18 13:37:24 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 62.8ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-18 13:37:26 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 13:53:10 +1000
+* Reloaded "pages", "snippets" at 2017-10-18 13:53:30 +1000
