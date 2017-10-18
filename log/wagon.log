@@ -21827,3 +21827,35 @@ Found page "ICS Scholarship Expression of Interest" [forms/ics-application]
 [0m
 * Reloaded "pages", "snippets" at 2017-10-18 13:53:10 +1000
 * Reloaded "pages", "snippets" at 2017-10-18 13:53:30 +1000
+[0;97;49mStarted GET "/forms/tfn-declaration" at 2017-10-18 14:41:16 +1000[0m
+Detecting locale EN
+Found page "Tax File Number Declaration" [forms/tfn-declaration]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 14:41:55 +1000
+[0;97;49mStarted GET "/forms/tfn-declaration" at 2017-10-18 14:41:57 +1000[0m
+Detecting locale EN
+Found page "Tax File Number Declaration" [forms/tfn-declaration]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-18 14:46:13 +1000
+[0;97;49mStarted GET "/forms/tfn-declaration" at 2017-10-18 14:46:38 +1000[0m
+Detecting locale EN
+Found page "Tax File Number Declaration" [forms/tfn-declaration]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.8ms
+
+[0m
