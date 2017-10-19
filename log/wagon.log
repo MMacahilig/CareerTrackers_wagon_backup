@@ -21859,3 +21859,40 @@ Found page "Tax File Number Declaration" [forms/tfn-declaration]
 [0;32;49mCompleted 200 OK in 27.8ms
 
 [0m
+[0;97;49mStarted GET "/" at 2017-10-19 09:28:54 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 304.8ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-19 09:29:02 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 15.6ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-19 09:29:02 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 16.2ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-19 09:29:02 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 16.4ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-19 09:29:02 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 109.4ms
+
+[0m

@@ -24,6 +24,12 @@ fields:
     required: false
     unique: false
     localized: false
+- po_box:
+    label: PO Box
+    type: string
+    required: false
+    unique: false
+    localized: false
 - email:
     label: Email
     type: string

@@ -1,0 +1,27 @@
+---
+- Architecture:
+    _slug: architectur
+- Communications:
+    _slug: communications
+- Energy:
+    _slug: energy
+- Engineering:
+    _slug: engineering
+- Entertainment:
+    _slug: entertainment
+- Finance:
+    _slug: finance
+- Health Care:
+    _slug: health-care
+- Information Technology and Telecommunication:
+    _slug: information-technology
+- Law:
+    _slug: law
+- Metals + Mining:
+    _slug: metals-plus-mining
+- 'Non-governmental Organization ':
+    _slug: non-governmental-organization
+- Travel / Tourism:
+    _slug: travel-slash-tourism
+- Utilities:
+    _slug: utilities

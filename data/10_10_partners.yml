@@ -1,0 +1,178 @@
+---
+- CPB Contractors:
+    _slug: leighton
+    description: "The company was formed in Australia in 1949 by Englishman, Stanley
+      Leighton. In England, Stanley Leighton had been heavily involved in engineering
+      and infrastructure contracting, a key aspect of the Leighton Group’s success
+      today.\r\nThe Leighton Group now includes the diverse operating companies Thiess,
+      John Holland, Leighton Properties, and Leighton Asia, India and Offshore. Leighton
+      Contractors is the Leighton Group’s construction company and one of Australia’s
+      most recognised leaders. With around 200 project locations across Australia,
+      New Zealand, Papua New Guinea and South East Asia, Leighton provide a wide range
+      of capabilities and services."
+    image: /samples/10_10_partners/leighton/CPB_Contractor_300x200.png
+- Insurance Australia Group:
+    _slug: iag
+    description: "Insurance Australia Group Limited (IAG) is the parent company of
+      a general insurance group with controlled operations in Australia, New Zealand,
+      Thailand and Vietnam, employing more than 15,000 people. Its businesses underwrite
+      over $11 billion of premium per annum, selling insurance under many leading
+      brands, including: NRMA Insurance, CGU, SGIO, SGIC, Swann, WFI and Lumley Insurance
+      (Australia); NZI, State, AMI and Lumley Insurance (New Zealand); Safety and
+      NZI (Thailand); and AAA Assurance (Vietnam).\r\n"
+    image: /samples/10_10_partners/iag/new_iag_300x200_2.png
+- Westpac:
+    _slug: westpac
+    description: "Westpac Banking Corporation (Westpac) was founded in 1817 and was
+      the first bank established in Australia.\r\nWestpac began trading on 8 April,
+      1817 as the Bank of New South Wales with a single office in Macquarie Place,
+      Sydney. In 1982, with the merger of the Commercial Bank of Australia, it changed
+      its name to Westpac Banking Corporation. On 23 August 2002, Westpac was registered
+      as a public company limited by shares under the Australian Corporations Act
+      (2001). In December 2008, Westpac merged with St.George Bank Limited"
+    image: /samples/10_10_partners/westpac/Westpac_300x200.png
+- Lend Lease:
+    _slug: lend_lease_-_logo
+    description: At Lend Lease, we work with communities, clients and our colleagues
+      to create positive legacies from funding a project right through to developing
+      and constructing state of the art buildings and infrastructure, including hospitals,
+      roads and bridges.  We also create vibrant residential communities, productive
+      workplaces and retail destinations.
+    image: /samples/10_10_partners/lend_lease_-_logo/Lend_Lease_300x200.png
+- Qantas:
+    _slug: qantas
+    description: "Founded in the Queensland outback in 1920, Qantas has grown to be
+      Australia's largest domestic and international airline. Registered originally
+      as the Queensland and Northern Territory Aerial Services Limited (QANTAS), Qantas
+      is widely regarded as the world's leading long distance airline and one of the
+      strongest brands in Australia.\r\nWe have built a reputation for excellence
+      in safety, operational reliability, engineering and maintenance, and customer
+      service.\r\n\r\nThe Qantas Group's main business is the transportation of customers
+      using two complementary airline brands - Qantas and Jetstar. We also operate
+      subsidiary businesses including other airlines, and businesses in specialist
+      markets such as Q Catering.\r\n\r\nOur airline brands operate regional, domestic
+      and international services. The Group's broad portfolio of subsidiary businesses
+      ranges from Qantas Freight Enterprises to Qantas Frequent Flyer.\r\n\r\nWe employ
+      over 30,000 people with approximately 93 per cent of them based within Australia."
+    image: /samples/10_10_partners/qantas/Qantas_300x200.png
+- Herbert Smith Freehills:
+    _slug: herbert-smith-freehills
+    description: "As one of the world’s leading law firms, we advise many of the biggest
+      and most ambitious organisations across all major regions of the globe. Our
+      clients trust us with their most important transactions, disputes and projects
+      because of our ability to cut through complexity and mitigate risk.\r\n\r\nWe
+      can help you thrive in the global economy. Operating from over 20 offices spanning
+      Asia, Australia, Europe, the Middle East and the US, we can deliver whatever
+      expertise you need, wherever you need it.\r\n\r\nBecause technical ability alone
+      is not enough, we seek to build exceptional working relationships with our clients.
+      By doing so, we are able to develop a deeper understanding of our clients’ businesses,
+      provide commercially astute, innovative advice and create better business outcomes
+      for our clients. "
+    image: /samples/10_10_partners/herbert-smith-freehills/HSF_300x200.png
+- Commonwealth Bank:
+    _slug: cba
+    description: "The Commonwealth Bank is Australia’s leading provider of integrated
+      financial services including retail banking, premium banking, business banking,
+      institutional banking, funds management, superannuation, insurance, investment
+      and sharebroking products and services. The Group is one of the largest listed
+      companies on the Australian Securities Exchange and is included in the Morgan
+      Stanley Capital Global Index.\r\n\r\nThe key financial objective of the Group
+      is to have Total Shareholder Return in the top quartile of our Australian listed
+      peers over each rolling five-year period. Total Shareholder Return is calculated
+      as the growth in the value of the investment in the Group's shares, assuming
+      all dividends are reinvested in shares at the point dividends are paid.\r\n\r\nThe
+      Commonwealth Bank brand is the most recognised brand in the Australian financial
+      services industry. Other award-winning brands within the Group include our wealth
+      management business Colonial First State, our online broking service CommSec
+      and Bankwest.\r\n\r\nIn terms of scale, the Group has a strong domestic presence
+      with the largest customer base of any Australian bank and operates the largest
+      financial services distribution network in the country with the most points
+      of access."
+    image: /samples/10_10_partners/cba/CommBank_300x200.png
+- SJB:
+    _slug: sjb-1
+    description: ''
+    image: /samples/10_10_partners/sjb-1/sjb.png
+- COX:
+    _slug: cox
+    description: ''
+    image: /samples/10_10_partners/cox/cox.png
+- COX SJB:
+    _slug: sjb
+    _visible: false
+    description: We are leaders in the built environment, producing intelligent responses
+      that engage, activate, and serve those who use them. As professionals, we understand
+      the value of working with others to reveal opportunities and optimise design
+      outcomes, and that includes collaboration with clients, communities and user
+      stakeholders. As expected in our fields, we possess the expertise to provide
+      design that is intelligent, feasible, robust, fit for purpose as well as fresh
+      and life-enhancing. We build sustainability into our work and deliver urban
+      and design solutions that emerge from the places where they are located and
+      needs of people whom they serve.
+    image: /samples/10_10_partners/sjb/COX_SJB_300x200.png
+- GHD:
+    _slug: ghd
+    description: "GHD is one of the world’s leading professional services companies
+      operating in the global markets of water, energy and resources, environment,
+      property and buildings, and transportation. We provide engineering, architecture,
+      environmental and construction services to private and public sector clients.\r\nEstablished
+      in 1928 and privately owned by our people, GHD operates across five continents
+      – Asia, Australia, Europe, North and South America – and the Pacific region.
+      We employ more than 8500 people in 200+ offices to deliver projects with high
+      standards of safety, quality and ethics across the entire asset value chain.
+      Driven by a client-service led culture, we connect the knowledge, skill and
+      experience of our people with innovative practices, technical capabilities and
+      robust systems to create lasting community benefits.\r\n\r\nCommitted to sustainable
+      development, GHD improves the physical, natural and social environments of the
+      many communities in which we operate. We are guided by our workplace health,
+      safety, quality and environmental management systems, which are certified by
+      Lloyds Register Quality Assurance to the relevant international standards (ISO
+      and OHSAS).\r\n\r\nIn alignment with the global demands of water, energy and
+      urbanisation, our aim is to exceed the expectations of our clients and contribute
+      to their success.\r\n"
+    image: /samples/10_10_partners/ghd/ghd_new.png
+- Indigenous Business Australia:
+    _slug: iba
+    description: "Indigenous Business Australia (IBA) is a progressive, commercially
+      focused organisation that promotes and encourages self-management, self-sufficiency
+      and economic independence for Aboriginal and Torres Strait Islander peoples.\r\n\r\nIBA
+      is a significant contributor to the goals of the Australian Government’s Indigenous
+      Economic Development Strategy, aimed at closing the gap between the living standards
+      of Indigenous and other Australians."
+    image: /samples/10_10_partners/iba/IBA_300x200.png
+- Origin Energy:
+    _slug: origin-energy
+    description: Origin energy
+    image: /samples/10_10_partners/origin-energy/origin.png
+- Henry Davis York:
+    _slug: henry-davis-york
+    description: Henry Davis York
+    image: /samples/10_10_partners/henry-davis-york/HDY.png
+- NAB:
+    _slug: nab
+    description: New NAB
+    image: /samples/10_10_partners/nab/nab_10x10.png
+- Gadens:
+    _slug: test
+    description: ''
+    image: /samples/10_10_partners/test/gadens_-_1.png
+- Bupa:
+    _slug: bupa
+    description: ''
+    image: /samples/10_10_partners/bupa/Bupa.png
+- Dentons:
+    _slug: dentons
+    description: ''
+    image: /samples/10_10_partners/dentons/Screen_Shot_2017-02-09_at_3.49.39_pm_1.png
+- Broadspectrum:
+    _slug: broadspectrum
+    description: ''
+    image: /samples/10_10_partners/broadspectrum/broadspec10x10.png
+- Aecom:
+    _slug: aecom
+    description: ''
+    image: /samples/10_10_partners/aecom/Aecom_10x10.png
+- Aurizon:
+    _slug: aurizon
+    description: ''
+    image: /samples/10_10_partners/aurizon/aurizon10x10.png

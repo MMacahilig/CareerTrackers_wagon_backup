@@ -7,9 +7,10 @@
     _slug: nsw-and-act
 - QLD & NT:
     _slug: qld-and-nt
-- VIC:
-    _slug: vic
-- SA:
-    _slug: sa
-- WA:
+- SA & WA:
     _slug: wa
+- VIC & TAS:
+    _slug: vic-and-tas
+- SouthWest Region:
+    _slug: southwest-region
+    _visible: false

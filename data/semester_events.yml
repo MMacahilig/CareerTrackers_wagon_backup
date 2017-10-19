@@ -1,61 +1,125 @@
 ---
 - Program Orientation:
     _slug: program-orientation
-    event_date: 4 March - 28 March
+    event_date: 27 Feb - 31 March
     semester: semester-01
 - CV Writing & Company Match:
     _slug: cv-writing-and-company-match
-    event_date: 10 March - 11 April
+    event_date: 15 September
     semester: semester-01
 - Interview Preparation Training:
     _slug: interview-preparation-training
-    event_date: 31 March - 30 April
+    event_date: 3 April - 19 May
     semester: semester-01
 - Networking Event:
     _slug: networking-event
-    event_date: 1 April - 16 May
+    event_date: 10 April - 19 May
     semester: semester-01
 - Corporate Interview:
     _slug: corporate-interview
-    event_date: 5 May - 30 May
+    event_date: 24 April - 26 May
     semester: semester-01
 - Winter Kick-Off Workshop:
     _slug: winter-kick-off-workshop
-    event_date: 9 June - 29 June
+    event_date: 24 June - 2 July
     semester: semester-01
 - Winter Internship:
     _slug: winter-internship
-    event_date: 23 June - 25 July
+    event_date: 26 June - 28 July
     semester: semester-01
 - Program Orientation:
-    _slug: program-orientation-1
-    event_date: 4 August - 29 August
-    semester: semester-02
-- CV Writing & Company Match:
-    _slug: cv-writing-and-company-match-1
-    event_date: 11 August - 5 September
-    semester: semester-02
+    _slug: program-orientation-2
+    event_date: 31 July - 1 September
+    semester: 2016-semester-2
+- CV Writing and Company Match:
+    _slug: cv-writing-and-company-match-2
+    event_date: 14 August - 8 September
+    semester: 2016-semester-2
+- Networking Events:
+    _slug: networking-events
+    event_date: 11 September - 3 November
+    semester: 2016-semester-2
+- CV Submit:
+    _slug: cv-submit
+    event_date: 15 September
+    semester: 2016-semester-2
 - Interview Preparation Training:
-    _slug: interview-preparation-training-1
-    event_date: 1 September - 28 September
-    semester: semester-02
-- Networking Event:
-    _slug: networking-event-1
-    event_date: 8 September - 3 October
-    semester: semester-02
-- Corporate Interview:
-    _slug: corporate-interview-1
-    event_date: 29 September - 31 October
-    semester: semester-02
-- Summer Kick-Off Workshop:
-    _slug: summer-kick-off-workshop
-    event_date: 10 November - 30 November
-    semester: semester-02
-- Summer Internship:
-    _slug: summer-internship
-    event_date: 24 November 2014 - 13 February 2015
-    semester: semester-02
+    _slug: interview-preparations
+    event_date: 4 September - 6 October
+    semester: 2016-semester-2
+- Corporate Interviews:
+    _slug: interviews
+    event_date: 25 September - 27 October
+    semester: 2016-semester-2
+- Corporate Summer Kick-Off Workshop:
+    _slug: corporate-summer-kick-off-workshop
+    event_date: 6 - 10 November
+    semester: 2016-semester-2
+- 'Student Summer Kick-Off Workshop ':
+    _slug: student-summer-kick-off-workshop
+    event_date: 18 November - 26 November
+    semester: 2016-semester-2
+- Student Summer Internship:
+    _slug: student-internship
+    event_date: 20 November - 9 February
+    semester: 2016-semester-2
+- Leadership Development Institute 2018:
+    _slug: leadership-development-institute-2017
+    event_date: 30 January - 2 February
+    semester: 2016-semester-2
+- CV Submit:
+    _slug: cv-submit-1
+    event_date: 14 April
+    semester: semester-01
+- Christmas Shutdown:
+    _slug: christmas-shutdown
+    event_date: 25 December - 5 January
+    semester: 2016-semester-2
+- CV Submit:
+    _slug: cv-submit-2
+    event_date: 15 September
+    semester: semester-2-2017
+- Return Interns Confirmed:
+    _slug: return-interns-confirmed
+    event_date: 29 September
+    semester: semester-2-2017
+- Manager Induction:
+    _slug: manager-induction
+    event_date: 30 October - 17 November
+    semester: semester-2-2017
+- Summer Internship Commencement:
+    _slug: summer-internship-commencement
+    event_date: 20 November
+    semester: semester-2-2017
+- Program Day:
+    _slug: program-day
+    event_date: 24 November
+    semester: semester-2-2017
+- Christmas Office Closure:
+    _slug: christmas-office-closure
+    event_date: 25 December - 5 January
+    semester: semester-2-2017
+- Pre-University Internship:
+    _slug: pre-university-internship
+    event_date: 9 January - 9 February
+    semester: summer-2017-2018
 - Leadership Development Institute:
-    _slug: ldi-2015
-    event_date: 27 January - 30 January 2015
-    semester: semester-02
+    _slug: leadership-development-institute
+    event_date: 31 January - 2 February
+    semester: summer-2017-2018
+- Gala Dinner and Awards:
+    _slug: gala-dinner-and-awards
+    event_date: 1 February
+    semester: summer-2017-2018
+- End of Summer Presentation:
+    _slug: end-of-summer-presentation
+    event_date: 5 - 9 February
+    semester: summer-2017-2018
+- Internship Completion & Intern Evaluation:
+    _slug: internship-completion-and-intern-evaluation
+    event_date: 9 February
+    semester: summer-2017-2018
+- Intent to Return Forms Complete:
+    _slug: intent-to-return-forms-complete
+    event_date: 16 February
+    semester: summer-2017-2018

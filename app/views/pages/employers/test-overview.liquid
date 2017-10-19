@@ -1,0 +1,74 @@
+---
+title: Test Employer Calendar
+slug: test-overview
+listed: false
+published: false
+cache_strategy: none
+response_type: text/html
+position: 102
+seo_title: Employer Calendar
+editable_elements:
+  main/banner: /samples/pages/Banner_Andrew_Niven_Gala
+  main/content: "<p>\r\n    CareerTrackers provides a unique and innovative avenue
+    to match the need for corporate diversity with a structured, proven and results-based
+    program. \r\n  </p>\r\n  <p>\r\n    We create private sector internship opportunities
+    for high performing Indigenous university students. These opportunities complement
+    many private sector diversity initiatives, such as Reconciliation Action Plans
+    (RAP), and provide a tangible, cost effective and guided method to implement diversity
+    initiatives. \r\n  </p>\r\n  <p>\r\n    Our program is based on the successful
+    INROADS diversity internship in the USA.  INROADS has been introducing ethnic
+    minorities to professional private sector employment for over 40-years.  We have
+    adapted this model to support the unique needs of Australian Indigenous university
+    students and Australian employers.\r\n  </p>"
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  {% editable_text content %}
+  <p>
+    CareerTrackers provides a unique and innovative avenue to match the need for corporate diversity with a structured, proven and results-based program. 
+  </p>
+  <p>
+    We create private sector internship opportunities for high performing Indigenous university students. These opportunities complement many private sector diversity initiatives, such as Reconciliation Action Plans (RAP), and provide a tangible, cost effective and guided method to implement diversity initiatives. 
+  </p>
+  <p>
+    Our program is based on the successful INROADS diversity internship in the USA.  INROADS has been introducing ethnic minorities to professional private sector employment for over 40-years.  We have adapted this model to support the unique needs of Australian Indigenous university students and Australian employers.
+  </p>
+  {% endeditable_text %}
+  
+  <div class='row'>
+      <div class='col-lg-12'>
+        <h2 class='orange-text'>
+          2015 Key Dates
+        </h2>
+      </div>
+      {% for semester in contents.employer_semester %}
+      <div class='col-lg-6'>
+        <div class='panel panel-default'>
+          <div class='panel-heading orange-panel-heading'>
+            <h3>{{semester.semester | escape }}</h3>
+          </div>
+          <div class='list-group'>
+            {% for semester_event in semester.events %}
+            <div class='list-group-item'>
+              <div class='row'>
+                <div class='col-lg-6'>
+                  <strong>
+                    {{semester_event.event_title | escape}}
+                  </strong>
+                </div>
+                <div class='col-lg-6'>
+                  {{semester_event.event_date | escape}}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}

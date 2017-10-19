@@ -1,27 +1,35 @@
 ---
-- Semester 2 2014 - 30/12/2014:
-    _slug: semester-2-2014-30-slash-12-slash-2014
-- Semester 1 2015 - 30/06/2015:
-    _slug: semester-1-2015-30-slash-06-slash-2015
-- Semester 2 2015 - 30/12/2015:
-    _slug: semester-2-2015-30-slash-12-slash-2015
-- Semester 1 2016 - 30/06/2016:
-    _slug: semester-1-2016-30-slash-06-slash-2016
-- Semester 2 2016 - 30/12/2016:
-    _slug: semester-2-2016-30-slash-12-slash-2016
-- Semester 1 2017 - 30/06/2017:
-    _slug: semester-1-2017-30-slash-06-slash-2017
-- Semester 2 2017 - 30/12/2017:
+- Semester 2, 2017 - 30/12/2017:
     _slug: semester-2-2017-30-slash-12-slash-2017
-- Semester 1 2018 - 30/06/2018:
+- Semester 1, 2018 - 30/06/2018:
     _slug: semester-1-2018-30-slash-06-slash-2018
-- Semester 2 2018 - 30/12/2018:
+- Semester 2, 2018 - 30/12/2018:
     _slug: semester-2-2018-30-slash-12-slash-2018
-- Semester 1 2019 - 30/06/2019:
+- Semester 1, 2019 - 30/06/2019:
     _slug: semester-1-2019-30-slash-06-slash-2019
-- Semester 2 2019 - 30/12/2019:
+- Semester 2, 2019 - 30/12/2019:
     _slug: semester-2-2019-30-slash-12-slash-2019
-- Semester 1 2020 - 30/06/2020:
+- Semester 1, 2020 - 30/06/2020:
     _slug: semester-1-2020-30-slash-06-slash-2020
-- Semester 2 2020 - 30/12/2020:
+- Semester 2, 2020 - 30/12/2020:
     _slug: semester-2-2020-30-slash-12-slash-2020
+- Semester 1, 2021 - 30/06/2021:
+    _slug: semester-1-2021-30-slash-06-slash-2021
+- Semester 2, 2021 - 30/12/2021:
+    _slug: semester-2-2021-30-slash-12-slash-2020
+- Semester 1, 2022 - 30/06/2022:
+    _slug: semester-1-2022-30-slash-06-slash-2022
+- Semester 2, 2022 - 30/12/2022:
+    _slug: semester-2-2022-30-slash-12-slash-2022
+- Semester 1, 2023 - 30/06/2023:
+    _slug: semester-1-2023-30-slash-06-slash-2023
+- Semester 2, 2023 - 30/12/2023:
+    _slug: semester-2-2023-30-slash-12-slash-2023
+- Semester 1, 2024 - 30/06/2024:
+    _slug: semester-1-2024-30-slash-06-slash-2024
+- Semester 2, 2024 - 30/12/2024:
+    _slug: semester-2-2024-30-slash-12-slash-2024
+- Semester 1, 2025 - 30/06/2025:
+    _slug: semester-1-2025-30-slash-06-slash-2025
+- Semester 2, 2025 - 30/12/2025:
+    _slug: semester-2-2025-30-slash-12-slash-2025

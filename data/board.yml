@@ -1,29 +1,43 @@
 ---
-- Michael McLeod (Chair):
+- Craig Laslett (Co-Chair):
+    _slug: craig-laslett
+    position: 'Managing Director, Engineering: Lendlease'
+    image: /samples/board/craig-laslett/craig_laslett_4.png
+- Laura Berry (Chair):
+    _slug: laura-berry-vice-chair
+    _visible: false
+    position: CEO, Supply Nation
+    image: /samples/board/laura-berry-vice-chair/laura_berry_2.png
+- Michael McLeod (Co-Chair):
     _slug: michael-mcleod-chair
     position: CEO, Message Stick Communications
     image: /samples/board/michael-mcleod-chair/michael_mcleod.jpg
-- Laura Berry (Vice Chair):
-    _slug: laura-berry-vice-chair
-    position: Head of Community Partnerships, Qantas
-    image: /samples/board/laura-berry-vice-chair/laura_berry.jpg
-- Geoff Booth (Treasurer):
-    _slug: geoff-booth
-    position: National Production and Logistics Director, News Limited
-    image: /samples/board/geoff-booth/geoff_booth.jpg
 - Angus Dorney (Secretary):
     _slug: angus-dorney
     position: Director & General Manager, Rackspace
     image: /samples/board/angus-dorney/angus-dorney.png
 - Leah Armstrong:
     _slug: leah-armstrong
-    position: CEO, Reconciliation Australia
+    _visible: false
+    position: Chairperson, Supply Nation
     image: /samples/board/leah-armstrong/Profile_Leah_Armstrong.jpg
-- Jamila Gordon:
-    _slug: jamila-gordon
-    position: CIO, Leighton Holdings
-    image: /samples/board/jamila-gordon/Profile_Jamila_Gordon.jpg
+- Brian Cahill:
+    _slug: brian-cahill
+    position: Managing Director, Moody's
+    image: /samples/board/brian-cahill/brian_cahill.png
 - Michael Combs:
     _slug: michael-combs
     position: Founder & CEO, CareerTrackers
     image: /samples/board/michael-combs/Profile_Michael.jpg
+- Olivia Wirth:
+    _slug: olivia-wirth
+    position: Group Executive Brand, Marketing and Corporate Affairs, Qantas
+    image: /samples/board/olivia-wirth/CT_Profile_pictures__3_.png
+- Andy Cornish:
+    _slug: andy-cornish
+    position: Director
+    image: /samples/board/andy-cornish/CT_Profile_pictures__1_.png
+- Anita Lee Hong:
+    _slug: anita-lee-hong
+    position: Director, Oodgeroo Unit, Queensland University of Technology
+    image: /samples/board/anita-lee-hong/CT_Profile_pictures__2_.png

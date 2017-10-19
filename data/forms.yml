@@ -1,19 +1,21 @@
 ---
-- Indigenous Cadetship Support Application:
-    _slug: indigenous-cadetship-support-application
-    link: /forms/ics-application
 - 12 Week Intern Evaluation Form:
     _slug: 12-week-intern-evaluation-form
     link: /forms/intern-evaluation
 - Document upload:
     _slug: document-upload
     link: /forms/document-upload
-- Weekly Update:
-    _slug: weekly-update
-    link: weekly-update
+- Summer Kick-Off Workshop Evaluation:
+    _slug: summer-kick-off-workshop-evaluation
+    _visible: false
+    link: summer-kick-off-workshop-evaluation
 - Learning Contract:
     _slug: learning-contract
     link: /forms/learning-contract
-- Student End of Intership Review:
-    _slug: student-end-of-internship-review
-    link: /forms/end-of-internship
+- Confidential Detail Form:
+    _slug: confidential-detail-form
+    _visible: false
+    link: http://www.careertrackers.org.au/forms/confidential-details
+- ICS Scholarship - Expression of Interest:
+    _slug: indigenous-cadetship-support-expression-of-interest
+    link: http://www.careertrackers.org.au/forms/ics-scholarship-eoi

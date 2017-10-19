@@ -1,0 +1,23 @@
+---
+name: Categories
+description: categories
+slug: categories
+label_field_name: name
+order_by: manually
+order_direction: asc
+fields:
+- name:
+    label: Category
+    type: string
+    required: true
+    unique: false
+    localized: false
+- companies:
+    label: companies
+    type: has_many
+    required: false
+    unique: false
+    localized: false
+    class_name: companies
+    inverse_of: category
+    ui_enabled: true

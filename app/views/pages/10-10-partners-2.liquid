@@ -1,0 +1,60 @@
+---
+title: 10x10 Partners - 2
+slug: 10-10-partners-2
+listed: true
+published: false
+cache_strategy: none
+response_type: text/html
+position: 21
+seo_title: 10x10 Program
+editable_elements:
+  main/banner: /samples/pages/10-10_cropped
+  main/partners: <p>The 10x10 program is a 10 year contract to be signed by 10 major
+    companies. The agreement within the contract is that these 10 companies will commit
+    to providing internship positions for indigenous students within the CareerTrackers
+    Indigenous Internship Program. In committing to 10 years of partnership, these
+    companies will serve as CareerTrackers' backbone in preserving our program for
+    the benefit of all future indigenous students around Australia.&nbsp;</p>
+---
+{% extends parent %}
+{% block main %}
+{% capture banner_url %}{% editable_file 'banner' %}{% endeditable_file %}{% endcapture %}
+{% if banner_url != '' %}
+<div class='banner visible-lg visible-md'>
+  <img class='img-responsive' src='{{banner_url | escape}}'>
+</div>
+{% endif %}
+
+<style>
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+</style>
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='container-fluid'>
+    {% editable_text 'partners' %}
+    <p>
+      text here
+    </p>
+    {% endeditable_text %}
+  </div>
+
+  {% for partner in contents.10_10_partners %}
+  {% cycle  '<div class="row">', '''<div class="row">'%}
+  {% cycle  '<div class="col-lg-6" style="height:250px">', '<div class="col-lg-6" style="height:250px">', '<div class="col-lg-6" style="height:250px">', '<div class="col-lg-6" style="height:250px">'%}
+	<img alt="{{partner.name | escape}}"  style="padding-left:200px" src="{{partner.image.url | escape}}">
+  {% cycle  '</div>', '</div>', '</div>', '</div>'%}
+  {% cycle  '', '</div>', '', '</div>'%}
+  {% endfor %}
+  
+</div>
+
+
+    
+
+{% endblock %}

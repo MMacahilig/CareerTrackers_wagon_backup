@@ -1,0 +1,28 @@
+---
+title: Mobile App New
+slug: mobile-app-new
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 26
+seo_title: New Mobile App
+editable_elements:
+  main/banner: 
+  main/content: "<p>Our original mobile app will stop working soon. To stay on track,
+    you'll need to uninstall the app you're using now and <a title=\"New CareerTrackers
+    mobile app\" href=\"https://play.google.com/store/apps/details?id=com.careertrackers\"
+    target=\"_blank\">install our new mobile app.</a></p>\r\n<p>Please only mark this
+    milestone as complete when you have installed the new app.</p>"
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='col-md-12'>
+    {% capture 'content' %}{% editable_text 'content' %}{% endeditable_text %}{% endcapture %}
+    {{content}}
+  </div>
+</div>
+{% endblock %}

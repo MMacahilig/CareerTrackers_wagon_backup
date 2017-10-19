@@ -1,5 +1,11 @@
 ---
-- Semester 01:
+- Semester 1:
     _slug: semester-01
-- Semester 02:
-    _slug: semester-02
+    _visible: false
+- Semester 2 2017:
+    _slug: semester-2-2017
+- Semester 1 2018:
+    _slug: 2016-semester-2
+    _visible: false
+- Summer 2017-2018:
+    _slug: summer-2017-2018

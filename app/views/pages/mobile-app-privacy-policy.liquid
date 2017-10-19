@@ -1,0 +1,75 @@
+---
+title: Mobile App Privacy Policy
+slug: mobile-app-privacy-policy
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 24
+seo_title: CareerTrackers Privacy Policy
+editable_elements:
+  main/banner: 
+  main/privacy_policy: "<p>The following describes how CareerTrackers deals with personal
+    information collected through our app.</p>\r\n<p>Personal information collected
+    by CareerTrackers is handled in accordance with the Privacy and Personal Information
+    Protection Act 1998 and the Health Records and Information Privacy Protection
+    Act 2002 (&ldquo;the Acts&rdquo;).</p>\r\n<p>The CareerTrackers&rsquo; app automatically
+    collects a certain amount of personal information about you when you are using
+    our app. This privacy statement deals primarily with the automatic collection
+    of data about you.</p>\r\n<p><strong>1. Collection of information automatically
+    logged</strong></p>\r\n<p>Automated collection of information &ndash; CareerTrackers
+    may collect personal information and other data about you from your phone as you
+    browse or otherwise interact with our app.</p>\r\n<p>The information collected
+    by our app may include:</p>\r\n<ul>\r\n<li>Your identity and contact information</li>\r\n<li>The
+    dates and times that you use the app</li>\r\n<li>The pages accessed and documents
+    downloaded</li>\r\n</ul>\r\n<p>CareerTrackers uses the data collected for statistical
+    and business purposes such as diagnosing a fault and improving our services or
+    when required to, for investigations. Information which is automatically collected
+    may be published as aggregated (de-identified) information to assist with improving
+    the services offered by CareerTrackers through our app.</p>\r\n<p><strong>2. Storage
+    and security of information</strong></p>\r\n<p>Information automatically collected
+    by our app is stored in our cloud services. CareerTrackers also uses the services
+    of third party service providers who store information in their systems.</p>\r\n<p>CareerTrackers
+    has in place security measures based on a risk assessment process to protect against
+    the loss, misuse, and alteration of the information. CareerTrackers also encrypts
+    some information.</p>\r\n<p>Where you can access the CareerTrackers&rsquo; app
+    using your login details, the secure login issued to you, the information about
+    you which is held, or you add or amend, on the app, is protected by restricting
+    access through that login. Accordingly, you must ensure that your login is not
+    disclosed or made available to others.</p>\r\n<p>Relevant technical staff are
+    able to access the logs created by servers for the purposes of collecting statistics,
+    dealing with faults and improving the service and investigations.</p>\r\n<p><strong>3.
+    Use and disclosure</strong></p>\r\n<p>Information collected by the CareerTrackers&rsquo;
+    app will only be used for the purpose for which it was collected in accord with
+    this Privacy Statement.</p>\r\n<p>The information held by CareerTrackers&rsquo;
+    third party services providers will be used and disclosed in accord with the terms
+    of the service contract.</p>\r\n<p>CareerTrackers will not disclose this information
+    concerning you to parties outside CareerTrackers except with your consent, or
+    where required or authorised by law.</p>\r\n<p>Personal information collected
+    through the CareerTrackers&rsquo; app which is no longer required by CareerTrackers,
+    nor required by law to be retained, will be destroyed, as authorised by the disposal
+    authorities issued under the NSW State Records Act 1998.</p>\r\n<p><strong>4.
+    Access to and correction of personal information</strong></p>\r\n<p>You have a
+    right to request access to, and correction of, your personal information held
+    by the CareerTrackers&rsquo; app. If you require more information about privacy
+    in the CareerTrackers&rsquo; app, please consult CareerTrackers&rsquo; privacy
+    policy on our website.</p>\r\n<p><strong>5. Privacy complaints</strong></p>\r\n<p>If
+    you wish to make a complaint about the way CareerTrackers has handled your personal
+    information, please notify a CareerTrackers staff member at the CareerTrackers
+    office: 02 8090 5765. You are also able to make a normal complaint under the Privacy
+    Acts.</p>\r\n<p><strong>6. Breaches of security of CareerTrackers systems</strong></p>\r\n<p>If
+    you have an urgent concern that the CareerTrackers app has been breached and personal
+    information is not properly secured, please notify CareerTrackers immediately:
+    02 8090 5765</p>"
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='col-md-12'>
+    {% capture 'privacy_policy' %}{% editable_text 'privacy_policy' %}{% endeditable_text %}{% endcapture %}
+    {{privacy_policy}}
+  </div>
+</div>
+{% endblock %}

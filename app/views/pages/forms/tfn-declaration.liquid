@@ -180,14 +180,13 @@ seo_title: Tax File Number Declaration
         <h4 class='col-sm-12'>
           3. If you have changed your name since you last dealt with the ATO,
           <br>
-          show your previous family name.
+          show your previous family name
         </h4>
         <div class='form-group'>
           <div class='col-sm-5 col-sm-offset-3'>
             <input class='form-control' id='previous_name' name='tfn[previous_name]' type='text' value="{{params['previous_name']}}">
           </div>
         </div>
-        <div class='hide-form'>
         <hr class='darker-hr'>
         <h4 class='col-sm-12'>
           4. What is your date of birth?
@@ -214,13 +213,6 @@ seo_title: Tax File Number Declaration
             <input class='form-control' id='suburb' name='tfn[suburb]' placeholder='Suburb or town' type='text' value="{%if params['suburb']%}{{params['suburb']}}{%else%}{{ics['residential_address_2']}}{%endif%}">
           </div>
         </div>
-        <div class='form-group no-margin-bottom'>
-          <label class='col-sm-3 control-label' for='suburb'>State/territory</label>
-          <div class='col-sm-5'>
-            <input class='form-control' id='state' name='tfn[state]' placeholder='State/territory' type='text' value="{%if params['state']%}{{params['state']}}{%else%}{{ics['residential_address_3']}}{%endif%}">
-          </div>
-        </div>
-          <!--
         <div class='form-group no-margin-bottom'>
           <label class='col-sm-3 control-label' for='state'>State/territory</label>
           <div class='col-sm-5'>
@@ -264,14 +256,12 @@ seo_title: Tax File Number Declaration
             	<input class='digit-box form-control' id="state_3" maxlength='1' name='tfn[state_3]' type='text' value="">
             {% endif %}
           -->
-          <!--
           <input class='digit-box form-control' id="state_1" maxlength='1' name='tfn[state_1]' type='text' value="{{params['state_1']}}">
           <input class='digit-box form-control' id="state_2" maxlength='1' name='tfn[state_2]' type='text' value="{{params['state_2']}}">
           <input class='digit-box form-control' id="state_3" maxlength='1' name='tfn[state_3]' type='text' value="{{params['state_3']}}">
             </div>
           </div>
         </div>
-          -->
         <div class='form-group'>
           <label class='col-sm-3 control-label' for='post'>Postcode</label>
           <div class='col-sm-5'>
@@ -341,7 +331,6 @@ seo_title: Tax File Number Declaration
               </label>
             </div>
           </div>
-        </div>
         </div>
         <hr class='darker-hr'>
         <h4 class='col-sm-12'>

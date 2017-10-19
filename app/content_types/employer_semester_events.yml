@@ -1,0 +1,28 @@
+---
+name: Employer Semester Events
+description: Employer Semester Events
+slug: employer_semester_events
+label_field_name: event_title
+order_by: created_at
+order_direction: asc
+fields:
+- event_title:
+    label: event_title
+    type: string
+    required: true
+    unique: false
+    localized: false
+- event_date:
+    label: event_date
+    type: string
+    required: true
+    unique: false
+    localized: false
+- employer_semester:
+    label: Employer Semester
+    type: belongs_to
+    required: true
+    unique: false
+    localized: false
+    class_name: employer_semester
+    ui_enabled: true

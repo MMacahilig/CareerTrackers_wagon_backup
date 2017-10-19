@@ -1,0 +1,60 @@
+---
+title: Corporate 10x10 Program
+slug: 10-10_partners
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+seo_title: Corporate 10x10 Program
+editable_elements:
+  main/banner: /samples/pages/10-10_cropped
+  main/partners: <p>The CareerTrackers 10x10 program is a 10 year contract signed
+    by 19 major companies. The agreement within the contract is that these 19 companies
+    will commit to providing internship positions for Indigenous students within the
+    CareerTrackers Indigenous Internship Program. In committing to 10 years of partnership,
+    these companies will serve as CareerTrackers' backbone in preserving our program
+    for the benefit of all future Indigenous students around Australia.&nbsp;</p>
+---
+{% extends parent %}
+{% block main %}
+{% capture banner_url %}{% editable_file 'banner' %}{% endeditable_file %}{% endcapture %}
+{% if banner_url != '' %}
+<div class='banner visible-lg visible-md'>
+  <img class='img-responsive' src='{{banner_url | escape}}'>
+</div>
+{% endif %}
+
+<style>
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+</style>
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='container-fluid'>
+    {% editable_text 'partners' %}
+    <p>
+      text here
+    </p>
+    {% endeditable_text %}
+  </div>
+
+  {% for partner in contents.10_10_partners %}
+  {% cycle  '<div class="row">', '', '', '<div class="row">', '', ''%}
+  {% cycle  '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">'%}
+  <img alt='{{partner.name | escape}}' class='' style="padding-left:50px" src="{{partner.image.url | escape}}">
+  {% cycle  '</div>', '</div>', '</div>', '</div>', '</div>', '</div>'%}
+  {% cycle  '', '', '</div>', '', '', '</div>'%}
+  {% endfor %}
+  
+</div>
+
+
+    
+
+{% endblock %}

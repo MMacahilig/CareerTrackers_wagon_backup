@@ -1,0 +1,55 @@
+---
+title: Mobile App
+slug: mobile-app
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 25
+seo_title: CareerTrackers Mobile App
+editable_elements:
+  main/banner: 
+  main/content: <p>CareerTrackers is a national non-profit organisation that creates
+    internship opportunities for Indigenous university students in Australia. We've
+    created an app to help our students update us on the progress of their internships
+    by completing weekly updates, so that their advisors will know when people need
+    extra support.</p>
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='col-md-12'>
+    {% capture 'content' %}{% editable_text 'content' %}{% endeditable_text %}{% endcapture %}
+    {{content}}
+  </div>
+  <div class='col-md-12'>
+    <p>
+       If you'd like to find out more, please contact us using the details below.
+    </p>
+    {% for contact_us in contents.contact_us %}
+      {% if contact_us.location == 'Sydney' %}
+        <ul class='list-unstyled contact inherit-font-size'>
+        {% if contact_us.phone %}
+          <li class='contact_phone padded-top-small'>
+            <i class='fa fa-phone'></i>
+            <a href='tel:{{contact_us.phone}}'>
+              {{contact_us.phone}}
+            </a>
+          </li>
+        {% endif %}
+        {% if contact_us.email %}
+          <li class='contact_email padded-top-small'>
+            <i class='fa fa-envelope'></i>
+            <a href='mailto:{{contact_us.email}}'>
+              {{contact_us.email}}
+            </a>
+          </li>
+        {% endif %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

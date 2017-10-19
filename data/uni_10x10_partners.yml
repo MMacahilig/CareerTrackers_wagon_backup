@@ -1,0 +1,46 @@
+---
+- Charles Darwin University:
+    _slug: charles-darwin-university
+    description: ''
+    image: /samples/uni_10x10_partners/charles-darwin-university/CDU.png
+- Curtin University:
+    _slug: curtin-university
+    description: ''
+    image: /samples/uni_10x10_partners/curtin-university/Curtin.png
+- Griffith University:
+    _slug: griffith-university
+    description: ''
+    image: /samples/uni_10x10_partners/griffith-university/Griffith.png
+- Monash University:
+    _slug: monash-university
+    description: ''
+    image: /samples/uni_10x10_partners/monash-university/Monash-new.png
+- Queensland University of Technology:
+    _slug: queensland-university-of-technology
+    description: ''
+    image: /samples/uni_10x10_partners/queensland-university-of-technology/QUT.png
+- University of Canberra:
+    _slug: university-of-canberra
+    description: ''
+    image: /samples/uni_10x10_partners/university-of-canberra/UC.png
+- University of Melbourne:
+    _slug: university-of-melbourne
+    description: ''
+    image: /samples/uni_10x10_partners/university-of-melbourne/unimel-new.png
+- University of Newcastle:
+    _slug: university-of-newcastle
+    description: ''
+    image: /samples/uni_10x10_partners/university-of-newcastle/UoN.png
+- University of South Queensland:
+    _slug: university-of-south-queensland
+    description: ''
+    image: /samples/uni_10x10_partners/university-of-south-queensland/Screen_Shot_2016-12-12_at_2.35.34_pm.png
+- University of Technology, Sydney:
+    _slug: university-of-technology-sydney
+    description: ''
+    image: /samples/uni_10x10_partners/university-of-technology-sydney/UTS.png
+- Western Sydney University:
+    _slug: western-sydney-university
+    _visible: false
+    description: ''
+    image: /samples/uni_10x10_partners/western-sydney-university/WSU.png

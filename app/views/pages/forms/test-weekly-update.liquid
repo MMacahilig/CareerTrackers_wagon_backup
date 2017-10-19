@@ -1,0 +1,616 @@
+---
+title: test Weekly update
+slug: test-weekly-update
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 105
+---
+
+{% extends 'parent' %}
+
+{% block main %}
+
+<div class='container-fluid'>
+	{% include page_header %}
+		<div class="page-header orange-dotted-border-bottom">
+		<form  action='/forms' id='weekly-update' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+		{% csrf_param %}
+			
+			<div class='form-group no-margin-bottom'>
+        		<div class='col-sm-6'>
+        		<label for='full_name'>Full Name
+				</label>
+				</div>
+        	</div>
+			
+			<div class='form-group'>
+			  <div class='col-sm-5'>
+				<input class='form-control' id='full_name' name='update[full_name]' placeholder='Your Name' type='text' value="{{params['full_name']}}">
+			  </div>
+			</div>
+        	
+        	<div class='form-group no-margin-bottom'>
+        		<div class='col-sm-6'>
+        		<label for='primary_advisor'>Who is your primary Student Advisor?
+					<div class='small normal-font-weight'>
+					  This is your Student Advisor during the university semester
+					</div>
+				</label>
+				</div>
+        	</div>
+        	
+        	<div class='form-group'>
+				<div class='col-sm-5'>
+					<select class='form-control' id='primary_advisor' name='update[primary_advisor]' value="{{params['primary_advisor']}}">
+						<option selected='' value=''></option>
+
+											
+						{% if params['primary_advisor'] == "Andrea Walisser" %}
+						<option selected='' value='Andrea Walisser'>Andrea Walisser</option>
+						{% else %}
+						<option value='Andrea Walisser'>Andrea Walisser</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Brooke Scott" %}
+						<option selected ='' value='Brooke Scott'>Brooke Scott</option>
+						{% else %}
+						<option value='Brooke Scott'>Brooke Scott</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Dimity Sebire" %}
+						<option selected ='' value='Dimity Sebire'>Dimity Sebire</option>
+						{% else %}
+						<option value='Dimity Sebire'>Dimity Sebire</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Farhana Laffernis" %}
+						<option selected='' value='Farhana Laffernis'>Farhana Laffernis</option>
+						{% else %}
+						<option value='Farhana Laffernis'>Farhana Laffernis</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Holly Johnson" %}
+						<option selected ='' value='Holly Johnson'>Holly Johnson</option>
+						{% else %}
+						<option value='Holly Johnson'>Holly Johnson</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Ildike Piercy" %}
+						<option selected='' value='Ildike Piercy'>Ildike Piercy</option>
+						{% else %}
+						<option value='Ildike Piercy'>Ildike Piercy</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Jay Palese" %}
+						<option selected ='' value='Jay Palese'>Jay Palese</option>
+						{% else %}
+						<option value='Jay Palese'>Jay Palese</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Jessica Bulger" %}
+						<option selected='' value='Jessica Bulger'>Jessica Bulger</option>
+						{% else %}
+						<option value='Jessica Bulger'>Jessica Bulger</option>
+						{% endif %}
+					
+					
+						{% if params['primary_advisor'] == "Joshua Long" %}
+						<option selected='' value='Joshua Long'>Joshua Long</option>
+						{% else %}
+						<option value='Joshua Long'>Joshua Long</option>
+						{% endif %}
+					
+					
+						{% if params['primary_advisor'] == "Matthew Faulkner" %}
+						<option selected='' value='Matthew Faulkner'>Matthew Faulkner</option>
+						{% else %}
+						<option value='Matthew Faulkner'>Matthew Faulkner</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Mia Strasek-Barker" %}
+						<option selected='' value='Mia Strasek-Barker'>Mia Strasek-Barker</option>
+						{% else %}
+						<option value='Mia Strasek-Barker'>Mia Strasek-Barker</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Peta-Lee Moran" %}
+						<option selected='' value='Peta-Lee Moran'>Peta-Lee Moran</option>
+						{% else %}
+						<option value='Peta-Lee Moran'>Peta-Lee Moran</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Raqual Nutley" %}
+						<option selected='' value='Raqual Nutley'>Raqual Nutley</option>
+						{% else %}
+						<option value='Raqual Nutley'>Raqual Nutley</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Talia Ritson" %}
+						<option selected='' value='Talia Ritson'>Talia Ritson</option>
+						{% else %}
+						<option value='Talia Ritson'>Talia Ritson</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Trent Bosgra" %}
+						<option selected='' value='Trent Bosgra'>Trent Bosgra</option>
+						{% else %}
+						<option value='Trent Bosgra'>Trent Bosgra</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Zenzi Clark" %}
+						<option selected='' value='Zenzi Clark'>Zenzi Clark</option>
+						{% else %}
+						<option value='Zenzi Clark'>Zenzi Clark</option>
+						{% endif %}
+					
+						{% if params['primary_advisor'] == "Michael Macahilig" %}
+						<option selected='' value='Michael Macahilig'>Michael Macahilig</option>
+						{% else %}
+						<option value='Michael Macahilig'>Michael Macahilig</option>
+						{% endif %}
+					
+					</select>
+				</div>
+        	</div>
+        	
+        	<div class='form-group no-margin-bottom'>
+        	
+        		<div class='col-sm-6'>
+        		<label for='secondary_advisor'>Who is your secondary Student Advisor? (only if applicable)
+					<div class='small normal-font-weight'>
+					  This applies to traveling interns who have been allocated a second Student Advisor
+					</div>
+				</label>
+				</div>
+        	</div>
+        
+        	<div class='form-group'>
+
+				
+				<div class='col-sm-5'>
+					<select class='form-control' id='secondary_advisor' name='update[secondary_advisor]' value="{{params['secondary_advisor']}}">
+						<option selected='' value=''></option>
+					
+												
+						{% if params['secondary_advisor'] == "Andrea Walisser" %}
+						<option selected='' value='Andrea Walisser'>Andrea Walisser</option>
+						{% else %}
+						<option value='Andrea Walisser'>Andrea Walisser</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Brooke Scott" %}
+						<option selected ='' value='Brooke Scott'>Brooke Scott</option>
+						{% else %}
+						<option value='Brooke Scott'>Brooke Scott</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Dimity Sebire" %}
+						<option selected ='' value='Dimity Sebire'>Dimity Sebire</option>
+						{% else %}
+						<option value='Dimity Sebire'>Dimity Sebire</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Farhana Laffernis" %}
+						<option selected='' value='Farhana Laffernis'>Farhana Laffernis</option>
+						{% else %}
+						<option value='Farhana Laffernis'>Farhana Laffernis</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Holly Johnson" %}
+						<option selected ='' value='Holly Johnson'>Holly Johnson</option>
+						{% else %}
+						<option value='Holly Johnson'>Holly Johnson</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Ildike Piercy" %}
+						<option selected='' value='Ildike Piercy'>Ildike Piercy</option>
+						{% else %}
+						<option value='Ildike Piercy'>Ildike Piercy</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Jay Palese" %}
+						<option selected ='' value='Jay Palese'>Jay Palese</option>
+						{% else %}
+						<option value='Jay Palese'>Jay Palese</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Jessica Bulger" %}
+						<option selected='' value='Jessica Bulger'>Jessica Bulger</option>
+						{% else %}
+						<option value='Jessica Bulger'>Jessica Bulger</option>
+						{% endif %}
+					
+					
+						{% if params['secondary_advisor'] == "Joshua Long" %}
+						<option selected='' value='Joshua Long'>Joshua Long</option>
+						{% else %}
+						<option value='Joshua Long'>Joshua Long</option>
+						{% endif %}
+					
+					
+						{% if params['secondary_advisor'] == "Matthew Faulkner" %}
+						<option selected='' value='Matthew Faulkner'>Matthew Faulkner</option>
+						{% else %}
+						<option value='Matthew Faulkner'>Matthew Faulkner</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Mia Strasek-Barker" %}
+						<option selected='' value='Mia Strasek-Barker'>Mia Strasek-Barker</option>
+						{% else %}
+						<option value='Mia Strasek-Barker'>Mia Strasek-Barker</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Peta-Lee Moran" %}
+						<option selected='' value='Peta-Lee Moran'>Peta-Lee Moran</option>
+						{% else %}
+						<option value='Peta-Lee Moran'>Peta-Lee Moran</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Raqual Nutley" %}
+						<option selected='' value='Raqual Nutley'>Raqual Nutley</option>
+						{% else %}
+						<option value='Raqual Nutley'>Raqual Nutley</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Talia Ritson" %}
+						<option selected='' value='Talia Ritson'>Talia Ritson</option>
+						{% else %}
+						<option value='Talia Ritson'>Talia Ritson</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Trent Bosgra" %}
+						<option selected='' value='Trent Bosgra'>Trent Bosgra</option>
+						{% else %}
+						<option value='Trent Bosgra'>Trent Bosgra</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Zenzi Clark" %}
+						<option selected='' value='Zenzi Clark'>Zenzi Clark</option>
+						{% else %}
+						<option value='Zenzi Clark'>Zenzi Clark</option>
+						{% endif %}
+					
+						{% if params['secondary_advisor'] == "Michael Macahilig" %}
+						<option selected='' value='Michael Macahilig'>Michael Macahilig</option>
+						{% else %}
+						<option value='Michael Macahilig'>Michael Macahilig</option>
+						{% endif %}
+					
+					</select>
+				</div>
+        	</div>
+        	
+        	<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+        		<label for='week_end'>The Week Ending
+				</label>
+				</div>
+        	</div>
+        
+        	<div class='form-group'>
+            
+			  <div class='col-sm-5'>
+				<select class='form-control' id='week_end' name='update[week_end]' value="{{params['week_end']}}">
+					<option selected='' value=''></option>
+					
+					
+					{% if params['week_end'] == "3-July-2015" %}
+					<option selected ='' value='3-July-2015'>3-July-2015</option>
+					{% else %}
+					<option value='3-July-2015'>3-July-2015</option>
+					{% endif %}
+					
+					{% if params['week_end'] == "10-July-2015" %}
+					<option selected ='' value='10-July-2015'>10-July-2015</option>
+					{% else %}
+					<option value='10-July-2015'>10-July-2015</option>
+					{% endif %}
+					
+					{% if params['week_end'] == "17-July-2015" %}
+					<option selected='' value='17-July-2015'>17-July-2015</option>
+					{% else %}
+					<option value='17-July-2015'>17-July-2015</option>
+					{% endif %}
+					
+					{% if params['week_end'] == "24-July-2015" %}
+					<option selected ='' value='24-July-2015'>24-July-2015</option>
+					{% else %}
+					<option value='24-July-2015'>24-July-2015</option>
+					{% endif %}
+					
+				</select>
+			  </div>
+       		</div>
+       		
+       		<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+        		<label for='engaging'>How engaging was your internship this week
+				</label>
+				</div>
+        	</div>
+        	
+        	
+       		
+       		<div class='form-group'>
+			  
+			  <div class='col-sm-5'>
+			  
+				<div class='radio'>
+					<label>
+						<input  id='engaging_5' name='update[engaging]'  type='radio' value="5 - Very Engaging">5 - Very Engaging
+					</label>
+				</div>
+
+				
+				<div class='radio'>
+					<label>
+						<input  id='engaging_4' name='update[engaging]'  type='radio' value="4">4
+					</label>
+				</div>
+				
+				
+				<div class='radio'>
+					<label>
+						<input  id='engaging_3' name='update[engaging]'  type='radio' value="3">3
+					</label>
+				</div>
+				
+				
+				<div class='radio'>
+					<label>
+						<input id='engaging_2' name='update[engaging]'  type='radio' value="2">2
+					</label>
+				</div>
+				
+				
+				<div class='radio'>
+					<label>
+						<input  id='engaging_1' name='update[engaging]'  type='radio' value="1 - Not Engaging">1 - Not Engaging
+					</label>
+				</div>
+				
+			  </div>
+			</div>
+			
+			<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+					<label for='highlights'>What were your highlights and key learnings this week?</label>
+				</div>
+        	</div>
+			
+			
+			<div class='form-group'>
+			  
+			  <div class='col-sm-5'>
+				<textarea class='form-control' rows='5' id='highlights' name='update[highlights]' type='text' value="{{params['highlights']}}"></textarea>
+			  </div>
+			</div>
+			
+			<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+					<label for='details'>Give a detailed day-by-day overview of the projects you worked on:
+					<div class='small normal-font-weight'>
+						  "On Monday I completed..."
+					</div>
+				</label>
+				</div>
+        	</div>
+        	
+			<div class='form-group'>
+			  
+			  <div class='col-sm-5'>
+				<textarea class='form-control' rows='5' id='details' name='update[details]' type='text' value="{{params['details']}}"></textarea>
+			  </div>
+			</div>
+			
+			<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+					<label for='days_off'>Did you have any days off this week?</label>
+				</div>
+        	</div>
+			
+			<div class='form-group'>
+				<div class='col-sm-5'>
+					<div class='radio'>
+						<label>
+							<input  id='days_off_yes' name='update[days_off]'  type='radio' value="Yes">Yes
+						</label>
+					</div>
+
+	
+					<div class='radio'>
+						<label>
+							<input  id='days_off_no' name='update[days_off]'  type='radio' value="No">No
+						</label>
+					</div>
+				</div>
+       		</div>
+       		
+       		
+       		<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+					<label for='which_days'>If so, what days and why?
+				</label>
+				</div>
+        	</div>
+        	
+       		<div class='form-group'>
+			  
+			  
+			  <div class='col-sm-5'>
+				<textarea class='form-control' rows='5' id='which_days' name='update[which_days]' type='text' value="{{params['which_days']}}"></textarea>
+			  </div>
+			</div>
+			
+			<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+					<label for='concerns'>Do you have any immediate concerns that you would like to share with your Student Advisor?
+				</label>
+				</div>
+        	</div>
+			
+			<div class='form-group'>
+			 
+			  <div class='col-sm-5'>
+				<textarea class='form-control' rows='5' id='concerns' name='update[concerns]' type='text' value="{{params['concerns']}}"></textarea>
+			  </div>
+			</div>
+			
+			<div class='form-group no-margin-bottom'>
+        		
+        		<div class='col-sm-6'>
+					<label for='copy'>If you would like to receive a copy of this week’s update please include your email address below.
+				</label>
+				</div>
+        	</div>
+			
+			<div class='form-group'>
+			  
+			  <div class='col-sm-5'>
+				<input class='form-control' id='copy' name='update[copy]' placeholder='Your email' type='text' value="{{params['copy']}}">
+			  </div>
+			</div>
+        
+        
+			<div class='row padding-top'>
+				<div class='col-sm-12'>
+					<!--<div class='col-sm-6' style="text-alight:center;">-->
+					<div class='col-sm-5'>
+						<button class='btn orange-button col-sm-12' type='submit'>Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		 
+		
+	</div>
+</div>
+
+{% endblock %}
+{% block javascripts %}
+
+<script>
+$(document).ready(function() {
+
+var metrics = [
+
+                    [ "[name='update[full_name]']", 'presence', 'Name is required and cannot be empty' ],
+
+                    [ "[name='update[primary_advisor]']", 'presence', 'Primary Student Advisor is required and cannot be empty' ],
+
+                    [ "[name='update[week_end]']", 'presence', 'Please select the date of the week ending' ],
+
+                    [ "[name='update[engaging]']", 'presence', 'It is important for us to know how you rated your week' ],
+
+                    [ "[name='update[highlights]']", 'presence', 'Highlights cannot be empty' ],
+
+                    [ "[name='update[details]']", 'presence', 'Please provide is with more details regarding your week' ],
+
+                    [ "[name='update[days_off]']", 'presence', 'We would like to know if you took time off this week' ],
+                                        
+                    [ "[name='update[copy]']", 'email', 'Invalid Email Address' ]
+
+                  ];
+
+  
+
+    $( "form" ).nod( metrics , {
+
+                      groupSelector: ".form-group", 
+
+                      groupClass: "has-error", 
+
+                      helpSpanDisplay: "help-block small"
+
+    });
+
+		
+		function postToGoogle() {
+		var studentName       = $("#full_name").val();
+			var primary_advisor   = $("#primary_advisor").val();
+			var secondary_advisor = $("#secondary_advisor").val();
+			var week_end          = $("#week_end").val();
+			//var engaging          = $("#engaging").val();
+			var engaging;
+			var highlights        = $("#highlights").val();
+			var details           = $("#details").val();
+			//var days_off          = $("#days_off").val();
+			var days_off;
+			var which_days        = $("#which_days").val();
+			var concerns          = $("#concerns").val();
+			var student_email     = $("#copy").val();
+			
+			if(document.getElementById('engaging_5').checked){
+				engaging          = $("#engaging_5").val();
+			}else if(document.getElementById('engaging_4').checked){
+				engaging          = $("#engaging_4").val();
+			}else if(document.getElementById('engaging_3').checked){
+				engaging          = $("#engaging_3").val();
+			}else if(document.getElementById('engaging_2').checked){
+				engaging          = $("#engaging_2").val();
+			}else if(document.getElementById('engaging_1').checked){
+				engaging          = $("#engaging_1").val();
+			}
+			
+			if(document.getElementById('days_off_yes').checked){
+				days_off          = $("#days_off_yes").val();
+			}else if(document.getElementById('days_off_no').checked){
+				days_off          = $("#days_off_no").val();
+			}
+			
+			
+                // new form https://docs.google.com/forms/d/1W_rwq_KmoSmf9J1mG_yVHVFhid-yFaZ-EAzeLyYMvi0/viewform
+                // url: "https://docs.google.com/a/careertrackers.org.au/forms/d/1Il2SW32-aqpUDHvRAAxXTRaPwgXEy4rhGJFvEKx9CXs/formResponse",
+          
+          		// redirect 301 - /forms/weekly-update/submit
+          
+          		// https://docs.google.com/a/careertrackers.org.au/forms/d/1W_rwq_KmoSmf9J1mG_yVHVFhid-yFaZ-EAzeLyYMvi0/formResponse
+                $.ajax({
+                	type: "GET",
+                    url: "/forms/weekly-update/submit",
+                    data: { "entry.935151036" : studentName,
+                   			"entry.358248699" : primary_advisor,
+                    		"entry.1949660345": secondary_advisor,
+                    		"entry.722680789" : week_end,
+                    		"entry.1808783018": engaging,
+                    		"entry.960414492": highlights,
+                    		"entry.1873377006": details,
+                    		"entry.818485423"  : days_off,
+                    		"entry.1128020795": which_days,
+                    		"entry.1901774326" : concerns,
+                    		"entry.1872968141": student_email
+                    },
+                    dataType: "text/html",
+                    statusCode: {
+                        0: function() {
+                            // Success message
+                          	// alert("0 - OK - website");
+                        },
+                        200: function() {
+                            // Success Message
+                            // alert("success");
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					},
+   					crossDomain: true,
+                });
+		}
+
+		$("#weekly-update").submit(function() {
+			postToGoogle();
+			//alert('posting');
+		});
+	});
+</script>
+{% endblock %}

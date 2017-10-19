@@ -1,27 +1,172 @@
 ---
-- Corporate Award Winners:
-    _slug: corporate-award-winners
-    caption: Congratulations to our 2014 corporate award winners and thank you for
-      your support!
-    image: /samples/carousel/corporate-award-winners/socialImpact3.png
 - Westpac RAP:
     _slug: gala-dinner
+    _visible: false
     caption: Congratulations to Westpac on signing their 10 year commitment to partner
       with CareerTrackers
     image: /samples/carousel/gala-dinner/Westpac_RAP.png
 - 'IAG 10-10 Signing ':
     _slug: student-award-winners
+    _visible: false
     caption: "Congratulations to IAG on their 10 year agreement signing with CareerTrackers.
       A major step in solidifying opportunities for CareerTrackers' students. \r\n"
     image: /samples/carousel/student-award-winners/IAG_10-10.png
+- CareerTrackers Social Impact Study:
+    _slug: careertrackers-social-impact-study
+    _visible: false
+    caption: Celebrating the launch of our first social impact study in partnership
+      with J.P. Morgan
+    image: /samples/carousel/careertrackers-social-impact-study/socialImpact2.png
 - Mr Craig Laslett:
     _slug: mr-craig-laslett
+    _visible: false
     caption: Mr Craig Laslett, Managing Director of Leighton Contractors and CareerTrackers
-      have signed a historic 10 year contract, the biggest commitment a corporation
+      have signed an historic 10 year contract, the biggest commitment a corporation
       has ever made to an Indigenous program in Australia.
     image: /samples/carousel/mr-craig-laslett/Carousel_Craig_Laslett___John.jpg
 - Corporate Award Winners:
     _slug: corporate-award-winners
+    _visible: false
     caption: Congratulations to our 2014 corporate award winners and thank you for
       your support!
     image: /samples/carousel/corporate-award-winners/Carousel_Corporate_Awards.jpg
+- Qantas 10-10:
+    _slug: qantas-10-10
+    _visible: false
+    caption: Congratulations to Qantas on becoming 1 of only 11 companies to sign
+      a 10 year commitment with CareerTrackers. An historic commitment
+    image: /samples/carousel/qantas-10-10/QANTAS-cropped.jpg
+- Gala Award Winners 2015:
+    _slug: gala-2015
+    _visible: false
+    caption: Congratulations to our 2015 Award winners
+    image: /samples/carousel/gala-2015/1.png
+- Community Day 2015:
+    _slug: community-day-2015
+    _visible: false
+    caption: ​During our 2015 annual community day, CareerTrackers interns supported
+      local projects to strengthen our communities.
+    image: /samples/carousel/community-day-2015/Community_Day.jpg
+- LDI 2015:
+    _slug: ldi-2015
+    _visible: false
+    caption: ​Preparing for the future - the 2015 CareerTrackers Leadership Development
+      Institute brought together Interns from all across Australia to participate
+      in professional development workshops.
+    image: /samples/carousel/ldi-2015/LDI2.jpg
+- 10/10 2015:
+    _slug: 10-slash-10-2015
+    _visible: false
+    caption: 10 companies committing to 10 years of opportunities and support for
+      the long-term success of CareerTrackers
+    image: /samples/carousel/10-slash-10-2015/cropped-10-10.jpg
+- Winter Internships 2015:
+    _slug: winter-internships-2015
+    _visible: false
+    caption: ​Well done to our interns for completing their winter internship!
+    image: /samples/carousel/winter-internships-2015/preparing_for_internship.png
+- Summer Internship 2015-16:
+    _slug: summer-internship-2015-16
+    _visible: false
+    caption: "Well done to all of our interns so far this summer - LDI is just around
+      the corner and we look forward to bringing our entire community together!\r\n"
+    image: /samples/carousel/summer-internship-2015-16/summer_carousel.png
+- CT First Day Selfie 2015-16:
+    _slug: ct-first-day-selfie-2015-16
+    _visible: false
+    caption: 'There''s no better way to kick-off your summer internship than with
+      a #ctfirstdayselfie - preparing for a massive summer!'
+    image: /samples/carousel/ct-first-day-selfie-2015-16/ctfirstdayselfie_carousel.png
+- Alumni 2015:
+    _slug: alumni-2015
+    _visible: false
+    caption: ​Thank you to our passionate Alumni who continue to support interns in
+      our program.
+    image: /samples/carousel/alumni-2015/Alumni1.png
+- Academic Excellence Award Winners 2015:
+    _slug: academic-execellence-award-winners-2015
+    _visible: false
+    caption: Proudly celebrating academic achievement at university! Congratulations
+      to our Academic Excellence Award winners.
+    image: /samples/carousel/academic-execellence-award-winners-2015/Gold_Diary.png
+- Student Awards 2016:
+    _slug: student-awards-2016
+    _visible: false
+    caption: Congratulations to our 2016 Student Award Winners and well done for inspiring
+      excellence in our community
+    image: /samples/carousel/student-awards-2016/student_awards_2.png
+- Academic Excellence:
+    _slug: academic-excellence
+    _visible: false
+    caption: Celebrating Academic Excellence. Congratulations to our interns who achieved
+      a Distinction or higher grade average and earning your Gold Diary!
+    image: /samples/carousel/academic-excellence/Gold_Diaries_Carousel_2.png
+- Company Awards:
+    _slug: company-awards
+    _visible: false
+    caption: Congratulations to all of our 2016 Company Award Winners - thank you
+      for endlessly supporting our students!
+    image: /samples/carousel/company-awards/company_awards_6.png
+- Alumni:
+    _slug: alumni
+    _visible: false
+    caption: "Welcoming new CareerTrackers Alumni. This year CareerTrackers will graduate
+      141 students from university who will enter full-time employment and join our
+      Alumni Association\r\n"
+    image: /samples/carousel/alumni/Alumni_2016_Carousel.png
+- LDI Image 2016:
+    _slug: ldi-image-2016
+    _visible: false
+    caption: "Bringing together our student community for our 2016 Leadership Development
+      Institute. This year’s conference our biggest and best yet!\r\n"
+    image: /samples/carousel/ldi-image-2016/LDI_Carousel.png
+- Student Ambassadors:
+    _slug: student-ambassadors
+    _visible: false
+    caption: "Congratulations to our new Student Ambassadors who will play a key role
+      in helping to grow our community at university campuses across Australia\r\n"
+    image: /samples/carousel/student-ambassadors/Student_Ambassadors_2.png
+- New Interns 2016-2017:
+    _slug: new-interns-2016-2017
+    _visible: false
+    caption: Students are receiving their employment contract for their summer internship
+      - congratulations to all of our new interns!
+    image: /samples/carousel/new-interns-2016-2017/contract-signing.png
+- Gold Diaries:
+    _slug: gold-diaries
+    _visible: false
+    caption: Good luck to all of our students in preparing for their end of semester
+      assessments and exams - we know you will smash it!
+    image: /samples/carousel/gold-diaries/gold_diaries.png
+- Student Ambassadors 2016:
+    _slug: student-ambassadors-2016
+    _visible: false
+    caption: Thank you to all of our Student Ambassadors for building our community
+      of passionate students in 2016.
+    image: /samples/carousel/student-ambassadors-2016/2016-ambassadors.png
+- Winter Internships 2017:
+    _slug: winter-internships-2017
+    caption: The winter internship provides students with four weeks of paid work
+      in their desired career field over the mid year break at university. Check out
+      some of their amazing work.
+    image: /samples/carousel/winter-internships-2017/winter_internship_2017.png
+- Outward Bound 2017:
+    _slug: outward-bound-2017
+    caption: Thank you Outward Bound Australia for providing an incredible leadership
+      development program for CareerTrackers Alumni and Corporate 10x10 partners!
+    image: /samples/carousel/outward-bound-2017/outwardBound.png
+- Keynote Speakers 2017:
+    _slug: keynote-speakers-2017
+    caption: Congratulations to Keaan, Tiarnee and Jake for stepping up in front of
+      2,000 guests and sharing your story!
+    image: /samples/carousel/keynote-speakers-2017/CT_Carousel__6_.png
+- Gold Diary Winners 2017:
+    _slug: gold-diary-winners-2017
+    caption: Congratulations to our Academic Excellence Award winners for earning
+      the coveted CareerTrackers Gold Diary
+    image: /samples/carousel/gold-diary-winners-2017/CT_Carousel__4_.png
+- CT Award Winners 2017:
+    _slug: ct-award-winners-2017
+    caption: Congratulations to our 2017 award winners and for your contribution to
+      the CareerTrackers community
+    image: /samples/carousel/ct-award-winners-2017/CT_Carousel__5_.png

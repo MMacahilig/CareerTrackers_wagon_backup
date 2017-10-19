@@ -1,0 +1,62 @@
+---
+title: University 10x10 Program
+slug: university-10x10-program
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+editable_elements:
+  main/banner: /samples/pages/CTLDI_Flashpoint_Labs_6489.jpg
+  main/partners: "<div class=\"gmail_extra\">\r\n<div class=\"gmail_quote\">\r\n<div><span>The
+    CareerTrackers University 10x10 Initiative is a 10 year agreement signed by 10
+    universities.&nbsp;</span>The overarching principle of this initiative is to formalise
+    the pathways for Aboriginal and Torres Strait Islander university students into
+    experiential learning opportunities and to work closely with universities to achieve
+    our mutual goal of improving the educational outcomes for Indigenous students.&nbsp;As
+    10-year partners, CareerTrackers and each University have established a long-term
+    strategy that enables us to work side-by-side over many years.</div>\r\n</div>\r\n</div>"
+---
+{% extends parent %}
+{% block main %}
+{% capture banner_url %}{% editable_file 'banner' %}{% endeditable_file %}{% endcapture %}
+{% if banner_url != '' %}
+<div class='banner visible-lg visible-md'>
+  <img class='img-responsive' src='{{banner_url | escape}}'>
+</div>
+{% endif %}
+
+<style>
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+</style>
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='container-fluid'>
+    {% editable_text 'partners' %}
+    <p>
+      text here
+    </p>
+    {% endeditable_text %}
+  </div>
+	
+  <div class="containter-fluid" style="margin-bottom:10px"></div>
+  {% for partner in contents.uni_10x10_partners %}
+  {% cycle  '<div class="row">', '', '', '<div class="row">', '', ''%}
+  {% cycle  '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">', '<div class="col-lg-4" style="height:250px">'%}
+  <img alt='{{partner.name | escape}}' class='' style="padding-left:50px" src="{{partner.image.url | escape}}">
+  {% cycle  '</div>', '</div>', '</div>', '</div>', '</div>', '</div>'%}
+  {% cycle  '', '', '</div>', '', '', '</div>'%}
+  {% endfor %}
+  
+</div>
+
+
+    
+
+{% endblock %}

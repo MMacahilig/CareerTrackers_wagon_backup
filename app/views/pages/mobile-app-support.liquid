@@ -1,0 +1,46 @@
+---
+title: Mobile App Support
+slug: mobile-app-support
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 23
+seo_title: Mobile App Support
+editable_elements:
+  main/banner: 
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='col-md-12'>
+    <p>
+      Welcome! If you have any questions about installing or using our app, please get in touch with us using the contact details below.
+    </p>
+    {% for contact_us in contents.contact_us %}
+      {% if contact_us.location == 'Sydney' %}
+        <ul class='list-unstyled contact inherit-font-size'>
+        {% if contact_us.phone %}
+          <li class='contact_phone padded-top-small'>
+            <i class='fa fa-phone'></i>
+            <a href='tel:{{contact_us.phone}}'>
+              {{contact_us.phone}}
+            </a>
+          </li>
+        {% endif %}
+        {% if contact_us.email %}
+          <li class='contact_email padded-top-small'>
+            <i class='fa fa-envelope'></i>
+            <a href='mailto:{{contact_us.email}}'>
+              {{contact_us.email}}
+            </a>
+          </li>
+        {% endif %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

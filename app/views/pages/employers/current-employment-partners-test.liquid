@@ -1,0 +1,106 @@
+---
+title: Current Employment Partners Test
+slug: current-employment-partners-test
+listed: true
+published: false
+cache_strategy: none
+response_type: text/html
+position: 102
+editable_elements:
+  main/banner: 
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class="col-lg-12">
+  	<h3>CareerTrackers 10x10 Partners</h3>
+    <hr>
+  </div>
+  
+   <div class="col-lg-12">
+  {% for partner in contents.10_10_partners %}
+  {% cycle  '<div class="row company-row">', '', '', '<div class="row company-row">', '', ''%}
+  {% cycle  '<div class="col-lg-4" >', '<div class="col-lg-4" style="">', '<div class="col-lg-4" style="">', '<div class="col-lg-4" style="">', '<div class="col-lg-4" style="">', '<div class="col-lg-4" style="">'%}
+  <img alt='{{partner.name | escape}}' class='img-responsive' src="{{partner.group_image_1.url | escape}}">
+  {% cycle  '</div>', '</div>', '</div>', '</div>', '</div>', '</div>'%}
+  {% cycle  '', '', '</div>', '', '', '</div>'%}
+  {% endfor %}
+     
+  </div>
+  
+  {% for category in contents.categories %}
+  <div class="col-lg-12">
+  	<h3>{{category.name}}</h3>
+    <hr>
+  </div>
+  
+  	<!-- start logos -->
+	<div class="col-lg-12">
+
+    {% for company in category.companies %}
+      
+      {%if forloop.index == 1%}
+      	<div class="row company-row">
+      {% endif %}
+          
+      {% if forloop.index == 4 || forloop.index == 7 || forloop.index == 10 || forloop.index == 13%}
+          <div class="row company-row four {{forloop.index}}">
+      {% endif %}
+            
+      {% if forloop.index == 7%}
+          <div class="row company-row four {{forloop.index}}">
+      {% endif %}  
+            
+      {% if forloop.index == 10%}
+          <div class="row company-row four {{forloop.index}}">
+      {% endif %}
+            
+      {% if forloop.index == 13%}
+          <div class="row company-row four {{forloop.index}}">
+      {% endif %}
+            
+      <div class="col-lg-4">
+      <img alt='{{company.name | escape}}' class='img-responsive' src='{{company.image.url | escape}}'>
+      </div>
+      
+      {% if forloop.index == 3 || forloop.index == 6 || forloop.index == 9 || forloop.index == 12%}
+		</div><!-- 3 -->
+      {% endif %}
+      
+      {% if forloop.index == 6 %}
+		</div><!-- 6 -->
+      {% endif %}
+          
+      {% if forloop.index == 9 %}
+		</div><!-- 9 -->
+      {% endif %}
+      
+      {% if forloop.index == 12 %}
+		</div><!-- 12 -->
+      {% endif %}
+          
+      {% if forloop.rindex == 1 %}
+          {% if forloop.index == 3 %}
+          		<!--trigger 3-->
+          {% elsif forloop.index == 6 %}
+          		<!--trigger 6-->
+          {% elsif forloop.index == 9 %}
+          		<!--trigger 9-->
+          {% elsif forloop.index == 12 %}
+          {% else %}
+          	</div> <!-- last -->  
+          {% endif  %}
+      		
+      {% endif %}
+            
+     
+    {% endfor %}
+    
+  	</div><!-- end logos -->
+ 
+  {% endfor %}
+  
+</div>
+{% endblock %}

@@ -1,9 +1,33 @@
 ---
 - Morgan Coleman (President):
     _slug: morgan-coleman
-    description: Morgan is a graduate of Melbourne University with a Bachelor of Commerce. Morgan majored in Management and Marketing and was the recipient of an Academic Excellence Award and The Student of The Year Award in 2012. Morgan completed his internship with Lend Lease and has successfully converted into full-time employment within the Project Management and Construction division of the company.
+    _visible: false
+    description: Morgan is a graduate of Melbourne University with a Bachelor of Commerce.
+      Morgan majored in Management and Marketing and was the recipient of an Academic
+      Excellence Award and The Student of The Year Award in 2012. Morgan completed
+      his internship with Lend Lease and has successfully converted into full-time
+      employment within the Project Management and Construction division of the company.
     image: /samples/alumni/morgan-coleman/Profile_Morgan_Coleman.jpg
 - Nathan Fuller (Vice President):
     _slug: nathan-fuller
-    description: Nathan completed his internship with Woolworths in 2011 and successfully converted into full-time employment with the Business Technical Services team of Woolworths. Nathan is a graduate of the University of Technology, Sydney with a Bachelor of Science in Information Technology.
+    _visible: false
+    description: Nathan completed his internship with Woolworths in 2011 and successfully
+      converted into full-time employment with the Business Technical Services team
+      of Woolworths. Nathan is a graduate of the University of Technology, Sydney
+      with a Bachelor of Science in Information Technology.
     image: /samples/alumni/nathan-fuller/Profile_Nathan_Fuller.jpg
+- Charlee-Sue Frail (President):
+    _slug: charlee-sue-frail-president
+    description: Charlee-Sue is a Ngemba woman from North Western NSW. Charlee-Sue
+      completed her Bachelor of Arts majoring in Political Science and Anthropology
+      at the Australian National University in 2014. While studying she interned at
+      GHD Consulting and now works at Recognise as the Coordinator of Aboriginal and
+      Torres Strait Islander Engagement.
+    image: /samples/alumni/charlee-sue-frail-president/Charlie-Sue.png
+- Harley Gleeson (Vice President):
+    _slug: harley-gleeson-vice-president
+    description: Harley is from Newcastle, where he completed his Bachelor of Construction
+      Management (Building) at the University of Newcastle. Harley completed his internship
+      with GHD and has successfully converted into full-time employment and now works
+      in the Cost and Commercial team as a Quantity Surveyor.
+    image: /samples/alumni/harley-gleeson-vice-president/Harley.png

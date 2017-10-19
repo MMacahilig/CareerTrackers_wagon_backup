@@ -1,13 +1,15 @@
 ---
-- Graeme Kennedy:
-    _slug: graeme-kennedy
+- John Kirby:
+    _slug: clark-donovan
+    _visible: false
     description: John Kirby is a proud Ngemba man from Brewarrina and currently studies
       Business at the University of Technology Sydney. Check out his keynote speech
       at our 4th Annual Gala Dinner at the Westin Sydney in January.
-    image: /samples/stories/Gawamga-DP.png
+    image: /samples/stories/clark-donovan/Profile_John_Kirby.jpg
     youtube_video_url: http://youtu.be/VOvHhkbszHc
 - Craig Laslett:
     _slug: craig-laslett
+    _visible: false
     description: Managing Director of Leighton Contractors, Craig Laslett discusses
       his view on reconciliation and his vision for CareerTrackers interns within
       his company.
@@ -15,8 +17,59 @@
     youtube_video_url: http://youtu.be/HW48o-Fqx8M
 - Amanda Fisher:
     _slug: elliana-lawford
+    _visible: false
     description: Amanda recently graduated with a Bachelor of Arts in Communications
       (Journalism) at the University of Technology Sydney and commenced her role in
       the Coca Cola graduate program.
     image: /samples/stories/elliana-lawford/Profile_Amanda_Fisher.jpg
     youtube_video_url: http://youtu.be/OFd-cKqw4G0
+- Ashleigh Lindsay:
+    _slug: ashleigh-lindsay
+    _visible: false
+    description: Ashleigh Lindsay is a Bardi and Torres Strait Islander Woman from
+      Western Australia. Ashleigh is a young mother to a 7-year old boy named Shaun.
+      He is her motivation for succeeding in life. At the time of this speech Ashleigh
+      was completing her Law degree at Murdoch University and has since earned a Graduate
+      role at Herbert Smith Freehills.
+    image: /samples/stories/ashleigh-lindsay/Ashleigh.png
+    youtube_video_url: https://www.youtube.com/watch?v=xaOmCWl63TY
+- Barbie-Lee Kirby:
+    _slug: barbie-lee-kirby
+    _visible: false
+    description: Barbie-Lee is a proud Ngemba woman from Brewarrina and is currently
+      in her final year of a Bachelor of Business majoring in Accounting at the University
+      of Technology Sydney. Barbie-Lee made an extremely moving speech on her journey
+      and passion for helping other young Indigenous students at our latest Annual
+      Gala Dinner, check it out here!
+    image: /samples/stories/barbie-lee-kirby/Barbie.jpg
+    youtube_video_url: https://www.youtube.com/watch?v=Jptl_REODGY
+- Shannon Lockyer:
+    _slug: shannon-lockyer
+    _visible: false
+    description: 'Shannon Lockyer is a proud Kija/Jaru man from the east Kimberley''s
+      and is currently undertaking his third year of a Bachelor of Town Planning at
+      the University of Queensland and Interning with Lend Lease in Brisbane. '
+    image: /samples/stories/shannon-lockyer/Shayne.png
+    youtube_video_url: https://youtu.be/A6c9Cwfby_Q
+- Keaan Mason:
+    _slug: keaan-mason
+    description: Keaan is a proud Indigenous man from the Kariyarra people in Western
+      Australia. He recently graduated with a Bachelor of Business majoring in Economics
+      and Business Management at Queensland University of Technology and commenced
+      graduate employment with Commonwealth Bank.
+    image: /samples/stories/keaan-mason/Keynote_speaker_-_Keaan.png
+    youtube_video_url: https://youtu.be/VnqNTk5Sxxk
+- Tiarnee Schafer:
+    _slug: tiarnee-schafer
+    description: 'Tiarnee is a proud Kalkadoon woman from Mount Isa and is studying
+      a double degree in psychological science and business majoring in human resources
+      at Griffith University whilst interning at Caltex. '
+    image: /samples/stories/tiarnee-schafer/Keynote_speaker_-_Tiarnee.png
+    youtube_video_url: https://youtu.be/y-nxosWkXgA
+- Jake Witchard:
+    _slug: jake-witchard-1
+    description: Jake is a proud Dunghutti man from Kempsey and is currently undertaking
+      a Bachelor of Law at the University of Technology Sydney whilst interning at
+      Lendlease.
+    image: /samples/stories/jake-witchard-1/Keynote_speaker_-_Jake.png
+    youtube_video_url: https://www.youtube.com/watch?v=gN8bdOci3IY

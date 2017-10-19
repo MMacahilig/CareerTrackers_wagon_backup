@@ -20,3 +20,11 @@ fields:
     required: true
     unique: false
     localized: false
+- category:
+    label: Category
+    type: belongs_to
+    required: false
+    unique: false
+    localized: false
+    class_name: categories
+    ui_enabled: true

@@ -1,0 +1,27 @@
+---
+name: 10/10 Partners
+description: Corporate 10-10 Partners
+slug: 10_10_partners
+label_field_name: name
+order_by: manually
+order_direction: asc
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    unique: false
+    localized: false
+- description:
+    label: Description
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: none
+- image:
+    label: Image
+    type: file
+    required: true
+    unique: false
+    localized: false

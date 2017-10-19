@@ -1,0 +1,38 @@
+---
+title: Manager's Guide
+slug: managers-guide
+listed: false
+published: false
+cache_strategy: none
+response_type: text/html
+position: 102
+editable_elements:
+  main/banner: /samples/pages/Qantas_Banner_2.png
+  main/content: <p>The video presented below provides a guide for managers new to
+    the CareerTrackers Indigenous Internship Program. <br />This video walks through
+    four key elements of the program, namely, The Learning Contract, Weekly Updates,
+    <br />Intern Presentations and the Internship Evaluation.&nbsp;</p>
+  main/video: <p><iframe width="854" height="510" frameborder="0" allowfullscreen=""
+    src="https://www.youtube.com/embed/jD7BqfD-HIM"></iframe></p>
+---
+{% extends 'parent' %}
+{% block main %}
+{% include banner %}
+<style>
+.youtube-player { display: block; margin: 0 auto; }
+</style>
+<div class='container-fluid'>
+
+  {% include page_header %}
+  {% editable_text content %}
+  
+  {% endeditable_text %}
+  <div class='col-md-2'>
+  </div>
+  <div class='col-md-10'>
+  	{% editable_text video %}
+    
+    {% endeditable_text %}
+  </div>
+</div>
+{% endblock %}

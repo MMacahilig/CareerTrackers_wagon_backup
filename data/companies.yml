@@ -1,187 +1,363 @@
 ---
+- Aboriginal Housing Office:
+    _slug: aboriginal-housing-office
+    image: /samples/companies/aboriginal-housing-office/aho.png
+- ACCC:
+    _slug: accc
+    image: /samples/companies/accc/ACCC.png
+- Accenture:
+    _slug: accenture
+    image: /samples/companies/accenture/accenture.png
 - Accor Hotels:
     _slug: accor-hotels
     image: /samples/companies/accor-hotels/accor-logo.jpg
+    category: travel-slash-tourism
+- AECOM:
+    _slug: aecom
+    image: /samples/companies/aecom/10x10_logo_300x200.png
 - Allen & Overy:
     _slug: allen-and-overy
     image: /samples/companies/allen-and-overy/allen-overy_-_logo.jpg
+    category: law
 - ANZ:
     _slug: anz
     image: /samples/companies/anz/anz_h_boxed-whitebluedeepcurrent-rgb1.jpg
+    category: finance
 - Arnold Bloch Leibler:
     _slug: arnold-bloch-leibler
-    image: /samples/companies/arnold-bloch-leibler/ABLmedialogorgb.jpg
-- Austrade:
-    _slug: austrade
-    image: /samples/companies/austrade/Austrade_-_logo1.jpg
-- Bangarra Dance Theatre:
-    _slug: bangarra-dance-theatre
-    image: /samples/companies/bangarra-dance-theatre/bangarra.jpeg
+    image: /samples/companies/arnold-bloch-leibler/Arnold_Bloch_Leibler.jpeg
+- ARUP:
+    _slug: arup
+    image: /samples/companies/arup/1606_Bupa_logo_500x110px.jpg
+- Atlassian:
+    _slug: atlassian
+    image: /samples/companies/atlassian/logo-21.png
+- Audit Office of NSW:
+    _slug: audit-office-of-nsw
+    image: /samples/companies/audit-office-of-nsw/logo-audit-office.png
+- Aurizon:
+    _slug: aurizon
+    image: /samples/companies/aurizon/Aurizon_logo.png
+- Australia Post:
+    _slug: australia-post
+    image: /samples/companies/australia-post/_media_18779_ap-primary_lockup_pos_cmyk.jpg
+    category: utilities
+- Australian Pool Reinsurance Corporation:
+    _slug: australian-pool-reinsurance-corporation
+    image: /samples/companies/australian-pool-reinsurance-corporation/arpc-logo.png
+- Australian Rugby Union:
+    _slug: australian-rugby-union
+    image: /samples/companies/australian-rugby-union/Australian_Rugby_Union_logo.jpg
+- Bank of Queensland:
+    _slug: bank-of-queensland
+    image: /samples/companies/bank-of-queensland/BOQ_logo_portrait_1181x1332pixels.jpg
+- BBC Worldwide:
+    _slug: bbc-worldwide
+    image: /samples/companies/bbc-worldwide/BBC_Worldwide_Logo.svg.png
+- BGC:
+    _slug: bcg
+    image: /samples/companies/bcg/BGCLogoCol_no_background.jpg
+- Blackwall:
+    _slug: blackwall
+    image: /samples/companies/blackwall/blackwall.png
 - BP:
     _slug: bp
     image: /samples/companies/bp/bp_logo_svg.png
-- Bunch:
-    _slug: bunch
-    image: /samples/companies/bunch/bunchlogo.jpg
-- CCA:
-    _slug: cca
-    image: /samples/companies/cca/cca-logo.gif
+    category: metals-plus-mining
+- Brisbane Airport Corporation:
+    _slug: brisbane-airport-corporation
+    image: /samples/companies/brisbane-airport-corporation/brisbaneairport.png
+- Broadspectrum:
+    _slug: transfield-services
+    image: /samples/companies/transfield-services/Approved-Broadspectrum-logo-cmyk.jpg
+    category: engineering
+- Brotherhood of St Laurence:
+    _slug: brotherhood-of-st-laurence
+    image: /samples/companies/brotherhood-of-st-laurence/brotherhoodofstlaurence.gif
+- Bupa:
+    _slug: bupa
+    image: /samples/companies/bupa/Bupa.png
+- Caltex:
+    _slug: caltex
+    image: /samples/companies/caltex/Caltex.png
+- CIRCA:
+    _slug: circa
+    image: /samples/companies/circa/circa.png
+- Clifford Chance:
+    _slug: clifford-chance
+    image: /samples/companies/clifford-chance/Clifford_Chance.png
+- Colin Biggers & Paisley:
+    _slug: colin-biggers-and-paisley
+    image: /samples/companies/colin-biggers-and-paisley/cbp.jpg
 - Commonwealth Bank:
     _slug: commonwealth-bank
     image: /samples/companies/commonwealth-bank/cba.jpg
-- CSTL:
-    _slug: cstl
-    image: /samples/companies/cstl/csl.jpeg
+    category: finance
+- Corrs Chambers Westgarth:
+    _slug: corrs-chambers-westgarth
+    image: /samples/companies/corrs-chambers-westgarth/Corrs_Chambers_Westgarth.png
+- COX:
+    _slug: cox
+    image: /samples/companies/cox/cox.png
+    category: architectur
+- CPB Contractors:
+    _slug: leighton-contractors
+    image: /samples/companies/leighton-contractors/CPB_Full_RGB_Pos.jpg
+    category: engineering
+- Culture is Life:
+    _slug: culture-is-life
+    image: /samples/companies/culture-is-life/cultureislife.png
+- Danone Nutricia:
+    _slug: danone-nutricia
+    image: /samples/companies/danone-nutricia/Danone_Nutricia.png
+- Dentons:
+    _slug: dentons
+    image: /samples/companies/dentons/Screen_Shot_2017-01-17_at_11.53.37_am.png
+- Department of Education & Community:
+    _slug: department-of-education-and-community
+    image: /samples/companies/department-of-education-and-community/Department_of_Education_and_Community.png
 - DLA Piper:
     _slug: dla-piper
     image: /samples/companies/dla-piper/DLA-Piper_-Logo.jpg
-- dLux:
-    _slug: dlux
-    image: /samples/companies/dlux/dlux-logo.jpg
-- Energy Development Ltd:
-    _slug: energy-development-ltd
-    image: /samples/companies/energy-development-ltd/Energy_Developments_-_Logo.jpeg
+    category: law
+- DHHS:
+    _slug: dhhs
+    image: /samples/companies/dhhs/VDHHS.png
+- Energy Developments:
+    _slug: energy-developments
+    image: /samples/companies/energy-developments/Energy_Developments.png
 - EY:
     _slug: ey
     image: /samples/companies/ey/ey.gif
+    category: finance
+- EPA NSW:
+    _slug: epa-nsw
+    image: /samples/companies/epa-nsw/epa-NSW-e1457486611345.png
 - Foxtel:
     _slug: foxtel
-    image: /samples/companies/foxtel/Foxtel.jpeg
+    image: /samples/companies/foxtel/Foxtel_Logotype_Hero_logo_FRed_RGB.jpg
+    category: entertainment
 - Gadens Lawyers:
     _slug: gadens-lawyers
     image: /samples/companies/gadens-lawyers/Gadens.jpg
+    category: law
 - GHD:
     _slug: ghd
-    image: /samples/companies/ghd/ghd.jpg
+    image: /samples/companies/ghd/GHD.jpg
+    category: engineering
+- Goodman fielder:
+    _slug: goodman-fielder
+    image: /samples/companies/goodman-fielder/logo-large.png
+- Goodstart Early Learning:
+    _slug: goodstart-early-learning
+    image: /samples/companies/goodstart-early-learning/Goodstart_Early_Learning.jpeg
 - GPT Group:
     _slug: gpt-group
     image: /samples/companies/gpt-group/gpt.jpg
-- Hausmann Communications:
-    _slug: hausmann-communications
-    image: /samples/companies/hausmann-communications/hausmann_logo.jpg
+    category: finance
+- Griffith University:
+    _slug: griffith-university
+    image: /samples/companies/griffith-university/griffith-logo-2.png
+- Hardy Grant:
+    _slug: hardy-gran
+    image: /samples/companies/hardy-gran/hardygrant.png
 - Henry Davis York:
     _slug: henry-davis-york
     image: /samples/companies/henry-davis-york/henry_davis_york_-_new_logo.jpg
+    category: law
 - Herbert Smith Freehills:
     _slug: herbert-smith-freehills
     image: /samples/companies/herbert-smith-freehills/hsf.jpg
+    category: law
 - Indigenous Business Australia:
     _slug: indigenous-business-australia
     image: /samples/companies/indigenous-business-australia/iba.jpeg
+    category: finance
 - Infigen Energy:
     _slug: infigen-energy
     image: /samples/companies/infigen-energy/Infigen_Energy_-_Logo.jpeg
+    category: energy
 - Insurance Australia Group (IAG):
     _slug: insurance-australia-group-iag
-    image: /samples/companies/insurance-australia-group-iag/iag.gif
+    image: /samples/companies/insurance-australia-group-iag/new_iag_300x200_2.png
+    category: finance
+- Jacobs:
+    _slug: jacobs
+    image: /samples/companies/jacobs/Jacobs-Logo_Blue_Small.jpg
+- Jawun:
+    _slug: jawun
+    image: /samples/companies/jawun/jawun.png
 - John Holland:
     _slug: john-holland
     image: /samples/companies/john-holland/jh_rail_logo.jpg
+    category: engineering
 - King & Wood Mallesons:
     _slug: king-and-wood-mallesons
-    image: /samples/companies/king-and-wood-mallesons/King_and_Wood_Mallesons_-_Logo.jpeg
-- Leighton Contractors:
-    _slug: leighton-contractors
-    image: /samples/companies/leighton-contractors/leighton.jpg
+    image: /samples/companies/king-and-wood-mallesons/king___wood.png
+    category: law
 - Lend Lease:
     _slug: lend-lease
-    image: /samples/companies/lend-lease/Lend_Lease_-_Logo.jpeg
+    image: /samples/companies/lend-lease/Lendlease-min.jpg
+    category: engineering
+- Level Crossing Removal Authority:
+    _slug: level-crossing-railway-authority
+    image: /samples/companies/level-crossing-railway-authority/lxra_logo.jpg
 - Macquarie:
     _slug: macquarie
-    image: /samples/companies/macquarie/macquarie_personal_logo.gif
-- Maxima:
-    _slug: maxima
-    image: /samples/companies/maxima/Maxima_-_logo.gif
-- Metcash:
-    _slug: metcash
-    image: /samples/companies/metcash/metcash.jpg
-- Minter Ellison:
-    _slug: minter-ellison
-    image: /samples/companies/minter-ellison/Minter_Ellison_-_Logo.jpg
+    image: /samples/companies/macquarie/macquarie-bank.png
+    category: finance
+- Medibank:
+    _slug: medibank
+    image: /samples/companies/medibank/medibank-logo.jpg
+- Melbourne Metro:
+    _slug: melbourne-metro
+    image: /samples/companies/melbourne-metro/melbournemetro.gif
+- Mirvac:
+    _slug: mirvac
+    image: /samples/companies/mirvac/mirvac.png
+- Monash University:
+    _slug: monash-university
+    image: /samples/companies/monash-university/Monash_University_logo.png
 - Moody's:
     _slug: moodys
     image: /samples/companies/moodys/moodys_logo_blue.jpg
+    category: finance
+- MWH:
+    _slug: mwh
+    image: /samples/companies/mwh/MWH.jpg
 - NAB:
     _slug: nab
     image: /samples/companies/nab/nab.jpg
-- NBN Co:
-    _slug: nbn-co
-    image: /samples/companies/nbn-co/NBN_Co_-_Logo.jpg
+    category: finance
 - News Limited:
     _slug: news-limited
     image: /samples/companies/news-limited/NCAus_2c_rgb.jpg
-- Opera Australia:
-    _slug: opera-australia
-    image: /samples/companies/opera-australia/OA_OperaAustralia_Logo_RGB_72dpi.jpg
-- OzChild:
-    _slug: ozchild
-    image: /samples/companies/ozchild/OzChild_-_Logo.jpeg
-- Parsons Brickerhoff:
-    _slug: parsons-brickerhoff
-    image: /samples/companies/parsons-brickerhoff/Parsons_Brinckerhoff_-_Logo.jpg
-- Perpetual:
-    _slug: perpetual
-    image: /samples/companies/perpetual/Perpetual_-_Logo.jpg
+    category: communications
+- Nous group:
+    _slug: nous-group
+    image: /samples/companies/nous-group/Screen_Shot_2016-07-19_at_8.59.52_am.png
+- Novartis Pharmaceuticals:
+    _slug: novartis-pharmaceuticals
+    image: /samples/companies/novartis-pharmaceuticals/novartis.png
+- NRL:
+    _slug: nrl
+    image: /samples/companies/nrl/nrl.jpg
+- NRMA:
+    _slug: nrma
+    image: /samples/companies/nrma/NRMA.png
+- Ogilvy:
+    _slug: ogilvy
+    image: /samples/companies/ogilvy/logo-ogilvy.png
+- Origin:
+    _slug: origi
+    image: /samples/companies/origi/origin-energy-vector-logo-400x400.png
+- Promena Projects:
+    _slug: promena-projects
+    image: /samples/companies/promena-projects/Promena_Projects.jpeg
+- PWC:
+    _slug: pwc
+    image: /samples/companies/pwc/PWC.png
 - Qantas:
     _slug: qantas
     image: /samples/companies/qantas/qantas.jpg
-- Recognise:
-    _slug: recognise
-    image: /samples/companies/recognise/RECOGNISE_Circle_Logo.jpeg
-- Shell:
-    _slug: shell
-    image: /samples/companies/shell/shell.jpg
+    category: travel-slash-tourism
+- QBE:
+    _slug: qbe
+    image: /samples/companies/qbe/QBE.png
+- QIC:
+    _slug: qic
+    image: /samples/companies/qic/qic-logo.png
+- RBA:
+    _slug: rba
+    image: /samples/companies/rba/rba-logo-horizontal-black.jpg
+- ReachOut!:
+    _slug: reachout
+    image: /samples/companies/reachout/ReachOut_Logo_Dark.png
+- Red Cross:
+    _slug: red-cross
+    image: /samples/companies/red-cross/CLFull_Horizontal.jpg
+    category: health-care
+- Rehab Management:
+    _slug: rehab-management
+    image: /samples/companies/rehab-management/REHAB-MANAGEMENT-LOGO.jpg
+- Richard Crookes Constructions:
+    _slug: richard-crookes-constructions
+    image: /samples/companies/richard-crookes-constructions/RC_rainbow_logo_RGB_2017.png
+- RSM:
+    _slug: rsm
+    image: /samples/companies/rsm/RSM_International_Logo.jpg
+- Save the Children:
+    _slug: save-the-children
+    image: /samples/companies/save-the-children/stc-logo.jpg
+- Schlumburger:
+    _slug: schlumburger
+    image: /samples/companies/schlumburger/schlumburger.jpg
 - SJB:
     _slug: sjb
     image: /samples/companies/sjb/sjb.jpg
+    category: architectur
 - Social Ventures Australia (SVA):
     _slug: social-ventures-australia-sva
     image: /samples/companies/social-ventures-australia-sva/sva-2.jpg
+    category: travel-slash-tourism
 - St John of God Health Care:
     _slug: st-john-of-god-health-care
     image: /samples/companies/st-john-of-god-health-care/St_John_of_God.jpg
+    category: health-care
+- Sugar Australia:
+    _slug: sugar-australia
+    image: /samples/companies/sugar-australia/Sugar_Australia.jpeg
+- 'Sydney Airport ':
+    _slug: sydney-airport
+    image: /samples/companies/sydney-airport/Sydney_Airport_Logo.png
 - Sydney Theatre Company:
     _slug: sydney-theatre-company
     image: /samples/companies/sydney-theatre-company/Sydney_Theatre_Company.jpg
+    category: entertainment
+- TAL:
+    _slug: tal
+    image: /samples/companies/tal/TAL_Logo_light_green.jpg
 - Telstra:
     _slug: telstra
     image: /samples/companies/telstra/Telstra_icon_blue.png
-- TFE Hotels:
-    _slug: tfe-hotels
-    image: /samples/companies/tfe-hotels/TFE.jpg
-- Thiess:
-    _slug: thiess
-    image: /samples/companies/thiess/thiess_newlogo_rgb_gradient.jpg
+    category: information-technology
 - ThoughtWorks:
     _slug: thoughtworks
     image: /samples/companies/thoughtworks/thoughtworks.jpg
-- Toga Group:
-    _slug: toga-group
-    image: /samples/companies/toga-group/toga_group.jpg
-- Transfield Services:
-    _slug: transfield-services
-    image: /samples/companies/transfield-services/transfield.jpeg
-- Urbis:
-    _slug: urbis
-    image: /samples/companies/urbis/urbis.jpg
-- VACCHO:
-    _slug: vaccho
-    image: /samples/companies/vaccho/vaccho.jpg
-- Visionstream:
-    _slug: visionstream
-    image: /samples/companies/visionstream/visionstream.png
-- Vitol:
-    _slug: vitol
-    image: /samples/companies/vitol/Vitol_-_Logo.bmp
+    category: information-technology
+- TopDeck:
+    _slug: topdeck
+    image: /samples/companies/topdeck/TD_Logo_Black_Yellowbg_RGB.jpg
+- Tourism & Events QLD:
+    _slug: tourism-and-events-qld
+    image: /samples/companies/tourism-and-events-qld/22_lrg_20131907160015_img.jpg
+- VACCA:
+    _slug: vacca
+    image: /samples/companies/vacca/vacca-logo.png
+- Viva Energy Australia:
+    _slug: viva-energy-australia
+    image: /samples/companies/viva-energy-australia/Viva_Energy_Australia_RGB.jpg
+    category: energy
+- Walter & Eliza Hall:
+    _slug: walter-and-eliza-hall
+    image: /samples/companies/walter-and-eliza-hall/Walter___Eliza_Hall.png
+- Waratahs:
+    _slug: waratahs
+    image: /samples/companies/waratahs/waratahs.png
+- Wesfarmers Industrial and Safety:
+    _slug: wesfarmers-industrial-and-safety
+    image: /samples/companies/wesfarmers-industrial-and-safety/westfarmers_industrial.jpg
 - Westpac:
     _slug: westpac
     image: /samples/companies/westpac/westpac.jpg
-- Woodside:
-    _slug: woodside
-    image: /samples/companies/woodside/Woodside_Logo_-_Colour_HiDef_1_.png
-- Worley Parsons:
-    _slug: worley-parsons
-    image: /samples/companies/worley-parsons/worley-parsons-logo.jpg
+    category: finance
+- WINC:
+    _slug: staples
+    image: /samples/companies/staples/WINC_TM_LOGO_RGB_COLOUR.PNG
+- Wood Group:
+    _slug: wood-group
+    image: /samples/companies/wood-group/Wood_Group.png
 - Wyatt Trust:
     _slug: wyatt-trust
     image: /samples/companies/wyatt-trust/wyatt.png
+    category: non-governmental-organization
