@@ -21918,3 +21918,73 @@ Found page "Forms" [forms]
 [0m
 * Reloaded "pages", "snippets" at 2017-10-20 08:16:53 +1000
 * Reloaded "pages", "snippets" at 2017-10-20 08:19:53 +1000
+[0;97;49mStarted GET "/" at 2017-10-20 08:20:56 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 169.4ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-20 08:21:02 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 26.6ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-20 08:21:20 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 43.4ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-20 08:21:22 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.7ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-10-20 08:22:30 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 28.9ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-20 08:22:32 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 08:22:52 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 31.4ms
+
+[0m
