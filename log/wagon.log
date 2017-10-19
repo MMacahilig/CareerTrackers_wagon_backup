@@ -21988,3 +21988,46 @@ Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
 [0;32;49mCompleted 200 OK in 31.4ms
 
 [0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 08:44:25 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 39.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 08:47:36 +1000
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 08:47:40 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 08:49:10 +1000
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 08:49:16 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 38.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 08:50:27 +1000
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 08:50:33 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 35.0ms
+
+[0m
