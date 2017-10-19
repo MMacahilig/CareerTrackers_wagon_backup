@@ -21896,3 +21896,24 @@ Detecting locale EN
 [0;32;49mCompleted 404 Not Found in 109.4ms
 
 [0m
+[0;97;49mStarted GET "/" at 2017-10-20 08:15:04 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 198.8ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-20 08:15:21 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 08:16:53 +1000
