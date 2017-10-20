@@ -255,3 +255,86 @@ Found page "Tax File Number Declaration" [forms/tfn-declaration]
 
 [0m
 * Reloaded "pages", "snippets" at 2017-10-20 14:59:29 +1000
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 15:53:49 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.2ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 15:54:08 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 46.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 15:56:06 +1000
+[0;97;49mStarted GET "/forms/ics-application" at 2017-10-20 15:56:55 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 16.0ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-20 15:57:02 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 15:59:18 +1000
+[0;97;49mStarted GET "/" at 2017-10-20 15:59:44 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 188.1ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-20 15:59:48 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 16:00:09 +1000
+[0;97;49mStarted GET "/forms/ics-scholarship-eoi" at 2017-10-20 16:00:29 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship - Expression of Interest" [forms/ics-scholarship-eoi]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.2ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 16:00:56 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 32.2ms
+
+[0m
