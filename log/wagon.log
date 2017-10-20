@@ -1,0 +1,31 @@
+# Logfile created on 2017-10-20 09:30:22 +1100 by logger.rb/1.2.8
+[0;97;49mStarted GET "/" at 2017-10-20 09:30:33 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 434.1ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 09:31:04 +1100[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 103.0ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2017-10-20 09:44:51 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 226.5ms
+
+[0m
