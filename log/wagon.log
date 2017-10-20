@@ -394,3 +394,26 @@ Found page "ICS Scholarship - Expression of Interest" [forms/ics-scholarship-eoi
 [0;32;49mCompleted 200 OK in 19.3ms
 
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 17:08:40 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 40.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 17:18:07 +1000
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 17:19:08 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 45.9ms
+
+[0m

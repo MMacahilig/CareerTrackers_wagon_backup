@@ -195,22 +195,28 @@ seo_title: ICS Expression of Interest (cont)
 
                                     <option value = "">State</option>
 
+                                    {% if params['residential_address_3'] == "ACT" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                                    {% endif %}
+
                                     {% if params['residential_address_3'] == "NSW" %}
                                     <option selected='' value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
                                     {% else %}
                                     <option value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
                                     {% endif %}
 
+                                    {% if params['residential_address_3'] == "NT" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                                    {% endif %}
+
                                     {% if params['residential_address_3'] == "QLD" %}
                                     <option selected='' value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
                                     {% else %}
                                     <option value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
-                                    {% endif %}
-
-                                    {% if params['residential_address_3'] == "VIC" %}
-                                    <option selected='' value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
-                                    {% else %}
-                                    <option value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
                                     {% endif %}
 
                                     {% if params['residential_address_3'] == "SA" %}
@@ -225,22 +231,16 @@ seo_title: ICS Expression of Interest (cont)
                                     <option value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
                                     {% endif %}
 
+                                    {% if params['residential_address_3'] == "VIC" %}
+                                    <option selected='' value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                                    {% else %}
+                                    <option value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                                    {% endif %}
+
                                     {% if params['residential_address_3'] == "WA" %}
                                     <option selected='' value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
                                     {% else %}
                                     <option value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
-                                    {% endif %}
-
-                                    {% if params['residential_address_3'] == "ACT" %}
-                                    <option selected='' value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
-                                    {% else %}
-                                    <option value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
-                                    {% endif %}
-
-                                    {% if params['residential_address_3'] == "NT" %}
-                                    <option selected='' value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
-                                    {% else %}
-                                    <option value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
                                     {% endif %}
 
                                 </select>
