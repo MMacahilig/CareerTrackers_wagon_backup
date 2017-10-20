@@ -123,7 +123,7 @@ seo_title: Bank Account Details
 				</div>
 
 				<div class='form-group'>
-					<label class='small col-sm-3 control-label' for='post'>Postcode</label>
+					<label class='col-sm-3 control-label' for='post'>Postcode</label>
 					<div class='col-sm-5'>
 						<div class='input-group'>
 							<input class='digit-box form-control' id="residential_post_1" maxlength='1' name='bank[residential_post_1]' type='text' value="{%if params['residential_post_1']%}{{params['residential_post_1']}}{%else%}{{ics['residential_post_1']}}{%endif%}">
@@ -155,51 +155,38 @@ seo_title: Bank Account Details
 					</div>
 
 				</div>
+                
+                <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='mobile'>
+                            Mobile Number
+                        </label>
+                        <div class='col-sm-5'>
+                            <!--<input class='mobile form-control' id="mobile" name='ics[mobile]' placeholder='' type='text' value="{{params['mobile']}}">-->
+							<div class='input-group pull-left'>
 
-				<div class='form-group'>
+								<input class='digit-box form-control' id="phone_1" maxlength='1' name='bank[phone_1]' type='text' value="{%if params['phone_1']%}{{params['phone_1']}}{%else%}{{ics['phone_1']}}{%endif%}">
 
-					<label class='col-sm-3 control-label' for='phone'>
+								<input class='digit-box form-control' id="phone_2" maxlength='1' name='bank[phone_2]' type='text' value="{%if params['phone_2']%}{{params['phone_2']}}{%else%}{{ics['phone_2']}}{%endif%}">
 
-						Phone numbers:
+								<input class='digit-box form-control' id="phone_3" maxlength='1' name='bank[phone_3]' type='text' value="{%if params['phone_3']%}{{params['phone_3']}}{%else%}{{ics['phone_3']}}{%endif%}">
 
-					</label>
+								<input class='digit-box form-control' id="phone_4" maxlength='1' name='bank[phone_4]' type='text' value="{%if params['phone_4']%}{{params['phone_4']}}{%else%}{{ics['phone_4']}}{%endif%}">
 
-				</div>
+								<input class='digit-box form-control' id="phone_5" maxlength='1' name='bank[phone_5]' type='text' value="{%if params['phone_5']%}{{params['phone_5']}}{%else%}{{ics['phone_5']}}{%endif%}">
 
-				<div class='form-group no-margin-bottom'>
+								<input class='digit-box form-control' id="phone_6" maxlength='1' name='bank[phone_6]' type='text' value="{%if params['phone_6']%}{{params['phone_6']}}{%else%}{{ics['phone_6']}}{%endif%}">
 
-					<label class='col-sm-3 small control-label' for='home_phone'>
+								<input class='digit-box form-control' id="phone_7" maxlength='1' name='bank[phone_7]' type='text' value="{%if params['phone_7']%}{{params['phone_7']}}{%else%}{{ics['phone_7']}}{%endif%}">
 
-						Home
+								<input class='digit-box form-control' id="phone_8" maxlength='1' name='bank[phone_8]' type='text' value="{%if params['phone_8']%}{{params['phone_8']}}{%else%}{{ics['phone_8']}}{%endif%}">
 
-					</label>
-
-					<div class='col-sm-5'>
-
-						<div class='input-group'>
-							<input class='area_code form-control' id='home_phone_area' maxlength='2' name='bank[home_phone_area]' type='text' value="{%if params['home_phone_area']%}{{params['home_phone_area']}}{%else%}{{ics['home_phone_area']}}{%endif%}">
-
-							<input class='phone form-control' id='home_phone' name='bank[home_phone]' type='text' value="{%if params['home_phone']%}{{params['home_phone']}}{%else%}{{ics['home_phone']}}{%endif%}">
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class='form-group'>
-
-					<label class='col-sm-3 small control-label' for='mobile'>
-
-						Mobile
-
-					</label>
-
-					<div class='col-sm-5'>
-						<input class='mobile form-control' id="mobile" name='bank[mobile]' placeholder='' type='text' value="{%if params['mobile']%}{{params['mobile']}}{%else%}{{ics['mobile']}}{%endif%}">
-					</div>
-
-				</div>
-
+								<input class='digit-box form-control' id="phone_9" maxlength='1' name='bank[phone_9]' type='text' value="{%if params['phone_9']%}{{params['phone_9']}}{%else%}{{ics['phone_9']}}{%endif%}">
+								
+								<input class='digit-box form-control' id="phone_10" maxlength='1' name='bank[phone_10]' type='text' value="{%if params['phone_10']%}{{params['phone_10']}}{%else%}{{ics['phone_10']}}{%endif%}">
+							</div>
+                        </div>
+                    </div>
+                
 				<div class='form-group'>
 
 					<label class='col-sm-3 control-label' for='tax'>Tax File Number</label>
@@ -343,6 +330,8 @@ seo_title: Bank Account Details
 				</div>
 
 			</div>
+            
+            <br>
 
 			<div class='form-group'>
 

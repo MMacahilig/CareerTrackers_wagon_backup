@@ -22031,3 +22031,95 @@ Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
 [0;32;49mCompleted 200 OK in 35.0ms
 
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 08:57:44 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.1ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 09:28:54 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 09:28:58 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 09:29:44 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 09:29:46 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 09:30:41 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 09:30:42 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 09:31:49 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 09:31:51 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 09:33:51 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 09:33:51 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.8ms
+
+[0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 09:34:16 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 10:00:56 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 10:02:00 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 33.9ms
+
+[0m
