@@ -338,3 +338,13 @@ Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
 [0;32;49mCompleted 200 OK in 32.2ms
 
 [0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2017-10-20 16:04:51 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 40.3ms
+
+[0m

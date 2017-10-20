@@ -524,6 +524,12 @@ seo_title: ICS Expression of Interest (cont)
                                 <option value = "University of Technology, Sydney">University of Technology, Sydney</option>
                                 {% endif %}
 
+                                {% if params['educational_institution'] == "University of the Sunshine Coast" %}
+                                <option selected='' value = "University of the Sunshine Coast">University of the Sunshine Coast</option>
+                                {% else %}
+                                <option value = "University of the Sunshine Coast">University of the Sunshine Coast</option>
+                                {% endif %}
+                                
                                 {% if params['educational_institution'] == "University of Western Australia" %}
                                 <option selected='' value = "University of Western Australia">University of Western Australia</option>
                                 {% else %}
@@ -540,12 +546,6 @@ seo_title: ICS Expression of Interest (cont)
                                 <option selected='' value = "University of Wollongong">University of Wollongong</option>
                                 {% else %}
                                 <option value = "University of Wollongong">University of Wollongong</option>
-                                {% endif %}
-
-                                {% if params['educational_institution'] == "University of Sunshine Coast" %}
-                                <option selected='' value = "University of Sunshine Coast">University of Sunshine Coast</option>
-                                {% else %}
-                                <option value = "University of Sunshine Coast">University of Sunshine Coast</option>
                                 {% endif %}
 
                                 {% if params['educational_institution'] == "Victoria University" %}
