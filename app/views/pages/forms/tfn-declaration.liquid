@@ -211,9 +211,10 @@ seo_title: Tax File Number Declaration
           <label class='col-sm-3 control-label' for='suburb'>Suburb or town</label>
           <div class='col-sm-5'>
             <input class='form-control' id='suburb' name='tfn[suburb]' placeholder='Suburb or town' type='text' value="{%if params['suburb']%}{{params['suburb']}}{%else%}{{ics['residential_address_2']}}{%endif%}">
+            <input class='form-control' id='state' name='tfn[state]' placeholder='State/Territory' value="{%if params['state']%}{{params['state']}}{%else%}{{ics['residential_address_3']}}{%endif%}">
           </div>
         </div>
-        <div class='form-group no-margin-bottom'>
+        <!--<div class='form-group no-margin-bottom'>
           <label class='col-sm-3 control-label' for='state'>State/territory</label>
           <div class='col-sm-5'>
             <div class='input-group'>
@@ -256,12 +257,13 @@ seo_title: Tax File Number Declaration
             	<input class='digit-box form-control' id="state_3" maxlength='1' name='tfn[state_3]' type='text' value="">
             {% endif %}
           -->
-          <input class='digit-box form-control' id="state_1" maxlength='1' name='tfn[state_1]' type='text' value="{{params['state_1']}}">
+          <!--<input class='digit-box form-control' id="state_1" maxlength='1' name='tfn[state_1]' type='text' value="{{params['state_1']}}">
           <input class='digit-box form-control' id="state_2" maxlength='1' name='tfn[state_2]' type='text' value="{{params['state_2']}}">
           <input class='digit-box form-control' id="state_3" maxlength='1' name='tfn[state_3]' type='text' value="{{params['state_3']}}">
             </div>
           </div>
         </div>
+          -->
         <div class='form-group'>
           <label class='col-sm-3 control-label' for='post'>Postcode</label>
           <div class='col-sm-5'>
@@ -665,7 +667,7 @@ seo_title: Tax File Number Declaration
         var dob = $("#dob").val();
         var street = $("#home_address_1").val(); +""+ $("#home_address_2").val();
         var suburb = $("#suburb").val();
-        var state = $("#state_1").val() +""+ $("#state_2").val() +""+ $("#state_3").val();
+        var state = $("#state").val();
         var postcode = $("#post_1").val() +""+ $("#post_2").val()+""+ $("#post_3").val()+""+ $("#post_4").val();
         var paid = $('input[id=paid]:checked', '#ics_tax').val();
         var resident = $('input[id=resident]:checked', '#ics_tax').val();
