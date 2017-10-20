@@ -22125,3 +22125,36 @@ Found page "Bank Account Details" [forms/bank-account-details]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 10:39:13 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.4ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 11:02:42 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-20 11:02:55 +1000
+[0;97;49mStarted GET "/forms/bank-account-details" at 2017-10-20 11:02:57 +1000[0m
+Detecting locale EN
+Found page "Bank Account Details" [forms/bank-account-details]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.1ms
+
+[0m
