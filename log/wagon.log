@@ -382,3 +382,15 @@ Found page "ICS Scholarship - Expression of Interest" [forms/ics-scholarship-eoi
 [0;32;49mCompleted 200 OK in 18.2ms
 
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/ics-scholarship-eoi" at 2017-10-20 16:26:15 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship - Expression of Interest" [forms/ics-scholarship-eoi]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.3ms
+
+[0m
