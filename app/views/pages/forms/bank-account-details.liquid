@@ -506,7 +506,7 @@ seo_title: Bank Account Details
 			[ "[name='bank[tax_8]']", 'integer', 'Tax File Number has to be a number' ],
 			[ "[name='bank[tax_9]']", 'integer', 'Tax File Number has to be a number' ],
 
-			[ "[name='bank[home_phone]'], [name='bank[mobile]']", 'one-of', 'Please enter at least one contact number' ],
+			
 
 			[ "[name='bank[address_1]'], [name='bank[address_2]'], [name='bank[address_3]']", 'one-of', 'Address is required and cannot be empty' ],
 
@@ -523,15 +523,16 @@ seo_title: Bank Account Details
 			helpSpanDisplay: "help-block small"
 
 		});
-
+        
 		function postToGoogle() {
 			var name = $("#name").val();
+            
 			var email = $("#email").val();
 			var street = $("#address_1").val();
 			var suburb = $("#address_2").val();
 			var state = $("#address_3").val();
 			var postcode = $("#residential_post_1").val() +""+ $("#residential_post_2").val()+""+ $("#residential_post_3").val()+""+ $("#residential_post_4").val();
-			var dob = $("#dob").val();:
+			var dob = $("#dob").val();
             var mobile = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
 			var taxfile = $("#tax_1").val()+""+ $("#tax_2").val()+""+ $("#tax_3").val()+""+ $("#tax_4").val()+""+ $("#tax_5").val()+""+ $("#tax_6").val()+""+ $("#tax_7").val()+""+ $("#tax_8").val()+""+ $("#tax_9").val();
 			var centrelink = $('input[id=centrelink]:checked', '#ics_bank_details').val()
@@ -540,7 +541,7 @@ seo_title: Bank Account Details
 			var bank = $("#tax_1").val()+""+ $("#tax_2").val()+""+ $("#tax_3").val()+"-"+ $("#tax_4").val()+""+ $("#tax_5").val()+""+ $("#tax_6").val()
 			var account = $("#account").val();
 			var icsid = $("#ics-app-id").val();
-
+            
 			var ajaxData = {
 				"id" : icsid,
 				"name": name,
@@ -563,28 +564,30 @@ seo_title: Bank Account Details
 
 			$.ajax({
 				type: "POST",
-				url: "https://script.google.com/macros/s/AKfycbw6xM7JJp-fUSR2mJ7kt-crvW3skiArT-oRBAjLvyjGM_piXqBa/exec",
+				url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbw6xM7JJp-fUSR2mJ7kt-crvW3skiArT-oRBAjLvyjGM_piXqBa/exec",
 				data: JSON.stringify(ajaxData),
 				dataType: "json",
 				statusCode: {
 					0: function() {
-						//Success message
+						console.log("Success"); //Success message
 					},
 					200: function() {
-						//Success Message
+						console.log("Success"); //Success Message
 					}
 				},
 				xhrFields: {
 					withCredentials: true
 				}
 			});
-			//alert('working');
+			
 		}
 
 		$('#ics_bank_details').submit(function() {
-			postToGoogle();
+			
+            postToGoogle();
 			//return false;
 		});
+        
 	});
 
 </script>
