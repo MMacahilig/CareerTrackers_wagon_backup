@@ -179,3 +179,125 @@ Found page "Bank Account Details" [forms/bank-account-details]
 [0m
       entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
       entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2017-10-23 11:12:17 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 260.4ms
+
+[0m
+[0;97;49mStarted GET "/alumni" at 2017-10-23 11:14:44 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 97.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-23 11:15:01 +1100
+* Reloaded "pages", "snippets" at 2017-10-23 11:15:21 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-23 11:15:21 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 59.8ms
+
+[0m
+[0;97;49mStarted GET "/alumni" at 2017-10-23 11:17:12 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-23 11:17:12 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-23 11:17:15 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 54.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-23 11:48:30 +1100
+[0;97;49mStarted GET "/" at 2017-10-23 15:00:34 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 256.2ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-23 15:00:42 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.4ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-23 15:00:42 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 19.2ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-23 15:00:42 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 10.8ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-23 15:00:42 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 13.3ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-26 08:38:54 +1100[0m
+[0;97;49mStarted GET "/" at 2017-10-26 08:38:54 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+Found page "Home" [index]
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 34.9ms
+
+[0m
+  Rendered snippet header
+[0;97;49mStarted GET "/robots.txt" at 2017-10-26 08:38:54 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 15.1ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 306.7ms
+
+[0m
+[0;97;49mStarted GET "/forms/new-employer-expression-of-interest" at 2017-10-26 08:39:51 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 10.7ms
+
+[0m
