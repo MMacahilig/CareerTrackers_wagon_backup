@@ -31,8 +31,6 @@ seo_title: New Employer - Expression of Interest
         </h1>
     </div>
     
-    <div class="page-header orange-dotted-border-bottom">
-    
     <p>
       To help streamline the process of new employment partners... <br>
  
@@ -78,7 +76,7 @@ seo_title: New Employer - Expression of Interest
 
     </p>
 
-    <form id='ics_sponsor_form' action='/interns/ics' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+    <form id='employer_expression_of_interest' action='' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
         {% assign intern = session['intern'] %}
         {% csrf_param %}
         <!-- Will be hidden until Intern Details -->
@@ -89,7 +87,7 @@ seo_title: New Employer - Expression of Interest
             <!-- Visible From Below -->
 
             <hr>
-            <div class='light-background padded-top padded-bottom'>
+            <div class='light-background padded-bottom'>
                 <fieldset>
                     <h3><u>New Employer - Expression of Interest Form</u></h3><br>
                     <div class='form-group'>
@@ -323,7 +321,6 @@ seo_title: New Employer - Expression of Interest
 
 
     </form>
-    </div>
 </div>
 {% endblock %}
 {% block javascripts %}
@@ -331,8 +328,8 @@ seo_title: New Employer - Expression of Interest
     $(document).ready(function() {
         var metrics = [
             [ "[name='employer[name]']", 'presence', 'Name is required and cannot be empty' ],
-            [ "[name='employer[email]']", 'presence', 'Email address is required and cannot be empty' ],
-            [ "[name='employer[email]']", 'email', 'Invalid email address' ],
+            [ "[name='employer[email_address]']", 'presence', 'Email address is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'email', 'Invalid email address' ],
             [ "[name='employer[role]']", 'presence', 'Role is required and cannot be empty' ],
             [ "[name='employer[phone_1]']", 'integer', 'Contact Number must be a number' ],
 			[ "[name='employer[phone_2]']", 'integer', 'Contact Number must be a number' ],
@@ -344,7 +341,8 @@ seo_title: New Employer - Expression of Interest
 			[ "[name='employer[phone_8]']", 'integer', 'Contact Number must be a number' ],
 			[ "[name='employer[phone_9]']", 'integer', 'Contact Number must be a number' ],
 			[ "[name='employer[phone_10]']", 'integer', 'Contact Number must be a number' ],
-            [ "[name='employer[company]']", 'presence', 'Company is required and cannot be empty' ]
+            [ "[name='employer[phone_10]']", 'presence', 'Contact Number must be entered' ],
+            [ "[name='employer[company]']", 'presence', 'Company is required and cannot be empty' ],
             [ "[name='employer[abn_1]']", 'integer', 'ABN must be a number' ],
 			[ "[name='employer[abn_2]']", 'integer', 'ABN must be a number' ],
 			[ "[name='employer[abn_3]']", 'integer', 'ABN must be a number' ],
@@ -356,6 +354,7 @@ seo_title: New Employer - Expression of Interest
 			[ "[name='employer[abn_9]']", 'integer', 'ABN must be a number' ],
 			[ "[name='employer[abn_10]']", 'integer', 'ABN must be a number' ],
             [ "[name='employer[abn_11]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[abn_11]']", 'presence', 'ABN must be entered' ],
             [ "[name='employer[existing_vac_program]']", 'presence', 'Required field. Cannont be empty' ],
             [ "[name='employer[reconciliation_action_plan]']", 'presence', 'Required field. Cannont be empty' ],
             [ "[name='employer[other_initiatives]']", 'presence', 'Required field. Cannont be empty' ],
@@ -374,113 +373,42 @@ seo_title: New Employer - Expression of Interest
         });
 
         function postToGoogle() {
-            var lastName = $("#last_name").val();
-            var firstName = $("#first_name").val();
-            var intials = $("#initials").val();
-            var gender = $('input[id=gender]:checked', '#ics_sponsor_form').val()
-            var dob = $("#dob").val();
-            var indig = $('input[id=indig]:checked', '#ics_sponsor_form').val()
-            var email = $("#email").val();
-            var resStreet = $("#residential_address_1").val();
-            var resSuburb = $("#residential_address_2").val();
-            var resState = $("#residential_address_3").val();
-            var resPost = $("#residential_post_1").val() +""+ $("#residential_post_2").val()+""+ $("#residential_post_3").val()+""+ $("#residential_post_4").val();
-            var contactRes = $("#home_phone_area").val() +" "+ $("#home_phone").val();
-            var contactMobile = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
-            var education = $("#educational_institution").val();
-            var campus = $("#campus_location").val();
-            var course = $("#course").val();
-            var studyAward = $('input[id=study_award]:checked', '#ics_sponsor_form').val();
-            var enrolStatus = $("#enrolStatus").val();
-            var commence = $("#cadetship_date").val();
-            var grad = $("#graduation_date").val();
-            var signature = $("#signature").val();
-            var date = $("#date").val();
-            var icsid = $("#ics-app-id").val();
+            var name = $("#name").val();
+            var emailAddress = $("#email_address").val();
+            var role = $("#role").val();
+            var contactNumber = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
+            var company = $("#company").val();
+            var abn = $("#abn_1").val()+""+ $("#abn_2").val()+""+ $("#abn_3").val()+""+ $("#abn_4").val()+""+ $("#abn_5").val()+""+ $("#abn_6").val()+""+ $("#abn_7").val()+""+ $("#abn_8").val()+""+ $("#abn_9").val()+""+ $("#abn_10").val()+""+ $("#abn_10").val();
+            var existingVacProgram = $("#existing_vac_program").val();
+            var rap = $("#reconciliation_action_plan").val();
+            var otherInitiatives = $("#other_initiatives").val();
+            var departments = $("#departments").val();
+            var degreeTypes = $("#degree_types").val();
+            var locations = $("#locations").val();
+            var numberOfInterns = $("#number_of_interns").val();
+            var hearAboutUs = $("#hear_about_us").val();
 
-            var ajaxData = {"id": icsid,
-                            "entry.1862661918": lastName,
-                            "entry.730450753": firstName,
-                            "entry.967983336": intials,
-                            "entry.548718755": gender,
-                            "entry.1716666657": dob,
-                            "entry.209084879": indig,
-                            "entry.357859019": email,
-                            "entry.46714137": resStreet,
-                            "entry.1856718304": resSuburb,
-                            "entry.1123400366": resState,
-                            "entry.423526007": resPost,
-                            "entry.428247000": contactMobile,
-                            "entry.715990456": education,
-                            "entry.2066429542": campus,
-                            "entry.1935838082": course,
-                            "entry.538319437": enrolStatus,
-                            "entry.731344024": studyAward,
-                            "entry.538319437": enrolStatus,
-                            "entry.1601403612": commence,
-                            "entry.1782867248": grad,
-                            "entry.1096356346": signature,
-                            "entry.1515616812": date
+            var ajaxData = {
+                            "entry.1862661918": name,
+                            "entry.730450753": emailAddress,
+                            "entry.967983336": role,
+                            "entry.548718755": contactNumber,
+                            "entry.1716666657": company,
+                            "entry.209084879": abn,
+                            "entry.357859019": existingVacProgram,
+                            "entry.46714137": rap,
+                            "entry.1856718304": otherInitiatives,
+                            "entry.1123400366": departments,
+                            "entry.423526007": degreeTypes,
+                            "entry.428247000": locations,
+                            "entry.715990456": numberOfInterns,
+                            "entry.2066429542": hearAboutUs
                            };
 
-            /*
-								https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/viewform?usp=pp_url&entry.1862661918=lastName&entry.730450753=firstName&entry.967983336=initials&entry.548718755=gender&entry.1716666657=dob&entry.209084879=indig&entry.357859019=email&entry.46714137=resStreet&entry.1856718304=resSuburb&entry.1123400366=resState&entry.423526007=resPost&entry.525163280=postStreet&entry.124368833=postSuburb&entry.681530446=postState&entry.2063298090=postPost&entry.805068194=semStreet&entry.448633858=semSuburb&entry.1653290301=semState&entry.812394399=semPost&entry.946817817=contactRes&entry.428247000=contactMobile&entry.715990456=uni&entry.2066429542=campus&entry.1200743245=facultyStreet&entry.132153159=facultySuburb&entry.422257361=facultyState&entry.354743533=facultyPost&entry.1935838082=course&entry.1601403612=commence&entry.1782867248=graduate&entry.1096356346=signature&entry.1515616812=date
-
-								https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/viewform?usp=pp_url&entry.1862661918&entry.730450753&entry.967983336&entry.548718755&entry.1716666657&entry.209084879&entry.357859019&entry.46714137&entry.1856718304&entry.1123400366&entry.423526007&entry.525163280&entry.124368833&entry.681530446&entry.2063298090&entry.805068194&entry.448633858&entry.1653290301&entry.812394399&entry.946817817&entry.428247000&entry.715990456&entry.2066429542&entry.1200743245&entry.132153159&entry.422257361&entry.354743533&entry.1935838082&entry.731344024=studyAward&entry.538319437=enrolStatus&entry.1601403612&entry.1782867248&entry.1096356346&entry.1515616812
-								*/
-            /*
-                $.ajax({
-                    type: "POST",
-                    url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
-                    data: {"entry.1862661918": lastName, "entry.730450753": firstName, "entry.967983336": intials, "entry.548718755": gender,"entry.1716666657": dob, "entry.209084879": indig, "entry.357859019": email, "entry.46714137": resStreet,"entry.1856718304": resSuburb, "entry.1123400366": resState, "entry.423526007": resPost, "entry.525163280": postStreet,"entry.124368833": postSuburb, "entry.681530446": postState, "entry.805068194": semStreet, "entry.448633858": SemSuburb, "entry.1653290301": semState, "entry.812394399": semPost, "entry.946817817": contactRes, "entry.428247000": contactMobile, "entry.715990456": education, "entry.2066429542": campus, "entry.1200743245": facultyStreet, "entry.422257361": facultyState,"entry.354743533": facultyPost, "entry.1935838082": course, "entry.1601403612": commence, "entry.1782867248": grad, "entry.1096356346": signature, "entry.1515616812": date, "entry.2063298090": postPost, "entry.132153159": facultySuburb,"entry.731344024": studyAward, "entry.538319437": enrolStatus},
-                    dataType: "text/html",
-                    statusCode: {
-                        0: function() {
-                            //Success message
-                        },
-                        200: function() {
-                            //Success Message
-                        }
-                    },
-                    xhrFields: {
-      					withCredentials: true
-   					}
-					});
-
-					{
-						"entry.1862661918": lastName,
-						 "entry.730450753": firstName,
-						  "entry.967983336": intials,
-							 "entry.548718755": gender,
-							 "entry.1716666657": dob,
-							  "entry.209084879": indig,
-								 "entry.357859019": email,
-								  "entry.46714137": resStreet,
-									"entry.1856718304": resSuburb,
-									 "entry.1123400366": resState,
-									  "entry.423526007": resPost,
-										 "entry.525163280": postStreet,
-										 "entry.124368833": postSuburb,
-										  "entry.681530446": postState,
-											 "entry.805068194": semStreet,
-											  "entry.448633858": SemSuburb,
-												"entry.1653290301": semState,
-												 "entry.812394399": semPost,
-												  "entry.946817817": contactRes,
-													 "entry.428247000": contactMobile,
-													  "entry.715990456": education,
-														  "entry.2066429542": campus,
-															 "entry.1200743245": facultyStreet,
-															  "entry.422257361": facultyState,
-																"entry.354743533": facultyPost
-															}
-
-
-					*/
+            
             $.ajax({
                 type: "POST",
-                //url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
-                url: //Update this!!! "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzKOGbc4i547wGQaMvrA0vTwD9M12gzp_bdsivS4gzXXnqcCeZv/exec",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzmqJXtt_7HoV6hWYBmemSqFEEyi-WrSfli-a9ly28rjL-ptnI/exec",
                 data: JSON.stringify(ajaxData),
                 dataType: "json",
                 statusCode: {
@@ -497,11 +425,10 @@ seo_title: New Employer - Expression of Interest
             });
             //alert('working');
         }
-        $('#ics_sponsor_form').submit(function() {
+        $('#employer_expression_of_interest').submit(function() {
             postToGoogle();
             //return false;
         });
-
 
     });
 
