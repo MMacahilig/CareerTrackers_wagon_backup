@@ -1,0 +1,514 @@
+---
+title: New Employer - Expression of Interest
+slug: new-employer-expression-of-interest
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 103
+seo_title: New Employer - Expression of Interest
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input').keyup(function(){
+                if($(this).val().length==$(this).attr("maxlength")){
+                    $(this).next().focus();
+                }
+            });
+        });
+
+    </script>
+    <!--{% include page_header %}-->
+    <div class="page-header orange-dotted-border-bottom">
+        
+        <div class='fb-like pull-right visible-lg' data-action='like' data-href='https://facebook.com/CareerTrackers' data-layout='button_count' data-share='true' data-show-faces='true'></div>
+        <h1>
+            Partnering with CareerTrackers
+        </h1>
+    </div>
+    
+    <div class="page-header orange-dotted-border-bottom">
+    
+    <p>
+      To help streamline the process of new employment partners... <br>
+ 
+      abcdefg... <br><br>
+
+      abcdefg... <br>
+
+      abcdefg... <br>
+
+      abcdefg... <br>
+	
+    
+    <br>
+      <h4><u>The Process:</u></h4>
+
+      <table style="width:800px;" border="0">
+        <tr>
+          <td>Step 1: <br><br></td>
+          <td>Complete the below 'New Employer - Expression of Interest Form'. <br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 2:<br><br></td>
+          <td>Once we receive your responses, one of our team members will be in contact to answer any questions you may have.<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 3:<br><br></td>
+          <td>abcdefg...<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 4:<br><br></td>
+          <td>abcdefg...<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 5:<br></td>
+          <td>abcdefg...<br>
+            </td>
+        </tr>
+      </table>
+
+    </p>
+
+    <form id='ics_sponsor_form' action='/interns/ics' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+        {% assign intern = session['intern'] %}
+        {% csrf_param %}
+        <!-- Will be hidden until Intern Details -->
+
+
+        <div class = "">
+
+            <!-- Visible From Below -->
+
+            <hr>
+            <div class='light-background  padded-bottom'>
+                <fieldset>
+                    <h3><u>New Employer - Expression of Interest Form</u></h3><br>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='name'>Name</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='name' name='employer[name]' placeholder='Name' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='email_address'>Email Address</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='email_address' name='employer[email_address]' placeholder='Email Address' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='role'>Role</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='role' name='employer[role]' placeholder='Role' type='text'>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='contact_number'>
+                            Contact Number
+                        </label>
+                        <div class='col-sm-5'>
+							<div class='input-group pull-left'>
+
+								<input class='digit-box form-control' id="phone_1" maxlength='1' name='employer[phone_1]' type='text' value="{{params['phone_1']}}">
+
+								<input class='digit-box form-control' id="phone_2" maxlength='1' name='employer[phone_2]' type='text' value="{{params['phone_2']}}">
+
+								<input class='digit-box form-control' id="phone_3" maxlength='1' name='employer[phone_3]' type='text' value="{{params['phone_3']}}">
+
+								<input class='digit-box form-control' id="phone_4" maxlength='1' name='employer[phone_4]' type='text' value="{{params['phone_4']}}">
+
+								<input class='digit-box form-control' id="phone_5" maxlength='1' name='employer[phone_5]' type='text' value="{{params['phone_5']}}">
+
+								<input class='digit-box form-control' id="phone_6" maxlength='1' name='employer[phone_6]' type='text' value="{{params['phone_6']}}">
+
+								<input class='digit-box form-control' id="phone_7" maxlength='1' name='employer[phone_7]' type='text' value="{{params['phone_7']}}">
+
+								<input class='digit-box form-control' id="phone_8" maxlength='1' name='employer[phone_8]' type='text' value="{{params['phone_8']}}">
+
+								<input class='digit-box form-control' id="phone_9" maxlength='1' name='employer[phone_9]' type='text' value="{{params['phone_9']}}">
+								
+								<input class='digit-box form-control' id="phone_10" maxlength='1' name='employer[phone_10]' type='text' value="{{params['phone_10']}}">
+							</div>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='company'>Company</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='company' name='employer[company]' placeholder='Company' type='text'>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='abn'>
+                            ABN
+                        </label>
+                        <div class='col-sm-5'>
+							<div class='input-group pull-left'>
+
+								<input class='digit-box form-control' id="abn_1" maxlength='1' name='employer[abn_1]' type='text' value="{{params['abn_1']}}">
+
+								<input class='digit-box form-control' id="abn_2" maxlength='1' name='employer[abn_2]' type='text' value="{{params['abn_2']}}">
+
+								<input class='digit-box form-control' id="abn_3" maxlength='1' name='employer[abn_3]' type='text' value="{{params['abn_3']}}">
+
+								<input class='digit-box form-control' id="abn_4" maxlength='1' name='employer[abn_4]' type='text' value="{{params['abn_4']}}">
+
+								<input class='digit-box form-control' id="abn_5" maxlength='1' name='employer[abn_5]' type='text' value="{{params['abn_5']}}">
+
+								<input class='digit-box form-control' id="abn_6" maxlength='1' name='employer[abn_6]' type='text' value="{{params['abn_6']}}">
+
+								<input class='digit-box form-control' id="abn_7" maxlength='1' name='employer[abn_7]' type='text' value="{{params['abn_7']}}">
+
+								<input class='digit-box form-control' id="abn_8" maxlength='1' name='employer[abn_8]' type='text' value="{{params['abn_8']}}">
+
+								<input class='digit-box form-control' id="abn_9" maxlength='1' name='employer[abn_9]' type='text' value="{{params['abn_9']}}">
+								
+								<input class='digit-box form-control' id="abn_10" maxlength='1' name='employer[abn_10]' type='text' value="{{params['abn_10']}}">
+                                
+                                <input class='digit-box form-control' id="abn_11" maxlength='1' name='employer[abn_11]' type='text' value="{{params['abn_11']}}">
+							</div>
+                        </div>
+                    </div>
+
+                    
+                    <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='existing_vac_program'>Does your organisation currently employ interns via an existing vacation work program?</label>
+                    <div class='col-sm-5'>
+                        <select class='form-control' id='existing_vac_program' name='employer[existing_vac_program]'>
+                            <option selected='' value=''></option>
+                            <option value='Yes'>Yes</option>
+                            <option value='No'>No</option>
+                            
+                        </select>
+                    </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='reconciliation_action_plan'>Does your organisation currently have a Reconciliation Action Plan (RAP)?</label>
+                    <div class='col-sm-5'>
+                        <select class='form-control' id='reconciliation_action_plan' name='employer[reconciliation_action_plan]'>
+                            <option selected='' value=''></option>
+                            <option value='Yes'>Yes</option>
+                            <option value='No'>No</option>
+                            <option value='Currently being developed'>Currently being developed</option>
+                            
+                        </select>
+                    </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='other_initiatives'>What other diversity initiatives is your organisation currently undertaking, or looking to start?<br> e.g. Refugees and Asylum seekers</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='other_initiatives' name='employer[other_initiatives]' placeholder='Other Initiatives' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='departments'>Which departments / business units do you anticipate will employ a CareerTrackers intern?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='departments' name='employer[departments]' placeholder='Departments' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='degree_types'>What are some of the degree types that would suit your organisation?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='degree_types' name='employer[degree_types]' placeholder='Degree Types' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='locations'>Where is your organisation based and which office locations could host an intern?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='locations' name='employer[locations]' placeholder='Locations' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                     <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='number_of_interns'>How many interns are you hoping to employ?
+                         <div class='small normal-font-weight'>
+                                (Note: We encourage all new employers to begin with at least two interns)
+                            </div>
+                         </label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='number_of_interns' name='employer[number_of_interns]' placeholder='Number of Interns' type='text'>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='hear_about_us'>How did you hear about us?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='hear_about_us' name='employer[hear_about_us]' placeholder='How did you hear about us?' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Spacer Start -->
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <!-- Spacer End -->
+
+
+                </fieldset>
+            </div>
+
+                </p>
+        </div>
+
+
+        <!-- spacer -->
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+
+        <!-- end spacer -->
+        
+    
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='form-group'>
+                    <div class='col-sm-2 pull-left'>
+                        <button class='btn orange-button' type='submit'>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    $(document).ready(function() {
+        var metrics = [
+            [ "[name='employer[name]']", 'presence', 'Name is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'presence', 'Email address is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'email', 'Invalid email address' ],
+            [ "[name='employer[role]']", 'presence', 'Role is required and cannot be empty' ],
+            [ "[name='employer[phone_1]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_2]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_3]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_4]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_5]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_6]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_7]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_8]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_9]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_10]']", 'integer', 'Contact Number must be a number' ],
+            [ "[name='employer[company]']", 'presence', 'Company is required and cannot be empty' ],
+            [ "[name='employer[abn_1]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_2]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_3]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_4]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_5]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_6]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_7]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_8]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_9]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_10]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[abn_11]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[existing_vac_program]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[reconciliation_action_plan]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[other_initiatives]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[departments]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[degree_types]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[locations]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[number_of_interns]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[hear_about_us]']", 'presence', 'Required field. Cannont be empty' ],
+            
+        ];
+
+        $( "form" ).nod( metrics , {
+            groupSelector: ".form-group",
+            groupClass: "has-error",
+            helpSpanDisplay: "help-block small"
+        });
+        
+        function postToGoogle() {
+            var lastName = $("#last_name").val();
+            var firstName = $("#first_name").val();
+            var intials = $("#initials").val();
+            var gender = $('input[id=gender]:checked', '#ics_sponsor_form').val()
+            var dob = $("#dob").val();
+            var indig = $('input[id=indig]:checked', '#ics_sponsor_form').val()
+            var email = $("#email").val();
+            var resStreet = $("#residential_address_1").val();
+            var resSuburb = $("#residential_address_2").val();
+            var resState = $("#residential_address_3").val();
+            var resPost = $("#residential_post_1").val() +""+ $("#residential_post_2").val()+""+ $("#residential_post_3").val()+""+ $("#residential_post_4").val();
+            var contactRes = $("#home_phone_area").val() +" "+ $("#home_phone").val();
+            var contactMobile = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
+            var education = $("#educational_institution").val();
+            var campus = $("#campus_location").val();
+            var course = $("#course").val();
+            var studyAward = $('input[id=study_award]:checked', '#ics_sponsor_form').val();
+            var enrolStatus = $("#enrolStatus").val();
+            var commence = $("#cadetship_date").val();
+            var grad = $("#graduation_date").val();
+            var signature = $("#signature").val();
+            var date = $("#date").val();
+            var icsid = $("#ics-app-id").val();
+
+            var ajaxData = {"id": icsid,
+                            "entry.1862661918": lastName,
+                            "entry.730450753": firstName,
+                            "entry.967983336": intials,
+                            "entry.548718755": gender,
+                            "entry.1716666657": dob,
+                            "entry.209084879": indig,
+                            "entry.357859019": email,
+                            "entry.46714137": resStreet,
+                            "entry.1856718304": resSuburb,
+                            "entry.1123400366": resState,
+                            "entry.423526007": resPost,
+                            "entry.428247000": contactMobile,
+                            "entry.715990456": education,
+                            "entry.2066429542": campus,
+                            "entry.1935838082": course,
+                            "entry.538319437": enrolStatus,
+                            "entry.731344024": studyAward,
+                            "entry.538319437": enrolStatus,
+                            "entry.1601403612": commence,
+                            "entry.1782867248": grad,
+                            "entry.1096356346": signature,
+                            "entry.1515616812": date
+                           };
+
+            /*
+								https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/viewform?usp=pp_url&entry.1862661918=lastName&entry.730450753=firstName&entry.967983336=initials&entry.548718755=gender&entry.1716666657=dob&entry.209084879=indig&entry.357859019=email&entry.46714137=resStreet&entry.1856718304=resSuburb&entry.1123400366=resState&entry.423526007=resPost&entry.525163280=postStreet&entry.124368833=postSuburb&entry.681530446=postState&entry.2063298090=postPost&entry.805068194=semStreet&entry.448633858=semSuburb&entry.1653290301=semState&entry.812394399=semPost&entry.946817817=contactRes&entry.428247000=contactMobile&entry.715990456=uni&entry.2066429542=campus&entry.1200743245=facultyStreet&entry.132153159=facultySuburb&entry.422257361=facultyState&entry.354743533=facultyPost&entry.1935838082=course&entry.1601403612=commence&entry.1782867248=graduate&entry.1096356346=signature&entry.1515616812=date
+
+								https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/viewform?usp=pp_url&entry.1862661918&entry.730450753&entry.967983336&entry.548718755&entry.1716666657&entry.209084879&entry.357859019&entry.46714137&entry.1856718304&entry.1123400366&entry.423526007&entry.525163280&entry.124368833&entry.681530446&entry.2063298090&entry.805068194&entry.448633858&entry.1653290301&entry.812394399&entry.946817817&entry.428247000&entry.715990456&entry.2066429542&entry.1200743245&entry.132153159&entry.422257361&entry.354743533&entry.1935838082&entry.731344024=studyAward&entry.538319437=enrolStatus&entry.1601403612&entry.1782867248&entry.1096356346&entry.1515616812
+								*/
+            /*
+                $.ajax({
+                    type: "POST",
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
+                    data: {"entry.1862661918": lastName, "entry.730450753": firstName, "entry.967983336": intials, "entry.548718755": gender,"entry.1716666657": dob, "entry.209084879": indig, "entry.357859019": email, "entry.46714137": resStreet,"entry.1856718304": resSuburb, "entry.1123400366": resState, "entry.423526007": resPost, "entry.525163280": postStreet,"entry.124368833": postSuburb, "entry.681530446": postState, "entry.805068194": semStreet, "entry.448633858": SemSuburb, "entry.1653290301": semState, "entry.812394399": semPost, "entry.946817817": contactRes, "entry.428247000": contactMobile, "entry.715990456": education, "entry.2066429542": campus, "entry.1200743245": facultyStreet, "entry.422257361": facultyState,"entry.354743533": facultyPost, "entry.1935838082": course, "entry.1601403612": commence, "entry.1782867248": grad, "entry.1096356346": signature, "entry.1515616812": date, "entry.2063298090": postPost, "entry.132153159": facultySuburb,"entry.731344024": studyAward, "entry.538319437": enrolStatus},
+                    dataType: "text/html",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    },
+                    xhrFields: {
+      					withCredentials: true
+   					}
+					});
+
+					{
+						"entry.1862661918": lastName,
+						 "entry.730450753": firstName,
+						  "entry.967983336": intials,
+							 "entry.548718755": gender,
+							 "entry.1716666657": dob,
+							  "entry.209084879": indig,
+								 "entry.357859019": email,
+								  "entry.46714137": resStreet,
+									"entry.1856718304": resSuburb,
+									 "entry.1123400366": resState,
+									  "entry.423526007": resPost,
+										 "entry.525163280": postStreet,
+										 "entry.124368833": postSuburb,
+										  "entry.681530446": postState,
+											 "entry.805068194": semStreet,
+											  "entry.448633858": SemSuburb,
+												"entry.1653290301": semState,
+												 "entry.812394399": semPost,
+												  "entry.946817817": contactRes,
+													 "entry.428247000": contactMobile,
+													  "entry.715990456": education,
+														  "entry.2066429542": campus,
+															 "entry.1200743245": facultyStreet,
+															  "entry.422257361": facultyState,
+																"entry.354743533": facultyPost
+															}
+
+
+					*/
+        
+            $.ajax({
+                type: "POST",
+                //url: "https://docs.google.com/forms/d/e/1FAIpQLSejVdNguNuqfcD7QVaKTFbYff5AU6i-ZV_Av77UMQv9l-wRMg/formResponse?",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzKOGbc4i547wGQaMvrA0vTwD9M12gzp_bdsivS4gzXXnqcCeZv/exec",
+                data: JSON.stringify(ajaxData),
+                dataType: "json",
+                statusCode: {
+                    0: function() {
+                        //Success message
+                    },
+                    200: function() {
+                        //Success Message
+                    }
+                },
+                xhrFields: {
+                    withCredentials: true
+                }
+            });
+            //alert('working');
+        }
+        $('#ics_sponsor_form').submit(function() {
+            postToGoogle();
+            //return false;
+        });
+
+    
+    });
+
+
+
+
+</script>
+{% endblock %}
+;
