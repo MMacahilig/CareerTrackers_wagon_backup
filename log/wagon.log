@@ -2398,3 +2398,15 @@ Found page "New Employer - Expression of Interest" [forms/new-employer-expressio
 * Reloaded "pages", "snippets" at 2017-10-26 08:36:41 +1000
 * Reloaded "pages", "snippets" at 2017-10-26 08:37:53 +1000
 * Reloaded "pages", "snippets" at 2017-10-26 08:38:20 +1000
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/partnering-with-careertrackers" at 2017-10-26 09:16:39 +1000[0m
+Detecting locale EN
+Found page "New Employer - Expression of Interest" [forms/partnering-with-careertrackers]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.7ms
+
+[0m
