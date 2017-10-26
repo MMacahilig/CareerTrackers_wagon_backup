@@ -1,0 +1,77 @@
+# Logfile created on 2017-10-26 11:07:42 +1100 by logger.rb/1.2.8
+[0;97;49mStarted GET "/" at 2017-10-26 11:07:50 +1100[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-26 11:07:50 +1100[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 37.0ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 214.3ms
+
+[0m
+[0;97;49mStarted GET "/manager-induction" at 2017-10-26 11:09:31 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 55.6ms
+
+[0m
+[0;97;49mStarted GET "/employers/manager-induction" at 2017-10-26 11:09:40 +1100[0m
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-26 11:10:09 +1100
+* Reloaded "pages", "snippets" at 2017-10-26 11:10:14 +1100
+* Reloaded "pages", "snippets" at 2017-10-26 11:10:18 +1100
+* Reloaded "pages", "snippets" at 2017-10-26 11:10:24 +1100
+[0;97;49mStarted GET "/" at 2017-10-26 11:10:37 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 83.5ms
+
+[0m
+[0;97;49mStarted GET "/employers/manager-induction" at 2017-10-26 11:10:44 +1100[0m
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 35.5ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2017-10-26 11:14:03 +1100[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 59.3ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2017-10-26 11:14:07 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 162.4ms
+
+[0m
