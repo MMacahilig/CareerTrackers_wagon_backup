@@ -1,0 +1,443 @@
+<<<<<<< HEAD:app/views/pages/forms/new-employer-expression-of-interest.liquid
+=======
+---
+title: New Employer - Expression of Interest
+slug: partnering-with-careertrackers
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 103
+seo_title: New Employer - Expression of Interest
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input').keyup(function(){
+                if($(this).val().length==$(this).attr("maxlength")){
+                    $(this).next().focus();
+                }
+            });
+        });
+
+    </script>
+    <!--{% include page_header %}-->
+    <div class="page-header orange-dotted-border-bottom">
+        
+        <div class='fb-like pull-right visible-lg' data-action='like' data-href='https://facebook.com/CareerTrackers' data-layout='button_count' data-share='true' data-show-faces='true'></div>
+        <h1>
+            Partnering with CareerTrackers
+        </h1>
+    </div>
+    
+    <p>
+      To help streamline the process of new employment partners... <br>
+ 
+      abcdefg... <br><br>
+
+      abcdefg... <br>
+
+      abcdefg... <br>
+
+      abcdefg... <br>
+	
+    
+    <br>
+      <h4><u>The Process:</u></h4>
+
+      <table style="width:800px;" border="0">
+        <tr>
+          <td>Step 1: <br><br></td>
+          <td>Complete the below 'New Employer - Expression of Interest Form'. <br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 2:<br><br></td>
+          <td>Once we receive your responses, one of our team members will be in contact to answer any questions you may have.<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 3:<br><br></td>
+          <td>abcdefg...<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 4:<br><br></td>
+          <td>abcdefg...<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 5:<br></td>
+          <td>abcdefg...<br>
+            </td>
+        </tr>
+      </table>
+
+    </p>
+
+    <form id='employer_expression_of_interest' action='' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+        {% assign intern = session['intern'] %}
+        {% csrf_param %}
+        <!-- Will be hidden until Intern Details -->
+
+
+        <div class = "">
+
+            <!-- Visible From Below -->
+
+            <hr>
+            <div class='light-background padded-bottom'>
+                <fieldset>
+                    <h3><u>New Employer - Expression of Interest Form</u></h3><br>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='name'>Name</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='name' name='employer[name]' placeholder='Name' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='email_address'>Email Address</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='email_address' name='employer[email_address]' placeholder='Email Address' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='role'>Role</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='role' name='employer[role]' placeholder='Role' type='text'>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='contact_number'>
+                            Contact Number
+                        </label>
+                        <div class='col-sm-5'>
+							<div class='input-group pull-left'>
+
+								<input class='digit-box form-control' id="phone_1" maxlength='1' name='employer[phone_1]' type='text' value="{{params['phone_1']}}">
+
+								<input class='digit-box form-control' id="phone_2" maxlength='1' name='employer[phone_2]' type='text' value="{{params['phone_2']}}">
+
+								<input class='digit-box form-control' id="phone_3" maxlength='1' name='employer[phone_3]' type='text' value="{{params['phone_3']}}">
+
+								<input class='digit-box form-control' id="phone_4" maxlength='1' name='employer[phone_4]' type='text' value="{{params['phone_4']}}">
+
+								<input class='digit-box form-control' id="phone_5" maxlength='1' name='employer[phone_5]' type='text' value="{{params['phone_5']}}">
+
+								<input class='digit-box form-control' id="phone_6" maxlength='1' name='employer[phone_6]' type='text' value="{{params['phone_6']}}">
+
+								<input class='digit-box form-control' id="phone_7" maxlength='1' name='employer[phone_7]' type='text' value="{{params['phone_7']}}">
+
+								<input class='digit-box form-control' id="phone_8" maxlength='1' name='employer[phone_8]' type='text' value="{{params['phone_8']}}">
+
+								<input class='digit-box form-control' id="phone_9" maxlength='1' name='employer[phone_9]' type='text' value="{{params['phone_9']}}">
+								
+								<input class='digit-box form-control' id="phone_10" maxlength='1' name='employer[phone_10]' type='text' value="{{params['phone_10']}}">
+							</div>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='company'>Company</label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='company' name='employer[company]' placeholder='Company' type='text'>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3  control-label' for='abn'>
+                            ABN
+                        </label>
+                        <div class='col-sm-5'>
+							<div class='input-group pull-left'>
+
+								<input class='digit-box form-control' id="abn_1" maxlength='1' name='employer[abn_1]' type='text' value="{{params['abn_1']}}">
+
+								<input class='digit-box form-control' id="abn_2" maxlength='1' name='employer[abn_2]' type='text' value="{{params['abn_2']}}">
+
+								<input class='digit-box form-control' id="abn_3" maxlength='1' name='employer[abn_3]' type='text' value="{{params['abn_3']}}">
+
+								<input class='digit-box form-control' id="abn_4" maxlength='1' name='employer[abn_4]' type='text' value="{{params['abn_4']}}">
+
+								<input class='digit-box form-control' id="abn_5" maxlength='1' name='employer[abn_5]' type='text' value="{{params['abn_5']}}">
+
+								<input class='digit-box form-control' id="abn_6" maxlength='1' name='employer[abn_6]' type='text' value="{{params['abn_6']}}">
+
+								<input class='digit-box form-control' id="abn_7" maxlength='1' name='employer[abn_7]' type='text' value="{{params['abn_7']}}">
+
+								<input class='digit-box form-control' id="abn_8" maxlength='1' name='employer[abn_8]' type='text' value="{{params['abn_8']}}">
+
+								<input class='digit-box form-control' id="abn_9" maxlength='1' name='employer[abn_9]' type='text' value="{{params['abn_9']}}">
+								
+								<input class='digit-box form-control' id="abn_10" maxlength='1' name='employer[abn_10]' type='text' value="{{params['abn_10']}}">
+                                
+                                <input class='digit-box form-control' id="abn_11" maxlength='1' name='employer[abn_11]' type='text' value="{{params['abn_11']}}">
+							</div>
+                        </div>
+                    </div>
+
+                    
+                    <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='existing_vac_program'>Does your organisation currently employ interns via an existing vacation work program?</label>
+                    <div class='col-sm-5'>
+                        <select class='form-control' id='existing_vac_program' name='employer[existing_vac_program]'>
+                            <option selected='' value=''></option>
+                            <option value='Yes'>Yes</option>
+                            <option value='No'>No</option>
+                            
+                        </select>
+                    </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                    <label class='col-sm-3 control-label' for='reconciliation_action_plan'>Does your organisation currently have a Reconciliation Action Plan (RAP)?</label>
+                    <div class='col-sm-5'>
+                        <select class='form-control' id='reconciliation_action_plan' name='employer[reconciliation_action_plan]'>
+                            <option selected='' value=''></option>
+                            <option value='Yes'>Yes</option>
+                            <option value='No'>No</option>
+                            <option value='Currently being developed'>Currently being developed</option>
+                            
+                        </select>
+                    </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='other_initiatives'>What other diversity initiatives is your organisation currently undertaking, or looking to start?<br> e.g. Refugees and Asylum seekers</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='other_initiatives' name='employer[other_initiatives]' placeholder='Other Initiatives' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='departments'>Which departments / business units do you anticipate will employ a CareerTrackers intern?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='departments' name='employer[departments]' placeholder='Departments' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='degree_types'>What are some of the degree types that would suit your organisation?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='degree_types' name='employer[degree_types]' placeholder='Degree Types' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='locations'>Where is your organisation based and which office locations could host an intern?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='locations' name='employer[locations]' placeholder='Locations' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+                     <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='number_of_interns'>How many interns are you hoping to employ?
+                         <div class='small normal-font-weight'>
+                                (Note: We encourage all new employers to begin with at least two interns)
+                            </div>
+                         </label>
+                        <div class='col-sm-5'>
+                            <input class='form-control' id='number_of_interns' name='employer[number_of_interns]' placeholder='Number of Interns' type='text'>
+                        </div>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label class='col-sm-3 control-label' for='hear_about_us'>How did you hear about us?</label>
+                        <div class='col-sm-5'>
+                            <textarea class='form-control' id='hear_about_us' name='employer[hear_about_us]' placeholder='How did you hear about us?' rows='5' maxlength="1000" style="height:150px;overflow:hidden;resize:none;"></textarea>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Spacer Start -->
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <!-- Spacer End -->
+
+
+                </fieldset>
+            </div>
+
+                </p>
+        </div>
+
+
+        <!-- spacer -->
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+
+        <!-- end spacer -->
+        
+    
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='form-group'>
+                    <div class='col-sm-2 pull-left'>
+                        <button class='btn orange-button' type='submit'>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    $(document).ready(function() {
+        var metrics = [
+            [ "[name='employer[name]']", 'presence', 'Name is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'presence', 'Email address is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'email', 'Invalid email address' ],
+            [ "[name='employer[role]']", 'presence', 'Role is required and cannot be empty' ],
+            [ "[name='employer[phone_1]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_2]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_3]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_4]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_5]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_6]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_7]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_8]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_9]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_10]']", 'integer', 'Contact Number must be a number' ],
+            [ "[name='employer[phone_10]']", 'presence', 'Contact Number must be entered' ],
+            [ "[name='employer[company]']", 'presence', 'Company is required and cannot be empty' ],
+            [ "[name='employer[abn_1]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_2]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_3]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_4]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_5]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_6]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_7]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_8]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_9]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_10]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[abn_11]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[abn_11]']", 'presence', 'ABN must be entered' ],
+            [ "[name='employer[existing_vac_program]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[reconciliation_action_plan]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[other_initiatives]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[departments]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[degree_types]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[locations]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[number_of_interns]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[hear_about_us]']", 'presence', 'Required field. Cannont be empty' ],
+            
+        ];
+
+        $( "form" ).nod( metrics , {
+            groupSelector: ".form-group",
+            groupClass: "has-error",
+            helpSpanDisplay: "help-block small"
+        });
+
+        function postToGoogle() {
+            var name = $("#name").val();
+            var emailAddress = $("#email_address").val();
+            var role = $("#role").val();
+            var contactNumber = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
+            var company = $("#company").val();
+            var abn = $("#abn_1").val()+""+ $("#abn_2").val()+""+ $("#abn_3").val()+""+ $("#abn_4").val()+""+ $("#abn_5").val()+""+ $("#abn_6").val()+""+ $("#abn_7").val()+""+ $("#abn_8").val()+""+ $("#abn_9").val()+""+ $("#abn_10").val()+""+ $("#abn_10").val();
+            var existingVacProgram = $("#existing_vac_program").val();
+            var rap = $("#reconciliation_action_plan").val();
+            var otherInitiatives = $("#other_initiatives").val();
+            var departments = $("#departments").val();
+            var degreeTypes = $("#degree_types").val();
+            var locations = $("#locations").val();
+            var numberOfInterns = $("#number_of_interns").val();
+            var hearAboutUs = $("#hear_about_us").val();
+
+            var ajaxData = {
+                            "entry.1862661918": name,
+                            "entry.730450753": emailAddress,
+                            "entry.967983336": role,
+                            "entry.548718755": contactNumber,
+                            "entry.1716666657": company,
+                            "entry.209084879": abn,
+                            "entry.357859019": existingVacProgram,
+                            "entry.46714137": rap,
+                            "entry.1856718304": otherInitiatives,
+                            "entry.1123400366": departments,
+                            "entry.423526007": degreeTypes,
+                            "entry.428247000": locations,
+                            "entry.715990456": numberOfInterns,
+                            "entry.2066429542": hearAboutUs
+                           };
+
+            
+            $.ajax({
+                type: "POST",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzmqJXtt_7HoV6hWYBmemSqFEEyi-WrSfli-a9ly28rjL-ptnI/exec",
+                data: JSON.stringify(ajaxData),
+                dataType: "json",
+                statusCode: {
+                    0: function() {
+                        //Success message
+                    },
+                    200: function() {
+                        //Success Message
+                    }
+                },
+                xhrFields: {
+                    withCredentials: true
+                }
+            });
+            //alert('working');
+        }
+        $('#employer_expression_of_interest').submit(function() {
+            postToGoogle();
+            //return false;
+        });
+
+    });
+
+
+
+
+</script>
+{% endblock %}
+;
+>>>>>>> 0617dc8a47e430d7c7dbe1d5f5ed64501dc6ec92:app/views/pages/forms/partnering-with-careertrackers.liquid
