@@ -107,3 +107,173 @@ Found page "New Employer - Expression of Interest" [forms/partnering-with-career
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;97;49mStarted GET "/" at 2017-10-27 15:17:58 +1100[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-27 15:17:58 +1100[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 39.7ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 226.4ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-10-27 15:18:09 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.6ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2017-10-27 15:18:12 +1100[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.1ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-27 15:18:15 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 90.3ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-27 15:18:15 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 14.7ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-27 15:18:15 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 18.0ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:18:18 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 29.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-27 15:19:13 +1100
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:19:15 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 61.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-27 15:26:15 +1100
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:26:52 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 29.4ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:26:57 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 31.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-27 15:27:18 +1100
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:27:19 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 55.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-27 15:27:47 +1100
+* Reloaded "pages", "snippets" at 2017-10-27 15:27:49 +1100
+* Reloaded "pages", "snippets" at 2017-10-27 15:27:52 +1100
+* Reloaded "pages", "snippets" at 2017-10-27 15:27:55 +1100
+* Reloaded "pages", "snippets" at 2017-10-27 15:28:24 +1100
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:28:28 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.4ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:28:35 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.4ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:37:37 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 70.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-27 15:40:29 +1100
+* Reloaded "pages", "snippets" at 2017-10-27 15:41:12 +1100
+* Reloaded "pages", "snippets" at 2017-10-27 15:42:09 +1100
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:46:01 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 184.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-27 15:46:10 +1100
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2017-10-27 15:46:14 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.5ms
+
+[0m
