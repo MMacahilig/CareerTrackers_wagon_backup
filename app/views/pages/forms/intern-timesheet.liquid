@@ -149,7 +149,7 @@ seo_title: CareerTrackers Intern Timesheet
                             <th>Net Hours to be paid after breaks</th>
                         </tr>
                         <tr>
-                            <form oninput="bb.value=parseInt(finish_time1.value)-parseInt(start_time1.value)">
+                            
                             <td>Monday</td>
                             <td><input type="time" id='start_time1' name='timesheet[start_time1]'></td>
                             <td><select class='form-control' id='meal_break1' name='timesheet[meal_break1]'>
@@ -160,9 +160,9 @@ seo_title: CareerTrackers Intern Timesheet
                             <option value='1'>60 mins</option>
                                 </select></td> 
                             <td><input type="time" id='finish_time1' name='timesheet[finish_time1]'></td>
-                            <td><output name="bb" for="start_time1 finish_time1"></output></td>
+                            <td><input name="bb" disabled id="bb"></td>
                             <td>tbc</td>
-                            </form>
+                            
                         </tr>
                         <tr>
                             <td>Tuesday</td>
@@ -410,6 +410,49 @@ seo_title: CareerTrackers Intern Timesheet
             postToGoogle();
             //return false;
         });
+        
+        $('#start_time1').change(function(){
+            let startTime = $('#start_time1').val();
+            let endTime = $('#finish_time1').val();
+            
+            let startHour = startTime.slice(0,2);
+            let startMins = startTime.slice(3,5);
+            let endHour = endTime.slice(0,2);
+            let endMins = endTime.slice(3,5);
+            
+            
+            let differenceHour = endHour - startHour;
+            let differenceMins = (endMins - startMins)/60;
+            
+            //console.log(differenceHour + '.' + differenceMins);
+            if(endTime == ""){
+                $('#bb').val("");
+            }else{
+                $('#bb').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+            }
+        });
+        
+        $('#finish_time1').change(function(){
+            let startTime = $('#start_time1').val();
+            let endTime = $('#finish_time1').val();
+            
+            let startHour = startTime.slice(0,2);
+            let startMins = startTime.slice(3,5);
+            let endHour = endTime.slice(0,2);
+            let endMins = endTime.slice(3,5);
+
+            
+            let differenceHour = endHour - startHour;
+            let differenceMins = (endMins - startMins)/60;
+            
+            //console.log(differenceHour + '.' + differenceMins);
+            if(startTime == ""){
+                $('#bb').val("");
+            }else{
+                $('#bb').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+            }
+            
+        });
 
     });
 
@@ -418,5 +461,4 @@ seo_title: CareerTrackers Intern Timesheet
 
 </script>
 {% endblock %}
-;
->>>>>>> 0617dc8a47e430d7c7dbe1d5f5ed64501dc6ec92:app/views/pages/forms/partnering-with-careertrackers.liquid
+
