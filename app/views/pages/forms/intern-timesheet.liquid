@@ -1,0 +1,422 @@
+<<<<<<< HEAD:app/views/pages/forms/new-employer-expression-of-interest.liquid
+=======
+---
+title: CareerTrackers Intern Timesheet
+slug: intern-timesheet
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 103
+seo_title: CareerTrackers Intern Timesheet
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input').keyup(function(){
+                if($(this).val().length==$(this).attr("maxlength")){
+                    $(this).next().focus();
+                }
+            });
+        });
+
+    </script>
+    <!--{% include page_header %}-->
+    <div class="page-header orange-dotted-border-bottom">
+        
+        <div class='fb-like pull-right visible-lg' data-action='like' data-href='https://facebook.com/CareerTrackers' data-layout='button_count' data-share='true' data-show-faces='true'></div>
+        <h1>
+            CareerTrackers Intern Timesheet
+        </h1>
+    </div>
+    
+    <p>
+      CareerTrackers interns are required to complete the below timesheet and submit to their manager for approval at the end of the week.  Once approved, timesheets are sent to the Payroll Officer at CareerTrackers for processing.<br><br>
+        
+      All timesheets must be approved by the manager before 5:30pm at the end of each week.  Timesheets not approved before the deadline may not be processed until the following pay period.<br><br>
+        
+      If you have any questions, email the CareerTrackers Payroll Officer at payroll@careertrackers.org.au.<br><br>
+    
+      <h4><u>The Process:</u></h4>
+
+      <table style="width:800px;" border="0">
+        <tr>
+          <td>Step 1: <br><br></td>
+          <td>Complete the below timesheet each week ensuring that all information is correct. <br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 2:<br><br></td>
+          <td>The completed timesheet will be sent to your manager for approval.  You will also receive a copy for your own records.<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 3:<br><br></td>
+          <td>Once approved by your manager, a final copy will be sent to you and the CareerTrackers Payroll Officer for processing.<br><br>
+            </td>
+        </tr>
+        <tr>
+          <td>Step 4:<br><br></td>
+          <td>Payroll is paid fortnightly in arrears.  After each pay run you will receive a pay slip etc... <br><br>
+            </td>
+        </tr>
+      </table>
+
+    </p>
+
+    <form id='employer_expression_of_interest' action='' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+        {% assign intern = session['intern'] %}
+        {% csrf_param %}
+        <!-- Will be hidden until Intern Details -->
+
+
+        <div class = "">
+
+            <!-- Visible From Below -->
+
+            <hr>
+            <div class='light-background padded-bottom'>
+                <fieldset>
+                    <h3><u>Timesheet</u></h3><br>
+                    <div class='form-group'>
+                        <label class='col-sm-2 control-label' for='name'>Name</label>
+                        <div class='col-sm-4'>
+                            <input class='form-control' id='name' name='timesheet[name]' placeholder='Name' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-2 control-label' for='email_address'>Email Address</label>
+                        <div class='col-sm-4'>
+                            <input class='form-control' id='email_address' name='timesheet[email_address]' placeholder='Email Address' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-2 control-label' for='employer'>Employer</label>
+                        <div class='col-sm-4'>
+                            <input class='form-control' id='employer' name='timesheet[employer]' placeholder='Employer' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-2 control-label' for='team_department'>Team / Department</label>
+                        <div class='col-sm-4'>
+                            <input class='form-control' id='team_department' name='timesheet[team_department]' placeholder='Team / Department' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-2 control-label' for='manager'>Manager Name</label>
+                        <div class='col-sm-4'>
+                            <input class='form-control' id='manager' name='timesheet[manager]' placeholder='Manager Name' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='col-sm-2 control-label' for='manager_email_address'>Manager Email Address</label>
+                        <div class='col-sm-4'>
+                            <input class='form-control' id='manager_email_address' name='timesheet[manager_email_address]' placeholder='Manager Email Address' type='text'>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                    <label class='col-sm-2 control-label' for='timeperiod'>Time Period</label>
+                    <div class='col-sm-4'>
+                        <select class='form-control' id='timeperiod' name='timesheet[timeperiod]'>
+                            <option selected='' value=''></option>
+                            <option value='20-24 November 2017'>20-24 November 2017</option>
+                            <option value='27 November 2017 - 1 December 2017'>27 November 2017 - 1 December 2017</option>
+                            <option value='4-8 December 2017'>4-8 December 2017</option>
+                            <option value='11-15 December 2017'>11-15 December 2017</option>
+                            <option value='18-22 December 2017'>18-22 December 2017</option>
+                            <option value='8-12 January 2018'>8-12 January 2018</option>
+                            <option value='15-19 January 2018'>15-19 January 2018</option>
+                            <option value='22-26 January 2018'>22-26 January 2018</option>
+                            <option value='29 January 2018 - 2 February 2018'>29 January 2018 - 2 February 2018</option>
+                            <option value='5-9 February 2018'>5-9 February 2018</option>                            
+                        </select>
+                    </div>
+                    </div>
+                    
+                <div class='form-group'>
+                    <label class='col-sm-1 control-label' for='spacer'></label>
+                    <div class='col-sm-5'>
+                    <table style="width:100%" border="1">
+                        <tr>
+                            <th>Day</th>
+                            <th>Start Time</th> 
+                            <th>Meal Break</th>
+                            <th>Finish Time</th>
+                            <th>Total Hours per Day</th>
+                            <th>Net Hours to be paid after breaks</th>
+                        </tr>
+                        <tr>
+                            <form oninput="bb.value=parseInt(finish_time1.value)-parseInt(start_time1.value)">
+                            <td>Monday</td>
+                            <td><input type="time" id='start_time1' name='timesheet[start_time1]'></td>
+                            <td><select class='form-control' id='meal_break1' name='timesheet[meal_break1]'>
+                            <option selected='' value=''></option>
+                            <option value='0.25'>15 mins</option>
+                            <option value='0.50'>30 mins</option>
+                            <option value='0.75'>45 mins</option>
+                            <option value='1'>60 mins</option>
+                                </select></td> 
+                            <td><input type="time" id='finish_time1' name='timesheet[finish_time1]'></td>
+                            <td><output name="bb" for="start_time1 finish_time1"></output></td>
+                            <td>tbc</td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td><input type="time" name="start_time2"></td>
+                            <td><select class='form-control' id='meal_break2' name='timesheet[meal_break2]'>
+                            <option selected='' value=''></option>
+                            <option value='0.25'>15 mins</option>
+                            <option value='0.50'>30 mins</option>
+                            <option value='0.75'>45 mins</option>
+                            <option value='1'>60 mins</option>
+                                </select></td>  
+                            <td><input type="time" name="finish_time2"></td>
+                            <td>tbc</td>
+                            <td>tbc</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td><input type="time" name="start_time3"></td>
+                            <td><select class='form-control' id='meal_break3' name='timesheet[meal_break3]'>
+                            <option selected='' value=''></option>
+                            <option value='0.25'>15 mins</option>
+                            <option value='0.50'>30 mins</option>
+                            <option value='0.75'>45 mins</option>
+                            <option value='1'>60 mins</option>
+                                </select></td>  
+                            <td><input type="time" name="finish_time3"></td>
+                            <td>tbc</td>
+                            <td>tbc</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td><input type="time" name="start_time4"></td>
+                            <td><select class='form-control' id='meal_break4' name='timesheet[meal_break4]'>
+                            <option selected='' value=''></option>
+                            <option value='0.25'>15 mins</option>
+                            <option value='0.50'>30 mins</option>
+                            <option value='0.75'>45 mins</option>
+                            <option value='1'>60 mins</option>
+                                </select></td>  
+                            <td><input type="time" name="finish_time4"></td>
+                            <td>tbc</td>
+                            <td>tbc</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td><input type="time" name="start_time5"></td>
+                            <td><select class='form-control' id='meal_break5' name='timesheet[meal_break5]'>
+                            <option selected='' value=''></option>
+                            <option value='0.25'>15 mins</option>
+                            <option value='0.50'>30 mins</option>
+                            <option value='0.75'>45 mins</option>
+                            <option value='1'>60 mins</option>
+                                </select></td>  
+                            <td><input type="time" name="finish_time5"></td>
+                            <td>tbc</td>
+                            <td>tbc</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td> 
+                            <td>Total</td>
+                            <td>tbc</td>
+                            <td>tbc</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                    
+                                        
+
+                    <!-- Spacer Start -->
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <div class='form-group hide-form'>
+                        <label class='col-sm-3 control-label' for='blank_space'>
+                        </label>
+                        <div class='col-sm-5'>
+                        </div>
+                    </div>
+                    <!-- Spacer End -->
+
+
+                </fieldset>
+            </div>
+
+                </p>
+        </div>
+
+
+        <!-- spacer -->
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+        <div class='form-group hide-form'>
+            <label class='col-sm-3 control-label' for='blank_space'>
+            </label>
+            <div class='col-sm-5'>
+            </div>
+        </div>
+
+        <!-- end spacer -->
+        
+    
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='form-group'>
+                    <div class='col-sm-2 pull-left'>
+                        <button class='btn orange-button' type='submit'>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    $(document).ready(function() {
+        var metrics = [
+            [ "[name='employer[name]']", 'presence', 'Name is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'presence', 'Email address is required and cannot be empty' ],
+            [ "[name='employer[email_address]']", 'email', 'Invalid email address' ],
+            [ "[name='employer[role]']", 'presence', 'Role is required and cannot be empty' ],
+            [ "[name='employer[phone_1]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_2]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_3]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_4]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_5]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_6]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_7]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_8]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_9]']", 'integer', 'Contact Number must be a number' ],
+			[ "[name='employer[phone_10]']", 'integer', 'Contact Number must be a number' ],
+            [ "[name='employer[phone_10]']", 'presence', 'Contact Number must be entered' ],
+            [ "[name='employer[company]']", 'presence', 'Company is required and cannot be empty' ],
+            [ "[name='employer[abn_1]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_2]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_3]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_4]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_5]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_6]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_7]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_8]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_9]']", 'integer', 'ABN must be a number' ],
+			[ "[name='employer[abn_10]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[abn_11]']", 'integer', 'ABN must be a number' ],
+            [ "[name='employer[abn_11]']", 'presence', 'ABN must be entered' ],
+            [ "[name='employer[existing_vac_program]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[reconciliation_action_plan]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[other_initiatives]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[departments]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[degree_types]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[locations]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[number_of_interns]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='employer[hear_about_us]']", 'presence', 'Required field. Cannont be empty' ],
+            
+        ];
+
+        $( "form" ).nod( metrics , {
+            groupSelector: ".form-group",
+            groupClass: "has-error",
+            helpSpanDisplay: "help-block small"
+        });
+
+        function postToGoogle() {
+            var name = $("#name").val();
+            var emailAddress = $("#email_address").val();
+            var role = $("#role").val();
+            var contactNumber = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
+            var company = $("#company").val();
+            var abn = $("#abn_1").val()+""+ $("#abn_2").val()+""+ $("#abn_3").val()+""+ $("#abn_4").val()+""+ $("#abn_5").val()+""+ $("#abn_6").val()+""+ $("#abn_7").val()+""+ $("#abn_8").val()+""+ $("#abn_9").val()+""+ $("#abn_10").val()+""+ $("#abn_10").val();
+            var existingVacProgram = $("#existing_vac_program").val();
+            var rap = $("#reconciliation_action_plan").val();
+            var otherInitiatives = $("#other_initiatives").val();
+            var departments = $("#departments").val();
+            var degreeTypes = $("#degree_types").val();
+            var locations = $("#locations").val();
+            var numberOfInterns = $("#number_of_interns").val();
+            var hearAboutUs = $("#hear_about_us").val();
+
+            var ajaxData = {
+                            "entry.1862661918": name,
+                            "entry.730450753": emailAddress,
+                            "entry.967983336": role,
+                            "entry.548718755": contactNumber,
+                            "entry.1716666657": company,
+                            "entry.209084879": abn,
+                            "entry.357859019": existingVacProgram,
+                            "entry.46714137": rap,
+                            "entry.1856718304": otherInitiatives,
+                            "entry.1123400366": departments,
+                            "entry.423526007": degreeTypes,
+                            "entry.428247000": locations,
+                            "entry.715990456": numberOfInterns,
+                            "entry.2066429542": hearAboutUs
+                           };
+
+            
+            $.ajax({
+                type: "POST",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzmqJXtt_7HoV6hWYBmemSqFEEyi-WrSfli-a9ly28rjL-ptnI/exec",
+                data: JSON.stringify(ajaxData),
+                dataType: "json",
+                statusCode: {
+                    0: function() {
+                        //Success message
+                    },
+                    200: function() {
+                        //Success Message
+                    }
+                },
+                xhrFields: {
+                    withCredentials: true
+                }
+            });
+            //alert('working');
+        }
+        $('#employer_expression_of_interest').submit(function() {
+            postToGoogle();
+            //return false;
+        });
+
+    });
+
+
+
+
+</script>
+{% endblock %}
+;
+>>>>>>> 0617dc8a47e430d7c7dbe1d5f5ed64501dc6ec92:app/views/pages/forms/partnering-with-careertrackers.liquid
