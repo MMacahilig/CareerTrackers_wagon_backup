@@ -8,59 +8,129 @@ response_type: text/html
 position: 6
 seo_title: CareerTrackers Alumni Program
 editable_elements:
-  main/banner: /samples/pages/alumnibanner.png
-  main/alumni: "<p><strong>By 2020 there will be more than 1,000 CareerTrackers Alumni
-    out there in the workforce!&nbsp;</strong></p>\r\n<p>The purpose of our Alumni
-    program is to accelerate Aboriginal and Torres Strait Islander leadership in industry
-    through creating an influential network of Indigenous professionals who are active
-    role models within the community and are supporting the next generation to fulfil
-    their potential.</p>\r\n<p>CareerTrackers continues to support Alumni and provide
-    opportunities for ongoing development and leadership opportunities within the
-    community. Each year we deliver national Alumni events to provide leadership training
-    and networking opportunities with corporate and community leaders.&nbsp;Our Alumni
-    also continue to participate in CareerTrackers events and take on a mentoring
-    role for younger students in the program and the community.&nbsp;</p>\r\n<h3>Who
-    are our Alumni?</h3>\r\n<p>Members of our Alumni Association are made up of Indigenous
-    university graduates who participated in CareerTrackers through an internship
-    and continue an active role in our community.</p>\r\n<h3>2017 Goals &amp; Objectives</h3>\r\n<ul>\r\n<li>Creating
-    an Alumni community that can easily communicate with each other and expand their
-    professional networks.</li>\r\n<li>Facilitating leadership within the Alumni community
-    through the selection of an Alumni Executive Committee to lead the community and
-    act as interface between CareerTrackers and the Alumni.</li>\r\n<li>Embedding
-    a stronger sense of belonging through Alumni involvement and recognition with
-    the wider CareerTrackers community.</li>\r\n<li>Including Alumni in critical CareerTrackers
-    activities.</li>\r\n<li>Providing Alumni with ongoing professional development
-    opportunities.</li>\r\n</ul>\r\n<p>&nbsp;</p>"
 ---
+
 {% extends parent %}
 {% block main %}
-{% include banner %}
-<div class='container-fluid'>
-  {% include page_header %}
-  <div class='container-fluid'>
-    {% editable_text 'alumni' %}
-    <p>
-      At the Annual Gala Dinner held during the Leadership Development Institute, we welcome new Alumni. Our current Head of Alumni, Nathan Fuller, will welcome new members into the Alumni Program. In 2013 the CareerTrackers Alumni Program will grow to 17 members.
-    </p>
-    <p>
-      &nbsp;
-    </p>
-    {% endeditable_text %}
-  </div>
-  <!--
-  {% for alumnus in contents.alumni %}
-  <div class='container-fluid bottom-margin-large'>
-    <div class='col-lg-2'>
-      <img alt='{{alumnus.name | escape}}' class='profile-picture' src='{{alumnus.image.url | escape}}'>
+
+
+<div class='container-fluid white-background'>
+  <div class='container marketing'>
+    <div class='container-fluid'>
+     <div class='page-header container text-center white-background'>
+      <h1>CareerTrackers Alumni Program</h1>
+      
     </div>
-    <div class='col-lg-7'>
-      <h4>{{alumnus.name | escape}}</h4>
-      <p>
-        {{alumnus.description | escape}}
-      </p>
+        <div class='container-fluid'>
+
+            <p>
+                <strong>By 2020 there will be more than 1,000 CareerTrackers Alumni out there in the workforce!  </strong><br><br>
+
+                The purpose of our Alumni program is to accelerate Aboriginal and Torres Strait Islander leadership in industry through creating an influential network of Indigenous professionals who are active role models within the community and are supporting the next generation to fulfil their potential.<br><br>
+
+                CareerTrackers continues to support Alumni and provide opportunities for ongoing development and leadership opportunities within the community. Each year we deliver national Alumni events to provide leadership training and networking opportunities with corporate and community leaders. Our Alumni also continue to participate in CareerTrackers events and take on a mentoring role for younger students in the program and the community. <br><br>
+
+            <h3>Who are our Alumni?</h3>
+
+            Members of our Alumni Association are made up of Indigenous university graduates who participated in CareerTrackers through an internship and continue an active role in our community.<br><br>
+
+            </p>
+
+
+      </div>
+<div class="container-fluid">
+    <div class="col-md-12  bottom-margin-medium">
+        <img class="img-responsive" style="margin-left: auto;margin-right: auto;display: block" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/Alumni_Three_Pillars.png" />
     </div>
-  </div>
-  {% endfor %}
-  -->
+    <div class='col-md-12  careertrackers-model'>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Goal Statement</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'goal' %}
+                To accelerate Indigenous leadership in industry through creating an influencial netework of Aboriginal and Torres Strait Islander professionals whoa re active role models within the community and are supporting the next generation to fulfill their potential
+                {% endeditable_text %}
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Leadership Development</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'student' %}
+                Accelerate the development of Alumni by providing access to programs that develop their leadership potential.
+                {% endeditable_text %}
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Community Impact</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'university' %}
+                Empower Alumni to become active role models and engage with Indigenous school students and community to inspire interest in university and professional employment.
+                {% endeditable_text %}
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading orange-panel-heading'>
+                <h3 class='panel-title'>Networking & Events</h3>
+            </div>
+            <div class='panel-body'>
+                {% editable_text 'work' %}
+                Create opportunities that develop the Alumni community through both personal and professional relationship building. 
+                {% endeditable_text %}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+        <div class='page-header container text-center white-background'>
+          <h1>Community Impact</h1>
+          <div class='lead'>
+            {% editable_text 'stories' %}
+            <p>Our CareerTrackers Alumni work hard to inspire young Indigenous students through various communities</p>
+            {% endeditable_text %}
+          </div>
+        </div>
+		  
+		{% for story in contents.community_activity %}
+	    {% cycle  '<div class="row">', '', ''%} 
+		{% cycle  '<div class="col-lg-4">', '<div class="col-lg-4">', '<div class="col-lg-4">'%}
+		  <a href="" data-target="#{{story._slug}}-modal" data-toggle='modal'><img alt='{{story.student_name | escape }}' src='{{story.image.url | escape }}'></a>
+            <h2>{{story.student_name | escape }}</h2>
+            <p>{{story.action | escape }}</p>
+
+        {% cycle  '</div>', '</div>', '</div>'%}
+		{% cycle   '','','</div>'%}
+		  
+            <div aria-hidden='true' class='modal fade' id='{{story._slug}}-modal' role='dialog' tabindex='-1'>
+              <div class='modal-dialog'>
+                <div class='modal-content'>
+                  <div class='modal-header'>
+                    <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+                    <h2 class='modal-title' id='myModalLabel'>{{story.student_name}}</h2>
+                  </div>
+                  <div class='modal-body'>
+                    <!--<div class='player' id='{{story._slug}}-video' src=''></div>-->
+					  <p>
+						  <div class=""><img class='img-responsive' alt='{{story.student_name | escape }}' src='{{story.picture.url | escape }}'></div>
+					  		<br>
+					  	  {{story.description}}
+						  {{story.activity}}
+					  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+	    {% endfor %}
+          </div>
+          
+        </div>
+      </div>
+    </div>
 </div>
 {% endblock %}

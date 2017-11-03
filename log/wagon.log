@@ -277,3 +277,285 @@ Found page "Learning Contract - Goals" [forms/learning-contract-goals]
 [0;32;49mCompleted 200 OK in 23.5ms
 
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2017-10-30 13:16:48 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 318.0ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-30 13:16:55 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.1ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-10-30 13:16:55 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 18.6ms
+
+[0m
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:18:04 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 248.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:18:34 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:18:35 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 55.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:19:45 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:19:46 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 56.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:20:11 +1100
+* Reloaded "pages", "snippets" at 2017-10-30 13:20:50 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:20:50 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 56.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:21:25 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:21:26 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 54.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:03 +1100
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:10 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:49:13 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+[0;97;49mStarted GET "/robots.txt" at 2017-10-30 13:49:13 +1100[0m
+  Rendered liquid page template
+Detecting locale EN
+[0;32;49mCompleted 200 OK in 71.6ms
+
+[0m
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 15.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:22 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:49:23 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 55.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:28 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:49:29 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 60.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:37 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:49:38 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 56.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:46 +1100
+* Reloaded "pages", "snippets" at 2017-10-30 13:49:57 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:49:58 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:50:05 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:50:06 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:50:14 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:50:17 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 84.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:50:22 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:50:25 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 13:52:11 +1100
+* Reloaded "pages", "snippets" at 2017-10-30 13:56:07 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 13:56:08 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 64.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 14:04:00 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 14:04:03 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 69.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-10-30 14:05:05 +1100
+[0;97;49mStarted GET "/alumni" at 2017-10-30 14:05:06 +1100[0m
+Detecting locale EN
+Found page "Alumni" [alumni]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 68.5ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-11-03 10:22:27 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 329.9ms
+
+[0m
+[0;97;49mStarted GET "/summer-internship" at 2017-11-03 10:22:30 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 32.3ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 10:22:31 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 21.8ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 10:22:31 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 19.9ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 10:22:31 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 34.9ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 10:22:31 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 74.6ms
+
+[0m
+[0;97;49mStarted GET "/students/summer-internship" at 2017-11-03 10:22:36 +1100[0m
+Detecting locale EN
+Found page "Summer Internship" [students/summer-internship]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-03 13:56:53 +1100
+[0;97;49mStarted GET "/students/summer-internship" at 2017-11-03 13:56:55 +1100[0m
+Detecting locale EN
+Found page "Summer Internship" [students/summer-internship]
+  Rendered snippet header
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 13:56:55 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 9.7ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 194.7ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 13:57:04 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 16.5ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-03 13:57:04 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 15.9ms
+
+[0m
