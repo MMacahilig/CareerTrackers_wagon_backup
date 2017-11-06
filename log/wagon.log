@@ -1979,3 +1979,1047 @@ Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
 
 [0m
 * Reloaded "pages", "snippets" at 2017-11-04 08:46:12 +1000
+[0;97;49mStarted GET "/" at 2017-11-06 09:24:28 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 257.8ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-11-06 09:24:35 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.7ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-06 09:24:41 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 10.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 09:27:33 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 256.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 09:50:30 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:01:09 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:02:23 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:04:03 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:06:11 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:07:37 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:09:17 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:14:01 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:14:18 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:14:29 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.9ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:15:11 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 14.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:15:11 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:15:12 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:15:12 +1100[0m
+Detecting locale EN
+[0;32;49mCompleted 200 OK in 66.0ms
+
+[0m
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 14.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:23:04 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 61.3ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:23:06 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 38.4ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:23:06 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 48.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:23:47 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:26:21 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:26:25 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:26:26 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:27:03 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:27:03 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 14.1ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:27:04 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.7ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:27:17 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 12.2ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:27:18 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:28:41 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:28:44 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:28:44 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 51.0ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:28:45 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:30:38 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:39:58 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:43:29 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:44:57 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:49:11 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:49:12 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:51:05 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 76.2ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:51:06 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 41.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:52:23 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:52:25 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.9ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 10:52:27 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 26.0ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 10:52:27 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 15.1ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:52:27 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 10:53:28 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:55:19 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 10:55:37 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:55:38 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 59.7ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:55:38 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.4ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 10:55:38 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 11:00:22 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:39:02 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:43:42 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 11:43:53 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 26.6ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 11:43:54 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 11:43:54 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 11:49:38 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:51:43 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:52:32 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:52:34 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:57:58 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 11:58:10 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 11:58:12 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 14.4ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 11:58:12 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 11:58:12 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 12:02:09 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 12:02:10 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.3ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 12:02:10 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.5ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 12:02:10 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 36.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 12:09:32 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 12:10:47 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 12:13:22 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 12:13:23 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 12:14:40 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:13:07 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 73.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:30:41 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:30:41 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:30:45 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 67.3ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:30:46 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.1ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:30:46 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:31:42 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:31:45 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:31:52 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:31:57 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:31:58 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.5ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:31:59 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 31.5ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:31:59 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 98.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:32:42 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:32:42 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.1ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:32:44 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 28.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:40:12 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:41:50 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:41:54 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 63.2ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:41:54 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:44:31 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:45:09 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:45:09 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.1ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:45:10 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:46:23 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:46:30 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.0ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 13:46:31 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 26.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 13:51:02 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:54:52 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 13:55:34 +1100
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 14:51:31 +1100[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 14:51:31 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet footer
+  Rendered snippet header
+[0;32;49mCompleted 404 Not Found in 173.3ms
+
+[0m
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 165.4ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 14:51:34 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 45.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 14:57:53 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 14:57:55 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 64.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:04:21 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:04:25 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.5ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:04:36 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:05:03 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:05:07 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 62.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:05:33 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:05:38 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:10:08 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:10:11 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 73.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:11:10 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:11:24 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:11:26 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:11:27 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.1ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:11:28 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:12:34 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:12:54 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:13:01 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:21:44 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:21:49 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:22:26 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:22:38 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:23:29 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:23:35 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:23:48 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 41.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:24:27 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:24:33 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:24:36 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:25:08 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 29.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:25:08 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:25:36 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:25:49 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:25:56 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 15:26:10 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:26:18 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:44:36 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:44:38 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:45:01 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:45:04 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 68.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:45:14 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:45:18 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.1ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-11-06 15:50:01 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 68.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2017-11-06 15:50:03 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 237.6ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-11-06 15:50:11 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.2ms
+
+[0m
+[0;97;49mStarted GET "/summer-kick-off-workshop-evaluation" at 2017-11-06 15:50:13 +1100[0m
+Detecting locale EN
+Found page "Summer Kick-Off Workshop Evaluation" [summer-kick-off-workshop-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.1ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-11-06 15:50:19 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.5ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2017-11-06 15:50:21 +1100[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.1ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 15:50:22 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 68.2ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 15:50:22 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 19.1ms
+
+[0m
+[0;97;49mStarted POST "/interns/contract" at 2017-11-06 15:50:25 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 19.4ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-11-06 15:50:32 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.8ms
+
+[0m
+[0;97;49mStarted GET "/summer-kick-off-workshop-evaluation" at 2017-11-06 15:50:35 +1100[0m
+Detecting locale EN
+Found page "Summer Kick-Off Workshop Evaluation" [summer-kick-off-workshop-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 35.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:51:18 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:51:23 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 59.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:51:38 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:51:40 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 15:51:52 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 15:51:55 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 57.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:20:20 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:31:20 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 116.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:32:04 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:32:07 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:33:34 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 78.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:35:07 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 16:35:50 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:35:52 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 26.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:36:15 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 16:37:06 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 16:37:18 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:37:21 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:38:33 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:38:39 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 26.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:38:55 +1100
+* Reloaded "pages", "snippets" at 2017-11-06 16:39:39 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:39:42 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 58.3ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:39:50 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.8ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:40:01 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 47.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-06 16:40:34 +1100
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 16:40:35 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.4ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2017-11-06 16:40:37 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.8ms
+
+[0m

@@ -80,7 +80,11 @@ seo_title: CareerTrackers Intern Timesheet
             <hr>
             <div class='light-background padded-bottom'>
                 <fieldset>
-                    <h3><u>Timesheet</u></h3><br>
+                    <div class='form-group'>
+                        <label class='col-sm-4 control-label' for='name'><h3><u>Timesheet</u></h3></label>
+                        
+                    </div>
+                    
                     <div class='form-group'>
                         <label class='col-sm-2 control-label' for='name'>Name</label>
                         <div class='col-sm-4'>
@@ -139,19 +143,19 @@ seo_title: CareerTrackers Intern Timesheet
                 <div class='form-group'>
                     <label class='col-sm-1 control-label' for='spacer'></label>
                     <div class='col-sm-8'>
-                    <table style="width:100%" border="0">
+                    <table style="width:100%;text-align: center" border="0">
                         <tr>
-                            <th>Day</th>
-                            <th>Start Time</th> 
-                            <th>Meal Break</th>
-                            <th>Finish Time</th>
-                            <th>Total Hours per Day</th>
-                            <th>Net Hours to be paid after breaks</th>
+                            <th id='dayheader'>Day</th>
+                            <th class='otherheaders'>Start Time</th> 
+                            <th class='otherheaders' >Meal Break</th>
+                            <th class='otherheaders' >Finish Time</th>
+                            <th class='otherheaders' >Total Hours per Day</th>
+                            <th class='otherheaders' >Net Hours to be paid after breaks</th>
                         </tr>
                         <tr>
                             
-                            <td>Monday</td>
-                            <td><input type="time" id='start_time1' name='timesheet[start_time1]'></td>
+                            <td style="text-align: left">Monday</td>
+                            <td><input type="time" id='start_time1' name='timesheet[start_time1]'  style="text-align:center;"></td>
                             <td><select class='form-control' id='meal_break1' name='timesheet[meal_break1]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
@@ -159,14 +163,14 @@ seo_title: CareerTrackers Intern Timesheet
                             <option value='0.75'>45 mins</option>
                             <option value='1'>60 mins</option>
                                 </select></td> 
-                            <td><input type="time" id='finish_time1' name='timesheet[finish_time1]'></td>
-                            <td><input name="hours1" disabled id="hours1"></td>
-                            <td><input name="final1" disabled id="final1"></td>
+                            <td><input type="time" id='finish_time1' name='timesheet[finish_time1]' style="text-align:center;"></td>
+                            <td><input name="hours1" disabled id="hours1" style="text-align:center;"></td>
+                            <td><input name="final1" disabled id="final1" style="text-align:center;"></td>
                             
                         </tr>
                         <tr>
-                            <td>Tuesday</td>
-                            <td><input type="time" id='start_time2' name='timesheet[start_time2]'></td>
+                            <td style="text-align: left">Tuesday</td>
+                            <td><input type="time" id='start_time2' name='timesheet[start_time2]' style="text-align:center;"></td>
                             <td><select class='form-control' id='meal_break2' name='timesheet[meal_break2]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
@@ -174,13 +178,13 @@ seo_title: CareerTrackers Intern Timesheet
                             <option value='0.75'>45 mins</option>
                             <option value='1'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time2' name='timesheet[finish_time2]'></td>
-                            <td><input name="hours2" disabled id="hours2"></td>
-                            <td><input name="final2" disabled id="final2"></td>
+                            <td><input type="time" id='finish_time2' name='timesheet[finish_time2]' style="text-align:center;"></td>
+                            <td><input name="hours2" disabled id="hours2" style="text-align:center;"></td>
+                            <td><input name="final2" disabled id="final2" style="text-align:center;"></td>
                         </tr>
                         <tr>
-                            <td>Wednesday</td>
-                            <td><input type="time" id='start_time3' name='timesheet[start_time3]'></td>
+                            <td style="text-align: left">Wednesday</td>
+                            <td><input type="time" id='start_time3' name='timesheet[start_time3]' style="text-align:center;"></td>
                             <td><select class='form-control' id='meal_break3' name='timesheet[meal_break3]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
@@ -188,13 +192,13 @@ seo_title: CareerTrackers Intern Timesheet
                             <option value='0.75'>45 mins</option>
                             <option value='1'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time3' name='timesheet[finish_time3]'></td>
-                            <td><input name="hours3" disabled id="hours3"></td>
-                            <td><input name="final3" disabled id="final3"></td>
+                            <td><input type="time" id='finish_time3' name='timesheet[finish_time3]' style="text-align:center;"></td>
+                            <td><input name="hours3" disabled id="hours3" style="text-align:center;"></td>
+                            <td><input name="final3" disabled id="final3" style="text-align:center;"></td>
                         </tr>
                         <tr>
-                            <td>Thursday</td>
-                            <td><input type="time" id='start_time4' name='timesheet[start_time4]'></td>
+                            <td style="text-align: left">Thursday</td>
+                            <td><input type="time" id='start_time4' name='timesheet[start_time4]' style="text-align:center;"></td>
                             <td><select class='form-control' id='meal_break4' name='timesheet[meal_break4]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
@@ -202,13 +206,13 @@ seo_title: CareerTrackers Intern Timesheet
                             <option value='0.75'>45 mins</option>
                             <option value='1'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time4' name='timesheet[finish_time4]'></td>
-                            <td><input name="hours4" disabled id="hours4"></td>
-                            <td><input name="final4" disabled id="final4"></td>
+                            <td><input type="time" id='finish_time4' name='timesheet[finish_time4]' style="text-align:center;"></td>
+                            <td><input name="hours4" disabled id="hours4" style="text-align:center;"></td>
+                            <td><input name="final4" disabled id="final4" style="text-align:center;"></td>
                         </tr>
                         <tr>
-                            <td>Friday</td>
-                            <td><input type="time" id='start_time5' name='timesheet[start_time5]'></td>
+                            <td style="text-align: left">Friday</td>
+                            <td><input type="time" id='start_time5' name='timesheet[start_time5]' style="text-align:center;"></td>
                             <td><select class='form-control' id='meal_break5' name='timesheet[meal_break5]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
@@ -216,15 +220,15 @@ seo_title: CareerTrackers Intern Timesheet
                             <option value='0.75'>45 mins</option>
                             <option value='1'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time5' name='timesheet[finish_time5]'></td>
-                            <td><input name="hours5" disabled id="hours5"></td>
-                            <td><input name="final5" disabled id="final5"></td>
+                            <td><input type="time" id='finish_time5' name='timesheet[finish_time5]' style="text-align:center;"></td>
+                            <td><input name="hours5" disabled id="hours5" style="text-align:center;"></td>
+                            <td><input name="final5" disabled id="final5" style="text-align:center;"></td>
                         </tr>
                         <tr>
                             <td colspan="3"></td> 
                             <td><b>Total</b></td>
-                            <td>tbc</td>
-                            <td><input name="totalFinal2" disabled id="totalFinal2"></td>
+                            <td><input name="totalFinal1" disabled id="totalFinal1" style="text-align:center;"></td>
+                            <td><input name="totalFinal2" disabled id="totalFinal2" style="text-align:center;"></td>
                         </tr>
                     </table>
                     </div>
@@ -411,545 +415,236 @@ seo_title: CareerTrackers Intern Timesheet
             //return false;
         });
         
-        $('#start_time1').change(function(){
-            let startTime = $('#start_time1').val();
-            let endTime = $('#finish_time1').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-            
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
+        $('#dayheader').css("text-align","left");
+        $('.otherheaders').css("text-align","center");
+        ///
+        $('#start_time1, #start_time2, #start_time3, #start_time4, #finish_time1, #finish_time1, #finish_time2, #finish_time3, #finish_time4, #finish_time5' ).each(function(){
+            $(this).change(function(){
+
+                let startTimeOne = $('#start_time1').val();
+                let startTimeTwo = $('#start_time2').val();
+                let startTimeThree = $('#start_time3').val();
+                let startTimeFour = $('#start_time4').val();
+                let startTimeFive = $('#start_time5').val();
+
+                let endTimeOne = $('#finish_time1').val();
+                let endTimeTwo = $('#finish_time2').val();
+                let endTimeThree = $('#finish_time3').val();
+                let endTimeFour = $('#finish_time4').val();
+                let endTimeFive = $('#finish_time5').val();
+
+                let startHourOne = startTimeOne.slice(0,2);
+                let startHourTwo = startTimeTwo.slice(0,2);
+                let startHourThree = startTimeThree.slice(0,2);
+                let startHourFour = startTimeFour.slice(0,2);
+                let startHourFive = startTimeFive.slice(0,2);
+
+                let startMinsOne = startTimeOne.slice(3,5);
+                let startMinsTwo = startTimeTwo.slice(3,5);
+                let startMinsThree = startTimeThree.slice(3,5);
+                let startMinsFour = startTimeFour.slice(3,5);
+                let startMinsFive = startTimeFive.slice(3,5);
+
+                let endHourOne = endTimeOne.slice(0,2);
+                let endHourTwo = endTimeTwo.slice(0,2);
+                let endHourThree = endTimeThree.slice(0,2);
+                let endHourFour = endTimeFour.slice(0,2);
+                let endHourFive = endTimeFive.slice(0,2);
+
+                let endMinsOne = endTimeOne.slice(3,5);
+                let endMinsTwo = endTimeTwo.slice(3,5);
+                let endMinsThree = endTimeThree.slice(3,5);
+                let endMinsFour = endTimeFour.slice(3,5);
+                let endMinsFive = endTimeFive.slice(3,5);
+
+
+                let differenceHourOne = endHourOne - startHourOne;
+                let differenceMinsOne = (endMinsOne - startMinsOne)/60;
+
+                let differenceHourTwo = endHourTwo - startHourTwo;
+                let differenceMinsTwo = (endMinsTwo - startMinsTwo)/60;
+
+                let differenceHourThree = endHourThree - startHourThree;
+                let differenceMinsThree = (endMinsThree - startMinsThree)/60;
+
+                let differenceHourFour = endHourFour - startHourFour;
+                let differenceMinsFour = (endMinsFour - startMinsFour)/60;
+
+                let differenceHourFive = endHourFive - startHourFive;
+                let differenceMinsFive = (endMinsFive - startMinsFive)/60;
+
             
             //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
+            if(endTimeOne == "" || startTimeOne == ""){
                 $('#hours1').val("");
             }else{
-                $('#hours1').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
-            }
-        });
-        
-        $('#finish_time1').change(function(){
-            let startTime = $('#start_time1').val();
-            let endTime = $('#finish_time1').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#hours1').val("");
-            }else{
-                $('#hours1').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+                $('#hours1').val(parseFloat(differenceHourOne) + parseFloat(differenceMinsOne.toFixed(2)))    
             }
             
-        });
-        
-        $('#start_time2').change(function(){
-            let startTime = $('#start_time2').val();
-            let endTime = $('#finish_time2').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-            
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
+            if(endTimeTwo == "" || startTimeTwo == ""){
                 $('#hours2').val("");
             }else{
-                $('#hours2').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
-            }
-        });
-        
-        $('#finish_time2').change(function(){
-            let startTime = $('#start_time2').val();
-            let endTime = $('#finish_time2').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#hours2').val("");
-            }else{
-                $('#hours2').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+                $('#hours2').val(parseFloat(differenceHourTwo) + parseFloat(differenceMinsTwo.toFixed(2)))    
             }
             
-        });
-        
-        $('#start_time3').change(function(){
-            let startTime = $('#start_time3').val();
-            let endTime = $('#finish_time3').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-            
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
+            if(endTimeThree == "" || startTimeThree == ""){
                 $('#hours3').val("");
             }else{
-                $('#hours3').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
-            }
-        });
-        
-        $('#finish_time3').change(function(){
-            let startTime = $('#start_time3').val();
-            let endTime = $('#finish_time3').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#hours3').val("");
-            }else{
-                $('#hours3').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+                $('#hours3').val(parseFloat(differenceHourThree) + parseFloat(differenceMinsThree.toFixed(2)))    
             }
             
-        });
-        
-        $('#start_time4').change(function(){
-            let startTime = $('#start_time4').val();
-            let endTime = $('#finish_time4').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-            
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
+            if(endTimeFour == "" || startTimeFour == ""){
                 $('#hours4').val("");
             }else{
-                $('#hours4').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
-            }
-        });
-        
-        $('#finish_time4').change(function(){
-            let startTime = $('#start_time4').val();
-            let endTime = $('#finish_time4').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#hours4').val("");
-            }else{
-                $('#hours4').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+                $('#hours4').val(parseFloat(differenceHourFour) + parseFloat(differenceMinsFour.toFixed(2)))    
             }
             
-        });
-        
-        $('#start_time5').change(function(){
-            let startTime = $('#start_time5').val();
-            let endTime = $('#finish_time5').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
-            
-            
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
+            if(endTimeFive == "" || startTimeFive == ""){
                 $('#hours5').val("");
             }else{
-                $('#hours5').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+                $('#hours5').val(parseFloat(differenceHourFive) + parseFloat(differenceMinsFive.toFixed(2)))    
             }
-        });
-        
-        $('#finish_time5').change(function(){
-            let startTime = $('#start_time5').val();
-            let endTime = $('#finish_time5').val();
-            
-            let startHour = startTime.slice(0,2);
-            let startMins = startTime.slice(3,5);
-            let endHour = endTime.slice(0,2);
-            let endMins = endTime.slice(3,5);
+                
+            /////////
+            let beforeBreakOne = $('#hours1').val();  
+            let beforeBreakTwo = $('#hours2').val();  
+            let beforeBreakThree = $('#hours3').val();  
+            let beforeBreakFour = $('#hours4').val();  
+            let beforeBreakFive = $('#hours5').val();  
 
+            let mealBreakOne = $('#meal_break1').val();
+            let mealBreakTwo = $('#meal_break2').val();
+            let mealBreakThree = $('#meal_break3').val();
+            let mealBreakFour = $('#meal_break4').val();
+            let mealBreakFive = $('#meal_break5').val();
             
-            let differenceHour = endHour - startHour;
-            let differenceMins = (endMins - startMins)/60;
+            let diffHourOne = beforeBreakOne - mealBreakOne;
+            let diffHourTwo = beforeBreakTwo - mealBreakTwo;
+            let diffHourThree = beforeBreakThree - mealBreakThree;
+            let diffHourFour = beforeBreakFour - mealBreakFour;
+            let diffHourFive = beforeBreakFive - mealBreakFive;
             
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#hours5').val("");
-            }else{
-                $('#hours5').val(parseFloat(differenceHour) + parseFloat(differenceMins.toFixed(2)))    
+            if(diffHourOne > 0) {
+                $('#final1').val(parseFloat(diffHourOne));
+            }else {
+                $('#final1').val(0);
             }
             
-        });
+            if(diffHourTwo > 0) {
+                $('#final2').val(parseFloat(diffHourTwo));
+            }else {
+                $('#final2').val(0);
+            }
+            
+            if(diffHourThree > 0) {
+                $('#final3').val(parseFloat(diffHourThree));
+            }else {
+                $('#final3').val(0);
+            }
+            
+            if(diffHourFour > 0) {
+                $('#final4').val(parseFloat(diffHourFour));
+            }else {
+                $('#final4').val(0);
+            }
+            
+            if(diffHourFive > 0) {
+                $('#final5').val(parseFloat(diffHourFive));
+            }else {
+                $('#final5').val(0);
+            }
+            
+        let totalHours = parseFloat(beforeBreakOne) + parseFloat(beforeBreakTwo) + parseFloat(beforeBreakThree) + parseFloat(beforeBreakFour) + parseFloat(beforeBreakFive);
         
-        $('#start_time1').change(function(){
-            let beforeBreak = $('#hours1').val();
-            let mealBreak = $('#meal_break1').val();
-            let endTime = $('#finish_time1').val();
+        let totalNet = parseFloat(diffHourOne) + parseFloat(diffHourTwo) + parseFloat(diffHourThree) + parseFloat(diffHourFour) + parseFloat(diffHourFive);
+        
+        if(totalHours > 0){
+            $('#totalFinal1').val(totalHours);    
+        } else {
+            $('#totalFinal1').val(0);    
+        }
+            
+        if(totalNet > 0){
+            $('#totalFinal2').val(totalNet);    
+        } else {
+            $('#totalFinal2').val(0);    
+        }
+                
+        });
+    });
     
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
-                $('#final1').val("");
-            }else{
-                $('#final1').val(parseFloat(differenceHour))    
-            }
-        });
         
-        $('#meal_break1').change(function(){
-            let beforeBreak = $('#hours1').val();
-            let mealBreak = $('#meal_break1').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final1').val(parseFloat(beforeBreak));
-            }else{
-                $('#final1').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#finish_time1').change(function(){
-            let beforeBreak = $('#hours1').val();
-            let mealBreak = $('#meal_break1').val();
-            let startTime = $('#start_time1').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#final1').val("");
-            }else{
-                $('#final1').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#hours1').change(function(){
-            let beforeBreak = $('#hours1').val();
-            let mealBreak = $('#meal_break1').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final1').val(parseFloat(beforeBreak));
-            }else{
-                $('#final1').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#start_time2').change(function(){
-            let beforeBreak = $('#hours2').val();
-            let mealBreak = $('#meal_break2').val();
-            let endTime = $('#finish_time2').val();
-    
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
-                $('#final2').val("");
-            }else{
-                $('#final2').val(parseFloat(differenceHour))    
-            }
-        });
-        
-        $('#meal_break2').change(function(){
-            let beforeBreak = $('#hours2').val();
-            let mealBreak = $('#meal_break2').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final2').val(parseFloat(beforeBreak));
-            }else{
-                $('#final2').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#finish_time2').change(function(){
-            let beforeBreak = $('#hours2').val();
-            let mealBreak = $('#meal_break2').val();
-            let startTime = $('#start_time2').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#final2').val("");
-            }else{
-                $('#final2').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#hours2').change(function(){
-            let beforeBreak = $('#hours2').val();
-            let mealBreak = $('#meal_break2').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final2').val(parseFloat(beforeBreak));
-            }else{
-                $('#final2').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#start_time3').change(function(){
-            let beforeBreak = $('#hours3').val();
-            let mealBreak = $('#meal_break3').val();
-            let endTime = $('#finish_time3').val();
-    
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
-                $('#final3').val("");
-            }else{
-                $('#final3').val(parseFloat(differenceHour))    
-            }
-        });
-        
-        $('#meal_break3').change(function(){
-            let beforeBreak = $('#hours3').val();
-            let mealBreak = $('#meal_break3').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final3').val(parseFloat(beforeBreak));
-            }else{
-                $('#final3').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#finish_time3').change(function(){
-            let beforeBreak = $('#hours3').val();
-            let mealBreak = $('#meal_break3').val();
-            let startTime = $('#start_time3').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#final3').val("");
-            }else{
-                $('#final3').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#hours3').change(function(){
-            let beforeBreak = $('#hours3').val();
-            let mealBreak = $('#meal_break3').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final3').val(parseFloat(beforeBreak));
-            }else{
-                $('#final3').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#start_time4').change(function(){
-            let beforeBreak = $('#hours4').val();
-            let mealBreak = $('#meal_break4').val();
-            let endTime = $('#finish_time4').val();
-    
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
-                $('#final4').val("");
-            }else{
-                $('#final4').val(parseFloat(differenceHour))    
-            }
-        });
-        
-        $('#meal_break4').change(function(){
-            let beforeBreak = $('#hours4').val();
-            let mealBreak = $('#meal_break4').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final4').val(parseFloat(beforeBreak));
-            }else{
-                $('#final4').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#finish_time4').change(function(){
-            let beforeBreak = $('#hours4').val();
-            let mealBreak = $('#meal_break4').val();
-            let startTime = $('#start_time4').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#final4').val("");
-            }else{
-                $('#final4').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#hours4').change(function(){
-            let beforeBreak = $('#hours4').val();
-            let mealBreak = $('#meal_break4').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final4').val(parseFloat(beforeBreak));
-            }else{
-                $('#final4').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#start_time5').change(function(){
-            let beforeBreak = $('#hours5').val();
-            let mealBreak = $('#meal_break5').val();
-            let endTime = $('#finish_time5').val();
-    
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(endTime == ""){
-                $('#final5').val("");
-            }else{
-                $('#final5').val(parseFloat(differenceHour))    
-            }
-        });
-        
-        $('#meal_break5').change(function(){
-            let beforeBreak = $('#hours5').val();
-            let mealBreak = $('#meal_break5').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final5').val(parseFloat(beforeBreak));
-            }else{
-                $('#final5').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#finish_time5').change(function(){
-            let beforeBreak = $('#hours5').val();
-            let mealBreak = $('#meal_break5').val();
-            let startTime = $('#start_time5').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(startTime == ""){
-                $('#final5').val("");
-            }else{
-                $('#final5').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#hours5').change(function(){
-            let beforeBreak = $('#hours5').val();
-            let mealBreak = $('#meal_break5').val();
-            
-            let differenceHour = beforeBreak - mealBreak;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mealBreak == ""){
-                $('#final5').val(parseFloat(beforeBreak));
-            }else{
-                $('#final5').val(parseFloat(differenceHour))    
-            }
-            
-        });
-        
-        $('#start_time1').change(function(){
-            let mondayFinal = $('#final1').val();
-            let tuesdayFinal = $('#final2').val();
-            let wednesdayFinal = $('#final3').val();
-            let thursdayFinal = $('#final4').val();
-            let fridayFinal = $('#final5').val();
-            
-            let totalFinal = mondayFinal + tuesdayFinal + wednesdayFinal + thursdayFinal + fridayFinal;
-            
-            //console.log(differenceHour + '.' + differenceMins);
-            if(mondayFinal == ""){
-                $('#totalFinal2').val(parseFloat(totalFinal));
-            }else{
-                $('#totalFinal2').val(parseFloat(totalFinal))    
-            }
-            
-        });
+    $('#hours1, #hours2, #hours3, #hours4, #hours5, #meal_break1, #meal_break2, #meal_break3, #meal_break4, #meal_break5').each(function(){
+        $(this).change(function(){
+            //console.log("trigger");
+            let beforeBreakOne = $('#hours1').val();  
+            let beforeBreakTwo = $('#hours2').val();  
+            let beforeBreakThree = $('#hours3').val();  
+            let beforeBreakFour = $('#hours4').val();  
+            let beforeBreakFive = $('#hours5').val();  
 
-
+            let mealBreakOne = $('#meal_break1').val();
+            let mealBreakTwo = $('#meal_break2').val();
+            let mealBreakThree = $('#meal_break3').val();
+            let mealBreakFour = $('#meal_break4').val();
+            let mealBreakFive = $('#meal_break5').val();
+            
+            let differenceHourOne = beforeBreakOne - mealBreakOne;
+            let differenceHourTwo = beforeBreakTwo - mealBreakTwo;
+            let differenceHourThree = beforeBreakThree - mealBreakThree;
+            let differenceHourFour = beforeBreakFour - mealBreakFour;
+            let differenceHourFive = beforeBreakFive - mealBreakFive;
+            
+            if(differenceHourOne > 0) {
+                $('#final1').val(parseFloat(differenceHourOne));
+            }else {
+                $('#final1').val(0);
+            }
+            
+            if(differenceHourTwo > 0) {
+                $('#final2').val(parseFloat(differenceHourTwo));
+            }else {
+                $('#final2').val(0);
+            }
+            
+            if(differenceHourThree > 0) {
+                $('#final3').val(parseFloat(differenceHourThree));
+            }else {
+                $('#final3').val(0);
+            }
+            
+            if(differenceHourFour > 0) {
+                $('#final4').val(parseFloat(differenceHourFour));
+            }else {
+                $('#final4').val(0);
+            }
+            
+            if(differenceHourFive > 0) {
+                $('#final5').val(parseFloat(differenceHourFive));
+            }else {
+                $('#final5').val(0);
+            }
+            
+        let totalHours = parseFloat(beforeBreakOne) + parseFloat(beforeBreakTwo) + parseFloat(beforeBreakThree) + parseFloat(beforeBreakFour) + parseFloat(beforeBreakFive);
+        
+        let totalNet = parseFloat(differenceHourOne) + parseFloat(differenceHourTwo) + parseFloat(differenceHourThree) + parseFloat(differenceHourFour) + parseFloat(differenceHourFive);
+        
+        if(totalHours > 0){
+            $('#totalFinal1').val(totalHours);    
+        } else {
+            $('#totalFinal1').val(0);    
+        }
+            
+        if(totalNet > 0){
+            $('#totalFinal2').val(totalNet);    
+        } else {
+            $('#totalFinal2').val(0);    
+        }
+            
+        });
+       
+    });
+      
 
     });
 
