@@ -1979,3 +1979,23 @@ Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
 
 [0m
 * Reloaded "pages", "snippets" at 2017-11-04 08:46:12 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-06 08:23:41 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.9ms
+
+[0m
+[0;97;49mStarted POST "/forms/intern-timesheet" at 2017-11-06 08:29:35 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.7ms
+
+[0m
