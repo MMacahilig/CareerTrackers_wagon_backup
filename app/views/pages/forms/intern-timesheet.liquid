@@ -42,7 +42,7 @@ seo_title: CareerTrackers Intern Timesheet
     
       <h4><u>The Process:</u></h4>
 
-      <table style="width:800px;" border="0">
+      <table style="width:1500px;" border="0">
         <tr>
           <td>Step 1: <br><br></td>
           <td>Complete the below timesheet each week ensuring that all information is correct. <br><br>
@@ -55,12 +55,7 @@ seo_title: CareerTrackers Intern Timesheet
         </tr>
         <tr>
           <td>Step 3:<br><br></td>
-          <td>Once approved by your manager, a final copy will be sent to you and the CareerTrackers Payroll Officer for processing.<br><br>
-            </td>
-        </tr>
-        <tr>
-          <td>Step 4:<br><br></td>
-          <td>Payroll is paid fortnightly in arrears.  After each pay run you will receive a pay slip etc... <br><br>
+          <td>Once approved by your manager, a final copy will be sent to you and the CareerTrackers Payroll Officer for processing.  (Please note that all wages are paid on a fortnightly basis in arrears)<br><br>
             </td>
         </tr>
       </table>
@@ -312,42 +307,15 @@ seo_title: CareerTrackers Intern Timesheet
 <script>
     $(document).ready(function() {
         var metrics = [
-            [ "[name='employer[name]']", 'presence', 'Name is required and cannot be empty' ],
-            [ "[name='employer[email_address]']", 'presence', 'Email address is required and cannot be empty' ],
-            [ "[name='employer[email_address]']", 'email', 'Invalid email address' ],
-            [ "[name='employer[role]']", 'presence', 'Role is required and cannot be empty' ],
-            [ "[name='employer[phone_1]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_2]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_3]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_4]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_5]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_6]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_7]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_8]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_9]']", 'integer', 'Contact Number must be a number' ],
-			[ "[name='employer[phone_10]']", 'integer', 'Contact Number must be a number' ],
-            [ "[name='employer[phone_10]']", 'presence', 'Contact Number must be entered' ],
-            [ "[name='employer[company]']", 'presence', 'Company is required and cannot be empty' ],
-            [ "[name='employer[abn_1]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_2]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_3]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_4]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_5]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_6]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_7]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_8]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_9]']", 'integer', 'ABN must be a number' ],
-			[ "[name='employer[abn_10]']", 'integer', 'ABN must be a number' ],
-            [ "[name='employer[abn_11]']", 'integer', 'ABN must be a number' ],
-            [ "[name='employer[abn_11]']", 'presence', 'ABN must be entered' ],
-            [ "[name='employer[existing_vac_program]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[reconciliation_action_plan]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[other_initiatives]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[departments]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[degree_types]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[locations]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[number_of_interns]']", 'presence', 'Required field. Cannont be empty' ],
-            [ "[name='employer[hear_about_us]']", 'presence', 'Required field. Cannont be empty' ],
+            [ "[name='timesheet[name]']", 'presence', 'Name is required and cannont be empty' ],
+            [ "[name='timesheet[email_address]']", 'presence', 'Email Address is required and cannot be empty' ],
+            [ "[name='timesheet[email_address]']", 'email', 'Invalid email address' ],
+            [ "[name='timesheet[employer]']", 'presence', 'Employer is required and cannot be empty' ],
+            [ "[name='timesheet[team_department]']", 'presence', 'Team / Department is required and cannot be empty' ],
+			[ "[name='timesheet[manager]']", 'presence', 'Manager Name is required and cannot be empty' ],
+			[ "[name='timesheet[manager_email_address]']", 'presence', 'Manager Email Address is required and cannot be empty' ],
+			[ "[name='timesheet[manager_email_address]']", 'email', 'Invalid email address' ],
+			[ "[name='timesheet[timeperiod]']", 'presence', 'Time Period is required and cannot be empty' ],
             
         ];
 
