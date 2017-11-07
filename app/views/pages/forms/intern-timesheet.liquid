@@ -62,7 +62,7 @@ seo_title: CareerTrackers Intern Timesheet
 
     </p>
 
-    <form id='employer_expression_of_interest' action='' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+    <form id='intern_timesheet' action='' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
         {% assign intern = session['intern'] %}
         {% csrf_param %}
         <!-- Will be hidden until Intern Details -->
@@ -328,40 +328,26 @@ seo_title: CareerTrackers Intern Timesheet
         function postToGoogle() {
             var name = $("#name").val();
             var emailAddress = $("#email_address").val();
-            var role = $("#role").val();
-            var contactNumber = $("#phone_1").val()+""+ $("#phone_2").val()+""+ $("#phone_3").val()+""+ $("#phone_4").val()+" "+ $("#phone_5").val()+""+ $("#phone_6").val()+""+ $("#phone_7").val()+" "+ $("#phone_8").val()+""+ $("#phone_9").val()+ $("#phone_10").val();
-            var company = $("#company").val();
-            var abn = $("#abn_1").val()+""+ $("#abn_2").val()+""+ $("#abn_3").val()+""+ $("#abn_4").val()+""+ $("#abn_5").val()+""+ $("#abn_6").val()+""+ $("#abn_7").val()+""+ $("#abn_8").val()+""+ $("#abn_9").val()+""+ $("#abn_10").val()+""+ $("#abn_10").val();
-            var existingVacProgram = $("#existing_vac_program").val();
-            var rap = $("#reconciliation_action_plan").val();
-            var otherInitiatives = $("#other_initiatives").val();
-            var departments = $("#departments").val();
-            var degreeTypes = $("#degree_types").val();
-            var locations = $("#locations").val();
-            var numberOfInterns = $("#number_of_interns").val();
-            var hearAboutUs = $("#hear_about_us").val();
+            var employer = $("#employer").val();
+            var teamDepartment = $("#team_department").val();
+            var manager = $("#manager").val();
+            var managerEmailAddress = $("#manager_email_address").val;
+            var timePeriod = $("#timeperiod").val();
 
             var ajaxData = {
                             "entry.1862661918": name,
                             "entry.730450753": emailAddress,
-                            "entry.967983336": role,
-                            "entry.548718755": contactNumber,
-                            "entry.1716666657": company,
-                            "entry.209084879": abn,
-                            "entry.357859019": existingVacProgram,
-                            "entry.46714137": rap,
-                            "entry.1856718304": otherInitiatives,
-                            "entry.1123400366": departments,
-                            "entry.423526007": degreeTypes,
-                            "entry.428247000": locations,
-                            "entry.715990456": numberOfInterns,
-                            "entry.2066429542": hearAboutUs
+                            "entry.967983336": employer,
+                            "entry.548718755": teamDepartment,
+                            "entry.1716666657": manager,
+                            "entry.209084879": managerEmailAddress,
+                            "entry.357859019": timePeriod,
                            };
 
             
             $.ajax({
                 type: "POST",
-                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbzmqJXtt_7HoV6hWYBmemSqFEEyi-WrSfli-a9ly28rjL-ptnI/exec",
+                url: "https://script.google.com/macros/u/0/s/AKfycbw9rCkfdpuHVoJpWHNeo5GHgKVokcjHZYNymPJd7FLqtU1OzPV1/exec",
                 data: JSON.stringify(ajaxData),
                 dataType: "json",
                 statusCode: {
@@ -378,7 +364,7 @@ seo_title: CareerTrackers Intern Timesheet
             });
             //alert('working');
         }
-        $('#employer_expression_of_interest').submit(function() {
+        $('#intern_timesheet').submit(function() {
             postToGoogle();
             //return false;
         });
