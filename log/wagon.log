@@ -87,3 +87,15 @@ Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
 
 [0m
 * Reloaded "pages", "snippets" at 2017-11-08 08:19:02 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-08 08:42:37 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.8ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
