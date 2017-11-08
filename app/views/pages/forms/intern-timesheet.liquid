@@ -331,7 +331,7 @@ seo_title: CareerTrackers Intern Timesheet
             var employer = $("#employer").val();
             var teamDepartment = $("#team_department").val();
             var manager = $("#manager").val();
-            var managerEmailAddress = $("#manager_email_address").val;
+            var managerEmailAddress = $("#manager_email_address").val();
             var timePeriod = $("#timeperiod").val();
 
             var ajaxData = {
@@ -347,15 +347,15 @@ seo_title: CareerTrackers Intern Timesheet
             
             $.ajax({
                 type: "POST",
-                url: "https://script.google.com/macros/u/0/s/AKfycbw9rCkfdpuHVoJpWHNeo5GHgKVokcjHZYNymPJd7FLqtU1OzPV1/exec",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbw9rCkfdpuHVoJpWHNeo5GHgKVokcjHZYNymPJd7FLqtU1OzPV1/exec",
                 data: JSON.stringify(ajaxData),
                 dataType: "json",
                 statusCode: {
                     0: function() {
-                        //Success message
+                        console.log("send")//Success message
                     },
                     200: function() {
-                        //Success Message
+                        console.log("send")//Success Message
                     }
                 },
                 xhrFields: {
