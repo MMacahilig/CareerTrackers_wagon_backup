@@ -1,0 +1,64 @@
+# Logfile created on 2017-11-14 08:16:03 +1000 by logger.rb/1.2.8
+[0;97;49mStarted GET "/" at 2017-11-14 08:16:14 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 189.0ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-11-14 08:16:24 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.7ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-14 08:16:32 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-14 08:17:56 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-14 08:17:59 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-14 08:18:22 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-14 08:18:38 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-11-14 08:21:57 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-11-14 08:22:02 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.3ms
+
+[0m
