@@ -62,7 +62,7 @@ seo_title: CareerTrackers Intern Timesheet
 
     </p>
 
-    <form id='intern_timesheet' action='' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+    <form id='intern_timesheet' action='/interns/timesheet' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
         {% assign intern = session['intern'] %}
         {% csrf_param %}
         <!-- Will be hidden until Intern Details -->
@@ -481,31 +481,31 @@ seo_title: CareerTrackers Intern Timesheet
             
             //console.log(differenceHour + '.' + differenceMins);
             if(endTimeOne == "" || startTimeOne == ""){
-                $('#hours1').val("");
+                $('#hours1').val(0);
             }else{
                 $('#hours1').val(parseFloat(differenceHourOne) + parseFloat(differenceMinsOne.toFixed(2)))    
             }
             
             if(endTimeTwo == "" || startTimeTwo == ""){
-                $('#hours2').val("");
+                $('#hours2').val(0);
             }else{
                 $('#hours2').val(parseFloat(differenceHourTwo) + parseFloat(differenceMinsTwo.toFixed(2)))    
             }
             
             if(endTimeThree == "" || startTimeThree == ""){
-                $('#hours3').val("");
+                $('#hours3').val(0);
             }else{
                 $('#hours3').val(parseFloat(differenceHourThree) + parseFloat(differenceMinsThree.toFixed(2)))    
             }
             
             if(endTimeFour == "" || startTimeFour == ""){
-                $('#hours4').val("");
+                $('#hours4').val(0);
             }else{
                 $('#hours4').val(parseFloat(differenceHourFour) + parseFloat(differenceMinsFour.toFixed(2)))    
             }
             
             if(endTimeFive == "" || startTimeFive == ""){
-                $('#hours5').val("");
+                $('#hours5').val(0);
             }else{
                 $('#hours5').val(parseFloat(differenceHourFive) + parseFloat(differenceMinsFive.toFixed(2)))    
             }
