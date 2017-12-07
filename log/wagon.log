@@ -480,3 +480,69 @@ Found page "Learning Contract - Goals" [forms/learning-contract-goals]
 [0;32;49mCompleted 200 OK in 121.1ms
 
 [0m
+[0;97;49mStarted GET "/" at 2017-12-04 14:05:53 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 277.6ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-12-04 14:06:08 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 34.9ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-12-04 14:06:16 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 58.6ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-07 15:35:36 +1100[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.4ms
+
+[0m
+[0;97;49mStarted POST "/interns/timesheet" at 2017-12-07 15:36:02 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 21.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-12-07 15:41:23 +1100
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m

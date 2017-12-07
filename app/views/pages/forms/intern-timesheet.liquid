@@ -400,8 +400,30 @@ seo_title: CareerTrackers Intern Timesheet
               
                            };
 
-            
+            /*
             $.ajax({
+                type: "POST",
+                url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbw9rCkfdpuHVoJpWHNeo5GHgKVokcjHZYNymPJd7FLqtU1OzPV1/exec",
+                data: JSON.stringify(ajaxData),
+                dataType: "json",
+                headers: {
+                    'Access-Control-Allow-Origin': '*'
+                },
+                statusCode: {
+                    0: function() {
+                        console.log("send")//Success message
+                    },
+                    200: function() {
+                        console.log("send")//Success Message
+                    }
+                },
+                xhrFields: {
+                    withCredentials: true
+                }
+            });
+            */
+            
+             $.ajax({
                 type: "POST",
                 url: "https://script.google.com/a/careertrackers.org.au/macros/s/AKfycbw9rCkfdpuHVoJpWHNeo5GHgKVokcjHZYNymPJd7FLqtU1OzPV1/exec",
                 data: JSON.stringify(ajaxData),
@@ -418,9 +440,12 @@ seo_title: CareerTrackers Intern Timesheet
                     withCredentials: true
                 }
             });
+            
             //alert('working');
         }
-        $('#intern_timesheet').submit(function() {
+        $('#intern_timesheet').submit(function(event) {
+            //event.preventDefault();
+
             postToGoogle();
             //return false;
         });
