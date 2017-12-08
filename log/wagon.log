@@ -546,3 +546,75 @@ Detecting locale EN
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;97;49mStarted GET "/" at 2017-12-08 10:31:28 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 186.6ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-12-08 10:32:39 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.5ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 10:32:50 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-12-08 10:37:44 +1000
+[0;97;49mStarted GET "/forms" at 2017-12-08 10:41:47 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 29.7ms
+
+[0m
+[0;97;49mStarted GET "/" at 2017-12-08 10:42:06 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 50.2ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2017-12-08 10:42:08 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.5ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-scholarship-eoi" at 2017-12-08 10:42:18 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship - Expression of Interest" [forms/ics-scholarship-eoi]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.7ms
+
+[0m
