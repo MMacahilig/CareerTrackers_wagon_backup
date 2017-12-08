@@ -144,78 +144,628 @@ seo_title: CareerTrackers Intern Timesheet
                             <th class='otherheaders'>Start Time</th> 
                             <th class='otherheaders' >Meal Break</th>
                             <th class='otherheaders' >Finish Time</th>
-                            <th class='otherheaders' >Total Hours per Day</th>
-                            <th class='otherheaders' >Net Hours to be paid after breaks</th>
+                            <th class='otherheaders' >Total Hours before breaks</th>
+                            <th class='otherheaders' >Net Hours after breaks</th>
                         </tr>
                         <tr>
                             
                             <td style="text-align: left">Monday</td>
-                            <td><input type="time" id='start_time1' name='timesheet[start_time1]'  style="text-align:center;"></td>
+                            <td><select class='form-control' id='start_time1' name='timesheet[start_time1]' style="text-align: right">
+                            <option selected='' value=''></option>
+                                <option value='6.00' style="text-align: right">6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><select class='form-control' id='meal_break1' name='timesheet[meal_break1]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
                             <option value='0.50'>30 mins</option>
                             <option value='0.75'>45 mins</option>
-                            <option value='1'>60 mins</option>
+                            <option value='1.00'>60 mins</option>
                                 </select></td> 
-                            <td><input type="time" id='finish_time1' name='timesheet[finish_time1]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='finish_time1' name='timesheet[finish_time1]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><input name="hours1" disabled id="hours1" style="text-align:center;"></td>
                             <td><input name="final1" disabled id="final1" style="text-align:center;"></td>
                             
                         </tr>
                         <tr>
                             <td style="text-align: left">Tuesday</td>
-                            <td><input type="time" id='start_time2' name='timesheet[start_time2]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='start_time2' name='timesheet[start_time2]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><select class='form-control' id='meal_break2' name='timesheet[meal_break2]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
                             <option value='0.50'>30 mins</option>
                             <option value='0.75'>45 mins</option>
-                            <option value='1'>60 mins</option>
+                            <option value='1.00'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time2' name='timesheet[finish_time2]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='finish_time2' name='timesheet[finish_time2]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><input name="hours2" disabled id="hours2" style="text-align:center;"></td>
                             <td><input name="final2" disabled id="final2" style="text-align:center;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: left">Wednesday</td>
-                            <td><input type="time" id='start_time3' name='timesheet[start_time3]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='start_time3' name='timesheet[start_time3]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><select class='form-control' id='meal_break3' name='timesheet[meal_break3]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
                             <option value='0.50'>30 mins</option>
                             <option value='0.75'>45 mins</option>
-                            <option value='1'>60 mins</option>
+                            <option value='1.00'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time3' name='timesheet[finish_time3]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='finish_time3' name='timesheet[finish_time3]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><input name="hours3" disabled id="hours3" style="text-align:center;"></td>
                             <td><input name="final3" disabled id="final3" style="text-align:center;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: left">Thursday</td>
-                            <td><input type="time" id='start_time4' name='timesheet[start_time4]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='start_time4' name='timesheet[start_time4]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><select class='form-control' id='meal_break4' name='timesheet[meal_break4]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
                             <option value='0.50'>30 mins</option>
                             <option value='0.75'>45 mins</option>
-                            <option value='1'>60 mins</option>
+                            <option value='1.00'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time4' name='timesheet[finish_time4]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='finish_time4' name='timesheet[finish_time4]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><input name="hours4" disabled id="hours4" style="text-align:center;"></td>
                             <td><input name="final4" disabled id="final4" style="text-align:center;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: left">Friday</td>
-                            <td><input type="time" id='start_time5' name='timesheet[start_time5]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='start_time5' name='timesheet[start_time5]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><select class='form-control' id='meal_break5' name='timesheet[meal_break5]'>
                             <option selected='' value=''></option>
                             <option value='0.25'>15 mins</option>
                             <option value='0.50'>30 mins</option>
                             <option value='0.75'>45 mins</option>
-                            <option value='1'>60 mins</option>
+                            <option value='1.00'>60 mins</option>
                                 </select></td>  
-                            <td><input type="time" id='finish_time5' name='timesheet[finish_time5]' style="text-align:center;"></td>
+                            <td><select class='form-control' id='finish_time5' name='timesheet[finish_time5]'>
+                            <option selected='' value=''></option>
+                                <option value='6.00'>6:00 am</option>
+                            <option value='6.25'>6:15 am</option>
+                            <option value='6.50'>6:30 am</option>
+                            <option value='6.75'>6:45 am</option>
+                                <option value='7.00'>7:00 am</option>
+                            <option value='7.25'>7:15 am</option>
+                            <option value='7.50'>7:30 am</option>
+                            <option value='7.75'>7:45 am</option>
+                                <option value='8.00'>8:00 am</option>
+                            <option value='8.25'>8:15 am</option>
+                            <option value='8.50'>8:30 am</option>
+                            <option value='8.75'>8:45 am</option>
+                                <option value='9.00'>9:00 am</option>
+                            <option value='9.25'>9:15 am</option>
+                            <option value='9.50'>9:30 am</option>
+                            <option value='9.75'>9:45 am</option>
+                                <option value='10.00'>10:00 am</option>
+                            <option value='10.25'>10:15 am</option>
+                            <option value='10.50'>10:30 am</option>
+                            <option value='10.75'>10:45 am</option>
+                                <option value='11.00'>11:00 am</option>
+                            <option value='11.25'>11:15 am</option>
+                            <option value='11.50'>11:30 am</option>
+                            <option value='11.75'>11:45 am</option>
+                                <option value='12.00'>12:00 pm</option>
+                            <option value='12.25'>12:15 pm</option>
+                            <option value='12.50'>12:30 pm</option>
+                            <option value='12.75'>12:45 pm</option>
+                                <option value='13.00'>1:00 pm</option>
+                            <option value='13.25'>1:15 pm</option>
+                            <option value='13.50'>1:30 pm</option>
+                            <option value='13.75'>1:45 pm</option>
+                                <option value='14.00'>2:00 pm</option>
+                            <option value='14.25'>2:15 pm</option>
+                            <option value='14.50'>2:30 pm</option>
+                            <option value='14.75'>2:45 pm</option>
+                                <option value='15.00'>3:00 pm</option>
+                            <option value='15.25'>3:15 pm</option>
+                            <option value='15.50'>3:30 pm</option>
+                            <option value='15.75'>3:45 pm</option>
+                                <option value='16.00'>4:00 am</option>
+                            <option value='16.25'>4:15 pm</option>
+                            <option value='16.50'>4:30 pm</option>
+                            <option value='16.75'>4:45 pm</option>
+                                <option value='17.00'>5:00 pm</option>
+                            <option value='17.25'>5:15 pm</option>
+                            <option value='17.50'>5:30 pm</option>
+                            <option value='17.75'>5:45 pm</option>
+                                <option value='18.00'>6:00 pm</option>
+                            <option value='18.25'>6:15 pm</option>
+                            <option value='18.50'>6:30 pm</option>
+                            <option value='18.75'>6:45 pm</option>
+                                <option value='19.00'>7:00 pm</option>
+                                </select></td> 
                             <td><input name="hours5" disabled id="hours5" style="text-align:center;"></td>
                             <td><input name="final5" disabled id="final5" style="text-align:center;"></td>
                         </tr>
@@ -467,7 +1017,8 @@ seo_title: CareerTrackers Intern Timesheet
                 let endTimeThree = $('#finish_time3').val();
                 let endTimeFour = $('#finish_time4').val();
                 let endTimeFive = $('#finish_time5').val();
-
+                
+                /*
                 let startHourOne = startTimeOne.slice(0,2);
                 let startHourTwo = startTimeTwo.slice(0,2);
                 let startHourThree = startTimeThree.slice(0,2);
@@ -492,7 +1043,6 @@ seo_title: CareerTrackers Intern Timesheet
                 let endMinsFour = endTimeFour.slice(3,5);
                 let endMinsFive = endTimeFive.slice(3,5);
 
-
                 let differenceHourOne = endHourOne - startHourOne;
                 let differenceMinsOne = (endMinsOne - startMinsOne)/60;
 
@@ -507,7 +1057,19 @@ seo_title: CareerTrackers Intern Timesheet
 
                 let differenceHourFive = endHourFive - startHourFive;
                 let differenceMinsFive = (endMinsFive - startMinsFive)/60;
+                */
 
+                let differenceHourOne = endTimeOne - startTimeOne;
+                let differenceMinsOne = 0;
+                let differenceHourTwo = endTimeTwo - startTimeTwo;
+                let differenceMinsTwo = 0;
+                let differenceHourThree = endTimeThree - startTimeThree;
+                let differenceMinsThree = 0;
+                let differenceHourFour = endTimeFour - startTimeFour;
+                let differenceMinsFour = 0;
+                let differenceHourFive = endTimeFive - startTimeFive;
+                let differenceMinsFive = 0;
+                
             
             //console.log(differenceHour + '.' + differenceMins);
             if(endTimeOne == "" || startTimeOne == ""){
