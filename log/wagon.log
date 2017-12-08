@@ -704,3 +704,111 @@ Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
 [0;32;49mCompleted 200 OK in 14.6ms
 
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 13:18:54 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.3ms
+
+[0m
+[0;97;49mStarted GET "/%22http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/Timesheet%20Intern%20CT%202017_12_08.pdf%22" at 2017-12-08 13:18:59 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 20.7ms
+
+[0m
+[0;97;49mStarted GET "/%22http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/Timesheet%20Intern%20CT%202017_12_08.pdf%22" at 2017-12-08 13:19:14 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 17.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-12-08 13:26:52 +1000
+[0;97;49mStarted GET "/%22http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/Timesheet%20Intern%20CT%202017_12_08.pdf%22" at 2017-12-08 13:27:01 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-12-08 13:27:55 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 13:27:59 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 14.4ms
+
+[0m
+[0;97;49mStarted GET "/%22http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/Timesheet%20Intern%20CT%202017_12_08.pdf/%22" at 2017-12-08 13:28:00 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 10.8ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 13:28:04 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 13:28:10 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.5ms
+
+[0m
+[0;97;49mStarted GET "/%22http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/Timesheet%20Intern%20CT%202017_12_08.pdf/%22" at 2017-12-08 13:28:12 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 13.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-12-08 13:28:22 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 13:28:24 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 12.0ms
+
+[0m
+[0;97;49mStarted GET "/%22http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/Timesheet%20Intern%20CT%202017_12_08.pdf%22" at 2017-12-08 13:28:26 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 14.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2017-12-08 13:28:34 +1000
+[0;97;49mStarted GET "/forms/intern-timesheet" at 2017-12-08 13:28:36 +1000[0m
+Detecting locale EN
+Found page "CareerTrackers Intern Timesheet" [forms/intern-timesheet]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 15.4ms
+
+[0m
