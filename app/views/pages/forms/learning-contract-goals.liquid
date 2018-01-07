@@ -47,6 +47,13 @@ seo_title: CareerTrackers Learning Contract
                   	<select class='form-control' id='student_advisor' name='goals[student_advisor]' value="{{params['student_advisor']}}">
                     	<option selected='' value=''></option>
 
+                      {% if params['student_advisor'] == "Abbey Wright" %}
+                      <option selected ='' value='Abbey Wright'>Abbey Wright</option>
+                      {% else %}
+                      <option value='Abbey Wright'>Abbey Wright</option>
+                      {% endif %}
+
+                        
                       {% if params['student_advisor'] == "Aydon Edwards" %}
                       <option selected ='' value='Aydon Edwards'>Aydon Edwards</option>
                       {% else %}
@@ -71,6 +78,12 @@ seo_title: CareerTrackers Learning Contract
                       <option value='Elianor Gerrard'>Elianor Gerrard</option>
                       {% endif %}
 
+                      {% if params['student_advisor'] == "Emily Vintour-Cesar" %}
+                      <option selected ='' value='Emily Vintour-Cesar'>Emily Vintour-Cesar</option>
+                      {% else %}
+                      <option value='Emily Vintour-Cesar'>Emily Vintour-Cesar</option>
+                      {% endif %}
+                        
                       {% if params['student_advisor'] == "Emma Guest" %}
                       <option selected ='' value='Emma Guest'>Emma Guest</option>
                       {% else %}
