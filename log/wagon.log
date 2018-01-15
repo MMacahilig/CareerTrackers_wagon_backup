@@ -1176,3 +1176,5 @@ Found page "New Employer - Expression of Interest" [forms/partnering-with-career
 * Reloaded "pages", "snippets" at 2018-01-15 12:04:15 +1100
 * Reloaded "pages", "snippets" at 2018-01-15 12:04:20 +1100
 * Reloaded "pages", "snippets" at 2018-01-15 12:04:28 +1100
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
