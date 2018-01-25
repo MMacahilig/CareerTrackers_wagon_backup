@@ -1182,3 +1182,114 @@ Found page "New Employer - Expression of Interest" [forms/partnering-with-career
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-01-25 16:09:34 +1100[0m
+[0;97;49mStarted GET "/forms/" at 2018-01-25 16:09:34 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+Found page "Forms" [forms]
+  Rendered snippet footer
+  Rendered snippet header
+[0;32;49mCompleted 404 Not Found in 25.9ms
+
+[0m
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 29.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:09:41 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 26.3ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:09:54 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 32.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-01-25 16:09:54 +1100
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:09:57 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 69.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-01-25 16:10:07 +1100
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:10:08 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-01-25 16:10:27 +1100
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:10:28 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 31.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-01-25 16:10:55 +1100
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:10:56 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-01-25 16:11:13 +1100
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-01-25 16:11:14 +1100[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.3ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-01-25 16:11:15 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 53.7ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-01-25 16:11:15 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-01-25 16:11:25 +1100
+* Reloaded "pages", "snippets" at 2018-01-25 16:12:51 +1100
