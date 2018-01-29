@@ -1293,3 +1293,5 @@ Detecting locale EN
 [0m
 * Reloaded "pages", "snippets" at 2018-01-25 16:11:25 +1100
 * Reloaded "pages", "snippets" at 2018-01-25 16:12:51 +1100
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
