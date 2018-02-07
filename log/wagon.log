@@ -1310,3 +1310,118 @@ Detecting locale EN
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;97;49mStarted GET "/robots.txt" at 2018-02-07 10:53:13 +1100[0m
+[0;97;49mStarted GET "/" at 2018-02-07 10:53:13 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+Found page "Home" [index]
+  Rendered snippet footer
+  Rendered snippet header
+[0;32;49mCompleted 404 Not Found in 50.2ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 335.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-07 10:53:49 +1100
+* Reloaded "pages", "snippets" at 2018-02-07 10:54:03 +1100
+[0;97;49mStarted GET "/" at 2018-02-07 10:56:51 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 85.2ms
+
+[0m
+[0;97;49mStarted GET "/" at 2018-02-07 12:13:54 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+[0;97;49mStarted GET "/robots.txt" at 2018-02-07 12:13:54 +1100[0m
+Detecting locale EN
+  Rendered snippet footer
+  Rendered snippet header
+  Rendered liquid page template
+  Rendered snippet footer
+[0;32;49mCompleted 200 OK in 530.2ms
+
+[0m
+[0;32;49mCompleted 404 Not Found in 35.7ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-02-07 14:39:44 +1100[0m
+[0;97;49mStarted GET "/" at 2018-02-07 14:39:44 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+Found page "Home" [index]
+  Rendered snippet footer
+  Rendered snippet header
+[0;32;49mCompleted 404 Not Found in 56.5ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 539.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-07 14:43:23 +1100
+* Reloaded "pages", "snippets" at 2018-02-07 14:44:05 +1100
+[0;97;49mStarted GET "/" at 2018-02-07 14:44:08 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 47.2ms
+
+[0m
+[0;97;49mStarted GET "/" at 2018-02-07 14:49:02 +1100[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-02-07 14:49:02 +1100[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 108.2ms
+
+[0m
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 131.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-07 15:33:52 +1100
+* Reloaded "pages", "snippets" at 2018-02-07 15:34:25 +1100
+* Reloaded "pages", "snippets" at 2018-02-07 15:34:28 +1100
+[0;97;49mStarted GET "/" at 2018-02-07 15:34:36 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 111.1ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2018-02-07 15:44:51 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 239.1ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m

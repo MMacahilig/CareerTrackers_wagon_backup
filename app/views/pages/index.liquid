@@ -82,11 +82,21 @@ editable_elements:
 					<div class='carousel-inner'>
 						{% for carousel in contents.carousel %}
 						{% if forloop.first %}
+                        <!--
 						<div class='item active'>
 							<img alt='{{carousel.title | escape }}' src='{{carousel.image.url | escape }}'>
 							<div class='container'>
 								<div class='carousel-caption'>
 									<p>{{carousel.caption | escape }}</p>
+								</div>
+							</div>
+						</div>
+                        -->
+                        <div class='item active'>
+							<a href='http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/CareerTrackers%20Advantage%20Report.pdf' target="_blank"><img alt='careertrackers advantage' src='http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/ct-advantage.png'></a>
+							<div class='container'>
+								<div class='carousel-caption'>
+									<p>Click Here to download the CareerTrackers Advantage Report</p>
 								</div>
 							</div>
 						</div>
@@ -320,6 +330,15 @@ editable_elements:
 		</div>
 
 		</div>
+    
+    <!-- mobile banner -->
+    <div class='container-fluid' style="padding-left:0;padding-right:0;">
+            <div class="poster visible-xs" style="padding-left:0;padding-right:0;">
+                <a href='http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/CareerTrackers%20Advantage%20Report.pdf' target="_blank"><img class='img-responsive' src='http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/ct-mobile-banner.png'></a>
+            </div>
+        </div>
+    <br>
+    <!-- mobile banner end -->
 	{% block middle_content %}
 	<div class='container-fluid dark-background homepage-strip'>
 		<div class='container headings'></div>
