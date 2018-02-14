@@ -53,7 +53,11 @@ seo_title: CareerTrackers Learning Contract
                       <option value='Abbey Wright'>Abbey Wright</option>
                       {% endif %}
 
-                        
+                      {% if params['student_advisor'] == "Ashlea Henley" %}
+                      <option selected ='' value='Ashlea Henley'>Ashlea Henley</option>
+                      {% else %}
+                      <option value='Ashlea Henley'>Ashlea Henley</option>
+                      {% endif %}  
 
                       {% if params['student_advisor'] == "Carmel Harris" %}
                       <option selected ='' value='Carmel Harris'>Carmel Harris</option>
@@ -65,6 +69,12 @@ seo_title: CareerTrackers Learning Contract
                       <option selected ='' value='Carrie Sailor'>Carrie Sailor</option>
                       {% else %}
                       <option value='Carrie Sailor'>Carrie Sailor</option>
+                      {% endif %}
+                      
+                      {% if params['student_advisor'] == "Clancy Kees" %}
+                      <option selected ='' value='Clancy Kees'>Clancy Kees</option>
+                      {% else %}
+                      <option value='Clancy Kees'>Clancy Kees</option>
                       {% endif %}
 
                       {% if params['student_advisor'] == "Elianor Gerrard" %}
@@ -210,7 +220,11 @@ seo_title: CareerTrackers Learning Contract
                       <option value='Abbey Wright'>Abbey Wright</option>
                       {% endif %}
                         
-                      
+                      {% if params['secondary_advisor'] == "Ashlea Henley" %}
+                      <option selected ='' value='Ashlea Henley'>Ashlea Henley</option>
+                      {% else %}
+                      <option value='Ashlea Henley'>Ashlea Henley</option>
+                      {% endif %}  
 
                       {% if params['secondary_advisor'] == "Carmel Harris" %}
                       <option selected ='' value='Carmel Harris'>Carmel Harris</option>
@@ -222,6 +236,12 @@ seo_title: CareerTrackers Learning Contract
                       <option selected ='' value='Carrie Sailor'>Carrie Sailor</option>
                       {% else %}
                       <option value='Carrie Sailor'>Carrie Sailor</option>
+                      {% endif %}
+                        
+                      {% if params['secondary_advisor'] == "Clancy Kees" %}
+                      <option selected ='' value='Clancy Kees'>Clancy Kees</option>
+                      {% else %}
+                      <option value='Clancy Kees'>Clancy Kees</option>
                       {% endif %}
 
 				      {% if params['secondary_advisor'] == "Elianor Gerrard" %}
