@@ -1,19 +1,17 @@
 ---
-title: Student Induction
+title: Program Orientation
 slug: student-induction
 listed: false
 published: true
 cache_strategy: none
 response_type: text/html
 position: 4
-seo_title: Student Induction
+seo_title: Program Orientation
 editable_elements:
   main/banner: 
   main/content: "\n\n  "
   main/manager_blurb: |-
-    Welcome to CareerTrackers! Many of you will have arrived at this page as part of our Student Induction training.
-              <br><br>
-              Please review the below materials before and/or after your scheduled session.
+    Welcome to CareerTrackers. Please take a moment to look through the materials below and get to know the program. We look forward to working with you and helping you get started to find your internship!
 ---
 {% extends 'parent' %}
 {% block main %}
@@ -30,16 +28,15 @@ editable_elements:
   <div class='container-fluid white-background'>
     <div class='container marketing'>
       <div class='page-header container text-center white-background'>
-        <h1>Student Induction</h1>
+        <h1>Program Orientation</h1>
 
       </div>
       <div class='row'>
         <div class="col-md-12 text-center lead">
           <p>
           {% editable_text manager_blurb %}
-          Welcome to CareerTrackers! Many of you will have arrived at this page as part of our Student Induction training.
-          <br><br>
-          Please review the below materials before and/or after your scheduled session.
+              
+          Welcome to CareerTrackers. Please take a moment to look through the materials below and get to know the program. We look forward to working with you and helping you get started to find your internship!
 
           {% endeditable_text %}
         </p>
@@ -55,14 +52,14 @@ editable_elements:
   <div class='container-fluid white-background'>
     <div class='container marketing'>
       <div class='page-header container text-center white-background'>
-        <h1>Manager Handbook</h1>
+        <h1>Student Handbook</h1>
 
       </div>
       <div class='row'>
         <div class="col-md-12 text-center">
 
           <div class='col-md-12'>
-            <a href="http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/CareerTrackers%20Manager%20Handbook.pdf"><img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/handbook.jpg" style="margin:0 auto;height:400px"/></a>
+            <a href="http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/CareerTrackers%20Student%20Handbook.pdf" target="_blank"><img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/handbook-cover.png" style="margin:0 auto;height:400px"/></a>
           </div>
         </div>
       </div>
@@ -72,54 +69,19 @@ editable_elements:
   <div class='container-fluid white-background'>
     <div class='container marketing'>
       <div class='page-header container text-center white-background'>
-        <h1>Learning Contract</h1>
+        <h1>CareerTrackers Advantage Report</h1>
 
       </div>
       <div class='row'>
         <div class="col-md-12 text-center">
 
           <div class='col-md-12'>
-            <a href="/forms/learning-contract"><img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/LC.jpg" style="margin:0 auto;height:400px"/></a>
+            <a href="http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/CareerTrackers%20Advantage%20Report.pdf" target="_blank"><img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/ct-advantage-studentinduction.png" style="margin:0 auto;height:400px"/></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class='container-fluid white-background'>
-    <div class='container marketing'>
-      <div class='page-header container text-center white-background'>
-        <h1>Intern Evaluation</h1>
-
-      </div>
-      <div class='row'>
-        <div class="col-md-12 text-center">
-
-          <div class='col-md-12'>
-            <a href="/forms/intern-evaluation"><img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/interneval.jpg" style="margin:0 auto;height:400px"/></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class='container-fluid white-background'>
-    <div class='container marketing'>
-      <div class='page-header container text-center white-background'>
-        <h1>CareerTrackers Social Impact</h1>
-
-      </div>
-      <div class='row'>
-        <div class="col-md-12 text-center">
-
-          <div class='col-md-12'>
-            <a href="http://59d107f8c0dc63892c5e-c6fb9b4f3c3891548580b4277d55f88f.r19.cf4.rackcdn.com/CareerTrackers_Social_Impact_Report_Executive_Summary.pdf"><img class="img-responsive" src="http://119.9.8.33/sites/533a6766f92ea180dd000002/theme/images/socialImpact.jpg" style="margin:0 auto;height:400px"/></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 
   <div class='container-fluid white-background'>
@@ -129,7 +91,7 @@ editable_elements:
 
       </div>
       <div class='row'>
-        {% for story in contents.videos %}
+        {% for story in contents.student_videos %}
         <div class='col-lg-4'>
           <img alt='{{story.name | escape }}' src='{{story.image.url | escape }}'>
           <h2>{{story.name | escape }}</h2>

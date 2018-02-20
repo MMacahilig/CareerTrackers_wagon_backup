@@ -1,13 +1,14 @@
 ---
-- Ashleigh Lindsay:
-    _slug: ashleigh-lindsay
-    description: Ashleigh Lindsay is a Bardi and Torres Strait Islander Woman from
-      Western Australia. Ashleigh is a young mother to a 7-year old boy named Shaun.
-      He is her motivation for succeeding in life. At the time of this speech Ashleigh
-      was completing her Law degree at Murdoch University and has since earned a Graduate
-      role at Herbert Smith Freehills.
-    image: /samples/videos/ashleigh-lindsay/Ashleigh.png
-    youtube_video_url: https://www.youtube.com/watch?v=xaOmCWl63TY
+- Kyran Dixon:
+    _slug: kyran-dixon
+    description: Kyran Dixon grew up in the western suburbs of Adelaide. Kyran is an alumni of the CareerTrackers program and completed a Bachelor of Arts majoring in History and Politics. Kyran is a consultant in the Risk and Internal Audit Practice ay EY. Kyran is the 2018 South Australia. Kyran tell's the story of his battle with cancer and how he has stayed motivated in the face of incredible obstacles. 
+    image: /samples/videos/ashleigh-lindsay/kyran-website.png
+    youtube_video_url: https://youtu.be/B505qbdvBrk
+- Sam Brown:
+    _slug: sam-brown
+    description: Samuel Brown is studying a Bachelor of Mathematics and Finance (Honors) at the University of Wollongong. Sam is a Dean's Scholar who has interned at the Reserve Bank of Australia since 2016. Sam carries an average of 89%, one of the highest in the CareerTrackers program nationally and is dedicated to inspiring more Indigenous students to pursue studies and a career in STEM.
+    image: /samples/videos/managers-guide/sam-website.png
+    youtube_video_url: https://youtu.be/HQsrFrmpj4Y
 - Barbie-Lee Kirby:
     _slug: barby-lee-kirby
     description: As shown on Qantas in-flight entertainment this video explores Barbie-Lee
