@@ -2152,3 +2152,59 @@ Found page "Program Orientation" [students/program-orientation]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;97;49mStarted GET "/" at 2018-02-22 15:22:04 +1100[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 272.9ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-02-22 15:24:10 +1100[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.8ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-02-22 15:24:15 +1100[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.8ms
+
+[0m
+[0;97;49mStarted POST "/interns/contract" at 2018-02-22 15:24:18 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 21.2ms
+
+[0m
+[0;97;49mStarted GET "/interns/learning-contract-goals" at 2018-02-22 15:24:27 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 12.7ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract-goals" at 2018-02-22 15:24:31 +1100[0m
+Detecting locale EN
+Found page "Learning Contract - Goals" [forms/learning-contract-goals]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-22 15:25:38 +1100
+* Reloaded "pages", "snippets" at 2018-02-22 15:26:34 +1100
