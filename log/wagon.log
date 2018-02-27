@@ -2980,3 +2980,94 @@ Found page "Program Orientation" [students/program-orientation]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2018-02-28 10:13:12 +1100[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-02-28 10:13:12 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+Found page "Home" [index]
+  Rendered snippet footer
+  Rendered snippet header
+[0;32;49mCompleted 404 Not Found in 30.6ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 225.8ms
+
+[0m
+[0;97;49mStarted GET "/students/program-orientation" at 2018-02-28 10:13:19 +1100[0m
+Detecting locale EN
+Found page "Program Orientation" [students/program-orientation]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 70.4ms
+
+[0m
+[0;97;49mStarted GET "/students/program-orientation" at 2018-02-28 10:14:04 +1100[0m
+Detecting locale EN
+Found page "Program Orientation" [students/program-orientation]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 24.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-28 10:14:27 +1100
+[0;97;49mStarted GET "/students/program-orientation" at 2018-02-28 10:14:31 +1100[0m
+Detecting locale EN
+Found page "Program Orientation" [students/program-orientation]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.9ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-02-28 10:14:31 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 21.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-28 10:14:45 +1100
+* Reloaded "pages", "snippets" at 2018-02-28 10:14:56 +1100
+[0;97;49mStarted GET "/students/program-orientation" at 2018-02-28 10:14:57 +1100[0m
+Detecting locale EN
+Found page "Program Orientation" [students/program-orientation]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-28 10:15:16 +1100
+* Reloaded "pages", "snippets" at 2018-02-28 10:15:26 +1100
+[0;97;49mStarted GET "/students/program-orientation" at 2018-02-28 10:15:28 +1100[0m
+Detecting locale EN
+Found page "Program Orientation" [students/program-orientation]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 21.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-02-28 10:15:39 +1100
+[0;97;49mStarted GET "/students/program-orientation" at 2018-02-28 10:15:40 +1100[0m
+Detecting locale EN
+Found page "Program Orientation" [students/program-orientation]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.2ms
+
+[0m
