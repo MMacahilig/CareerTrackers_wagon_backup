@@ -3071,3 +3071,41 @@ Found page "Program Orientation" [students/program-orientation]
 [0;32;49mCompleted 200 OK in 16.2ms
 
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "//google0627e861b5cf4222.html" at 2018-03-05 17:32:21 +1100[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-03-05 17:32:21 +1100[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 28.8ms
+
+[0m
+[0;32;49mCompleted 404 Not Found in 28.2ms
+
+[0m
+[0;97;49mStarted GET "/google0627e861b5cf4222.html" at 2018-03-05 17:32:28 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 13.5ms
+
+[0m
+[0;97;49mStarted GET "/google0627e861b5cf4222.html" at 2018-03-05 17:32:32 +1100[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 11.5ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
