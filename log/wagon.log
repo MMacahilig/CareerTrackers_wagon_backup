@@ -3149,3 +3149,44 @@ Found page "Our Board" [about-us/our-board]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2018-04-23 12:49:29 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 261.3ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-04-23 12:49:29 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 40.8ms
+
+[0m
+[0;97;49mStarted GET "/about-us/our-board" at 2018-04-23 12:49:38 +1000[0m
+Detecting locale EN
+Found page "Our Board" [about-us/our-board]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-04-23 12:49:48 +1000
+[0;97;49mStarted GET "/about-us/our-board" at 2018-04-23 12:49:49 +1000[0m
+Detecting locale EN
+Found page "Our Board" [about-us/our-board]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 59.1ms
+
+[0m

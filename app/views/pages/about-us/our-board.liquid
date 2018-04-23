@@ -18,14 +18,17 @@ editable_elements:
   
   <div class='row bottom-margin-large'>
     {% for board in contents.board %}
-    <div class='col-lg-2'>
+    <div class="col-lg-6">
+    <div class='col-lg-4'>
       <img alt='{{board.name | escape}}' class='profile-picture' src='{{board.image.url | escape}}'>
     </div>
-    <div class='col-lg-4'>
+    <div class='col-lg-8'>
       <h3>{{board.name | escape}}</h3>
       <h4 class='profile-position'>{{board.position | escape}}</h4>
       <div style="margin-bottom:100px"></div>
-    </div>
+</div>
+    </div>  
+    
     {% endfor %}
   </div>
   
