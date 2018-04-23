@@ -3192,3 +3192,23 @@ Found page "Our Board" [about-us/our-board]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/about-us/our-board" at 2018-04-23 12:57:31 +1000[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-04-23 12:57:31 +1000[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Our Board" [about-us/our-board]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered snippet banner
+[0;32;49mCompleted 404 Not Found in 25.3ms
+
+[0m
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 31.9ms
+
+[0m
