@@ -1,0 +1,58 @@
+# Logfile created on 2018-05-04 16:00:57 +1000 by logger.rb/1.2.8
+[0;97;49mStarted GET "/" at 2018-05-04 16:01:07 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 347.9ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-05-04 16:01:07 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 14.2ms
+
+[0m
+[0;97;49mStarted GET "/students/how-it-works" at 2018-05-04 16:01:17 +1000[0m
+Detecting locale EN
+Found page "How It Works" [students/how-it-works]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 32.3ms
+
+[0m
+[0;97;49mStarted GET "/students/how-it-works-test" at 2018-05-04 16:01:22 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 10.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-05-04 16:02:00 +1000
+[0;97;49mStarted GET "/students/how-it-works-test" at 2018-05-04 16:02:04 +1000[0m
+Detecting locale EN
+Found page "How It Works (Test)" [students/how-it-works-test]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 66.7ms
+
+[0m
+[0;97;49mStarted GET "/students/how-it-works-test" at 2018-05-04 16:02:19 +1000[0m
+Detecting locale EN
+Found page "How It Works (Test)" [students/how-it-works-test]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.3ms
+
+[0m
