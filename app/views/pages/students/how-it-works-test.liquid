@@ -1,0 +1,152 @@
+---
+title: How It Works (Test)
+slug: how-it-works (Test)
+listed: false
+published: false
+cache_strategy: none
+response_type: text/html
+position: 2
+seo_title: How It Works (Test)
+editable_elements:
+  main/banner: /samples/pages/Website_Banners_-_2017_-_5.png
+  main/year: <h2 class="orange-text">2017 Key Dates</h2>
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+  {% include page_header %}
+  <div class='container-fluid'>
+    <div class='horizontal-panel'>
+      <div class='horizontal-panel-heading'>
+        <h2>Engagement</h2>
+      </div>
+      <div class='horizontal-panel-body'>
+        <div class='list-group components-inline'>
+          <div class='list-group-item components-item'>
+            Fortnightly contact with your Student Advisor throughout the year.
+          </div>
+          <div class='list-group-item components-item'>
+            Structured monthly meetings with your Student Advisor focused on your personal and professional development.
+          </div>
+          <div class='list-group-item components-item'>
+            Ongoing CareerTrackers activities to develop your network of like-minded Indigenous university students.
+          </div>
+          <div class='list-group-item components-item'>
+            Access scholarships and other financial assistance.
+          </div>
+          <div class='list-group-item components-item'>
+            Dedicated support while working to ensure you are well supported in the workplace.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='horizontal-panel'>
+      <div class='horizontal-panel-heading'>
+        <h2>Training</h2>
+      </div>
+      <div class='horizontal-panel-body'>
+        <div class='list-group components-inline'>
+          <div class='list-group-item components-item'>
+            Develop a career plan utilising world-class tools and processes.
+          </div>
+          <div class='list-group-item components-item'>
+            Develop a winning CV.
+          </div>
+          <div class='list-group-item components-item'>
+            Complete group and one-on-one interview preparation training to ensure you are ready to earn your internship.
+          </div>
+          <div class='list-group-item components-item'>
+            Participate in workshops to prepare you for the professional office environment.
+          </div>
+          <div class='list-group-item components-item'>
+            Develop relationships with other students in the program locally and nationally.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='horizontal-panel'>
+      <div class='horizontal-panel-heading'>
+        <h2>Internship</h2>
+      </div>
+      <div class='horizontal-panel-body'>
+        <div class='list-group components-inline'>
+          <div class='list-group-item components-item'>
+            Complete a 12-week paid internship each year throughout your degree.
+          </div>
+          <div class='list-group-item components-item'>
+            Develop structured workplace goals and objectives with your manager and Student Advisor.
+          </div>
+          <div class='list-group-item components-item'>
+            Work in a culturally aware workplace.
+          </div>
+          <div class='list-group-item components-item'>
+            Deliver presentations to business leaders and receive formal performance feedback to help you grow.
+          </div>
+          <div class='list-group-item components-item'>
+            Receive weekly support from your Student Advisor to ensure you are getting challenging projects at work.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='horizontal-panel'>
+      <div class='horizontal-panel-heading'>
+        <h2>Leadership</h2>
+      </div>
+      <div class='horizontal-panel-body'>
+        <div class='list-group components-inline'>
+          <div class='list-group-item components-item'>
+            Attend our annual Leadership Development Institute each year throughout your degree.
+          </div>
+          <div class='list-group-item components-item'>
+            Complete world-class training programs focused on leadership development.
+          </div>
+          <div class='list-group-item components-item'>
+            Prepare for corporate and community leadership.
+          </div>
+          <div class='list-group-item components-item'>
+            Network with some of Australia’s most successful industry and community leaders.
+          </div>
+          <div class='list-group-item components-item'>
+            Give back as an alumnus and community leader.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12'>
+      {% editable_text year %}
+      <h2 class='orange-text'>
+        2015 Key Dates
+      </h2>
+      {% endeditable_text %}
+      </div>
+      {% for semester in contents.semesters %}
+      <div class='col-lg-6'>
+        <div class='panel panel-default'>
+          <div class='panel-heading orange-panel-heading'>
+            <h3>{{semester.semester | escape }}</h3>
+          </div>
+          <div class='list-group'>
+            {% for semester_event in semester.events %}
+            <div class='list-group-item'>
+              <div class='row'>
+                <div class='col-lg-6'>
+                  <strong>
+                    {{semester_event.event_title | escape}}
+                  </strong>
+                </div>
+                <div class='col-lg-6'>
+                  {{semester_event.event_date | escape}}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
