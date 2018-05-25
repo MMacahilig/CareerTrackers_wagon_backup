@@ -131,7 +131,7 @@ editable_elements:
                 </div>
                 <div class='form-group'>
                     <label class='col-sm-3 control-label' for='ics'>
-                        Have you received Indigenous Cadetship Support before?
+                        Have you received ICS before?
                     </label>
                     <div class='col-sm-5'>
                         <div class='radio'>
@@ -151,10 +151,10 @@ editable_elements:
 
                 <div id="ics_previous_dates" class='hide form-group'>
                     <label class='col-sm-3 control-label' for='ics'>
-                        If you have received Indigenous Cadetship Support before, what dates did you previously received ICS
+                        If you have received ICS before, what dates did you previously receive ICS?
                     </label>
                     <div class='col-sm-5'>
-                        <input class='form-control' id='ics_dates' name='intern[ics_dates]' placeholder='Semester 1 - 2014 to Semester 2 2015' type='text'>
+                        <input class='form-control' id='ics_dates' name='intern[ics_dates]' placeholder='Semester 1, 2014 to Semester 2, 2015' type='text'>
                     </div>
                 </div>
 
@@ -196,7 +196,7 @@ ICS Registration form
         var metrics = [
             [ "[name='intern[last_name]']", 'presence', 'Last name is required and cannot be empty' ],
             [ "[name='intern[first_name]']", 'presence', 'First name is required and cannot be empty' ],
-            [ "[name='intern[gender]']", 'presence', 'Please choose one of the following' ],
+            [ "[name='intern[gender]']", 'presence', 'Please choose one of the above' ],
             [ "[name='intern[dob]']", /|(0[1-9]|[12][0-9]|3[01])[\/.](0[1-9]|1[012])[\/.](19|20)\d\d/, 'Invalid date format. Should be dd/mm/yyyy' ],
             [ "[name='intern[dob]']", 'presence', 'Date of birth is required and cannot be empty' ],
             [ "[name='intern[email]']", 'presence', 'Email address is required and cannot be empty' ],
