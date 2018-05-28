@@ -189,4 +189,9 @@ Found page "Learning Contract" [forms/learning-contract]
 =======
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+<<<<<<< HEAD
 >>>>>>> 3a2357e41acf3f2e7c6e2ac5d94bbffbd17c1116
+=======
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+>>>>>>> 6455a23d3cfaf91077bb1224555cc99044ab5595
