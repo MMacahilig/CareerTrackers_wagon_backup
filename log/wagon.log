@@ -465,3 +465,31 @@ Detecting locale EN
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-01 15:35:46 +1000[0m
+Detecting locale EN
+[0;97;49mStarted GET "/" at 2018-06-01 15:35:46 +1000[0m
+  Rendered snippet header
+Detecting locale EN
+  Rendered snippet footer
+Found page "Home" [index]
+[0;32;49mCompleted 404 Not Found in 52.2ms
+
+[0m
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 443.2ms
+
+[0m
+[0;97;49mStarted GET "/employers/manager-induction" at 2018-06-01 15:36:00 +1000[0m
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 18.8ms
+
+[0m
