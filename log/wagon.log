@@ -205,3 +205,261 @@ Found page "Learning Contract" [forms/learning-contract]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+[0;97;49mStarted GET "/" at 2018-06-01 10:39:05 +1000[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-01 10:39:05 +1000[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 404 Not Found in 685.2ms
+
+[0m
+[0;32;49mCompleted 200 OK in 686.3ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-01 10:39:12 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.9ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:39:14 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:39:30 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:39:30 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 23.0ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:39:33 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 73.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:40:04 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:40:06 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 12.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:40:28 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:40:30 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 58.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:40:56 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:41:01 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 43.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:41:21 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:41:22 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 12.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:41:29 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 10:41:30 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 56.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 10:46:08 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 10:46:21 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 10:47:27 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 10:48:24 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 10:52:06 +1000
+[0;97;49mStarted GET "/students/internship" at 2018-06-01 11:11:08 +1000[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-01 11:11:08 +1000[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Internship" [students/internship]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 67.0ms
+
+[0m
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 76.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 11:32:18 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 11:32:38 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 11:34:51 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 11:37:36 +1000
+[0;97;49mStarted GET "/students/internship" at 2018-06-01 11:37:39 +1000[0m
+Detecting locale EN
+Found page "Internship" [students/internship]
+  Rendered snippet header
+[0;97;49mStarted GET "/robots.txt" at 2018-06-01 11:37:39 +1000[0m
+  Rendered snippet footer
+Detecting locale EN
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 82.2ms
+
+[0m
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 47.5ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-01 11:37:43 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 25.2ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 11:38:06 +1000
+[0;97;49mStarted GET "/forms" at 2018-06-01 11:38:07 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.6ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 11:38:12 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 73.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 11:38:49 +1000
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-01 11:38:50 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 14.1ms
+
+[0m
+[0;97;49mStarted GET "/employers/manager-induction" at 2018-06-01 12:21:20 +1000[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-01 12:21:20 +1000[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered snippet banner
+[0;32;49mCompleted 404 Not Found in 112.1ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 159.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 12:22:53 +1000
+[0;97;49mStarted GET "/employers/manager-induction" at 2018-06-01 12:22:55 +1000[0m
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 19.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 12:31:52 +1000
+* Reloaded "pages", "snippets" at 2018-06-01 12:32:05 +1000
+[0;97;49mStarted GET "/employers/manager-induction" at 2018-06-01 12:32:08 +1000[0m
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 32.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-01 12:34:12 +1000
+[0;97;49mStarted GET "/employers/manager-induction" at 2018-06-01 12:34:19 +1000[0m
+Detecting locale EN
+Found page "Manager Induction" [employers/manager-induction]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 36.2ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-01 12:34:19 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.8ms
+
+[0m
