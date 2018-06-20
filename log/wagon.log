@@ -520,3 +520,133 @@ Found page "Manager Induction" [employers/manager-induction]
 [0m
 [0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
 [0m
+[0;97;49mStarted GET "/" at 2018-06-14 16:36:33 +1000[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-14 16:36:33 +1000[0m
+Detecting locale EN
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 46.7ms
+
+[0m
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 228.2ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-14 16:36:45 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 16.8ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-14 16:36:45 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 22.1ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-14 16:36:46 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 18.1ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-14 16:36:50 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 16.4ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-14 16:36:51 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 14.3ms
+
+[0m
+[0;97;49mStarted POST "/interns/contract" at 2018-06-14 16:36:55 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 19.1ms
+
+[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-14 16:36:56 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 19.0ms
+
+[0m
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+[0;97;49mStarted GET "/" at 2018-06-18 16:40:22 +1000[0m
+[0;97;49mStarted GET "/robots.txt" at 2018-06-18 16:40:22 +1000[0m
+Detecting locale EN
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 27.7ms
+
+[0m
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 536.6ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-18 16:40:36 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 27.6ms
+
+[0m
+[0;97;49mStarted GET "/forms/intern-evaluation" at 2018-06-18 16:40:41 +1000[0m
+Detecting locale EN
+Found page "Intern Evaluation" [forms/intern-evaluation]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 35.8ms
+
+[0m
+[0;97;49mStarted GET "/forms/learning-contract" at 2018-06-18 16:40:44 +1000[0m
+Detecting locale EN
+Found page "Learning Contract" [forms/learning-contract]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 37.8ms
+
+[0m
+[0;97;49mStarted POST "/interns/contract" at 2018-06-18 16:40:48 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 22.6ms
+
+[0m
+[0;31;49m      entries_custom_fields => base, is invalid, 3, Label is already taken, 4, Label is already taken
+[0m
+      entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
