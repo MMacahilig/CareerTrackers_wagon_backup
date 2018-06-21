@@ -656,3 +656,91 @@ Detecting locale EN
       entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
       entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
       entries_custom_fields => base, is invalid, 59c1fa4fc54d2dfae3000004, Label is already taken, 59c1fa4fc54d2dfae3000005, Label is already taken, 4, Label is already taken, 5, Label is already taken
+[0;97;49mStarted GET "/" at 2018-06-21 11:04:40 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 189.8ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-21 11:04:49 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 30.0ms
+
+[0m
+[0;97;49mStarted GET "/" at 2018-06-21 11:05:50 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 31.9ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-21 11:05:54 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 28.0ms
+
+[0m
+[0;97;49mStarted GET "/" at 2018-06-21 11:06:14 +1000[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered snippet header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 28.9ms
+
+[0m
+[0;97;49mStarted GET "/forms" at 2018-06-21 11:06:18 +1000[0m
+Detecting locale EN
+Found page "Forms" [forms]
+  Rendered snippet header
+  Rendered snippet banner
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 20.3ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-scholarship-eoi" at 2018-06-21 11:07:10 +1000[0m
+Detecting locale EN
+Found page "ICS Scholarship - Expression of Interest" [forms/ics-scholarship-eoi]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.8ms
+
+[0m
+[0;97;49mStarted POST "/interns/start" at 2018-06-21 11:07:52 +1000[0m
+Detecting locale EN
+  Rendered snippet header
+  Rendered snippet footer
+[0;32;49mCompleted 404 Not Found in 9.1ms
+
+[0m
+[0;97;49mStarted GET "/forms/ics-sponsor-agreement" at 2018-06-21 11:10:49 +1000[0m
+Detecting locale EN
+Found page "ICS Expression of Interest (cont)" [forms/ics-sponsor-agreement]
+  Rendered snippet header
+  Rendered snippet page_header
+  Rendered snippet footer
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 28.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2018-06-21 11:24:27 +1000
