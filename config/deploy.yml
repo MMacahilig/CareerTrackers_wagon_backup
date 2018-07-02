@@ -1,6 +1,6 @@
 development:
   host: localhost:8080
-  api_key: 206f5555fb62047ebb2136fc4057dc15353f32c6
+  api_key: dc6be2e8c92c0fdf257c193346b069efd12f3d47
 production:
   host: 119.9.8.33
   api_key: 7f821361e92638fc0da0212f300db68e3e63aa8b
